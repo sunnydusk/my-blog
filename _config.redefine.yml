@@ -108,7 +108,7 @@ home_banner:
 #    dark: /images/wallhaven-wqery6-dark.webp # 暗色
     dark: /images/hill.jpg # 暗色
   # Home banner title
-  title: 清梦的小屋
+  title: 欢迎来到清梦的小屋
   # Home banner subtitle
   subtitle:
     text: ["123"] # subtitle text, array
