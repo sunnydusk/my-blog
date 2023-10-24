@@ -41,13 +41,13 @@ D.$f(x)=x+1$,$g(t)=t+1$
 ##### 1.分段函数
 ##### 在定义域内不同区间上用不同解析式表示的函数
 ##### 2.隐函数
-##### ![隐函数](https://raw.githubusercontent.com/sunnydusk/my-blog-images/main/202310242106917.png)
+##### ![隐函数](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242144794.png)
 ##### 3.参数方程式函数
-##### ![参数方程式.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695267241016-6b210724-bc6d-4f18-b959-2f2d851cd774.png#averageHue=%233581a3&clientId=u592527bd-b7a3-4&from=ui&id=u53862312&originHeight=367&originWidth=631&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=243984&status=done&style=none&taskId=u396fd0a3-b996-4449-a8af-c665f4cd2ec&title=)
+##### ![参数方程式](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242226795.png)
 ##### 4.抽象函数
-##### ![抽象函数.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695267159041-30f92754-03df-4258-85c1-7e37bd9cda7e.png#averageHue=%23417ca1&clientId=u592527bd-b7a3-4&from=ui&id=u42affec7&originHeight=282&originWidth=627&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=184887&status=done&style=none&taskId=u2b0e01d1-a5ce-4c28-a478-666a9046213&title=)
+##### ![抽象函数](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242229860.png)
 ##### *4.1求抽象函数的定义域
-##### ![解题.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695279326488-bc219d31-1f54-48e1-bcb1-a6184aa8deb4.png#averageHue=%234e6392&clientId=ufa678b2b-766f-4&from=ui&height=195&id=uda05f8a5&originHeight=263&originWidth=187&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=80326&status=done&style=none&taskId=u8bd43aa1-c6fc-4f40-886a-2ca5b9997c2&title=&width=139)
+##### ![解题]![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242231679.png)
 ##### 例题：已知函数$y=f(x)$的定义域为[-1,1),那么函数$y=f(x-2)$的定义域是   [1,3)
 ##### 解：$\because f(x)$的定义域为[-1,1)
 ##### $\therefore-1\leq x<1$
@@ -95,8 +95,8 @@ D.$f(x)=x+1$,$g(t)=t+1$
 设函数$f(x)$在区间（a,b）内有定义，对于任意$x_1,x_2∈(a,b)$时：
 如果恒有$f(x_1)$<$f(x_2)$,则称函数$f(x)$在（a，b）内单调增加；
 如果恒有$f(x_1)$>$f(x_2)$,则称函数$f(x)$在（a，b）内单调减少；
-![单增单减.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695283342135-804431dd-63db-4602-9a6d-ce16a0aaa14a.png#averageHue=%234c5d80&clientId=u6b2fbcfd-8ce8-4&from=ui&height=190&id=u6da15210&originHeight=221&originWidth=613&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=85864&status=done&style=none&taskId=ub3871499-7bb1-4107-9a39-4350050e0a8&title=&width=527.4000244140625)
-例题：#### 论证函数$y=\frac{x}{1-x}$在指定区间$(-\infty,1)$上的单调性。
+![单增单减](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242232359.png)
+#### 例题：论证函数$y=\frac{x}{1-x}$在指定区间$(-\infty,1)$上的单调性。
 #### 解：在$(-\infty,1)$上$\forall$$x_1,x_2$$x_1<x_2$
 #### $f(x_1)-f(x_2)=\frac{x_1}{1-x_1}-\frac{x_2}{1-x_2}$
 #### 即$f(x_1)-f(x_2)=\frac{x_1-x_2}{(1-x_1)(1-x_2)}$
@@ -131,17 +131,17 @@ D.$f(x)=x+1$,$g(t)=t+1$
  |
 | --- | --- | --- | --- |
 | #### $y=\sin x$
- | #### ![1.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695285974882-e0aa2559-dd00-45f6-8dc4-a79d78fd83b5.png#averageHue=%23337d9e&clientId=u6b2fbcfd-8ce8-4&from=ui&height=39&id=u5dee2874&originHeight=73&originWidth=263&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=21581&status=done&style=none&taskId=u125138f8-a158-4b0c-8c33-506a5c07278&title=&width=139.6500015258789)
+ | #### ![sinx](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242252146.png)
  | #### $2k\pi,k∈z$
  | #### $2\pi$
  |
 | #### $y=|\cos x|$
- | #### ![2.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695286011436-83c8025e-5f58-410f-be5f-86cff26b9ff0.png#averageHue=%23347c9c&clientId=u6b2fbcfd-8ce8-4&from=ui&id=u54e4c571&originHeight=77&originWidth=261&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=26009&status=done&style=none&taskId=u3dbe2002-786b-4b13-b686-1a367e3a50c&title=)
+ | #### ![cosx](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242253740.png)
  | #### $k\pi,k∈z$
  | #### $\pi$
  |
 | #### 常值函数$y=c$
- | #### ![3.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695286017830-67cd263e-874d-4f99-a805-7c1a126aa73a.png#averageHue=%232c7798&clientId=u6b2fbcfd-8ce8-4&from=ui&id=u10e09343&originHeight=72&originWidth=265&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=12638&status=done&style=none&taskId=u0383b12b-f795-442a-93ae-57315e63544&title=)
+ | #### ![常值函数](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242254168.png)
  | #### 任何正有理数
  | #### 不存在
  |
@@ -158,14 +158,14 @@ D.$f(x)=x+1$,$g(t)=t+1$
 例如：$y=x^2$和 $y=sinx$在$x∈R$范围内没有反函数！
 ##### 反函数的性质
 反函数和原函数的图像关于直线$y=x$对称。
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695448655684-8483efa0-411d-45cb-b3c3-0895db40d7db.png#averageHue=%234f5d82&clientId=uf2d7e53e-b303-4&from=paste&height=215&id=u03ad0cb7&originHeight=338&originWidth=422&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=67694&status=done&style=none&taskId=u70e94419-8c6d-4bfa-9f83-1ec41c62d53&title=&width=268.6000061035156)
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695448692217-4540b0eb-fd1e-40a7-88c8-9c6f810961b0.png#averageHue=%234f5d82&clientId=uf2d7e53e-b303-4&from=paste&height=209&id=u53df1bfc&originHeight=335&originWidth=427&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=68983&status=done&style=none&taskId=u2e10b165-35f2-42be-a178-4025d679038&title=&width=266.6000061035156)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242254203.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242255908.png)
 ##### 反函数和原函数单调性相同。
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695448799973-9b178296-46cc-4331-b862-de0e7673e915.png#averageHue=%23515e83&clientId=uf2d7e53e-b303-4&from=paste&height=204&id=u5d7c9c75&originHeight=329&originWidth=424&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=69952&status=done&style=none&taskId=u6cddcf24-3372-4e1d-844a-1d6b0bfe1d4&title=&width=263.20001220703125)
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695448850691-d99ea675-9f75-4491-b1ff-014ff0a2ae4d.png#averageHue=%23515e83&clientId=uf2d7e53e-b303-4&from=paste&height=209&id=u4c749896&originHeight=335&originWidth=415&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=62562&status=done&style=none&taskId=uf5aa72d9-b889-4dfd-8127-072b7931b42&title=&width=259)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242257542.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242257392.png)
 反函数和原函数的奇偶性相同。（奇函数的反函数还是奇函数，非奇非偶函数的反函数还是非奇非偶函数，偶函数不存在反函数）
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695449008250-c2a5252d-8351-40c3-a32d-df3616837729.png#averageHue=%23505e83&clientId=uf2d7e53e-b303-4&from=paste&height=200&id=u03546bc8&originHeight=331&originWidth=427&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=69157&status=done&style=none&taskId=u7aa74735-7625-4909-9df1-469a8ac4361&title=&width=258.6000061035156)
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695449050071-471bcced-4abc-4aa0-80ec-a4bd5d85296b.png#averageHue=%23505d83&clientId=uf2d7e53e-b303-4&from=paste&height=209&id=u1613cd23&originHeight=335&originWidth=418&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=64641&status=done&style=none&taskId=uc3d12a4d-3352-48bb-bc04-8bdce5dcf11&title=&width=261.3999938964844)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242258560.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242258960.png)
 ##### 复合函数
 自变量$x$——$u=g(x)$——>中间变量$u$——$y=f(u)$——>因变量$y$
 由函数$y=f(u)$及$u=g(x)$构成的函数$y=f[g(x)]$称为复合函数。
@@ -177,19 +177,20 @@ D.$f(x)=x+1$,$g(t)=t+1$
 幂函数、指数函数、对数函数、三角函数、反三角函数通称基本初等函数。
 ##### 幂函数：$y=x^\mu$（$\mu∈R$是常数）
 定义域和值域随$\mu$而异，但其在（$0,+\infty$）上总有意义，且图像总经过点（1，1）。
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695450453780-609761b3-eddb-47fd-8304-95abcf11fa61.png#averageHue=%23407ca3&clientId=uf2d7e53e-b303-4&from=paste&height=257&id=Piftq&originHeight=321&originWidth=283&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=110804&status=done&style=none&taskId=u04fe9728-0af8-4699-b5e1-550a24431d3&title=&width=226.4)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242258307.png)
 ##### 指数函数：$y=a^x$（$a>0,a\ne1$）
 特别当$a=e$时，有$y=e^x$($e\approx2.718$)(考点).
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695450925321-2621e900-f25a-4309-b736-6dd895d2f2c2.png#averageHue=%2335759c&clientId=uf2d7e53e-b303-4&from=paste&height=230&id=u50d965ae&originHeight=288&originWidth=296&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=65367&status=done&style=none&taskId=ua49cd032-a885-44a1-82cb-2c3154db8ef&title=&width=236.8)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242259157.png)
 ##### 对数函数：$y=log_ax$($a>0,a\ne1$)
 特别当$a=e$时，有$y=lnx$.(考点)
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695451444774-b23f7632-c546-43db-9c6b-3dd19acdc5ea.png#averageHue=%2336779d&clientId=uf2d7e53e-b303-4&from=paste&height=261&id=ubd88a71a&originHeight=326&originWidth=293&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=85114&status=done&style=none&taskId=uf2a02808-8c2d-4f6a-8d8f-7723ba32dfe&title=&width=234.4)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242301918.png)
 ##### 三角函数
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695452361442-82b23947-cc22-4304-86be-b24c9ad08e4c.png#averageHue=%23347199&clientId=uf2d7e53e-b303-4&from=paste&height=247&id=uae89d8c8&originHeight=374&originWidth=753&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=216119&status=done&style=none&taskId=ud8f80dc0-90a3-4202-9922-68a885a79a6&title=&width=496.4000244140625)
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695452679249-89f2cf43-749c-49f5-8173-854cf47152bc.png#averageHue=%23386997&clientId=uf2d7e53e-b303-4&from=paste&height=333&id=u8d909d30&originHeight=314&originWidth=234&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=56004&status=done&style=none&taskId=uf3f0b218-a74e-476d-aa05-83f231ec241&title=&width=248.1999969482422)![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695452761662-d79064be-78ff-4c0f-8e77-5fe97ad38ca9.png#averageHue=%233e5487&clientId=uf2d7e53e-b303-4&from=paste&height=367&id=u3bd358af&originHeight=505&originWidth=352&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=178096&status=done&style=none&taskId=ud3103a8b-e73b-40af-af7f-8b17dabe074&title=&width=255.60000610351562)
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695452825691-bb7e2327-030f-42b0-9024-b2bf1b539cea.png#averageHue=%233479a3&clientId=uf2d7e53e-b303-4&from=paste&height=318&id=uef0bbaf2&originHeight=397&originWidth=449&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=107352&status=done&style=none&taskId=u84afd72b-dcb2-462a-8235-bbff57764b8&title=&width=359.2)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242302642.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242302346.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242302725.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242303346.png)
 ##### 反三角函数
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1695453155090-ae3b365f-eed3-481c-90b5-29065ecce428.png#averageHue=%23347099&clientId=uf2d7e53e-b303-4&from=paste&height=282&id=ud83b7075&originHeight=386&originWidth=670&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=172354&status=done&style=none&taskId=u9d7160d3-1e1b-4d0b-b4cd-337a6a90b9f&title=&width=490)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242303393.png)
 ### 极限
 #### 数列
 ##### 数列的概念
@@ -445,20 +446,13 @@ $\lim  \frac{\alpha }{\beta } =1$$\Rightarrow$$\alpha$是$\beta$ 的等价无穷
 
 1. $x\sim \sin x\sim \tan x\sim \arcsin x\sim \arctan x$
 2. $1-\cos x\sim \frac{1}{2} x^2$
-
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696749056665-b4fb58ce-7964-467d-8a95-aaa4b2a77779.png#averageHue=%23317fa1&clientId=u2f3de26d-3f26-4&from=paste&height=197&id=ue4e83af1&originHeight=379&originWidth=327&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=92083&status=done&style=none&taskId=u97ec8931-3f03-4cb0-83a2-874ee266d2d&title=&width=169.60000610351562)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242304328.png)
 3. $ln(1+x)x\sim x$
-
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696749089846-d788ff4e-1d97-4d05-a9ad-454e407bf87e.png#averageHue=%233080a3&clientId=u2f3de26d-3f26-4&from=paste&height=150&id=uae5679f0&originHeight=276&originWidth=351&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=65033&status=done&style=none&taskId=u49d4406b-80fd-46c2-837d-cc0a7c36763&title=&width=190.80001831054688)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242305587.png)
 4. $e^x-1 \sim x$
-
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696748648566-f160320b-c567-4d5d-8155-bb968a328880.png#averageHue=%23307fa2&clientId=u2f3de26d-3f26-4&from=paste&height=139&id=u87428f0a&originHeight=251&originWidth=398&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=65227&status=done&style=none&taskId=ua322cc66-ab46-4558-bdbc-1e9bce7740f&title=&width=220.40000915527344)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242305245.png)
 5. $(1+x)^\mu-1 \sim  \mu \cdot x$   $\sqrt[n]{1+x}-1 \sim \frac{1}{n} \cdot x$
-
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696748981934-e05d5cd1-97d5-40eb-b626-7817299fdd37.png#averageHue=%232e7b9e&clientId=u2f3de26d-3f26-4&from=paste&height=153&id=u85e7542f&originHeight=316&originWidth=474&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=93813&status=done&style=none&taskId=ub42d3aa4-b617-406a-8b6e-e806b49c234&title=&width=230.20001220703125)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242306905.png)
 提示：可以将上述x替换成任意$\Box$
 二倍角公式：$\cos 2 \alpha =\cos ^2\alpha - \ sin ^2 \alpha  = 2\cos ^2 \alpha -1 = 1-2\sin ^2 \alpha$
 #####  利用等价无穷小替换求极限
@@ -467,9 +461,9 @@ $\lim  \frac{\alpha }{\beta } =1$$\Rightarrow$$\alpha$是$\beta$ 的等价无穷
 分子：$ln \cos x = ln(\cos x -1 +1) \sim - \frac{1}{2}x^2$
 分母：$\sin x \sim x \sim \tan x =x^2$
 #### 总结+习题
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696750494219-c6f572cd-9928-4f30-a919-bda3d0b311f4.png#averageHue=%233e7da4&clientId=u2f3de26d-3f26-4&from=paste&height=197&id=u8814931e&originHeight=458&originWidth=852&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=427018&status=done&style=none&taskId=ueef68151-5b74-4077-89ad-931081315ee&title=&width=367.3999938964844)
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696750513852-0b874360-1e29-4aae-9202-bb971bacc1e8.png#averageHue=%23387ba2&clientId=u2f3de26d-3f26-4&from=paste&height=196&id=u6bdeeec2&originHeight=452&originWidth=850&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=332117&status=done&style=none&taskId=u94a28f00-4b7b-40f4-a40c-9d619613df2&title=&width=369.4000244140625)
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696750723444-07e18b05-702e-4650-884c-99ae3510f302.png#averageHue=%233a7ba4&clientId=u2f3de26d-3f26-4&from=paste&height=227&id=ua5743645&originHeight=455&originWidth=746&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=345388&status=done&style=none&taskId=u3b5c05e0-128b-4ff1-8513-0c45f9e930b&title=&width=372.4000244140625)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242306054.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242306586.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242307410.png)
 例题1：$\lim_{x \to \infty} (\sin \frac{3}{x} +1)^{2x}$
 解：原式=
 利用第二重要极限
@@ -533,79 +527,59 @@ $\therefore\lim_{x \to 0} \frac{f(x)}{x^2}=\frac{10x^2}{x^2}=10$
 如果在区间上每一点都连续的函数，叫做该区间上的连续函数，或者说函数在该区间上连续。
 
 1. **左连续的概念：**
-
 如果$\lim_{x \to x_0^-}f(x)$存在且等于$f(x_0)$，那么就称函数$f(x)$在点$x_0$左连续，其左极限可简记为$f(x_0^-)$.
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696756726277-0839e30f-1b04-4792-a186-d57d3c0c33c0.png#averageHue=%232d7ea1&clientId=u824adc69-8787-4&from=paste&height=126&id=u0ef54ca9&originHeight=157&originWidth=244&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=21169&status=done&style=none&taskId=u11869b05-2590-4951-b78a-abd0fcb64a2&title=&width=195.2)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242307510.png)
 2. **右连续的概念：**
-
 如果$\lim_{x \to x_0^+}f(x)$存在且等于$f(x_0)$，那么就称函数$f(x)$在点$x_0$右连续，其右极限可简记为$f(x_0^+)$.
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696756741006-34de0c6a-0c58-47a4-99c1-6a12cb58c7d0.png#averageHue=%232b7c9f&clientId=u824adc69-8787-4&from=paste&height=130&id=u585d0498&originHeight=162&originWidth=256&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=23063&status=done&style=none&taskId=ufd882709-2a8a-4c6b-b811-1d7c956694e&title=&width=204.8)
-函数$f(x)$在点$x_0$处连续的充分必要条件为：$f(x_0^-)=f(x_0^+)=f(x_0)$
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242308828.png)
+3. 函数$f(x)$在点$x_0$处连续的充分必要条件为：$f(x_0^-)=f(x_0^+)=f(x_0)$
 ##### 间断点
 如果函数$f(x)$在点$x_0$处不连续，那么点$x_0$就称为函数$f(x)$的间断点。
 函数不连续有三种情形：
 1. 在$x=x_0$处没有定义；
-
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696757137321-150891b0-0c21-41e9-83bd-e82f4f2fdf00.png#averageHue=%233080a3&clientId=u824adc69-8787-4&from=paste&height=87&id=u8ad3a0e9&originHeight=137&originWidth=386&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=39033&status=done&style=none&taskId=ub8db5b06-be81-4597-899b-b9e26076ba1&title=&width=244.80001831054688)![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696757153551-af4f3ce8-3cd4-43c1-ac67-c7ce194a1a9c.png#averageHue=%232d7ea0&clientId=u824adc69-8787-4&from=paste&height=45&id=hQ0kA&originHeight=130&originWidth=390&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=35043&status=done&style=none&taskId=u1700b57b-22bd-4f4d-8e1b-e583cc1c85b&title=&width=134)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242308543.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242309190.png)
 2. 虽有定义，但$\lim_{x \to x_0}f(x)$不存在 ；
-
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696757153551-af4f3ce8-3cd4-43c1-ac67-c7ce194a1a9c.png#averageHue=%232d7ea0&clientId=u824adc69-8787-4&from=paste&height=35&id=u98451d23&originHeight=130&originWidth=390&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=35043&status=done&style=none&taskId=u1700b57b-22bd-4f4d-8e1b-e583cc1c85b&title=&width=104)![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696757172759-994ecc5d-fd90-4c0e-b0af-17358eb53568.png#averageHue=%232c7797&clientId=u824adc69-8787-4&from=paste&height=40&id=YMnrJ&originHeight=122&originWidth=379&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=36082&status=done&style=none&taskId=u6ee82f47-9336-42d1-938e-6f9b47aea77&title=&width=123)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242309052.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242309469.png)
 3. 虽有定义，且$\lim_{x \to x_0}f(x)$存在，但$\lim_{x \to x_0}f(x) \ne f(x_0)$ ；
-
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696757172759-994ecc5d-fd90-4c0e-b0af-17358eb53568.png#averageHue=%232c7797&clientId=u824adc69-8787-4&from=paste&height=36&id=lieHX&originHeight=122&originWidth=379&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=36082&status=done&style=none&taskId=u6ee82f47-9336-42d1-938e-6f9b47aea77&title=&width=112)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242310573.png)
 ##### 间断点-间断点分类
 如果$x_0$是函数$f(x)$的间断点，但左极限$f(x_0^-)$和右极限$f(x_0^+)$都存在，那么$x_0$称为函数$f(x)$的第一类间断点；
 表示第一类间断点的任何间断点，称为第二类间断点。
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696757482286-19cf62a2-5ff4-4f9d-8f8c-8734d174b939.png#averageHue=%23377ca2&clientId=u824adc69-8787-4&from=paste&height=232&id=uc66fde79&originHeight=382&originWidth=687&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=207494&status=done&style=none&taskId=u949192f2-51b7-4a90-9670-77dcff61397&title=&width=418)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242310665.png)
 1. 第一类：可去间断点
-
 如果左极限和右极限都存在，且$f(x_0^-)=f(x_0^+)$，那么称$x_0$为函数$f(x)$的可去间断点。
 例如：函数$y=\frac{x^2-1}{x-1}，x=1$是可取间断点
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696832212369-5c497c12-d75e-4539-bd62-38b83213a5bc.png#averageHue=%23525e83&clientId=u1dac168c-377d-4&from=paste&height=132&id=PJtvs&originHeight=213&originWidth=300&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=30667&status=done&style=none&taskId=u1ccfe058-0399-4552-8602-93e315b5db9&title=&width=186)
-函数$y=\left\{\begin{matrix}x,x\ne 1 \\ \frac{1}{2},x=1 \end{matrix}\right.,x=1$是可去间断点
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696832466480-c3f11b0e-63c2-4061-9f4b-5c6de036d3c8.png#averageHue=%234f5c7f&clientId=u1dac168c-377d-4&from=paste&height=130&id=u1bf6bd4f&originHeight=215&originWidth=301&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=32878&status=done&style=none&taskId=u2cedff12-dca2-40c6-a7cf-797b8cc396d&title=&width=181.8000030517578)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242310908.png)
+2. 函数$y=\left\{\begin{matrix}x,x\ne 1 \\ \frac{1}{2},x=1 \end{matrix}\right.,x=1$是可去间断点
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242311949.png)
 2. 第一类：跳跃间断点
-
 如果左极限$f(x_0^-)$和右极限$f(x_0^+)$都存在，且$f(x_0^-)\ne f(x_0^+)$，那么称$x_0$为函数$f(x)$的跳跃间断点。
 例如：函数$y=\left\{\begin{matrix}x-1,x<0 \\0,x=0  \\x+1,x>0 \end{matrix}\right.,x=0$是跳跃间断点  
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696832920028-1d831341-b640-4d8e-8c85-902ba7e8fbfe.png#averageHue=%23525e84&clientId=u1dac168c-377d-4&from=paste&height=134&id=u78060470&originHeight=198&originWidth=275&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=28154&status=done&style=none&taskId=u174241df-9627-4138-9620-1f45dabc226&title=&width=186)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242311540.png)
 3. 第二类：无穷间断点
-
 如果左极限$f(x_0^-)$和右极限$f(x_0^+)$至少有一个不存在，且其中至少有一个是$\infty$，那么称$x_0$为函数$f(x)$的无穷间断点。
 例如：函数$y=\tan x,x=\frac{\pi}{2}$是该函数的无穷间断点
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696833186437-b530851c-6a5c-44a4-9d4c-fbdebb8766a7.png#averageHue=%23515f84&clientId=u1dac168c-377d-4&from=paste&height=151&id=ue8a82613&originHeight=223&originWidth=274&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=37946&status=done&style=none&taskId=u939d9ab3-39ae-495d-8413-997ee50febc&title=&width=185.1999969482422)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242311962.png)
 4. 第二类：振荡间断点
-
 如果左极限$f(x_0^-)$和右极限$f(x_0^+)$至少有一个不存在，且其中至少有一个是振荡，那么称$x_0$为函数$f(x)$的振荡间断点。
 例如：函数$y=\sin \frac{1}{x},x=0$是该函数的振荡间断点
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696833444471-6d3787df-b53e-4718-a23f-7b1c4ed26fb7.png#averageHue=%23525d83&clientId=u1dac168c-377d-4&from=paste&height=131&id=ua3383c9a&originHeight=229&originWidth=321&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=41295&status=done&style=none&taskId=u4ffdb596-65c2-4362-8367-d1e2db51163&title=&width=183.80001831054688)
-注意：间断点类型与该点的函数值无关
-##### 初等函数的连续性
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242312133.png)
+5. 注意：间断点类型与该点的函数值无关
 
+##### 初等函数的连续性
 1. 一切初等函数在其定义区间内都是连续的。
 2. 若两个函数都连续，则它们的和、差、积、商都连续。
 3. 若两个函数都连续，则由它们构成的复合函数也连续。
 4. 若一个函数连续且有反函数，则它的反函数也连续。
 ##### 闭区间上连续函数的性质
-
 1. 【有界性与最大值最小值定理】在闭区间上连续的函数在该区间上有界，且一定能取得它的最大值和最小值。
-
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696834018358-21aab300-588d-4635-bf89-574dfdf15793.png#averageHue=%23525f84&clientId=u1dac168c-377d-4&from=paste&height=143&id=u1744a3f4&originHeight=272&originWidth=414&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=49887&status=done&style=none&taskId=ua631f045-b684-406a-ad94-a69edda5eef&title=&width=217.20001220703125)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242312767.png)
 2. 【零点定理】若函数$f(x)$在闭区间$[a,b]$上连续，且$f(a)$与$f(b)$异号（即$f(a)\cdot f(b)<0$），则至少存在一点$\xi \in (a,b)$，使得$f(\xi)=0$
-
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696834307321-13329923-0b45-4825-b8cd-9513ddb5e1af.png#averageHue=%23546087&clientId=u1dac168c-377d-4&from=paste&height=151&id=u3fd67924&originHeight=217&originWidth=320&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=38414&status=done&style=none&taskId=u6390ca16-35e0-4caf-9106-a3ca76e7bd2&title=&width=223)
-
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242313989.png)
 3. 【介值定理】设函数$f(x)$在闭区间$[a,b]$上连续，且在这区间的端点取不同的函数值$f(a)=A$及$f(b)=B$，则对于$A$与$B$之间的任意一个数$C$，在开区间$(a,b)$内至少有一点$\xi$，使得$f(\xi)=C$。
-
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696834604530-828375bb-9bdf-45a6-ae23-fcae8cc1b055.png#averageHue=%23546086&clientId=u1dac168c-377d-4&from=paste&height=157&id=u88564bcb&originHeight=221&originWidth=313&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=43753&status=done&style=none&taskId=u934c3b32-48ad-40e6-85aa-429dc6f895f&title=&width=222.40000915527344)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242313198.png)
 ##### 连续考点
 ###### 判断函数在某点的连续性
 **例题：**判断函数$f(x)=\left\{\begin{matrix}x+\frac{1}{2},x<0 \\ \frac{1}{2},x=0 \\ \frac{ln(1+x)}{2x},x>0 \end{matrix}\right.$，在点$x=0$处的连续性
@@ -650,7 +624,7 @@ $\frac{\Box }{0} =A$
 即$\frac{0}{0}=A$
 $\therefore  x-a=0，即1-a=0，a=1$
 ###### 证明方程在某区间内至少有一个实根——零点定理
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/39050477/1696838510161-348b8199-998b-4cd0-ada2-9cc794f96a05.png#averageHue=%23475a8a&clientId=uc33c2f37-a271-4&from=paste&height=58&id=u002310e6&originHeight=99&originWidth=616&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=76593&status=done&style=none&taskId=u136bb54b-cee1-400c-b896-bd34b8ac1b3&title=&width=362.8000183105469)
+
 **例题：**证明方程$x^3+3x^2=1$在区间$(0,1)$内至少有一个实根。
 解：有原式=
 $x^3+3x^2-1=0$即$f(x)=x^3+3x^2-1$
