@@ -106,7 +106,7 @@ home_banner:
 #    light: /images/wallhaven-wqery6-light.webp # 亮色
     light: /images/hill.jpg # 亮色
 #    dark: /images/wallhaven-wqery6-dark.webp # 暗色
-    dark: /images/hill.jpg # 暗色
+    dark: /images/dark.jpg # 暗色
   # Home banner title
   title: 欢迎来到清梦的小屋
   # Home banner subtitle
