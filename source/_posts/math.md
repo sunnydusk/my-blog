@@ -184,9 +184,7 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 一列有规律的数，对每个{% katex %}n \in N_+{% endkatex %}，对应着一个确定的实数，这样的一个序列叫数列。简记{% katex %}{x_n}{% endkatex %}.
 *数列一定是有无穷多项*
 ##### 数列极限的概念
-{% katex %}
-对于数列{x_n},\forall  \varepsilon>0,总是\exists正整数N,当n>N时，有|x_n-a|< \varepsilon ,那么就称常数a是数列{x_n}的极限，或者称数列{x_n}收敛于a.记为\lim_{n \rightarrow + \infty}{x_n}=a 
-{% endkatex %}
+对于数列{% katex %}{x_n},\forall  \varepsilon>0{% endkatex %},总是{% katex %}\exists{% endkatex %}正整数{% katex %}N{% endkatex %},当{% katex %}n>N{% endkatex %}时，有{% katex %}|x_n-a|< \varepsilon{% endkatex %},那么就称常数a是数列{% katex %}{x_n}{% endkatex %}的极限，或者称数列{% katex %}{x_n}{% endkatex %}收敛于{% katex %}a{% endkatex %}.记为{% katex %}\lim_{n \rightarrow + \infty}{x_n}=a{% endkatex %}
 ##### 收敛数列->有极限的数列的性质
 1. 收敛数列必有极限，且极限唯一；
 2. 收敛数列一定有界；
@@ -299,7 +297,8 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
     同除以{% katex %}x^3{% endkatex %}
     {% katex %}=\lim_{x \to \infty} {\frac{2+\frac{1}{x^2}}{\frac{1}{x}+\frac{3}{x^3} }}{% endkatex %}
     {% katex %}=\frac{2+0}{0+0}{% endkatex %}
-    {% katex %}=\infty{% endkatex %}   
+    {% katex %}=\infty{% endkatex %}<br />
+
 结论：当直接带入为{% katex %}\frac{\infty}{\infty}{% endkatex %}时，使用抓大头方法，最高次幂在分子上结果为{% katex %}\infty{% endkatex %}，最高次幂在分母上结果为0（上大无穷下大零）；分子分母最大次幂相同的话结果为系数比（次数相同系数比）。
 
 ---
