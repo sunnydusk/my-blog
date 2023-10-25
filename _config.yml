@@ -105,8 +105,11 @@ deploy:
   type: ''
 
 math:
-  engine: 'mathjax'
+  engine: true
   mathjax:
     src: custom_mathjax_source
     config:
     # MathJax config
+  katex:
+    options:
+      strict: false
