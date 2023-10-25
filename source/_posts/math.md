@@ -181,9 +181,7 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 ### 极限
 #### 数列
 ##### 数列的概念
-{% katex %}
-一列有规律的数，对每个n \in N_+ ，对应着一个确定的实数，这样的一个序列叫数列。简记{x_n}.
-{% endkatex %}
+一列有规律的数，对每个{% katex %}n \in N_+{% endkatex %}，对应着一个确定的实数，这样的一个序列叫数列。简记{% katex %}{x_n}{% endkatex %}.
 *数列一定是有无穷多项*
 ##### 数列极限的概念
 {% katex %}
@@ -646,7 +644,7 @@ A.1			B.2			C.0			D.-1
 ###### 课后习题
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251014781.png)
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251014449.png)
-<img src="https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251015882.png"  style="transform: rotate(-90deg);"> 
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251959527.png)
 
 ---
 ## 二.一元函数微分学**
