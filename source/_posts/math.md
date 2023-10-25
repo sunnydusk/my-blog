@@ -181,10 +181,10 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 ### 极限
 #### 数列
 ##### 数列的概念
-一列有规律的数，对每个$n\in N_+$，对应着一个确定的实数，这样的一个序列叫数列。简记{% katex %}{x_n}{% endkatex %}
+一列有规律的数，对每个{% katex %}n\in N_+{% endkatex %}，对应着一个确定的实数，这样的一个序列叫数列。简记{% katex %}{x_n}{% endkatex %}
 *数列一定是有无穷多项*
 ##### 数列极限的概念
-对于数列{{% katex %}x_n{% endkatex %}},{% katex %}\forall \varepsilon>0{% endkatex %},总是{% katex %}\exists{% endkatex %}正整数{% katex %}N{% endkatex %},当{% katex %}n>N{% endkatex %}时，有{% katex %}|x_n-a|< \varepsilon{% endkatex %},那么就称常数{% katex %}a{% endkatex %}是数列{{% katex %}x_n{% endkatex %}}的极限，或者称数列{% katex %}{x_n}{% endkatex %}收敛于{% katex %}a{% endkatex %}.记为{% katex %}\lim_{n\rightarrow+\infty}{x_n}=a{% endkatex %}
+对于数列{% katex %}{x_n}{% endkatex %},{% katex %}\forall \varepsilon>0{% endkatex %},总是{% katex %}\exists{% endkatex %}正整数{% katex %}N{% endkatex %},当{% katex %}n>N{% endkatex %}时，有{% katex %}|x_n-a|< \varepsilon{% endkatex %},那么就称常数{% katex %}a{% endkatex %}是数列{% katex %} {x_n} {% endkatex %}的极限，或者称数列{% katex %} {x_n} {% endkatex %}收敛于{% katex %}a{% endkatex %}.记为{% katex %}\lim_{n\rightarrow+\infty}{x_n}=a{% endkatex %}
 ##### 收敛数列->有极限的数列的性质
 1. 收敛数列必有极限，且极限唯一；
 2. 收敛数列一定有界；
