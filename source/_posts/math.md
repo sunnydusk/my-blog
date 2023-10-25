@@ -300,7 +300,7 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
     {% katex %}=\lim_{x \to \infty} {\frac{2+\frac{1}{x^2}}{\frac{1}{x}+\frac{3}{x^3} }}{% endkatex %}
     {% katex %}=\frac{2+0}{0+0}{% endkatex %}
     {% katex %}=\infty{% endkatex %}   
-    结论：当直接带入为{% katex %}\frac{\infty}{\infty}{% endkatex %}时，使用抓大头方法，最高次幂在分子上结果为{% katex %}\infty{% endkatex %}，最高次幂在分母上结果为0（上大无穷下大零）；分子分母最大次幂相同的话结果为系数比（次数相同系数比）。
+结论：当直接带入为{% katex %}\frac{\infty}{\infty}{% endkatex %}时，使用抓大头方法，最高次幂在分子上结果为{% katex %}\infty{% endkatex %}，最高次幂在分母上结果为0（上大无穷下大零）；分子分母最大次幂相同的话结果为系数比（次数相同系数比）。
 
 ---
 ###### 课后习题
