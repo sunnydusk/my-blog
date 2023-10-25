@@ -192,7 +192,7 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 
 ---
 ##### 夹逼准则  *
-对于三个数列{% katex %}{y_n}、{x_n}、{z_n}{% endkatex %}，如果满足以下两个条件：
+对于三个数列{% katex %}{y_n}、{x_n}、{z_n}{% endkatex %}，如果满足以下两个条件:
 1.从某项起，有{% katex %} y_n<x_n<z_n {% endkatex %}
 2.{% katex %}\lim_{n\rightarrow\infty}{y_n}=a，且\lim_{n\rightarrow\infty}{z_n}=a {% endkatex %}，
 则有：{% katex %}\lim_{n\rightarrow\infty}{x_n}=a{% endkatex %}
