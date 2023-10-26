@@ -1,6 +1,11 @@
 ---
 title: 计算机基础
 mathjax: true
+categories:
+   - 专升本
+tags:
+   - 学习资料
+   - computer
 date: 2023-09-22 10:45:00
 ---
 ## 一、计算机基础

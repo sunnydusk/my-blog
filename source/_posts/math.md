@@ -1,6 +1,12 @@
 ---
 title: 高等数学
 hexo-math: true
+type: "categories"
+categories: 
+  - 专升本
+tags:
+  - 学习资料
+  - math
 date: 2023-09-20 14:36:00
 ---
 ## 一.函数、极限与连续
