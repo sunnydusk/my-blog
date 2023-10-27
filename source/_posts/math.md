@@ -199,11 +199,11 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 ---
 ##### 夹逼准则  *
 对于三个数列{% katex %}{y_n}、{x_n}、{z_n}{% endkatex %}，如果满足以下两个条件:
-1.从某项起，有{% katex %} y_n<x_n<z_n {% endkatex %}
-2.{% katex %}\lim_{n\rightarrow\infty}{y_n}=a，且\lim_{n\rightarrow\infty}{z_n}=a {% endkatex %}，
-则有：{% katex %}\lim_{n\rightarrow\infty}{x_n}=a{% endkatex %}
+1.从某项起，有{% katex %} y_n<x_n<z_n {% endkatex %}  
+2.{% katex %}\lim_{n\rightarrow\infty}{y_n}=a，且\lim_{n\rightarrow\infty}{z_n}=a {% endkatex %}，  
+则有：{% katex %}\lim_{n\rightarrow\infty}{x_n}=a{% endkatex %}  
 例题：
-求极限：{% katex %}\lim_{n\rightarrow\infty}{(\frac{1}{n^2+1}+\frac{1}{n^2+2}+···+\frac{1}{n^2+n})}{% endkatex %}.
+求极限：{% katex %}\lim_{n\rightarrow\infty}{(\frac{1}{n^2+1}+\frac{1}{n^2+2}+···+\frac{1}{n^2+n})}{% endkatex %}.  
 解析：1.夹逼准则一般用于求{% katex %}n{% endkatex %}项和形式的数列的极限；
      2.对{% katex %}x_n{% endkatex %}适当的放缩，找到{% katex %}y_n{% endkatex %}、{% katex %}z_n{% endkatex %}是关键；
      3.一般方法：分子不变，分母都取最大的那一项即得到{% katex %}y_n{% endkatex %}，分母都取最小的那一项即得到{% katex %}z_n{% endkatex %}.
@@ -212,7 +212,7 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
     {% katex %}\lim_{n\rightarrow\infty}y_n=\lim_{n\rightarrow\infty}{\frac{1}{n+1}}=0{% endkatex %}
     {% katex %}\lim_{n\rightarrow\infty}z_n=\lim_{n\rightarrow\infty}{\frac{n}{n^2+n}}=0{% endkatex %}
 
-求极限：{% katex %}\lim_{n\rightarrow\infty}{(\frac{1}{n^2+n+1}+\frac{2}{n^2+n+2}+···+\frac{n}{n^2+n+n})}{% endkatex %}.
+求极限：{% katex %}\lim_{n\rightarrow\infty}{(\frac{1}{n^2+n+1}+\frac{2}{n^2+n+2}+···+\frac{n}{n^2+n+n})}{% endkatex %}.  
  解：{% katex %}y_n=(\frac{1}{n^2+n+n}+\frac{2}{n^2+n+n}+···+\frac{n}{n^2+n+n})=\frac{\frac{1}{2}(n+1)}{n^2+n+n}=\frac{n^2+n}{2n^2+4n}{% endkatex %}
     {% katex %}z_n=(\frac{1}{n^2+n+1}+\frac{2}{n^2+n+1}+···+\frac{n}{n^2+n+1})=\frac{\frac{1}{2}n(n^2+1)}{n^2+n+1}=\frac{1+\frac{1}{n}}{2+\frac{1}{n}+\frac{1}{n}}{% endkatex %}
     {% katex %}\lim_{n\rightarrow\infty}{y_n}=\frac{n^2+n}{2n^2+4n}=\frac{1}{2}{% endkatex %}
@@ -757,6 +757,18 @@ No face： {% katex %}\frac{(a+\Delta x)-(a-\Delta x)}{\Delta x}\cdot f'(a)=\fra
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251018295.png)
 
 #### 函数的求导方法
+1.复合函数求导
+求导法则：*外层求导，再乘以内层求导。*
+例题：
+设{% katex %}y=ln \cos x， 求y'{% endkatex %}。
+   解：原式={% katex %}y'=\frac{1}{\cos x}\cdot (- \sin x){% enndkatex %}
+         ={% katex %}- \tan x{% endkatex %}
+若函数{% katex %}f(x){% endkatex %}可导，求函数{% katex %}y=f(\frac{1}{x^3}){% endkatex %}的导数。
+   解：原式={% katex %}f'(\frac{1}{x^3}) \cdot (-3 \frac{1}{x^4}){% endkatex %}
+         ={% katex %}\frac{-3f'(\frac{1}{x^3})}{x^4}{% endkatex %}
+2.分段函数求导
+求导方法：*分段点两边分别求，中间分段点单独求*
+
 
 ---
 ### 微分中值定理
