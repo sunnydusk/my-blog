@@ -768,7 +768,15 @@ No face： {% katex %}\frac{(a+\Delta x)-(a-\Delta x)}{\Delta x}\cdot f'(a)=\fra
          ={% katex %}\frac{-3f'(\frac{1}{x^3})}{x^4}{% endkatex %}
 2.分段函数求导
 求导方法：*分段点两边分别求，中间分段点单独求*
-
+中间分段函数求导：
+   1.用导数的定义式求
+   2.导入左边导数得“左导数”，带入右边导数得“右导数”，若二者相等且分段函数连续，则值为分段点的导数值，若导数不相等或分段函数连续，则分段点导数值不存在；
+3.隐函数求导*
+求导方法：*方程两边分别求导，注意方程中{% katex %}y是x{% endkatex %}的复合函数*
+例题：求由方程{% katex %}e^y+xy-e=0{% endkatex %}所确定的隐函数的导数{% katex %}y'{% endkatex %}。
+   解：原式={% katex %}y=f(x){% endkatex %}  
+         ={% katex %}e^yy'+y+xy'-0=0{% endkatex %}  
+         ={% katex %}y'=\frac{-y}{e^y+x}{% endkatex %}  
 
 ---
 ### 微分中值定理
