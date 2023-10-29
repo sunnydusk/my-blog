@@ -763,7 +763,7 @@ No face： {% katex %}\frac{(a+\Delta x)-(a-\Delta x)}{\Delta x}\cdot f'(a)=\fra
 求导法则：*外层求导，再乘以内层求导。*
 例题：
 设{% katex %}y=ln \cos x， 求y'{% endkatex %}。
-   解：原式={% katex %}y'=\frac{1}{\cos x}\cdot (- \sin x){% enndkatex %}
+   解：原式={% katex %}y'=\frac{1}{\cos x}\cdot (- \sin x){% endkatex %}
          ={% katex %}- \tan x{% endkatex %}
 若函数{% katex %}f(x){% endkatex %}可导，求函数{% katex %}y=f(\frac{1}{x^3}){% endkatex %}的导数。
    解：原式={% katex %}f'(\frac{1}{x^3}) \cdot (-3 \frac{1}{x^4}){% endkatex %}
