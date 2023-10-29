@@ -106,7 +106,7 @@ deploy:
   type: git
   repo: "git@github.com:sunnydusk/my-blog.git"
   branch: ["gh-pages"]
-  message: ["blog"]
+  message: "blog"
 
 math:
   katex:
