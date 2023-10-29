@@ -28,6 +28,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
+# 跳过某文件
 skip_render:
 
 # Writing
@@ -119,21 +120,21 @@ math:
       svg:
 
 # offline config passed to sw-precache.
-#service_worker:
-#  maximumFileSizeToCacheInBytes: 5242880
-#  staticFileGlobs:
-#    - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
-#  stripPrefix: public
-#  verbose: true
-#  runtimeCaching:
-#    - urlPattern: /*       # 子路径（接受通配符）
-#      handler: cacheFirst
-#      options:
-#        origin: www.030706.xyz  # 域名
-#    - urlPattern: /npm/*   # 子路径（接受通配符）
-#      handler: cacheFirst
-#      options:
-#        origin: blog.sunnyduskxi.workers.dev  # 域名
+service_worker:
+  maximumFileSizeToCacheInBytes: 5242880
+  staticFileGlobs:
+    - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: public
+  verbose: true
+  runtimeCaching:
+    - urlPattern: /*       # 子路径（接受通配符）
+      handler: cacheFirst
+      options:
+        origin: www.030706.xyz  # 域名
+    - urlPattern: /npm/*   # 子路径（接受通配符）
+      handler: cacheFirst
+      options:
+        origin: blog.sunnyduskxi.workers.dev  # 域名
 
 #  执行下列激活
 #  hexo clean
