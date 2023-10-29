@@ -752,11 +752,13 @@ No face： {% katex %}\frac{(a+\Delta x)-(a-\Delta x)}{\Delta x}\cdot f'(a)=\fra
 ---
 #### 可导与连续的关系
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251018054.png)
-#### 基本导数公式和四则运算求导法则
+
+### 基本导数公式和四则运算求导法则
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251018535.png)
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251018295.png)
 
-#### 函数的求导方法
+---
+### 函数的求导方法
 1.复合函数求导
 求导法则：*外层求导，再乘以内层求导。*
 例题：
@@ -773,10 +775,109 @@ No face： {% katex %}\frac{(a+\Delta x)-(a-\Delta x)}{\Delta x}\cdot f'(a)=\fra
    2.导入左边导数得“左导数”，带入右边导数得“右导数”，若二者相等且分段函数连续，则值为分段点的导数值，若导数不相等或分段函数连续，则分段点导数值不存在；
 3.隐函数求导*
 求导方法：*方程两边分别求导，注意方程中{% katex %}y是x{% endkatex %}的复合函数*
-例题：求由方程{% katex %}e^y+xy-e=0{% endkatex %}所确定的隐函数的导数{% katex %}y'{% endkatex %}。
+例题1：求由方程{% katex %}e^y+xy-e=0{% endkatex %}所确定的隐函数的导数{% katex %}y'{% endkatex %}。
    解：原式={% katex %}y=f(x){% endkatex %}  
-         ={% katex %}e^yy'+y+xy'-0=0{% endkatex %}  
+         ={% katex %}e^yy'+y+xy'-0=0{% endkatex %}    
          ={% katex %}y'=\frac{-y}{e^y+x}{% endkatex %}  
+例题2：求由方程{% katex %}3xy+lny=1{% endkatex %}所确定的隐函数在{% katex %}x=0{% endkatex %}处的导数{% katex %}\frac{dy}{dx}|_{x=0}{% endkatex %}.
+   解：原式={% katex %}3y+3x \cdot y'+\frac{y'}{y}=0{% endkatex %}
+         ={% katex %}y'=\frac{-3y}{3x+\frac{1}{y}}=\frac{-3y^2}{3xy+1}{% endkatex %}  
+         当{% katex %}x=0时，y=e{% endkatex %}  
+         ={% katex %}\frac{dy}{dx}|_{x=0}=\frac{-3e^2}{0+1}=-3e^2{% endkatex %}  
+例题3： 设{% katex %}y=f(x){% endkatex %}是由方程{% katex %}\arcsin y=e^x{% endkatex %}确定的函数，求{% katex %}y'{% endkatex %}.
+   解：原式={% katex %}\arcsin x= \frac{1}{ \sqrt{1-x^2} }{% endkatex %}  
+         ={% katex %} \frac{1}{ \sqrt{1-y^2} } y'=e^x {% endkatex %}
+         ={% katex %}y'=e^x\sqrt{1-y^2} {% endkatex %}  
+4.由参数方程确定的函数求导
+求导方法：*y对t的导数除以x对t的导数*
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310281515928.png)
+例题1：设函数{% katex %}y=y(x){% endkatex %}由参数发方程
+{% katex %}
+\left\{\begin{matrix}x=3t^2-1
+ \\
+y=e^{2t}+1
+\end{matrix}\right. {% endkatex %}确定，求{% katex %}\frac{dy}{dx}{% endkatex %}
+   解：原式={% katex %}\frac{dy}{dt}=2e^{2t}{% endkatex %}
+         ={% katex %}\frac{dx}{dt}=6t{% endkatex %}  
+         ={% katex %}\frac{dy}{dx}=\frac{2e^{2t} }{6t}=\frac{ e^{2t} }{3t}{% endkatex %}  
+例题2：已知参数方程 {% katex %}\left\{\begin{matrix}
+x=t-\frac{1}{t} 
+ \\
+y=\frac{1}{2}t^2+lnt
+\end{matrix}\right.{% endkatex %},求\frac{dy}{dx}|_{t=1}。
+   解：原式={% katex %}\frac{dy}{dt}=t+\frac{1}{t}{% endkatex %}  
+         ={% katex %}\frac{dx}{dt}=1+\frac{1}{t^2}{% endkatex %} 
+         ={% katex %}\frac{dy}{dx}=\frac{t+\frac{1}{t} }{1+\frac{1}{t^2} }{% endkatex %} 
+         =t=1
+5.幂指函数求导
+求导方法：*对数求导法*
+例题1：求{% katex %}y=x^x(x>0){% endkatex %}的导数。
+   解：原式={% katex %}lny=lnx^x=xlnx{% endkatex %}
+         隐函数求导
+         ={% katex %}\frac{y'}{y}=lnx+x \cdot \frac{1}{x}{% endkatex %}     
+         ={% katex %}y'=y(lnx+1){% endkatex %}
+         ={% katex %}x^x(lnx+1){% endkatex %}   
+例题2：求{% katex %}y=x^{\sin x}(x>0) {% endkatex %}的导数。  
+   解：原式={% katex %}lny=\sin x \cdot lnx{% endkatex %} 
+         ={% katex %}\frac{y'}{y}=\cos x \cdot lnx+\sin x \cdot \frac{1}{x} {% endkatex %}  
+         ={% katex %}y'=x^{\sin x}(\cos x \cdot lnx+\frac{\sin x}{x}) {% endkatex %}   
+例题3：求{% katex %}y=(1+2x)^{\cos x}(x>-\frac{1}{2}){% endkatex %}的导数。  
+   解：原式={% katex %}lny=\cos x \cdot ln(1+2x){% endkatex %}   
+         ={% katex %}\frac{y'}{y}=-\sin x \cdot ln(1+2x)+\cos x \cdot \frac{2}{1+2x} {% endkatex %}   
+         ={% katex %}y'=(1+2x)^{\cos x}(\frac{2 \codt \cos x}{1+2x}-\sin x \cdot ln(1+2x) ) {% endkatex %}   
+6.多因子积商乘方构成的函数求导  
+求导方法：*对数求导法*
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310281604406.png)
+例题1：求{% katex %}\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)} } {% endkatex %}的导数。  
+解：原式={% katex %}lny=ln(\frac{(x-1)(x-2)}{(x-3)(x-4)}^\frac{1}{2} )=\frac{1}{2}ln \frac{(x-1)(x-2)}{(x-3)(x-4)}}{% endkatex %}  
+      ={% katex %}\frac{1}{2}(ln(x-1)+ln(x-2)-ln(x-3)-ln(x-4) ) {% endkatex %}
+      ={% katex %}2\frac{y'}{y}=\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4}{% endkatex %}
+      ={% katex %}y'=\frac{y}{2}(\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4}) {% endkatex %}
+![例题2](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310291425147.png)
+7.课堂总结
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310291427077.png)
+
+---
+### 高阶导数
+1.定义  
+对函数{% katex %}y=f(x){% endkatex %}求导得到的{% katex %}y'{% endkatex %}称为一阶导数；对{% katex %}y'{% endkatex %}继续求导得到二阶导数{% katex %}y''{% endkatex %}……;  
+从四阶导数开始，写法为{% katex %}y^{(4)} {% endkatex %};  
+对{% katex %}y^{(n-1)}{% endkatex %}求导得到n阶导数{% katex %}y^{(n)} {% endkatex %},或记作{% katex %}f^{(n)}(x),\frac{d^ny}{dx^n},\frac{d^nf(x)}{dx^n}{% endkatex %};二阶及其以上统称高阶导数。
+2.求高阶导数的方法
+(1).求二阶导数  
+一阶导数——>二阶导数
+例题1：求函数{% katex %}y=2x^4-x^2+e^x{% endkatex %}的三阶导数。
+   解：原式={% katex %}y'=8x^3-2x+e^x{% endkatex %}  
+         ={% katex %}y''=24x^2-2+e^x{% endkatex %}  
+         ={% katex %}y'''=48x+e^x{% endkatex %}
+例题2：求函数{% katex %}y=ln(\sin x){% endkatex %}的二阶导数。
+   解原式{% katex %}=\frac{1}{\sin x}\cdot \cos x=\cot x
+            =y''=-\csc^2x
+   {% endkatex %}
+例题3：求函数{% katex %}x^2+y^2=1{% endkatex %}的二阶导数。
+   解原式{% katex %}=2x+2y \cdot y'=0
+            =y'=-\frac{x}{y}
+            =y''=-\frac{y-y'x}{y^2}=-\frac{y+\frac{x}{y} \cdot x }{y^2}
+            =-\frac{1}{y^3}
+   {% endkatex %}
+(2).求三阶以上的导数
+使用常用的高阶求导公式  
+![常用高阶求导公式](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310291505621.png)
+例题4：设函数{% katex %}y=x^{2000}+e^x+\cos x{% endkatex %}，则{% katex %}y^{(2025)}=e^x-\sin x{% endkatex %}
+(3).由参数方程确定的函数二阶导数
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310291519838.png)
+![求导方法](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310291519312.png)
+例题5：求函数{% katex %}y=y(x){% endkatex %}由参数方程{% katex %}\left\{\begin{matrix}
+x=\frac{1}{2}t^2-1 
+ \\
+y=x^t+1
+\end{matrix}\right.{% endkatex %}确定，求{% katex %}\frac{d^2y}{dx^2}{% endkatex %}。
+   解原式{% katex %}=\frac{dy}{dt}=e^t
+            =\frac{dx}{dt}=t
+            =\frac{dy}{dx}=\frac{e^t}{t}
+            =\frac{dy'}{dt}=(\frac{e^t}{t})'=\frac{e^t \cdot t-e^t}{t^2}  
+            =\frac{d^2y}{dx^2}=\frac{e^t \cdot t-e^t}{t^3}
+   {% endkatex %}
 
 ---
 ### 微分中值定理
