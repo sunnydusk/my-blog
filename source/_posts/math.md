@@ -717,8 +717,8 @@ No face： {% katex %}\frac{(a+\Delta x)-(a-\Delta x)}{\Delta x}\cdot f'(a)=\fra
     又{% katex %}f'(a)=\lim_{x \to a} \frac{f(x)-f(a)}{x-a}=\lim_{x \to a}  \frac{f(x)}{x-a}=2{% endkatex %}
 
 ---
-### 左导数与右导数
-#### 左、右导数定义
+#### 左导数与右导数
+##### 左、右导数定义
 左导数和右导数统称单侧函数
 {% katex %}f_-'(x)=\lim_{x \to x_0^-}\frac{f(x)-f(x_0)}{x-x_0}{% endkatex %}（左导数）
 {% katex %}f_+'(x)=\lim_{x \to x_0^+}\frac{f(x)-f(x_0)}{x-x_0}{% endkatex %}（右导数）
@@ -753,12 +753,12 @@ No face： {% katex %}\frac{(a+\Delta x)-(a-\Delta x)}{\Delta x}\cdot f'(a)=\fra
 #### 可导与连续的关系
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251018054.png)
 
-### 基本导数公式和四则运算求导法则
+#### 基本导数公式和四则运算求导法则
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251018535.png)
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251018295.png)
 
 ---
-### 函数的求导方法
+#### 函数的求导方法
 1.复合函数求导
 求导法则：*外层求导，再乘以内层求导。*
 例题：
@@ -838,7 +838,7 @@ y=\frac{1}{2}t^2+lnt
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310291427077.png)
 
 ---
-### 高阶导数
+#### 高阶导数
 1.定义  
 对函数{% katex %}y=f(x){% endkatex %}求导得到的{% katex %}y'{% endkatex %}称为一阶导数；对{% katex %}y'{% endkatex %}继续求导得到二阶导数{% katex %}y''{% endkatex %}……;  
 从四阶导数开始，写法为{% katex %}y^{(4)} {% endkatex %};  
@@ -872,15 +872,33 @@ x=\frac{1}{2}t^2-1
  \\
 y=x^t+1
 \end{matrix}\right.{% endkatex %}确定，求{% katex %}\frac{d^2y}{dx^2}{% endkatex %}。
-   解原式{% katex %}=\frac{dy}{dt}=e^t
+   解:原式{% katex %}=\frac{dy}{dt}=e^t
             =\frac{dx}{dt}=t
             =\frac{dy}{dx}=\frac{e^t}{t}
             =\frac{dy'}{dt}=(\frac{e^t}{t})'=\frac{e^t \cdot t-e^t}{t^2}  
             =\frac{d^2y}{dx^2}=\frac{e^t \cdot t-e^t}{t^3}
    {% endkatex %}
+例题6：已知函数方程{% katex %}\left\{\begin{matrix}
+x=t-\frac{1}{t}
+\\
+y=\frac{1}{2}t^2+lnt
+\end{matrix}\right.{% endkatex %}，求{% katex %}\frac{d^2y}{dx^2}{% endkatex %}。
+    解:原式{% katex %}=\frac{dy}{dt}=t+\frac{1}{t}
+        =\frac{dx}{dt}=1+\frac{1}{t^2}
+        =y'=\frac{dy}{dx}=\frac{t+\frac{1}{t} }{1+\frac{1}{t^2} }=t
+        =\frac{dy'}{dt}=1    
+        =\frac{d^2y}{dx^2}=\frac{t^2}{t^2+1}
+{% endkatex %}
+
+---
+#### 导数的习题
+1. 设{% katex %}f'(x_0){% endkatex %}存在，则{% katex %}\lim_{\Delta x \to 0}\frac{f(x_0-\frac{1}{2}\Delta x)-f(x_0)}{-\Delta x} }=-\frac{1}{2} {\div} -1=\frac{1}{2}f'(x_0){% endkatex %}  
+2. 
 
 ---
 ### 微分中值定理
+
+---
 ### 洛必达法则
 
 ---
