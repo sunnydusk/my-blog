@@ -892,7 +892,7 @@ y=\frac{1}{2}t^2+lnt
 
 ---
 #### 导数的习题
-1. 设{% katex %}f'(x_0){% endkatex %}存在，则{% katex %}\lim_{\Delta x \to 0}\frac{f(x_0-\frac{1}{2}\Delta x)-f(x_0)}{-\Delta x} }=-\frac{1}{2} {\div} -1=\frac{1}{2}f'(x_0){% endkatex %}  
+1. 设{% katex %}f'(x_0){% endkatex %}存在，则{% katex %}\lim_{\Delta x \to 0} \frac{f(x_0-\frac{1}{2}\Delta x )-f(x_0)}{-\Delta x}=-\frac{1}{2} {\div} -1=\frac{1}{2}f'(x_0)  {% endkatex %}  
 2. 
 
 ---
