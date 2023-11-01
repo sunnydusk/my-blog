@@ -824,12 +824,12 @@ y=\frac{1}{2}t^2+lnt
 例题3：求{% katex %}y=(1+2x)^{\cos x}(x>-\frac{1}{2}){% endkatex %}的导数。  
    解：原式={% katex %}lny=\cos x \cdot ln(1+2x){% endkatex %}   
          ={% katex %}\frac{y'}{y}=-\sin x \cdot ln(1+2x)+\cos x \cdot \frac{2}{1+2x} {% endkatex %}   
-         ={% katex %}y'=(1+2x)^{\cos x}(\frac{2 \codt \cos x}{1+2x}-\sin x \cdot ln(1+2x) ) {% endkatex %}   
+         ={% katex %}y'=(1+2x)^{\cos x}(\frac{2 \cdot \cos x}{1+2x}-\sin x \cdot ln(1+2x) ) {% endkatex %}   
 6.多因子积商乘方构成的函数求导  
 求导方法：*对数求导法*
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310281604406.png)
 例题1：求{% katex %}\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)} } {% endkatex %}的导数。  
-解：原式={% katex %}lny=ln(\frac{(x-1)(x-2)}{(x-3)(x-4)}^\frac{1}{2} )=\frac{1}{2}ln \frac{(x-1)(x-2)}{(x-3)(x-4)}}{% endkatex %}  
+解：原式={% katex %lny=ln(\frac{(x-1)(x-2)}{(x-3)(x-4)} )^\frac{1}{2}=\frac{1}{2} ln\frac{(x-1)(x-2)}{(x-3)(x-4)}  {% endkatex %}  
       ={% katex %}\frac{1}{2}(ln(x-1)+ln(x-2)-ln(x-3)-ln(x-4) ) {% endkatex %}
       ={% katex %}2\frac{y'}{y}=\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4}{% endkatex %}
       ={% katex %}y'=\frac{y}{2}(\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4}) {% endkatex %}
