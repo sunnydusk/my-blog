@@ -829,7 +829,7 @@ y=\frac{1}{2}t^2+lnt
 求导方法：*对数求导法*
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310281604406.png)
 例题1：求{% katex %}\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)} } {% endkatex %}的导数。  
-解：原式={% katex %lny=ln(\frac{(x-1)(x-2)}{(x-3)(x-4)} )^\frac{1}{2}=\frac{1}{2} ln\frac{(x-1)(x-2)}{(x-3)(x-4)}  {% endkatex %}  
+解：原式={% katex %}lny=ln(\frac{(x-1)(x-2)}{(x-3)(x-4)} )^\frac{1}{2}=\frac{1}{2} ln\frac{(x-1)(x-2)}{(x-3)(x-4)}  {% endkatex %}  
       ={% katex %}\frac{1}{2}(ln(x-1)+ln(x-2)-ln(x-3)-ln(x-4) ) {% endkatex %}
       ={% katex %}2\frac{y'}{y}=\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4}{% endkatex %}
       ={% katex %}y'=\frac{y}{2}(\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4}) {% endkatex %}
