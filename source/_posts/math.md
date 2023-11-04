@@ -893,10 +893,93 @@ y=\frac{1}{2}t^2+lnt
 ---
 #### 导数的习题
 1. 设{% katex %}f'(x_0){% endkatex %}存在，则{% katex %}\lim_{\Delta x \to 0} \frac{f(x_0-\frac{1}{2}\Delta x )-f(x_0)}{-\Delta x}=-\frac{1}{2} {\div} -1=\frac{1}{2}f'(x_0)  {% endkatex %}  
-2. 
+2. 求函数{% katex %}y=f(\cos 2x){% endkatex %}的导数。  
+   解：原式={% katex %}y'=f'(\cos 2x) \cdot (-\sin 2x) \cdot 2
+        =-2 \sin 2x f'(\cos 2x)  
+{% endkatex %}  
+3. 求函数{% katex %}y=\frac{\sqrt{x+1}-\sqrt{x-1} }{\sqrt{x+1}+\sqrt{x-1} }{% endkatex %}的导数。  
+    解：原式={% katex %}y=\frac{(\sqrt{x+1}-\sqrt{x-1} )^2}{(\sqrt{x+1}+\sqrt{x-1})(\sqrt{x+1}-\sqrt{x-1} ) }    
+          =\frac{2x-2\sqrt{x^2-1} }{2}=x-\sqrt{x^2-1}  
+          =y'=1-\frac{1}{2}(x^2-1)^{-\frac{1}{2}} \cdot 2x  
+          =1-\frac{x}{\sqrt{x^2-1} }  
+{% endkatex %}   
+4. 求由方程{% katex %}xy=e^{x+y} {% endkatex %}确定的隐函数的导数。  
+    解：原式={% katex %}y+xy'=e^{x+y}(1+y')  
+          =y+xy'=e^{x+y}+e^{x+y}y'  
+          =y'=\frac{e^{x+y}-y}{x-e^{x+y} }   
+{% endkatex %}  
+5. 已知{% katex %}\left\{\begin{matrix}
+   x=e^t \sin t
+   \\
+   y=e^t \cos t
+   \end{matrix}\right.{% endkatex %}，求当{% katex %}t=\frac{\pi}{3}时\frac{dy}{dx}的值{% endkatex %} 。  
+    解：原式={% katex %}\frac{dy}{dt}=(\cos t-\sin t)e^t
+          =\frac{dx}{dt}=e^t(\cos t+\sin t)  
+          =\frac{dy}{dx}=\frac{\cos t-\sin t}{\cos t+\sin t}  
+          =\frac{dy}{dx}|_{t=\frac{\pi}{3}}=\frac{\frac{1}{2}-\frac{\sqrt{3} }{2} }{\frac{1}{2}+\frac{\sqrt{3} }{2} }=\sqrt{3}-2  
+{% endkatex %}  
 
 ---
-### 微分中值定理
+### 微分
+**导数**：{% katex %}f'(x)=\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x}=\frac{dy}{dx}  \frac{函数的增量}{自变量增量}{% endkatex %}代表斜率、变化率、即微商。  
+**微分**：{% katex %}dy=f'(x)dx{% endkatex %}   代表函数的增量（导数的乘积形式）。  
+![证明](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041628652.png)
+1. *微分的定义*：如果函数的增量{% katex %}\Delta y=f(x_0+\Delta x)-f(x_0){% endkatex %}可以表示为 
+{% katex %}\Delta y=A \cdot \Delta x+o(\Delta x){% endkatex %}  
+其中A是不依赖与{% katex %}\Delta x{% endkatex %}的常数，那么称函数{% katex %}y=f(x)在点x_0{% endkatex %}是**可微**的，而{% katex %}A \cdot \Delta x{% endkatex %}即为函数在该点的微分，记作：  
+{% katex %}dy=A \cdot \Delta x{% endkatex %}  
+或{% katex %}dy=A \cdot \Delta x{% endkatex %}(其中{% katex %}dx{% endkatex %}是自变量的微分)  
+{% katex %}函数可导\longleftarrow等价 \longrightarrow 函数可微{% endkatex %}  
+2. 基本微分公式及微分运算法则  
+   ![基本公式](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041648546.png)
+   ![运算法则](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041649949.png)
+
+---
+### 微分中值定理  
+#### 罗尔中值定理
+如果函数{% katex %}f(x){% endkatex %}满足以下条件 **（缺一不可）**：  
+1. 在闭区间{% katex %}[a,b]{% endkatex %}上连续；  
+2. 在开区间{% katex %}(a,b){% endkatex %}上可导；  
+3. {% katex %}f(a)=f(b){% endkatex %}；  
+则在开区间{% katex %}(a,b){% endkatex %}上至少存在一点{% katex %}\xi{% endkatex %}，使得{% katex %}f'(\xi)=0{% endkatex %}  
+   ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041700161.png)  
+   ![生活实例](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041704450.png)
+**不要和零点定理搞混！！！**
+例题1：下列函数在给定区间内满足罗尔中值定理的是（   ）。  
+{% katex %}A、f(x)=\left\{\begin{matrix}
+   x+1,x<5
+   \\
+   1,   x\ge 5
+   \end{matrix}\right.
+   [0,5]
+{% endkatex %}  
+{% katex %}B、f(x)=\sqrt[3]{(x-1)^2}  [0,2]{% endkatex %}  
+{% katex %}C、f(x)= x^2-3x+2 [1,2]{% endkatex %}   
+{% katex %}D、f(x)=|x-1| [0,2]{% endkatex %}  
+解析：
+A:分段点x=5，带入，不连续。  
+B:导函数定义域不能取值1，不可导。  
+C:没有不满足定义域的点，连续；求导可导，左右导数相等0，满足条件。  
+D:x=1,绝对值，连续不可导  
+A、B、D不满足条件3，C满足条件1、2、3，故选C。  
+例题2：证明方程 {% katex %}3a_1x^2-2a_2x=a_1-a_2{% endkatex %}在{% katex %}(0,1){% endkatex %}上至少有一个实根。  
+解析：证明方程在开区间内有实根。首先用零点定理，其次使用罗尔中值定理。
+    证明：{% katex %}f(x)=3a_1x^2-2a_2x-a_1+a_2{% endkatex %}  
+    {% katex %}f(0)=-a_1+a_2{% endkatex %}  
+    {% katex %}f(1)=2a_1-a_2{% endkatex %}  
+    零点定理无用。  
+    {% katex %}f'(x)=3a_1x^2-2a_2x-a_1+a_2{% endkatex %}  
+    反推：  
+    {% katex %}f(x)=a_1x^3-a_2x^2-a_1x+a_2x{% endkatex %}  
+   ![答案](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041744507.png)
+   ![标准解题](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041742778.png)
+例题3：已知函数{% katex %}f(x){% endkatex %}在{% katex %}x \in R{% endkatex %}范围内连续且可导，{% katex %}f(a)=f(b)=0{% endkatex %}，证明至少存在一点{% katex %}\xi \in (a,b){% endkatex %}，使得{% katex %}f'(\xi)+f(\xi)=0{% endkatex %}  
+解析：证明含有{% katex %}f'(\xi){% endkatex %}的等式，使用罗尔中值定理。  
+
+   
+#### 拉格朗日中值定理
+
+#### 柯西中值定理
 
 ---
 ### 洛必达法则
