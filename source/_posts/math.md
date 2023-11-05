@@ -964,7 +964,7 @@ D:x=1,绝对值，连续不可导
 A、B、D不满足条件3，C满足条件1、2、3，故选C。  
 例题2：证明方程 {% katex %}3a_1x^2-2a_2x=a_1-a_2{% endkatex %}在{% katex %}(0,1){% endkatex %}上至少有一个实根。  
 解析：证明方程在开区间内有实根。首先用零点定理，其次使用罗尔中值定理。
-    证明：{% katex %}f(x)=3a_1x^2-2a_2x-a_1+a_2{% endkatex %}  
+证明：{% katex %}f(x)=3a_1x^2-2a_2x-a_1+a_2{% endkatex %}  
     {% katex %}f(0)=-a_1+a_2{% endkatex %}  
     {% katex %}f(1)=2a_1-a_2{% endkatex %}  
     零点定理无用。  
@@ -973,16 +973,160 @@ A、B、D不满足条件3，C满足条件1、2、3，故选C。
     {% katex %}f(x)=a_1x^3-a_2x^2-a_1x+a_2x{% endkatex %}  
    ![答案](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041744507.png)
    ![标准解题](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041742778.png)
-例题3：已知函数{% katex %}f(x){% endkatex %}在{% katex %}x \in R{% endkatex %}范围内连续且可导，{% katex %}f(a)=f(b)=0{% endkatex %}，证明至少存在一点{% katex %}\xi \in (a,b){% endkatex %}，使得{% katex %}f'(\xi)+f(\xi)=0{% endkatex %}  
-解析：证明含有{% katex %}f'(\xi){% endkatex %}的等式，使用罗尔中值定理。  
+例题3-1：已知函数{% katex %}f(x){% endkatex %}在{% katex %}x \in R{% endkatex %}范围内连续且可导，{% katex %}f(a)=f(b)=0{% endkatex %}，证明至少存在一点{% katex %}\xi \in (a,b){% endkatex %}，使得{% katex %}f'(\xi)+f(\xi)=0{% endkatex %}  
+解析：证明含有{% katex %}f'(\xi){% endkatex %}的等式，使用罗尔中值定理。
+    证明：构造函数{% katex %}F(x)=f(x) \cdot e^x{% endkatex %}  
+    显然{% katex %}F(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上连续，在{% katex %}(a,b){% endkatex %}上可导  
+   {% katex %}F(a)=0,F(b)=0{% endkatex %},且{% katex %}F'(x)=f'(x)e^x+f(x)e^x{% endkatex %}  
+    所以{% katex %}F(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上满足罗尔中值定理的条件，故在{% katex %}(a,b){% endkatex %}上至少存在一点{% katex %}\xi{% endkatex %}，使得{% katex %}F'(\xi)=0{% endkatex %}  
+    即{% katex %}f'(\xi)e^{\xi}+f(\xi)e^{\xi}=0{% endkatex %}，化简得{% katex %}f'(\xi)+f(\xi)=0。{% endkatex %}  
 
-   
+例题3-2：已知函数{% katex %}f(x){% endkatex %}在{% katex %}x \in R{% endkatex %}范围内连续且可导，{% katex %}f(a)=f(b)=0{% endkatex %}，证明至少存在一点{% katex %}\xi \in (a,b){% endkatex %}，使得{% katex %}f'(\xi)+2f(\xi)=0{% endkatex %}
+解析：{% katex %}f'(x)\Box +2f(x)\Box =0{% endkatex %},{% katex %}使用(uv)'=u'v+uv'{% endkatex %}    
+{% katex %}\therefore \Box =e^{2x}{% endkatex %}  
+    证明：构造函数{% katex %}F(x)=f(x) \cdot e^{2x}{% endkatex %}  
+    显然{% katex %}F(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上连续，在{% katex %}(a,b){% endkatex %}上可导    
+    {% katex %}F(a)=0,F(b)=0{% endkatex %}  
+    且{% katex %}F'(x)=f'(x)e^{2x}+2f(x)e^{2x }{% endkatex %}  
+    所以{% katex %}F(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上满足罗尔中值定理的条件，故在{% katex %}(a,b){% endkatex %}上至少存在一点{% katex %}\xi{% endkatex %}，使得{% katex %}F'(\xi)=0{% endkatex %}  
+    即{% katex %}f'(\xi)+2f(\xi)=0。{% endkatex %}    
+
+例题3-3：已知函数{% katex %}f(x){% endkatex %}在{% katex %}x \in R{% endkatex %}范围内连续且可导，{% katex %}f(a)=f(b)=0{% endkatex %}，证明至少存在一点{% katex %}\xi \in (a,b){% endkatex %}，使得{% katex %}f'(\xi)+2\xi f(\xi)=0{% endkatex %}
+解析：{% katex %}f'(x)\Box +2xf(x)\Box =0{% endkatex %},{% katex %}使用(uv)'=u'v+uv'{% endkatex %}  
+{% katex %}\therefore \Box =e^{x^2}{% endkatex %}
+    证明：构造函数{% katex %}F(x)=f(x) \cdot e^{x^2}{% endkatex %}    
+    显然{% katex %}F(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上连续，在{% katex %}(a,b){% endkatex %}上可导  
+    {% katex %}F(a)=0,F(b)=0{% endkatex %},且{% katex %}F'(x)=f'(x)e^{x^2}+2f(x)e^{x^2}{% endkatex %}  
+    所以{% katex %}F(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上满足罗尔中值定理的条件，  
+    故在{% katex %}(a,b){% endkatex %}上至少存在一点{% katex %}\xi{% endkatex %}，使得{% katex %}F'(\xi)=0{% endkatex %}    
+    即{% katex %}f'(\xi)+2\xi f(\xi)=0。{% endkatex %}     
+
+例题3-4：已知函数{% katex %}f(x){% endkatex %}在{% katex %}x \in R{% endkatex %}范围内连续且可导，{% katex %}f(a)=f(b)=0{% endkatex %}，证明至少存在一点{% katex %}\xi \in (a,b){% endkatex %}，使得{% katex %}\frac{\xi}{n}f'(\xi)+f(\xi)=0，n{% endkatex %}为正整数。    
+解析：{% katex %}f'(x)\frac{x}{n} \Box +f(x)\Box =0{% endkatex %},{% katex %}使用(uv)'=u'v+uv'{% endkatex %}  
+{% katex %}\therefore \Box =x^n {% endkatex %}
+    证明：构造函数{% katex %}F(x)=f(x) \cdot x^n{% endkatex %}    
+    显然{% katex %}F(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上连续，在{% katex %}(a,b){% endkatex %}上可导  
+    {% katex %}F(a)=0,F(b)=0{% endkatex %},且{% katex %}F'(x)=f'(x) \cdot x^n+f(x) \cdot \frac{n}{x}\cdot x^n {% endkatex %}  
+    所以{% katex %}F(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上满足罗尔中值定理的条件，  
+    故在{% katex %}(a,b){% endkatex %}上至少存在一点{% katex %}\xi{% endkatex %}，使得{% katex %}F'(\xi)=0{% endkatex %}    
+    即{% katex %}f'(\xi) \cdot \xi ^n+f(\xi) \cdot \frac{n}{\xi} \cdot \xi ^n=0。{% endkatex %}，化简得{% katex %}\frac{\xi }{n} f'(\xi)+f(\xi)=0。{% endkatex %}  
+例题3总结
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051543530.png)
+例题4-1：已知函数{% katex %}f(x){% endkatex %}在{% katex %}x \in R{% endkatex %}范围内连续且可导，{% katex %}f(a)=f(b)=0{% endkatex %}，证明至少存在一点{% katex %}\xi \in (a,b){% endkatex %}，使得{% katex %}f'(\xi)-f(\xi)=0{% endkatex %}。    
+解析：{% katex %}f'(x) \Box -f(x)\Box =0{% endkatex %},{% katex %}使用(、frac{u}{v})'=\frac{u'v-uv'}{v^2} {% endkatex %}  
+{% katex %}\therefore \Box =e^x {% endkatex %}
+    证明：构造函数{% katex %}F(x)=\frac{f(x)}{e^x} {% endkatex %}    
+    显然{% katex %}F(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上连续，在{% katex %}(a,b){% endkatex %}上可导  
+    {% katex %}F(a)=0,F(b)=0{% endkatex %},且{% katex %}F'(x)=\frac{f'(x)\cdot e^x-f(x)\cdot e^x}{(e^x)^2} {% endkatex %}  
+    所以{% katex %}F(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上满足罗尔中值定理的条件，  
+    故在{% katex %}(a,b){% endkatex %}上至少存在一点{% katex %}\xi{% endkatex %}，使得{% katex %}F'(\xi)=0{% endkatex %}    
+    即{% katex %}\frac{f'(\xi)\cdot e^\xi-f(\xi) \cdot e^\xi}{(e^\xi)^2}=0{% endkatex %}，化简得{% katex %}f'(\xi)-f(\xi)=0{% endkatex %}。  
+例题4总结
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051555408.png)
+
+---
 #### 拉格朗日中值定理
+如果函数{% katex %}y=f(x){% endkatex %}满足以下条件(两端点函数差/两端点差)**（缺一不可）**：  
+1. 在闭区间{% katex %}[a,b]{% endkatex %}上连续；  
+2. 在开区间{% katex %}(a,b){% endkatex %}上可导；  
+则在开区间{% katex %}(a,b){% endkatex %}上至少存在一点{% katex %}\xi{% endkatex %}，使得{% katex %}f'(\xi)=\frac{f(b)-f(a)}{b-a} {% endkatex %}  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051607939.png)
+例题1：在下列区间上，函数{% katex %}f(x)=e^x-3x^{\frac{1}{3} } {% endkatex %}不满足拉格朗日中值定理的条件的是（ C ）。 
+A.{% katex %}[-1,0]{% endkatex %}  
+B.{% katex %}[0,1]{% endkatex %}  
+C.{% katex %}[-1,1]{% endkatex %}  
+D.{% katex %}[1,e]{% endkatex %}  
+解析：闭区间内连续—>看{% katex %}f(x){% endkatex %}的定义域，找间断点（定义域R，无间断点）；
+     开区间内可导—>求{% katex %}f'(x),看f'(x){% endkatex %}的定义域，找间断点。
+{% katex %}f'(x)=e^x-\frac{1}{\sqrt[3]{x^2} }(x \ne 0){% endkatex %}  
+只有C的开区间含0，所以选C。  
 
+例题2：函数{% katex %}f(x)=\frac{1}{2}x^2-x{% endkatex %}在区间{% katex %}[1,2]{% endkatex %}上满足拉格朗日中值定理条件的{% katex %}\xi=（ \frac{3}{2} ）{% endkatex %}。
+    解：{% katex %}f'(x)=x-1{% endkatex %}  
+    {% katex %}f(1)=\frac{1}{2} \cdot 1^2-1=-\frac{1}{2}{% endkatex %}  
+    {% katex %}f(2)=\frac{1}{2} \cdot 2^2-2=0{% endkatex %}  
+    {% katex %}\therefore \frac{f(2)-f(1)}{2-1}=\frac{1}{2}{% endkatex %}  
+    {% katex %}\therefore \xi=1+\frac{1}{2}=\frac{3}{2}{% endkatex %}
+
+例题3-1：设{% katex %}0<b<c{% endkatex %}，求证{% katex %}\frac{b-a}{1+b^2}<\arctan b-\arctan a<\frac{b-a}{1+a^2}{% endkatex %}  
+    证明：构造函数{% katex %}f(x)=\arctan x{% endkatex %}  
+    显然{% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上连续，在{% katex %}(a,b){% endkatex %}上可导  
+    所以{% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上满足拉格朗日中值定理的条件，且在{% katex %}(a,b){% endkatex %}内至少存在一点  
+    {% katex %}\xi{% endkatex %}使得{% katex %}f'(\xi)=\frac{\arctan b-\arctan a}{b-a}{% endkatex %}  
+    {% katex %}f'(\xi)=\frac{1}{1+\xi^2},\arctan b-\arctan a=\frac{b-a}{1+\xi^2}{% endkatex %}  
+    因为{% katex %}a<\xi<b{% endkatex %}，所以{% katex %}\frac{b-a}{1+b^2}<\frac{b-a}{1+\xi^2}<\frac{b-a}{1+a^2} {% endkatex %}  
+    所以{% katex %}\frac{b-a}{1+b^2}<\arctan b-\arctan a<\frac{b-a}{1+a^2}{% endkatex %}  
+
+例题3-2：设{% katex %}x>0{% endkatex %}，求证{% katex %}\frac{x}{1+x}<ln(1+x)<x{% endkatex %}。  
+    证明：构造函数{% katex %}f(x)=ln(x){% endkatex %}  
+    显然{% katex %}f(x){% endkatex %}在{% katex %}[0,1+x]{% endkatex %}上连续，在{% katex %}(0,1+x){% endkatex %}上可导  
+    所以{% katex %}f(x){% endkatex %}在{% katex %}[0,1+x]{% endkatex %}上满足拉格朗日中值定理的条件，且在{% katex %}(0,1+x){% endkatex %}内至少存在一点  
+    {% katex %}\xi{% endkatex %}，使得{% katex %}f'(\xi)=\frac{ln(1+x)-ln1}{x-0}=\frac{ln(1+x)}{x}{% endkatex %}  
+    {% katex %}f'(\xi)=\frac{1}{\xi}，ln(1+x)-ln1=x \cdot \frac{1}{\xi}=\frac{x}{\xi}{% endkatex %}
+    因为{% katex %}0<\xi<1+x{% endkatex %}，所以{% katex %}\frac{x}{1+x}<\frac{x}{\xi}<x{% endkatex %}  
+    所以{% katex %}\frac{x}{1+x}<ln(1+x)<x{% endkatex %}  
+
+例题3-3：设{% katex %}x \in (0,\frac{\pi}{2}){% endkatex %}，求证{% katex %}x<\tan x<\frac{x}{\cos ^2x}{% endkatex %}   
+    证明：构造函数{% katex %}f(x)=\tan x{% endkatex %}  
+    显然{% katex %}f(x){% endkatex %}在{% katex %}[0,x]{% endkatex %}上连续，在{% katex %}(0,x){% endkatex %}上可导  
+    所以{% katex %}f(x){% endkatex %}在{% katex %}[0,x]{% endkatex %}上满足拉格朗日中值定理的条件，且在{% katex %}(0,x){% endkatex %}内至少存在一点  
+    {% katex %}\xi{% endkatex %}，使得{% katex %}f'(\xi)=\frac{\tan x-\tan 0}{x-0}=\frac{\tan x}{x}{% endkatex %}  
+    {% katex %}f'(\xi)=\frac{1}{\cos ^2\xi}，\tan x-\tan 0=x \cdot \frac{1}{\cos ^2\xi}=\frac{x}{\cos ^2\xi}{% endkatex %}
+    因为{% katex %}0<\xi<x{% endkatex %}，所以{% katex %}x<\frac{x}{\cos ^2\xi}<\frac{x}{\cos ^2x}{% endkatex %}
+    所以{% katex %}x<\tan x<\frac{x}{\cos ^2x}{% endkatex %}
+例题3总结：
+
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051707546.png)
+
+---
 #### 柯西中值定理
+
 
 ---
 ### 洛必达法则
+{% katex %}\lim_{x \to x_0/x \to \infty }\frac{f(x)}{g(x)}=  \lim_{x \to x_0/x \to \infty }\frac{f'(x) } {g'(x)} {% endkatex %}   
+两函数之商求极限等于两函数导数之商的极限。  
+使用洛必达法则的两个前提：  
+
+1. {% katex %}f(x),g(x){% endkatex %}同时趋近于0或同时趋近于{% katex %}\infty{% endkatex %}极限为{% katex %} \frac{0}{0} {% endkatex %} 或 {% katex %} \frac{ \infty }{ \infty } {% endkatex %} 的未定式；
+2. {% katex %} \lim_{x \to x_0/x \to \infty }\frac{f'(x)}{g'(x)}{% endkatex %}存在或为{% katex %}\infty{% endkatex %}  
+   ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051756929.png)
+洛必达注意事项：  
+**同一道题中洛必达可以和等价无穷小可以交替使用，但是同一步骤中绝对不能混用**  
+不要盲目使用洛必达法则，能化简先化简。  
+使用洛必达法则前，如果存在非0非无穷因子可先带入，可简化计算。（条件：整体的极限式子可看作是非0非无穷因子和，另外一个式子的乘积的形式，局部加减的非0非无穷式子不能先行带入！）
+
+例题1：求{% katex %}\lim_{x \to +\infty}\frac{x^{100} }{e^x}{% endkatex %}
+    解：原式={% katex %}\lim_{x \to +\infty}\frac{100x^{99} }{e^x}  
+        =\lim_{x \to +\infty}\frac{9900x^{98} }{e^x}  
+        =\lim_{x \to +\infty}\frac{980100x^{97} }{e^x}  
+        =\lim_{x \to +\infty}\frac{97029900x^{96} }{e^x}  
+        ……  
+        =\lim_{x \to +\infty}\frac{100!x^0}{e^x}  
+        =0{% endkatex %}  
+例题2：求{% katex %}\lim_{x \to 0}\frac{s-\sin x}{x^2 \sin x}
+解：原式{% katex %}=\lim_{x \to 0}\frac{x-\sin x}{x3} 
+=\lim_{x \to 0}\frac{1-\cos x}{3x^2}
+=\lim_{x \to 0}\frac{\sin x}{6x}
+=\lim_{x \to 0}\frac{x}{6x} 
+=\frac{1}{6}{% endkatex %}  
+<br />
+{% katex %}x \to 0 {% endkatex %}时，{% katex %}(x-\sin x)~\frac{1}{6}x^3{% endkatex %}
+<br />
+例题3：求{% katex %}\lim_{x \to 0}\frac{\tan x-x}{x-\sin x}{% endkatex %}
+解：原式{% katex %}=\lim_{x \to 0}\frac{\frac{1}{\cos ^2x}-1}{1-\cos x}
+=\lim_{x \to 0}\frac{1+\cos x}{\cos ^2x}
+=\lim_{x \to 0}\frac{1+1}{1}
+=2{% endkatex %}  
+<br />
+{% katex %}x \to 0 {% endkatex %}时，{% katex %}(\tan x-x)~\frac{1}{3}x^3{% endkatex %}
+<br />
+例题4：求{% katex %}\lim_{x \to \frac{\pi}{2} }\frac{e^x \cdot \cos x}{\frac{\pi}{2}-x}{% endkatex %}  
+使用非0非无穷因子先行带入  
+解：原式{% katex %}=e^{\frac{\pi}{2} } \lim_{x \to \frac{\pi}{2} }\frac{\cos x}{\frac{\pi}{2}-x}  
+=e^{\frac{\pi}{2} } \lim_{x \to \frac{\pi}{2} }\frac{-\sin x}{-1}  
+=e^{\frac{\pi}{2} } \lim_{x \to \frac{\pi}{2} }\frac{-1}{-1}  
+=e^{\frac{\pi}{2} }{% endkatex %}  
 
 ---
  {% katex %}\frac{0}{0}{% endkatex %}或{% katex %}\frac{\infty}{\infty}{% endkatex %} 型
@@ -991,4 +1135,6 @@ A、B、D不满足条件3，C满足条件1、2、3，故选C。
 1. 分子分母各自同时求导；
 2. 洛必达法则一般配合等价使用；
 ！！万事不对洛必达
+
+---
 ### 导数在研究函数中的应用
