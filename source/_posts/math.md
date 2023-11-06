@@ -1094,7 +1094,7 @@ D.{% katex %}[1,e]{% endkatex %}
 洛必达注意事项：  
 **同一道题中洛必达可以和等价无穷小可以交替使用，但是同一步骤中绝对不能混用**  
 不要盲目使用洛必达法则，能化简先化简。  
-使用洛必达法则前，如果存在非0非无穷因子可先带入，可简化计算。（条件：整体的极限式子可看作是非0非无穷因子和，另外一个式子的乘积的形式，局部加减的非0非无穷式子不能先行带入！）
+使用洛必达法则前，如果存在`非0非无穷因子`可先带入，可简化计算。（条件：整体的极限式子可看作是非0非无穷因子和，另外一个式子的乘积的形式，局部加减的非0非无穷式子不能先行带入！）
 
 例题1：求{% katex %}\lim_{x \to +\infty}\frac{x^{100} }{e^x}{% endkatex %}
     解：原式={% katex %}\lim_{x \to +\infty}\frac{100x^{99} }{e^x}  
@@ -1111,7 +1111,7 @@ D.{% katex %}[1,e]{% endkatex %}
 =\lim_{x \to 0}\frac{x}{6x}
 =\frac{1}{6}{% endkatex %}
 <br />
-{% katex %}x \to 0 {% endkatex %}时，{% katex %}(x-\sin x)~\frac{1}{6}x^3{% endkatex %}
+{% katex %}{\color{Red} x \to 0 时，(x-\sin x)~\frac{1}{6}x^3} {% endkatex %}
 <br />
 例题3：求{% katex %}\lim_{x \to 0}\frac{\tan x-x}{x-\sin x}{% endkatex %}
 解：原式{% katex %}=\lim_{x \to 0}\frac{\frac{1}{\cos ^2x}-1}{1-\cos x}
@@ -1119,7 +1119,7 @@ D.{% katex %}[1,e]{% endkatex %}
 =\lim_{x \to 0}\frac{1+1}{1}
 =2{% endkatex %}
 <br />
-{% katex %}x \to 0 {% endkatex %}时，{% katex %}(\tan x-x)~\frac{1}{3}x^3{% endkatex %}
+{% katex %}{\color{Red} x \to 0 时，(\tan x-x)~\frac{1}{3}x^3} {% endkatex %}
 <br />
 例题4：求{% katex %}\lim_{x \to \frac{\pi}{2} }\frac{e^x \cdot \cos x}{\frac{\pi}{2}-x}{% endkatex %}
 使用非0非无穷因子先行带入
