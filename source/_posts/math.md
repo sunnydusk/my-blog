@@ -1104,12 +1104,12 @@ D.{% katex %}[1,e]{% endkatex %}
         ……  
         =\lim_{x \to +\infty}\frac{100!x^0}{e^x}  
         =0{% endkatex %}  
-例题2：求{% katex %}\lim_{x \to 0}\frac{s-\sin x}{x^2 \sin x}
-解：原式{% katex %}=\lim_{x \to 0}\frac{x-\sin x}{x3} 
+例题2：求{% katex %}\lim_{x \to 0}\frac{s-\sin x}{x^2 \sin x}{% endkatex %}
+解：原式{% katex %}=\lim_{x \to 0}\frac{x-\sin x}{x3}
 =\lim_{x \to 0}\frac{1-\cos x}{3x^2}
 =\lim_{x \to 0}\frac{\sin x}{6x}
-=\lim_{x \to 0}\frac{x}{6x} 
-=\frac{1}{6}{% endkatex %}  
+=\lim_{x \to 0}\frac{x}{6x}
+=\frac{1}{6}{% endkatex %}
 <br />
 {% katex %}x \to 0 {% endkatex %}时，{% katex %}(x-\sin x)~\frac{1}{6}x^3{% endkatex %}
 <br />
@@ -1117,16 +1117,16 @@ D.{% katex %}[1,e]{% endkatex %}
 解：原式{% katex %}=\lim_{x \to 0}\frac{\frac{1}{\cos ^2x}-1}{1-\cos x}
 =\lim_{x \to 0}\frac{1+\cos x}{\cos ^2x}
 =\lim_{x \to 0}\frac{1+1}{1}
-=2{% endkatex %}  
+=2{% endkatex %}
 <br />
 {% katex %}x \to 0 {% endkatex %}时，{% katex %}(\tan x-x)~\frac{1}{3}x^3{% endkatex %}
 <br />
-例题4：求{% katex %}\lim_{x \to \frac{\pi}{2} }\frac{e^x \cdot \cos x}{\frac{\pi}{2}-x}{% endkatex %}  
-使用非0非无穷因子先行带入  
-解：原式{% katex %}=e^{\frac{\pi}{2} } \lim_{x \to \frac{\pi}{2} }\frac{\cos x}{\frac{\pi}{2}-x}  
-=e^{\frac{\pi}{2} } \lim_{x \to \frac{\pi}{2} }\frac{-\sin x}{-1}  
-=e^{\frac{\pi}{2} } \lim_{x \to \frac{\pi}{2} }\frac{-1}{-1}  
-=e^{\frac{\pi}{2} }{% endkatex %}  
+例题4：求{% katex %}\lim_{x \to \frac{\pi}{2} }\frac{e^x \cdot \cos x}{\frac{\pi}{2}-x}{% endkatex %}
+使用非0非无穷因子先行带入
+解：原式{% katex %}=e^{\frac{\pi}{2} } \lim_{x \to \frac{\pi}{2} }\frac{\cos x}{\frac{\pi}{2}-x}
+=e^{\frac{\pi}{2} } \lim_{x \to \frac{\pi}{2} }\frac{-\sin x}{-1}
+=e^{\frac{\pi}{2} } \lim_{x \to \frac{\pi}{2} }\frac{-1}{-1}
+=e^{\frac{\pi}{2} }{% endkatex %}
 
 ---
  {% katex %}\frac{0}{0}{% endkatex %}或{% katex %}\frac{\infty}{\infty}{% endkatex %} 型
