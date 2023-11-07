@@ -1095,6 +1095,8 @@ D.{% katex %}[1,e]{% endkatex %}
 **同一道题中洛必达可以和等价无穷小可以交替使用，但是同一步骤中绝对不能混用**  
 不要盲目使用洛必达法则，能化简先化简。  
 使用洛必达法则前，如果存在`非0非无穷因子`可先带入，可简化计算。（条件：整体的极限式子可看作是非0非无穷因子和，另外一个式子的乘积的形式，局部加减的非0非无穷式子不能先行带入！）
+如果洛必达之后极限不存在，那么洛必达法则失效，应采用其他方法计算。  
+如果洛必达之后陷入了死循环，那么洛必达法则失效，应采用其他方法计算。  
 
 例题1：求{% katex %}\lim_{x \to +\infty}\frac{x^{100} }{e^x}{% endkatex %}
     解：原式={% katex %}\lim_{x \to +\infty}\frac{100x^{99} }{e^x}  
@@ -1127,6 +1129,28 @@ D.{% katex %}[1,e]{% endkatex %}
 =e^{\frac{\pi}{2} } \lim_{x \to \frac{\pi}{2} }\frac{-\sin x}{-1}
 =e^{\frac{\pi}{2} } \lim_{x \to \frac{\pi}{2} }\frac{-1}{-1}
 =e^{\frac{\pi}{2} }{% endkatex %}
+例题5：求{% katex %}\lim_{x \to \infty}\frac{\sin x-x \cos x}{x^3 \cos x}{% endkatex %}  
+解：原式{% katex %}=\frac{1}{\cos 0} \cdot \lim_{x \to \infty}\frac{\sin x- x \cdot \cos x}{x^3}
+=1 \cdot \lim_{x \to \infty}\frac{\cos x- (\cos x -x \cdot \sin x) }{3x^2}
+=\lim_{x \to \infty}\frac{x \cdot \sin x}{3x^2}
+=\lim_{x \to \infty}\frac{\sin x}{3x}
+=\frac{1}{3}{% endkatex %}  
+<br />
+注意事项：洛完无极限，洛必达法则失效，应采用其他方法计算。  
+例题6：求{% katex %}\lim_{x \to \infty}\frac{\sin x+x}{x}{% endkatex %}  
+解：原式{% katex %}=\lim_{x \to \infty}\frac{\sin x}{x}+1
+=0+1
+=1{% endkatex %}  
+<br />
+注意事项：洛完陷入死循环，洛必达法则失效，应采用其他方法计算。
+例题7：求{% katex %}\lim_{x \to \infty}\frac{e^x-e{-x} }{e^+e{-x} }{% endkatex %}  
+解：原式{% katex %}上下同除以e^x
+=\lim_{x \to \infty}\frac{1+\frac{1}{(e^x)^2} }{1-\frac{1}{(e^x)^2} }
+=\frac{1+0}{1-0}
+=1{% endkatex %}  
+<br />
+#### 总结
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311071515278.png)
 
 ---
  {% katex %}\frac{0}{0}{% endkatex %}或{% katex %}\frac{\infty}{\infty}{% endkatex %} 型
