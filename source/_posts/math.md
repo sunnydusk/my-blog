@@ -1162,3 +1162,119 @@ D.{% katex %}[1,e]{% endkatex %}
 
 ---
 ### 导数在研究函数中的应用
+#### 切线方程与法线方程
+函数在某一点处的导数的几何意义即在该点处切线的**斜率**。  
+**法线和切线垂直**，如果两条直线垂直，那么**斜率之积=-1**。  
+确定直线方程：如果只给了一个点{% katex %}(x_0,y_0){% endkatex %}，只要确定了斜率{% katex %}k{% endkatex %}，那么直线方程为（点斜式）{% katex %}y-y_0=k(x-x_0){% endkatex %}  
+{% katex %} k_切=f'(x_0), K_法=-\frac{1}{f'(x_0) }{% endkatex %}  
+求切线方程和法线方程的解题步骤：
+    (1). 求{% katex %}y_0{% endkatex %}；  
+    (2). 求{% katex %}f'(x_0){% endkatex %}；  
+        a. 先求{% katex %}f'(x){% endkatex %}，再将{% katex %}x_0{% endkatex %}代入；  
+        b. 用导数定义式直接求。  
+    (3). 带入点斜式直线方程；  
+        a. 切线方程{% katex %}y-y_0=f'(x_0)(x-x_0){% endkatex %}；  
+        b. 法线方程{% katex %}y-y_0=-\frac{1}{f'(x_0) } (x-x_0){% endkatex %}；  
+例题1：求函数{% katex %}f(x)=x^2-3x+1{% endkatex %}在点{% katex %}(1,-1) {% endkatex %}处的切线方程和法线方程。  
+解：
+{% katex %}f'(x)=2x-3{% endkatex %}  
+当{% katex %}x=1{% endkatex %}时，{% katex %}f'(x)=2 \cdot 1-3=-1{% endkatex %}  
+切线方程{% katex %}y-(-1)=-1(x-1){% endkatex %}  
+{% katex %}y=-x{% endkatex %}  
+法线方程{% katex %}y-(-1)=-\frac{1}{-1}(x-1){% endkatex %}  
+{% katex %}y=x-2{% endkatex %}  
+例题2：求函数{% katex %}y=2e^x{% endkatex %}在{% katex %}x=0{% endkatex %}处的切线方程和法线方程。   
+解：
+**如果题目只告诉了x，那这个x带入原方程求y**  
+{% katex %}y=2e^0=2{% endkatex %}
+{% katex %}f'(x)=2e^x{% endkatex %}
+当{% katex %}x=0{% endkatex %}时，{% katex %}f'(x_0)=2e^0=2{% endkatex %}
+切线方程{% katex %}y-2=2(x-0){% endkatex %}  
+{% katex %}y=2x+2{% endkatex %}  
+法线方程{% katex %}y-2=-\frac{1}{2}(x-0){% endkatex %}  
+{% katex %}y=-\frac{1}{2}x+2{% endkatex %}  
+例题3：若函数{% katex %}f(x)=1-x^3{% endkatex %}与函数{% katex %}g(x)=lnx{% endkatex %}在{% katex %}y=a{% endkatex %}处的切线互相垂直，则{% katex %}a=_ \frac{1}{3} _{% endkatex %}。  
+解：
+{% katex %}K_f \cdot K_g=-1{% endkatex %}  
+{% katex %}f'(a)=-3a^2{% endkatex %}  
+{% katex %}g'(a)=\frac{1}{a}{% endkatex %}  
+{% katex %}f'(a) \cdot g'(a)=-3a^2 \cdot \frac{1}{a}=-3a=-1{% endkatex %}  
+{% katex %}a=\frac{1}{3}{% endkatex %}
+
+---
+#### 函数的单调性
+|   导数    | 函数单调性 |
+|:-------:|:-----:|
+| f'(x)>0 | 单调增加  |
+| f'(x)<0 | 单调减少  |
+
+当{% katex %}f'(x)=0{% endkatex %}或{% katex %}f'(x){% endkatex %}不存在时，单调性？  
+当{% katex %}f'(x)=0{% endkatex %}时称为驻点，驻点两侧单调性可能相同也可能不同；  
+当{% katex %}f'(x){% endkatex %}不存在时，两侧单调性可能相同也可能不同。  
+<br />
+求函数单调区间的步骤：  
+(1). 求函数{% katex %}f(x){% endkatex %}的定义域，并得到间断点；  
+(2). 求导函数{% katex %}f'(x){% endkatex %}；    
+(3). 求驻点和不可导点，用驻点，不可导点，间断点把定义域分成若干区间；  
+(4). 列表讨论每个区间内{% katex %}f'(x){% endkatex %}的正负，写出单调区间；  
+例题1：求函数{% katex %}f(x)=x+\frac{1}{x}{% endkatex %}的单调区间。  
+解：
+函数的定义域为{% katex %}(-\infty,0)\cup (0,+\infty){% endkatex %}  
+间断点为{% katex %}x=0{% endkatex %}  
+{% katex %}f'(x)=1-\frac{1}{x^2}{% endkatex %}  
+{% katex %}f'(x)=0{% endkatex %}时，{% katex %}x=1{% endkatex %}或{% katex %}x=-1{% endkatex %}以及不可导点{% katex %}x=0{% endkatex %}    
+
+|       | (-∞,-1) | -1 | (-1,0) | 0 | (0,1) | 1 | (1,+∞) |
+|:-----:|:-------:|:--:|:------:|:-:|:-----:|:-:|:------:|
+| f'(x) |    +    | 0  |   -    | × |   -   | 0 |   +    |
+| f(x)  |   单增    |    |   单减   |   |  单减   |   |   单增   |
+由上表可知，单增{% katex %}(-\infty,-1){% endkatex %}和{% katex %}(1,+\infty){% endkatex %}；  
+单减{% katex %}(-1,0){% endkatex %}和{% katex %}(0,1){% endkatex %}； 
+<br />
+利用单调性证明不等式：  
+解题步骤：
+(1). 构造函数{% katex %}F(x)=左边-右边{% endkatex %}；  
+(2). 求导函数{% katex %}F'(x){% endkatex %}，并判断正负；  
+(3). 根据{% katex %}F'(x){% endkatex %}的正负判定{% katex %}F(x){% endkatex %}的单调性；  
+(4). 解出区间端点函数值（通常为0），根据单调性即得{% katex %}F(x)>0{% endkatex %}或{% katex %}F(x)<0{% endkatex %}；  
+例题2：证明{% katex %}x>0{% endkatex %}时，{% katex %}\ln (1+x)<x{% endkatex %}。  
+证明：构造函数{% katex %}F(x)=\ln (1+x)-x{% endkatex %}  
+{% katex %}F'(x)=\frac{1}{1+x}-1=\frac{1-(1+x)}{1+x}{% endkatex %}  
+当{% katex %}F'(x)>0{% endkatex %}时，{% katex %}F(x)<0{% endkatex %}  
+{% katex %}\therefore F(0)=0{% endkatex %}在{% katex %}[0,+\infty){% endkatex %}上单调减少。    
+{% katex %}F(x)>0{% endkatex %}时，{% katex %}F(x)<F(0)=\ln (1+0)-0=0{% endkatex %}  
+即{% katex %}\ln (1+x)-x<0{% endkatex %}
+即{% katex %}\ln (1+x)<x{% endkatex %}
+例题3：证明{% katex %}x>\sin x{% endkatex %}，{% katex %}x\in (0,\pi){% endkatex %}。  
+证明：构造函数{% katex %}F(x)=x-\sin x{% endkatex %}  
+{% katex %}F'(x)=1-\cos x{% endkatex %}  
+当{% katex %}x \in (0, \pi),F'(x)>0{% endkatex %}  
+{% katex %}\therefore F(x){% endkatex %}在{% katex %}[0,\pi){% endkatex %}上单调增加。  
+当{% katex %}x \in (0,\pi){% endkatex %}时，{% katex %}F(x)>F(0)=0-\sin 0=0{% endkatex %}  
+即{% katex %}x-\sin x>0{% endkatex %}  
+即{% katex %}x>\sin x{% endkatex %}  
+
+--- 
+#### 函数曲线的凹凸性
+![图像的凹凸性](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311091646637.png)
+
+连续曲线凹与凸的分界点称为曲线的拐点。  
+凸区间上斜率逐渐减少—>{% katex %}f(x)'{% endkatex %}单调减少—>{% katex %}f(x)''<0{% endkatex %}  
+凹区间上曲线的斜率逐渐增加—>{% katex %}f(x)'{% endkatex %}单调增加—>{% katex %}f(x)''>0{% endkatex %}  
+
+|               二阶导数                | 凹凸性 |
+|:---------------------------------:|:---:|
+| {% katex %}f''(x)>0{% endkatex %} |  凹  |
+| {% katex %}f''(x)<0{% endkatex %} |  凸  |
+
+不要和函数单调性搞混淆！！！  
+口诀：  
+一阶导，大增小减；  
+二阶导，大凹小凸；  
+
+求函数凹凸区间和拐点的步骤（对比单调区间四步骤）：  
+(1). 求函数{% katex %}f(x){% endkatex %}的定义域，并得到间断点；  
+(2). 求导函数{% katex %}f'(x){% endkatex %}；  
+(3). 求二阶导函数{% katex %}f''(x){% endkatex %}；  
+(4). 求{% katex %}f''(x)=0{% endkatex %}的点和{% katex %}f''(x){% endkatex %}不存在的点，用这个点把定义域分成若干区间；  
+(5). 列表讨论每个区间内{% katex %}f''(x){% endkatex %}的正负，写出凹凸区间；  
