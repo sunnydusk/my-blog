@@ -1278,3 +1278,167 @@ D.{% katex %}[1,e]{% endkatex %}
 (3). 求二阶导函数{% katex %}f''(x){% endkatex %}；  
 (4). 求{% katex %}f''(x)=0{% endkatex %}的点和{% katex %}f''(x){% endkatex %}不存在的点，用这个点把定义域分成若干区间；  
 (5). 列表讨论每个区间内{% katex %}f''(x){% endkatex %}的正负，写出凹凸区间；  
+注意：**拐点是曲线上的点，拐点两侧{% katex %}f(x)''{% endkatex %}必定异号**  
+
+例题1：求函数{% katex %}f(x)=x^4-2x^3+3{% endkatex %}的凹凸区间和拐点。  
+解：定义域为{% katex %}(-\infty,+\infty){% endkatex %}  
+{% katex %}f'(x)=4x^3-6x^2{% endkatex %}  
+{% katex %}f''(x)=12x^2-12x{% endkatex %}  
+{% katex %}f''(x)=0{% endkatex %}时，{% katex %}x=0{% endkatex %}或{% katex %}x=1{% endkatex %}  
+
+|        | (-∞,0) | 0 | (0,1) | 1 | (1,+∞) |
+|:------:|:------:|:-:|:-----:|:-:|:------:|
+| f'‘(x) |   +    | 0 |   -   | 0 |   +    |
+|   曲线   |   凹    |   |   凸   |   |   凹    |
+由上表可知，凹区间为{% katex %}(-\infty,0){% endkatex %}和{% katex %}(0,1){% endkatex %}；  
+凸区间为{% katex %}(0,1){% endkatex %}和{% katex %}(1,+\infty){% endkatex %}；  
+拐点：当{% katex %}x=0{% endkatex %}时，{% katex %}f(0)=3{% endkatex %}；  
+当{% katex %}x=1{% endkatex %}时，{% katex %}f(1)=2{% endkatex %}；
+拐点为：{% katex %}(0,3){% endkatex %}和{% katex %}(1,2){% endkatex %}。  
+例题2：求函数{% katex %}f(x)=\sqrt[3]{x}{% endkatex %}的凹凸区间和拐点。  
+解：定义域为{% katex %}[-\infty,+\infty){% endkatex %}  
+{% katex %}f'(x)=\frac{1}{3}x^{-\frac{2}{3} }{% endkatex %}  
+{% katex %}f''(x)=-\frac{2}{9}x^{-\frac{5}{3} }{% endkatex %}  
+{% katex %}f''(x)=0{% endkatex %}时，{% katex %}x=0{% endkatex %}  
+令{% katex %}f''(x)=0{% endkatex %}，无解；  
+{% katex %}f''(x)不存在的点为x=0{% endkatex %}  
+
+|        | (-∞,0) |  0  | (0,+∞) |
+|:------:|:------:|:---:|:------:|
+| f'‘(x) |   +    | 不存在 |   -    |
+|   曲线   |   凹    |     |   凸    |
+由上表可知，凹区间为{% katex %}(-\infty,0){% endkatex %}；  
+凸区间为{% katex %}(0,+\infty){% endkatex %}；  
+当{% katex %}x=0{% endkatex %}时，{% katex %}f(0)=0{% endkatex %}；  
+其拐点为{% katex %}(0,0){% endkatex %}。  
+
+例题3：函数{% katex %}f(x)=x^4{% endkatex %}上的拐点有（D）。   
+A、1个 B、2个 C、3个 D、0个   
+解：{% katex %}f'(x)=4x^3{% endkatex %}  
+{% katex %}f''(x)=12x^2{% endkatex %}  
+{% katex %}f''(x)=0{% endkatex %}时，{% katex %}x=0{% endkatex %}  
+
+|        | (-∞,0) |  0  | (0,+∞) |
+|:------:|:------:|:---:|:------:|
+| f'‘(x) |   +    | 不存在 |   +    |
+|   曲线   |   凹    |     |   凹    |
+由上表得：该函数无拐点。  
+
+例题4：函数{% katex %}f(x)=\frac{1}{x}{% endkatex %}的拐点有（D）。  
+A、1个 B、2个 C、3个 D、0个  
+解：{% katex %}f'(x)=-\frac{1}{x^2}{% endkatex %}  
+{% katex %}f''(x)=\frac{2}{x^3}{% endkatex %}  
+{% katex %}f''(x)=0{% endkatex %}时，不存在；  
+该函数无拐点。  
+注意：**拐点一定是{% katex %}f'(x)=0{% endkatex %}或者{% katex %}(x)''{% endkatex %}不存在的点，。但{% katex %}f(x)''{% endkatex %}不存在的点不一定是拐点**  
+
+---
+#### 函数的极值和最值问题
+一个区域内，**最值**只有`1个`，**极值**可以有`多个`；  
+极值是*局部区域内的最值*；  
+极值*不可在端点处取得*，只能在*区域内部*取得。  
+1. 极值定理  
+   (1). 必要条件定理  
+若函数{% katex %}f(x){% endkatex %}在点{% katex %}x_0{% endkatex %}处取得极值且在此处可导，则{% katex %}f'(x_0)=0{% endkatex %}(**极值+可导—>驻点**)。  
+   (2). 第一充分条件定理  
+设函数{% katex %}f(x){% endkatex %}在点{% katex %}x_0{% endkatex %}处连续且在{% katex %}x_0{% endkatex %}的邻域内可导，  
+若{% katex %}x_0{% endkatex %}左侧{% katex %}f'(x)>0{% endkatex %}，右侧{% katex %}f'(x)<0{% endkatex %}，则函数{% katex %}f(x){% endkatex %}在{% katex %}x_0{% endkatex %}处取得极大值(**左增右减—>极大值**)；  
+若{% katex %}x_0{% endkatex %}左侧{% katex %}f'(x)<0{% endkatex %}，右侧{% katex %}f'(x)>0{% endkatex %}，则函数{% katex %}f(x){% endkatex %}在{% katex %}x_0{% endkatex %}处取得极小值(**左减右增—>极小值**)；  
+若{% katex %}x_0{% endkatex %}左右两侧{% katex %}f'(x){% endkatex %}同号，则函数{% katex %}f(x){% endkatex %}在{% katex %}x_0{% endkatex %}处无极值(**左增右增/左减右减—>无极值**)。  
+   (3). 第二充分条件定理  
+设函数{% katex %}f(x){% endkatex %}在点{% katex %}x_0{% endkatex %}处{% katex %}f'(x_0)=0,f''(x_0)\ne 0{% endkatex %}，  
+若{% katex %}f''(x_0)<0{% endkatex %}，则函数{% katex %}f(x){% endkatex %}在{% katex %}x_0{% endkatex %}处取得极大值(**驻点+凸—>极大值**)；  
+若{% katex %}f''(x_0)>0{% endkatex %}，则函数{% katex %}f(x){% endkatex %}在{% katex %}x_0{% endkatex %}处取得极小值(**驻点+凹—>极小值**)；  
+**因为极值也可能在不可导点处取得，所以只能正推不能反推，即不是充要条件。**  
+求函数极值的步骤：  
+   (1). 求函数{% katex %}f(x){% endkatex %}的定义域；  
+   (2). 求一阶导{% katex %}f'(x){% endkatex %};  
+   (3). 求{% katex %}f'(x)=0{% endkatex %}的点和{% katex %}f'(x){% endkatex %}不存在的点；  
+   (4). 判断是否是极值，以及是极大值还是极小值：
+a. {% katex %}f'(x){% endkatex %}不存在的点只能使用第一充分条件定理判断(列表看{% katex %}f'(x){% endkatex %}正负)；  
+b. {% katex %}f'(x)=0{% endkatex %}的点可以使用第一或第二充分条件定理判断(带入{% katex %}f''(x){% endkatex %}看正负)；  
+例题1： 求函数{% katex %}f(x)=2x^3-6x^2-18x-7{% endkatex %}的极值。  
+解：定义域为{% katex %}(-\infty,+\infty){% endkatex %}  
+{% katex %}f'(x)=6x^2-12x-18{% endkatex %}  
+令{% katex %}f'(x)=0{% endkatex %}，得{% katex %}x_1=-1,x_2=3{% endkatex %}  
+使用第二充分条件  
+{% katex %}f''(x)=12x-12{% endkatex %}  
+当{% katex %}x=-1{% endkatex %}时，{% katex %}f''(-1)=-24<0{% endkatex %}，故{% katex %}x=-1{% endkatex %}为极大值点；  
+极大值为{% katex %}f(-1)=2 \cdot (-1)^3-6 \cdot (-1)^2-18 \cdot(-1) -7=3{% endkatex %}   
+当{% katex %}x=3{% endkatex %}时，{% katex %}f''(x)24>0{% endkatex %}，故{% katex %}x=3{% endkatex %}为极小值点；
+极小值为{% katex %}f(3)=2 \cdot 3^3-6 \cdot 3^2-18 \cdot 3-7=54-54-54-7=-61{% endkatex %}  
+例题2：求函数{% katex %}f(x)=x-\frac{3}{2}x^{\frac{2}{3} }+\frac{1}{2}{% endkatex %}  
+解：定义域为{% katex %}(-\infty,+\infty){% endkatex %}  
+{% katex %}f'(x)=1-x^{-\frac{1}{3} }{% endkatex %}  
+令{% katex %}f'(x)=0{% endkatex %}，得{% katex %}x=1{% endkatex %}且得到不可导点{% katex %}x=0{% endkatex %}  
+解{% katex %}1-\frac{1}{\sqrt[3]{x} }{% endkatex %}  
+
+|       |               (-∞,0)               | 0  |               (0,1)                | 1  |               (1,+∞)               |
+|:-----:|:----------------------------------:|:--:|:----------------------------------:|:--:|:----------------------------------:|
+| f'(x) |                 +                  | ×  |                 -                  | 0  |                 +                  |
+| f(x)  | {% katex %}\nearrow {% endkatex %} | 极大 | {% katex %}\searrow {% endkatex %} | 极小 | {% katex %}\nearrow {% endkatex %} |
+由上表可知，当{% katex %}x=0 {% endkatex %}时取得极大值，即{% katex %}f(0)=\frac{1}{2} {% endkatex %}；  
+当{% katex %}x=1 {% endkatex %}时取得极小值，即{% katex %}f(1)=0 {% endkatex %}；
+<br />
+1. 最值
+求闭区间内函数的最值：  
+   (1). 求一阶导{% katex %}f'(x){% endkatex %}；  
+   (2). 求所有{% katex %}f'(x)=0{% endkatex %}的点和{% katex %}f'(x){% endkatex %}不存在的点以及端点的函数值；  
+   (3). 比较这些函数值的大小，最大的就是最大值，反之。  
+例题1：求函数{% katex %}f(x)=x-\frac{3}{2}x^{\frac{2}{3} }+\frac{1}{2}{% endkatex %}在[-1,8]上的最值。  
+解：{% katex %}f'(x)=1-x^{-\frac{1}{3} }{% endkatex %}  
+令{% katex %}f'(x)=0{% endkatex %}，得{% katex %}x=1{% endkatex %}且得到不可导点{% katex %}x=0{% endkatex %}  
+{% katex %}f(1)=0,f(0)=\frac{1}{2},f(-1)=-2,f(8)=\frac{5}{2} {% endkatex %}  
+比较得：最大值为{% katex %}f(8)=\frac{5}{2} {% endkatex %}，最小值为{% katex %}f(-1)=-2 {% endkatex %}  
+<br />
+求实际问题的最值：
+   (1). 要谁最大(小)为{% katex %}y{% endkatex %}，要调整的为{% katex %}x{% endkatex %}，建立目标函数，确定自变量取值范围；  
+   (2). 求目标函数驻点，若驻点唯一，则根据实际问题最值一定存在确定此驻点即为极值点。   
+
+例题1：如图：在半径为{% katex %}r{% endkatex %}的半圆内做一个内接矩形，矩形的长和宽为多少时能使矩形面积最大？
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311101646682.png)
+解：设面积为{% katex %}y{% endkatex %}，长为{% katex %}x{% endkatex %}，则宽为{% katex %}\sqrt{r^2-(\frac{x}{2})^2 }{% endkatex %}  
+建立目标函数{% katex %}y=x \cdot \sqrt{r^2-(\frac{x}{2})^2 }{% endkatex %}  
+{% katex %}y=\sqrt{r^2\cdot x^2-\frac{1}{4}x^4 }{% endkatex %}  
+{% katex %}y'=\frac{1}{4}\cdot \frac{zr^2x-x^3}{\sqrt{r^2x^2-\frac{1}{4}x^4 } }{% endkatex %}时，{% katex %}x=\frac{2}{\sqrt{3} }r{% endkatex %}  
+令{% katex %}y'=0{% endkatex %}，故{% katex %}x=\sqrt{2}r{% endkatex %}  
+{% katex %} \therefore {% endkatex %}当矩形长为{% katex %}x=\sqrt{2}r{% endkatex %}，宽为{% katex %}\frac{\sqrt{2} }{2}r{% endkatex %}时，矩形面积最大。  
+
+例题2：如图，需要造圆柱形油罐，体积为{% katex %}V{% endkatex %}，问底半径{% katex %}r{% endkatex %}和高{% katex %}h{% endkatex %}各为多少时，才能使表面积 最小？这时底直径与高之比是多少？
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311101704201.png)
+解：设表面积为{% katex %}y{% endkatex %}，底半径为{% katex %}r{% endkatex %}，则高为{% katex %}\frac{V}{\pi r^2}{% endkatex %}  
+建立目标函数{% katex %}y=2\pi r^2+\frac{2V}{r}{% endkatex %}  
+{% katex %}y'=4\pi r-\frac{2V}{r^2}{% endkatex %}
+令{% katex %}y'=0{% endkatex %}，故{% katex %}r=\sqrt[3]{\frac{V}{2\pi } }{% endkatex %}  
+{% katex %}r^3=\frac{V}{2 \pi} = V=r^3 \cdot 2\pi{% endkatex %}  
+{% katex %}h=\frac{V}{\pi r^2}=\frac{r^3 \cdot 2\pi}{\pi r^2}=2r=2\sqrt[3]{\frac{V}{2\pi}}{% endkatex %}  
+{% katex %}\because {% endkatex %}驻点唯一，且为实际应用题  
+{% katex %}\therefore {% endkatex %}当{% katex %}r=\sqrt[3]{\frac{V}{2\pi} },h=2\sqrt[3]{\frac{V}{2\pi}} {% endkatex %}时表面积为最小值。  
+直径与高的比是{% katex %}\frac{2r}{h}=\frac{1}{1}{% endkatex %}  
+答：……  
+
+---
+#### 函数曲线的渐近线
+曲线上的一动点，沿着曲线**趋近于无穷远**时，该点与某直线的**距离趋近于零**，则称此直线为曲线的渐近线。  
+水平渐近线：如果渐近线是水平的，称为水平渐近线。  
+垂直渐近线(铅锤渐近线)：如果渐近线是垂直的，称为垂直渐近线。  
+*斜渐近线：如果渐近线是斜的，称为斜渐近线。*   
+<br />
+渐近线的求法：  
+1. 水平渐近线  
+实质=求趋于无穷时的极限；
+方法：求{% katex %}x \to \infty{% endkatex %}或{% katex %}x \to +\infty{% endkatex %}或{% katex %}x \to -\infty{% endkatex %}时函数的极限，若极限存在（假设等于A），则直线{% katex %}"y=A"{% endkatex %}即为水平渐近线；  
+2. 垂直渐近线  
+实质=找到无穷间断点；  
+方法：找出不满足定义域的点{% katex %}x_0{% endkatex %}，求{% katex %}x \to x_0{% endkatex %}或{% katex %}x \to x_0^+{% endkatex %}或{% katex %}x \to x_0^-{% endkatex %}时函数的极限，若极限为{% katex %}\infty{% endkatex %，则直线{% katex %}"x=x_0"{% endkatex %}即为垂直渐近线；  
+3. 斜渐近线
+实质=；
+注意：**曲线的渐近线可能有多条，也可能不存在**。  
+例题1：求曲线{% katex %}y=\frac{3x^2+1}{x^2+2x-3}{% endkatex %}的水平渐近线和垂直渐近线。  
+解：{% katex %}\lim_{x \to \infty} \frac{3x^2+1}{x^2+2x-3} =3{% endkatex %}
+即函数的水平渐近线为{% katex %}y=3{% endkatex %}  
+{% katex %}\because x^2+2x-3 \ne 0{% endkatex %}  
+{% katex %}\therefore {% endkatex %}函数间断点{% katex %}x=-3,x=1{% endkatex %}  
+{% katex %}\because \lim_{x \to -3} \frac{3x^2+1}{x^2+2x-3}=\infty {% endkatex %}  
+{% katex %}\because \lim_{x \to 1} \frac{3x^2+1}{x^2+2x-3}=\infty {% endkatex %}  
+   {% katex %}\therefore {% endkatex %}函数的垂直渐近线为{% katex %}x=-3,x=1{% endkatex %}  
