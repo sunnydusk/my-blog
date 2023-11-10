@@ -1430,7 +1430,7 @@ b. {% katex %}f'(x)=0{% endkatex %}的点可以使用第一或第二充分条件
 方法：求{% katex %}x \to \infty{% endkatex %}或{% katex %}x \to +\infty{% endkatex %}或{% katex %}x \to -\infty{% endkatex %}时函数的极限，若极限存在（假设等于A），则直线{% katex %}"y=A"{% endkatex %}即为水平渐近线；  
 2. 垂直渐近线  
 实质=找到无穷间断点；  
-方法：找出不满足定义域的点{% katex %}x_0{% endkatex %}，求{% katex %}x \to x_0{% endkatex %}或{% katex %}x \to x_0^+{% endkatex %}或{% katex %}x \to x_0^-{% endkatex %}时函数的极限，若极限为{% katex %}\infty{% endkatex %，则直线{% katex %}"x=x_0"{% endkatex %}即为垂直渐近线；  
+方法：找出不满足定义域的点{% katex %}x_0{% endkatex %}，求{% katex %}x \to x_0{% endkatex %}或{% katex %}x \to x_0^+{% endkatex %}或{% katex %}x \to x_0^-{% endkatex %}时函数的极限，若极限为{% katex %}\infty{% endkatex %}，则直线{% katex %}"x=x_0"{% endkatex %}即为垂直渐近线；  
 3. 斜渐近线
 实质=；
 注意：**曲线的渐近线可能有多条，也可能不存在**。  
