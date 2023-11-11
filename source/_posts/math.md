@@ -1089,6 +1089,7 @@ D.{% katex %}[1,e]{% endkatex %}
     {% katex %}f'(\xi)=\frac{1}{\cos ^2\xi}，\tan x-\tan 0=x \cdot \frac{1}{\cos ^2\xi}=\frac{x}{\cos ^2\xi}{% endkatex %}
     因为{% katex %}0<\xi<x{% endkatex %}，所以{% katex %}x<\frac{x}{\cos ^2\xi}<\frac{x}{\cos ^2x}{% endkatex %}
     所以{% katex %}x<\tan x<\frac{x}{\cos ^2x}{% endkatex %}
+
 例题3总结：
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051707546.png)  
 
@@ -1545,7 +1546,82 @@ D. {% katex %}(-\infty,-1)，(1,+\infty){% endkatex %}
    (3). 求{% katex %}\int \frac{1}{1+x^2}dx{% endkatex %}  
 解：{% katex %}\arctan x +C{% endkatex %}  
    (4). 求{% katex %}\int \frac{1}{x}dx{% endkatex %}  
-解：{% katex %}\ln|x|+C{% endkatex %}  
+解：{% katex %}\ln|x|+C{\color{Orange} } {% endkatex %}  
+3. **基本积分公式**：  
+   (1). {% katex %}\int kdx=kx+C{% endkatex %}  
+   (2). {% katex %}\int x^\mu dx=\frac{x^{\mu +1} }{\mu +1} +C{% endkatex %}  
+   (3). {% katex %}\int \frac{1}{x} dx=\ln |x|+C{% endkatex %}  
+   (4). {% katex %}\int e^x dx=e^x+C{% endkatex %}  
+   (5). {% katex %}\int \frac{1}{1+x^2} dx=\arctan x+C{% endkatex %}  
+   (6). {% katex %}\int \frac{1}{\sqrt{1-x^2} } dx=\arcsin x+C{% endkatex %}  
+   (7). {% katex %}\int \cos x dx=\sin x+C{% endkatex %}  
+   (8). {% katex %}\int \sin x dx=-\cos x+C{% endkatex %}  
+   (9). {% katex %}\int \frac{1}{\cos^2x} dx=\int \sec^2 xdx=\tan x+C{% endkatex %}  
+   (10). {% katex %}\int \frac{1}{\sin^2x} dx=\int \csc^2 xdx=-\cot x+C{% endkatex %}  
+   (11). {% katex %}\int \sec x \tan x dx=\sec x+C{% endkatex %}  
+   (12). {% katex %}\int \csc x \cot x dx=-\cot x+C{% endkatex %}
+4. 不定积分的性质  
+   (1). 设函数{% katex %}f(x){% endkatex %}及{% katex %}g(x){% endkatex %}的原函数存在，则{% katex %}\int [f(x) \pm g(x)]dx=\int f(x)dx \pm \int g(x)dx{% endkatex %}。  
+   (2). 设函数{% katex %}f(x){% endkatex %}的原函数存在，{% katex %}k{% endkatex %}为非零常数，则{% katex %}\int kf(x)dx=k \int f(x)dx{% endkatex %}。  
+   (3). 设函数{% katex %}f(x){% endkatex %}的原函数存在，则{% katex %}[\int f(x)dx]'=f(x);d[\int f(x)dx]=f(x)dx{% endkatex %}。  
+   (4). 设函数{% katex %}f(x){% endkatex %}可导，则{% katex %}\int f'(x)dx=f(x)+C;\int df(x)=f(x)+C{% endkatex %}。  
+**规律1**：先积后导=本身；先积后微=本身{% katex %}dx{% endkatex %}；先导/微后积=本身+{% katex %}C{% endkatex %}。  
+**规律2**：最外层是{% katex %}d{% endkatex %}则有{% katex %}dx{% endkatex %}，最外层是{% katex %}\int {% endkatex %}则有{% katex %}C{% endkatex %}，最外层是{% katex %}'{% endkatex %}则没{% katex %}dx{% endkatex %}也没{% katex %}C{% endkatex %}。  
+<br />
+例题1：设{% katex %}f(x){% endkatex %}可导，则下列等式正确的是（ D ）；
+A. {% katex %}\int f'(x)dx=f(x){% endkatex %}  
+B. {% katex %}d[\int f(x) dx]=f(x){% endkatex %}  
+C. {% katex %}[\int f(x) dx]'=f(x)+C{% endkatex %}  
+D. {% katex %}\frac{d}{dx} [\int f(x) dx]=f(x){% endkatex %}  
+解析：有两个规律，A最外层为{% katex %}\int {% endkatex %}最后没有{% katex %}C{% endkatex %}，错误；   
+B最外层为d，最后没有{% katex %}dx{% endkatex %}，错误；
+C最外层导数，最后没有有{% katex %}dx{% endkatex %}，正确；
+例题2：设{% katex %}e^{-x}{% endkatex %}是函数{% katex %}f(x){% endkatex %}的一个原函数，则下列等式正确的是（ D ）；  
+A. {% katex %}\int f'(x)dx=e^{-x}{% endkatex %}  
+B. {% katex %}\int f(x)dx=e^{-x}{% endkatex %}  
+C. {% katex %}d[\int f'(x) dx]'=e^{-x}dx{% endkatex %}  
+D. {% katex %}d [\int f(x) dx]=-e^{-x}dx{% endkatex %}  
+解析：A、B最外层为{% katex %}\int {% endkatex %}，最后没有{% katex %}C{% endkatex %}，错误；  
+例题3：若{% katex %}f(x){% endkatex %}的一个原函数是{% katex %}\cos x{% endkatex %}，则{% katex %}f'(x)={% endkatex %}();  
+A. {% katex %}\sin x{% endkatex %}  
+B. {% katex %}-\sin x{% endkatex %}  
+C. {% katex %}-\cos x{% endkatex %}  
+D.  {% katex %}\cos x{% endkatex %}  
+解析：{% katex %}\cos x \to -\sin x \to -\cos x{% endkatex %}  
+例题4：设{% katex %}F(x){% endkatex %}为{% katex %}\ln \cos x{% endkatex %}的一个原函数，则{% katex %}dF(x)={% endkatex %}({% katex %}\ln \cos x dx{\color{Red} } {% endkatex %});
+例题5：设{% katex %}f(x){% endkatex %}可导，则{% katex %}d[\int f(2x)dx]={% endkatex %}(C);  
+A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {% katex %}f(2x)dx{% endkatex %}    D. {% katex %}f'(2x)dx{% endkatex %}
+解析：A,B最外层为{% katex %}d{% endkatex %}，最后没有{% katex %}dx{% endkatex %}，错误；  
+
+---
+#### 直接积分法  
+根据基本积分公式以及第一第二基本性质；  
+例题1：求{% katex %}\int (e^x-3\cos x)dx{% endkatex %}  
+解：原式{% katex %}=\int e^xdx-3\int \cos x dx{% endkatex %}  
+{% katex %}=e^x-3\sin x+C{% endkatex %}  
+例题2：求{% katex %}\int \sqrt{x}(x^2-5)dx{% endkatex %}  
+解：原式{% katex %}=\int (x^{\frac{5}{2}}-5x^{\frac{1}{2} })dx{% endkatex %}  
+{% katex %}\int x^{\frac{5}{2} }dx-5\int x^{\frac{1}{2} }{% endkatex %}
+{% katex %}=\frac{2}{7}x^{\frac{7}{2} }-\frac{10}{3}x^{\frac{3}{2} }+C{% endkatex %}  
+{% katex %}=\frac{2}{7}x^{\frac{7}{2} }-\frac{10}{3}\sqrt{x}+C{% endkatex %}  
+例题3：求{% katex %}\int \frac{dx}{x^3}{% endkatex %}  
+解：原式{% katex %}=\int \frac{1}{x^{3} }dx{% endkatex %}  
+{% katex %}=-\frac{x-2}{2}+C{% endkatex %}  
+{% katex %}=-\frac{1}{2x^2}+C{% endkatex %}  
+例题4：求{% katex %}\int \frac{dx}{x^3\sqrt[3]{x} }dx{% endkatex %}  
+解：原式{% katex %}=\int x^{-\frac{4}{3} } }dx{% endkatex %}  
+{% katex %}=\frac{x^{-\frac{1}{3} } }{-\frac{1}{3} }+C{% endkatex %}  
+{% katex %}=-\frac{3}{\sqrt[3]{x} }+C{% endkatex %}  
+例题5：求{% katex %}\int (\frac{2}{1+x^2}-\frac{1}{2\sqrt{1-x^2} }+\frac{3}{x} )dx{% endkatex %}  
+解：原式{% katex %}=2\int \frac{1}{1+x^2}dx-\frac{1}{2}\int \frac{1}{\sqrt{1-x^2} }dx+3\int \frac{1}{x}dx{% endkatex %}   
+{% katex %}=2\arctan x-\frac{1}{2}\arcsin x+3\ln |x|+C{% endkatex %}  
+<br />
+利用平方差、立方差、完全平方、三角恒等式、二倍角公式等对被积函数进行恒等变形，拆分成可以直接积分的和或差的形式。  
+例题6：求{% katex %}\int (\sqrt{x}-\sqrt[3]{x} )^2dx{% endkatex %}  
+解：原式{% katex %}=\int ((\sqrt{x} )^2+(\sqrt[3]{x})^2-2\sqrt{x}\codt \sqrt[3]{x}  )dx{% endkatex %}  
+{% katex %}=\int (x +x^{\frac{2}{3} } -2x^{\frac{5}{6} }dx{% endkatex %}  
+{% katex %}=\frac{1}{2}x^2+\frac{x^{\frac{5}{3} } }{\frac{5}{3} }-2\frac{x^{\frac{11}{6} } }{\frac{11}{6} }+C{% endkatex %}  
+{% katex %}=\frac{1}{2}x^2+\frac{3}{5}x^{\frac{5}{3} }-\frac{12}{11}x^{\frac{11}{6} }+C{% endkatex %}
 
 ---
 ### 定积分
