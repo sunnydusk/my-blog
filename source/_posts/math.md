@@ -582,7 +582,8 @@ a=0\Rightarrow 0
  解：判断{% katex %}f(x){% endkatex %}在点{% katex %}x_0{% endkatex %}处连续的充分必要条件为{% katex %}f(x_0^-)=f(x_0^+)=f(x_0){% endkatex %} 	{% katex %}f(0^-)=\lim_{x \to 0^-}x+\frac{1}{2}=\frac{1}{2}{% endkatex %}
     {% katex %}f(0^+)=\lim_{x \to 0^+}\frac{ln(1+x)}{2x}=\lim_{x \to 0^+}\frac{x}{2x}=\frac{1}{2}{% endkatex %}
     {% katex %}\therefore f(0^-)=f(0^+)=f(0)=\frac{1}{2}{% endkatex %}.
-    {% katex %}\therefore{% endkatex %}函数是连续的
+    {% katex %}\therefore{% endkatex %}函数是连续的  
+
 ###### 已知函数在某点连续求系数
 例题：设函数{% katex %}f(x)=\left\{\begin{matrix}x \sin \frac{1}{x},x<0 \\a+xx^2,x\ge 0\end{matrix}\right.{% endkatex %}在点{% katex %}x=0{% endkatex %}处连续，则{% katex %}a={% endkatex %}____0___.
  解：由{% katex %}f(x_0^-)=f(x_0^+)=f(x_0){% endkatex %}
@@ -804,7 +805,7 @@ y=e^{2t}+1
 x=t-\frac{1}{t} 
  \\
 y=\frac{1}{2}t^2+lnt
-\end{matrix}\right.{% endkatex %},求\frac{dy}{dx}|_{t=1}。
+\end{matrix}\right.{% endkatex %},求{% katex %}\frac{dy}{dx}|_{t=1}{% endkatex %}。
    解：原式={% katex %}\frac{dy}{dt}=t+\frac{1}{t}{% endkatex %}  
          ={% katex %}\frac{dx}{dt}=1+\frac{1}{t^2}{% endkatex %} 
          ={% katex %}\frac{dy}{dx}=\frac{t+\frac{1}{t} }{1+\frac{1}{t^2} }{% endkatex %} 
@@ -1013,7 +1014,7 @@ A、B、D不满足条件3，C满足条件1、2、3，故选C。
 例题3总结
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051543530.png)
 例题4-1：已知函数{% katex %}f(x){% endkatex %}在{% katex %}x \in R{% endkatex %}范围内连续且可导，{% katex %}f(a)=f(b)=0{% endkatex %}，证明至少存在一点{% katex %}\xi \in (a,b){% endkatex %}，使得{% katex %}f'(\xi)-f(\xi)=0{% endkatex %}。    
-解析：{% katex %}f'(x) \Box -f(x)\Box =0{% endkatex %},{% katex %}使用(、frac{u}{v})'=\frac{u'v-uv'}{v^2} {% endkatex %}  
+解析：{% katex %}f'(x) \Box -f(x)\Box =0{% endkatex %},{% katex %}使用(\frac{u}{v})'=\frac{u'v-uv'}{v^2} {% endkatex %}  
 {% katex %}\therefore \Box =e^x {% endkatex %}
     证明：构造函数{% katex %}F(x)=\frac{f(x)}{e^x} {% endkatex %}    
     显然{% katex %}F(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上连续，在{% katex %}(a,b){% endkatex %}上可导  
@@ -1023,6 +1024,20 @@ A、B、D不满足条件3，C满足条件1、2、3，故选C。
     即{% katex %}\frac{f'(\xi)\cdot e^\xi-f(\xi) \cdot e^\xi}{(e^\xi)^2}=0{% endkatex %}，化简得{% katex %}f'(\xi)-f(\xi)=0{% endkatex %}。  
 例题4总结
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051555408.png)
+
+例题：若{% katex %}f(x){% endkatex %}在{% katex %}[1,e]{% endkatex %}连续，{% katex %}(1,e){% endkatex %}可导，且{% katex %}f(1)=0，f(e)=1{% endkatex %}，证明：存在一点{% katex %}\xi \in (1,e){% endkatex %}，使{% katex %}\xi \cdot f'(\xi )=1{% endkatex %}
+证明：构造函数{% katex %}F(x)=f(x) \cdot \ln x{% endkatex %}  
+{% katex %}F'(x)=f'(x)-\frac{1}{2}{% endkatex %}  
+{% katex %}F(1)=0,F(e)=1{% endkatex %}  
+{% katex %}F'(1)=f'(1)-\ln 1=0{% endkatex %}  
+{% katex %}F'(e)=f(e)-\ln e=0{% endkatex %}  
+{% katex %}f'(1)=f'(e)=0{% endkatex %}  
+有罗尔中值定理，存在一点{% katex %}\xi \in (1,e){% endkatex %}  
+{% katex %}F'(\xi)=0{% endkatex %}  
+即{% katex %}f'(\xi)-\frac{1}{\xi}=0{% endkatex %}  
+即{% katex %}f'(\xi)=\frac{1}{\xi}{% endkatex %}  
+即{% katex %}\xi f'(\xi)=1{% endkatex %}  
+
 
 ---
 #### 拉格朗日中值定理
@@ -1075,8 +1090,7 @@ D.{% katex %}[1,e]{% endkatex %}
     因为{% katex %}0<\xi<x{% endkatex %}，所以{% katex %}x<\frac{x}{\cos ^2\xi}<\frac{x}{\cos ^2x}{% endkatex %}
     所以{% katex %}x<\tan x<\frac{x}{\cos ^2x}{% endkatex %}
 例题3总结：
-
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051707546.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051707546.png)  
 
 ---
 #### 柯西中值定理
@@ -1193,7 +1207,7 @@ D.{% katex %}[1,e]{% endkatex %}
 {% katex %}y=2x+2{% endkatex %}  
 法线方程{% katex %}y-2=-\frac{1}{2}(x-0){% endkatex %}  
 {% katex %}y=-\frac{1}{2}x+2{% endkatex %}  
-例题3：若函数{% katex %}f(x)=1-x^3{% endkatex %}与函数{% katex %}g(x)=lnx{% endkatex %}在{% katex %}y=a{% endkatex %}处的切线互相垂直，则{% katex %}a=_ \frac{1}{3} _{% endkatex %}。  
+例题3：若函数{% katex %}f(x)=1-x^3{% endkatex %}与函数{% katex %}g(x)=lnx{% endkatex %}在{% katex %}y=a{% endkatex %}处的切线互相垂直，则({% katex %}a=\frac{1}{3}{% endkatex %})。  
 解：
 {% katex %}K_f \cdot K_g=-1{% endkatex %}  
 {% katex %}f'(a)=-3a^2{% endkatex %}  
@@ -1441,4 +1455,97 @@ b. {% katex %}f'(x)=0{% endkatex %}的点可以使用第一或第二充分条件
 {% katex %}\therefore {% endkatex %}函数间断点{% katex %}x=-3,x=1{% endkatex %}  
 {% katex %}\because \lim_{x \to -3} \frac{3x^2+1}{x^2+2x-3}=\infty {% endkatex %}  
 {% katex %}\because \lim_{x \to 1} \frac{3x^2+1}{x^2+2x-3}=\infty {% endkatex %}  
-   {% katex %}\therefore {% endkatex %}函数的垂直渐近线为{% katex %}x=-3,x=1{% endkatex %}  
+{% katex %}\therefore {% endkatex %}函数的垂直渐近线为{% katex %}x=-3,x=1{% endkatex %}  
+例题2：曲线{% katex %}y=\frac{e^x-1}{x}{% endkatex %}（A ）。  
+A. 仅有水平渐近线  
+B. 仅有垂直渐近线  
+C. 既有水平渐近线又有垂直渐近线  
+D. 既无水平渐近线也无垂直渐近线  
+解：水平渐近线：{% katex %}\lim_{x \to -\infty} \frac{e^x-1}{x}=\frac{-1}{-\infty}=0{% endkatex %}，即水平渐近线为{% katex %}y=0{% endkatex %}  
+水平渐近线：{% katex %}\lim_{x \to +\infty} \frac{e^x-1}{x}=+\infty{% endkatex %}，无极限。    
+垂直渐近线：{% katex %}\frac{e^x-1}{x}{% endkatex %}，有{% katex %}x \ne 0{% endkatex %}；  
+{% katex %}\lim_{x \to 0} \frac{e^x-1}{x}=1{% endkatex %}，即无垂直渐近线。  
+
+---
+#### 导数习题
+例题1. 曲线{% katex %}xy+e^{y^2}-x=0{% endkatex %}在点{% katex %}(1,0){% endkatex %}处的切线方程为（{% katex %}y=x-1{% endkatex %}）。  
+解：{% katex %}y+xy'+e^{y^2} \cdot 2y \cdot y'-1=0{% endkatex %}  
+{% katex %}y'=-\frac{1-y}{x+e^{y^2}\cdot 2y}{% endkatex %}  
+{% katex %}y'|(1,0)=\frac{1-0}{1+0}=1{% endkatex %}  
+切线方程为{% katex %}y-0=1(x-1){% endkatex %}，即{% katex %}y=x-1{% endkatex %}  
+例题2. 函数{% katex %}f(x)=e^{x^2}{% endkatex %}的单调区间和极值。 
+解：函数的定义域为{% katex %}(-\infty,+\infty){% endkatex %}  
+{% katex %}f'(x)=2xe^{x^2}{% endkatex %}
+令{% katex %}f'(x)=0{% endkatex %}得{% katex %}x=0{% endkatex %}  
+{% katex %}f''(x)=2e^{x^2}+4x^2e^{x^2}{% endkatex %}  
+
+|       |               (-∞,0)                | 0  |               (0,+∞)               |
+|:-----:|:-----------------------------------:|:--:|:----------------------------------:|
+| f'(x) |                  -                  | 0  |                 +                  |
+| f(x)  | {% katex %}\searrow  {% endkatex %} | 极小 | {% katex %}\nearrow {% endkatex %} |
+由上表可知，函数在{% katex %}(-\infty,0){% endkatex %}上单调增加，在{% katex %}(0,+\infty){% endkatex %}上单调减少；  
+极值为{% katex %}x=0{% endkatex %}，即{% katex %}f(x)=e^0=1{% endkatex %}  
+
+例题3. 证明{% katex %}x>0{% endkatex %}时，{% katex %}1+\frac{1}{2}x>\sqrt{1+x}{% endkatex %}。  
+证明：构造函数{% katex %}F(x)=1+\frac{1}{2}x-\sqrt{1+x}{% endkatex %}  
+{% katex %}F'(x)=\frac{1}{2}-\frac{1}{2\sqrt{1+x} }=\frac{\sqrt{1+x}-1 }{2\sqrt{1+x} }{% endkatex %}   
+当{% katex %}x>0{% endkatex %}时，{% katex %}F'(x)>0{% endkatex %}  
+{% katex %}\because F(x){% endkatex %}在{% katex %}[0,+\infty){% endkatex %}上单调增加。  
+{% katex %}\therefore {% endkatex %}当{% katex %}x>0{% endkatex %}时，{% katex %}F(x)>F(0)=0{% endkatex %}  
+{% katex %}1+\frac{1}{2}x-\sqrt{1+x}>0{% endkatex %}，即{% katex %}1+\frac{1}{2}x>\sqrt{1+x}{% endkatex %}  
+例题4. 函数{% katex %}f(x)=ln1+x^2{% endkatex %}的凹区间为（A ）。  
+A. {% katex %}(-\infty,-1){% endkatex %}  
+B. {% katex %}(-1,1){% endkatex %}  
+C. {% katex %}(1,+\infty){% endkatex %}  
+D. {% katex %}(-\infty,-1)，(1,+\infty){% endkatex %}  
+解：定义域为{% katex %}(-\infty,+\infty){% endkatex %}，  
+{% katex %}f'(x)=\frac{2x}{1+x^2}{% endkatex %}，  
+{% katex %}f''(x)=\frac{2\cdot (1+x^2)-2x\cdot 2x}{(1+x^2)^2}=\frac{2-2x^2}{(1+x^2)^2}{% endkatex %}  
+令{% katex %}f''(x)=0{% endkatex %}，得{% katex %}x=-1{% endkatex %}或{% katex %}x=1{% endkatex %}  
+
+|       | (-∞,-1) | -1 | (-1,1) | 1 | (1,+∞) |
+|:-----:|:-------:|:--:|:------:|:-:|:------:|
+| f'(x) |    -    | 0  |   +    | 0 |   -    |
+|  曲线   |    凸    |    |   凹    |   |   凸    |
+
+例题5. 某地区防空洞的截面拟建成矩形加半圆，截面的面积为{% katex %}5m^2{% endkatex %}，问底和宽{% katex %}x{% endkatex %}为多少时才能使截面的周长最小？从而使建造的材料最省。  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311111452726.png)  
+解：设截面周长为{% katex %}L{% endkatex %}，  
+则构造函数{% katex %}L=x+2y+\frac{\pi x}{2}{% endkatex %}  
+由题可知，界面面积{% katex %}5m^2{% endkatex %}，  
+所以{% katex %}5=xy+\frac{1}{8}\pi x^2{% endkatex %}  
+得{% katex %}y=\frac{5-\frac{1}{8}\pi x^2}{x}=\frac{5}{x}-\frac{\pi x}{8}{% endkatex %}  
+即{% katex %}L=x+2(\frac{5}{x}-\frac{\pi x}{8})+\frac{\pi x}{2}=x+\frac{\pi }{4}x+\frac{10}{x}{% endkatex %}    
+{% katex %}L'=1+\frac{\pi }{4}-\frac{10}{x^2}{% endkatex %}  
+令{% katex %}L'=0{% endkatex %}，得{% katex %}x=\sqrt{\frac{40}{4+\pi } }{% endkatex %}  
+{% katex %}\because {% endkatex %}驻点唯一，且为实际问题；  
+{% katex %}\therefore {% endkatex %}当{% katex %}x=\sqrt{\frac{40}{4+\pi } }{% endkatex %}时，{% katex %}L{% endkatex %}取得最小值。  
+{% katex %}\therefore {% endkatex %}当{% katex %}x=\sqrt{\frac{40}{4+\pi } }{% endkatex %}时，截面周长最小。  
+{% katex %}\therefore {% endkatex %}当{% katex %}x=\sqrt{\frac{40}{4+\pi } }{% endkatex %}时，建造的材料最省。  
+
+---
+## 三、一元函数积分学  
+### 不定积分
+#### 原函数与不定积分的概念及性质
+积分是求导的*逆运算*，不定积分的本质就是已知导数（微分）求原函数的过程。  
+1. 原函数  
+如果{% katex %}F'(x)=f(x){% endkatex %}或者{% katex %}dF(x)=f(x)dx{% endkatex %}，则称函数{% katex %}F(x){% endkatex %}为函数{% katex %}f(x){% endkatex %}的**一个原函数**。  
+**原函数存在定理**：如果函数在某区间内**连续**，则其在该区间内必有原函数；  
+**原函数性质**：如果函数{% katex %}f(x){% endkatex %}有一个原函数{% katex %}F(x){% endkatex %}，那么它一定有无数个原函数；  
+原函数之间相差一个常数；{% katex %}f(x){% endkatex %}的全体原函数可以表示为{% katex %}F(x)+C{\color{Red} } {% endkatex %}，其中{% katex %}C{% endkatex %}为任意常数。  
+2. 不定积分  
+函数{% katex %}f(x){% endkatex %}的全体原函数即称为{% katex %}f(x){% endkatex %}的**不定积分**，记为{% katex %}\int f(x)dx{% endkatex %}；  
+其中{% katex %}\int {% endkatex %}为积分号，{% katex %}f(x){% endkatex %}为被积函数，{% katex %}f(x)dx{% endkatex %}为被积表达式，{% katex %}x{% endkatex %}为积分变量。  
+若函数{% katex %}f(x){% endkatex %}为{% katex %}f(x){% endkatex %}的一个原函数，则有：{% katex %}\int f(x)dx=F(x)+C{% endkatex %}。  
+练习：
+   (1). 求{% katex %}\int x^3dx{% endkatex %}  
+解：{% katex %}=\frac{x^4}{4}+C{% endkatex %}  
+   (2). 求{% katex %}\int e^xdx{% endkatex %}  
+解：{% katex %}e^x+C{% endkatex %}  
+   (3). 求{% katex %}\int \frac{1}{1+x^2}dx{% endkatex %}  
+解：{% katex %}\arctan x +C{% endkatex %}  
+   (4). 求{% katex %}\int \frac{1}{x}dx{% endkatex %}  
+解：{% katex %}\ln|x|+C{% endkatex %}  
+
+---
+### 定积分
