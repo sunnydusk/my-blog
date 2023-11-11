@@ -1074,9 +1074,9 @@ D.{% katex %}[1,e]{% endkatex %}
 
 例题3-2：设{% katex %}x>0{% endkatex %}，求证{% katex %}\frac{x}{1+x}<ln(1+x)<x{% endkatex %}。  
     证明：构造函数{% katex %}f(x)=ln(x){% endkatex %}  
-    显然{% katex %}f(x){% endkatex %}在{% katex %}[0,1+x]{% endkatex %}上连续，在{% katex %}(0,1+x){% endkatex %}上可导  
-    所以{% katex %}f(x){% endkatex %}在{% katex %}[0,1+x]{% endkatex %}上满足拉格朗日中值定理的条件，且在{% katex %}(0,1+x){% endkatex %}内至少存在一点  
-    {% katex %}\xi{% endkatex %}，使得{% katex %}f'(\xi)=\frac{ln(1+x)-ln1}{x-0}=\frac{ln(1+x)}{x}{% endkatex %}  
+    显然{% katex %}f(x){% endkatex %}在{% katex %}[1,1+x]{% endkatex %}上连续，在{% katex %}(1,1+x){% endkatex %}上可导  
+    所以{% katex %}f(x){% endkatex %}在{% katex %}[1,1+x]{% endkatex %}上满足拉格朗日中值定理的条件，且在{% katex %}(1,1+x){% endkatex %}内至少存在一点  
+    {% katex %}\xi{% endkatex %}，使得{% katex %}f'(\xi)=\frac{ln(1+x)-ln1}{1+x-1}=\frac{ln(1+x)}{x}{% endkatex %}  
     {% katex %}f'(\xi)=\frac{1}{\xi}，ln(1+x)-ln1=x \cdot \frac{1}{\xi}=\frac{x}{\xi}{% endkatex %}
     因为{% katex %}1<\xi<1+x{% endkatex %}，所以{% katex %}\frac{x}{1+x}<\frac{x}{\xi}<x{% endkatex %}  
     所以{% katex %}\frac{x}{1+x}<ln(1+x)<x{% endkatex %}  
