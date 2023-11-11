@@ -1609,7 +1609,7 @@ A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {%
 {% katex %}=-\frac{x-2}{2}+C{% endkatex %}  
 {% katex %}=-\frac{1}{2x^2}+C{% endkatex %}  
 例题4：求{% katex %}\int \frac{dx}{x^3\sqrt[3]{x} }dx{% endkatex %}  
-解：原式{% katex %}=\int x^{-\frac{4}{3} } }dx{% endkatex %}  
+解：原式{% katex %}=\int x^{-\frac{4}{3} }dx{% endkatex %}  
 {% katex %}=\frac{x^{-\frac{1}{3} } }{-\frac{1}{3} }+C{% endkatex %}  
 {% katex %}=-\frac{3}{\sqrt[3]{x} }+C{% endkatex %}  
 例题5：求{% katex %}\int (\frac{2}{1+x^2}-\frac{1}{2\sqrt{1-x^2} }+\frac{3}{x} )dx{% endkatex %}  
@@ -1618,7 +1618,7 @@ A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {%
 <br />
 利用平方差、立方差、完全平方、三角恒等式、二倍角公式等对被积函数进行恒等变形，拆分成可以直接积分的和或差的形式。  
 例题6：求{% katex %}\int (\sqrt{x}-\sqrt[3]{x} )^2dx{% endkatex %}  
-解：原式{% katex %}=\int ((\sqrt{x} )^2+(\sqrt[3]{x})^2-2\sqrt{x}\codt \sqrt[3]{x}  )dx{% endkatex %}  
+解：原式{% katex %}=\int ((\sqrt{x} )^2+(\sqrt[3]{x})^2-2\sqrt{x}\cdot \sqrt[3]{x}  )dx{% endkatex %}  
 {% katex %}=\int (x +x^{\frac{2}{3} } -2x^{\frac{5}{6} }dx{% endkatex %}  
 {% katex %}=\frac{1}{2}x^2+\frac{x^{\frac{5}{3} } }{\frac{5}{3} }-2\frac{x^{\frac{11}{6} } }{\frac{11}{6} }+C{% endkatex %}  
 {% katex %}=\frac{1}{2}x^2+\frac{3}{5}x^{\frac{5}{3} }-\frac{12}{11}x^{\frac{11}{6} }+C{% endkatex %}
