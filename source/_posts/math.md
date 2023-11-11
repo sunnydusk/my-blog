@@ -1078,7 +1078,7 @@ D.{% katex %}[1,e]{% endkatex %}
     所以{% katex %}f(x){% endkatex %}在{% katex %}[0,1+x]{% endkatex %}上满足拉格朗日中值定理的条件，且在{% katex %}(0,1+x){% endkatex %}内至少存在一点  
     {% katex %}\xi{% endkatex %}，使得{% katex %}f'(\xi)=\frac{ln(1+x)-ln1}{x-0}=\frac{ln(1+x)}{x}{% endkatex %}  
     {% katex %}f'(\xi)=\frac{1}{\xi}，ln(1+x)-ln1=x \cdot \frac{1}{\xi}=\frac{x}{\xi}{% endkatex %}
-    因为{% katex %}0<\xi<1+x{% endkatex %}，所以{% katex %}\frac{x}{1+x}<\frac{x}{\xi}<x{% endkatex %}  
+    因为{% katex %}1<\xi<1+x{% endkatex %}，所以{% katex %}\frac{x}{1+x}<\frac{x}{\xi}<x{% endkatex %}  
     所以{% katex %}\frac{x}{1+x}<ln(1+x)<x{% endkatex %}  
 
 例题3-3：设{% katex %}x \in (0,\frac{\pi}{2}){% endkatex %}，求证{% katex %}x<\tan x<\frac{x}{\cos ^2x}{% endkatex %}   
