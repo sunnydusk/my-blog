@@ -1614,14 +1614,147 @@ A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {%
 {% katex %}=-\frac{3}{\sqrt[3]{x} }+C{% endkatex %}  
 例题5：求{% katex %}\int (\frac{2}{1+x^2}-\frac{1}{2\sqrt{1-x^2} }+\frac{3}{x} )dx{% endkatex %}  
 解：原式{% katex %}=2\int \frac{1}{1+x^2}dx-\frac{1}{2}\int \frac{1}{\sqrt{1-x^2} }dx+3\int \frac{1}{x}dx{% endkatex %}   
-{% katex %}=2\arctan x-\frac{1}{2}\arcsin x+3\ln |x|+C{% endkatex %}  
+{% katex %}=2\arctan x-\frac{1}{2} \arcsin x+3\ln |x|+C {% endkatex %}  
 <br />
 利用平方差、立方差、完全平方、三角恒等式、二倍角公式等对被积函数进行恒等变形，拆分成可以直接积分的和或差的形式。  
 例题6：求{% katex %}\int (\sqrt{x}-\sqrt[3]{x} )^2dx{% endkatex %}  
-解：原式{% katex %}=\int ((\sqrt{x} )^2+(\sqrt[3]{x})^2-2\sqrt{x}\cdot \sqrt[3]{x}  )dx{% endkatex %}  
+解：原式{% katex %}=\int ((\sqrt{x} )^2+(\sqrt[3]{x})^2-2\sqrt{x} \cdot \sqrt[3]{x} )dx{% endkatex %}  
 {% katex %}=\int (x +x^{\frac{2}{3} } -2x^{\frac{5}{6} }dx{% endkatex %}  
 {% katex %}=\frac{1}{2}x^2+\frac{x^{\frac{5}{3} } }{\frac{5}{3} }-2\frac{x^{\frac{11}{6} } }{\frac{11}{6} }+C{% endkatex %}  
 {% katex %}=\frac{1}{2}x^2+\frac{3}{5}x^{\frac{5}{3} }-\frac{12}{11}x^{\frac{11}{6} }+C{% endkatex %}
+例题7：求{% katex %}\int \frac{(x-1)^3}{x^2}dx{% endkatex %}  
+二项式定理  
+解：原式{% katex %}=\int \frac{x^3-3x^2+3x-1}{x^2}dx {% endkatex %}  
+{% katex %}=\int (x-3+\frac{3}{x}-\frac{1}{x^2} )dx {% endkatex %}  
+{% katex %}=\frac{1}{2}x^2-3x+3\ln |x|+\frac{1}{x}+C {% endkatex %}  
+例题8：求{% katex %}\int \frac{2+3x^2}{1+x^2}dx{% endkatex %}  
+解：原式{% katex %}=\int \frac{3+3x^2-1}{1+x^2}dx{% endkatex %}  
+{% katex %}=\int (3+\frac{1}{1+x^2} )dx{% endkatex %}  
+{% katex %}=3x-\arctan x+C{% endkatex %}  
+例题9：求{% katex %}\int \frac{1}{x^2-5x+6}dx{% endkatex %}  
+解：原式{% katex %}=\int \frac{1}{(x-3)(x-2)}dx{% endkatex %}  
+解析{% katex %}{\color{Violet} \frac{1}{(x-2)(z-3)} \longrightarrow \frac{a}{x-2}-\frac{b}{x-3 } }{% endkatex %}  
+求出{% katex %}a,b{% endkatex %}，得{% katex %}a=b=-1{% endkatex %}  
+{% katex %}=\int (\frac{1}{x-3}-\frac{1}{x-2} )dx{% endkatex %}  
+{% katex %}=\ln |x-3|-\ln |x-2|+C{% endkatex %}  
+{% katex %}=\ln |\frac{x-3}{x-2} |+C{% endkatex %}  
+例题10：求{% katex %}\int \frac{\cos 2x}{\cos^2x \sin^2x}dx{% endkatex %}  
+二倍角公式：{% katex %}{\color{Red} \cos 2x=\cos^2x-\sin^2x}=2\cos^2x-1=1-2\sin^2x {% endkatex %}  
+使用公式：{% katex %}{\color{Blue} \int \frac{1}{\cos^2x}dx=\int \sec^2xdx=\tan x+C } {% endkatex %}   
+{% katex %}{\color{Blue} \int \frac{1}{\sin^2x}dx=\int \csc^2xdx=-\cot x+C } {% endkatex %}
+{% katex %}=\int (\frac{1}{\sin^2x}-\frac{1}{\cos^2x} )dx{% endkatex %}  
+解：原式 {% katex %}=\int \frac{\cos^2x-\sin^2x}{\cos^2x \sin^2x}dx{% endkatex %}  
+{% katex %}=\int (\frac{1}{\sin^2x}-\frac{1}{\cos^2x} )dx{% endkatex %}  
+{% katex %}=-\cot x-\tan x+C{% endkatex %}  
+例题11：求{% katex %}\int \sin^2\frac{x}{2}dx{% endkatex %}  
+有二倍角公式{% katex %}\cos 2x=1-2\sin^2x{% endkatex %}  
+令{% katex %}x=\frac{x}{2}{% endkatex %}  
+有{% katex %}\cos x=1-2\sin^2\frac{x}{2}{% endkatex %}  
+{% katex %}\sin^2\frac{x}{2}=\frac{1-\cos x}{2}{% endkatex %}  
+解：原式{% katex %}=\int (\frac{1}{2}-\frac{1}{2}\cos x)dx{% endkatex %}  
+{% katex %}=\frac{1}{2}x-\frac{1}{2}\sin x+C{% endkatex %}  
+例题12：求{% katex %}\int \tan^2xdx{% endkatex %}  
+有公式{% katex %}\tan^2x=\sec^2x-1{% endkatex %}  
+{% katex %}\int \sec^2xdx=\tan x+C{% endkatex %}  
+解：原式{% katex %}=\int (\sec^2x-1)dx=\tan x-x+C{% endkatex %}  
+**基本代数式，可做恒等变形**：  
+(1). {% katex %}{\color{Red} (a+b)^2=a^2+2ab+b^2} {% endkatex %}  
+(2). {% katex %}{\color{Red} (a-b)^2=a^2-2ab+b^2} {% endkatex %}  
+(3). {% katex %}{\color{Red} (a+b)^3=a^3+3a^2b+3ab^2+b^3} {% endkatex %}  
+(4). {% katex %}{\color{Red} (a-b)^3=a^3-3a^2b+3ab^2-b^3} {% endkatex %}  
+(5). {% katex %}{\color{Red} a^2-b^2=(a+b)(a-b)} {% endkatex %}  
+(6). {% katex %}{\color{Red} a^3-b^3=(a-b)(a^2+ab+b^2)} {% endkatex %}  
+(7). {% katex %}{\color{Red} a^3+b^3=(a+b)(a^2-ab+b^2)} {% endkatex %}  
+(a). {% katex %}{\color{Purple} \cos 2x=\cos^2x-\sin^2x=2\cos^2x-1=1-2\sin^2x} {% endkatex %}  
+(b). {% katex %}{\color{Purple} \sin 2x=2\sin x \cos x} {% endkatex %}  
+(c). {% katex %}{\color{Purple} \sin x^2+\cos x^2 =1} {% endkatex %}  
+(d). {% katex %}{\color{Purple} \tan x^2+1=\sec x^2} {% endkatex %}  
+(e). {% katex %}{\color{Purple} 1-\cot x^2=\csc x^2} {% endkatex %}  
+
+---
+#### 第一类换元法（凑微分法）  
+积分式较为复杂，不能直接套用基本积分公式，整体结构为{% katex %}\int u'f(u)dx{% endkatex %};  
+我们需要将{% katex %}u'f(u)dx{% endkatex %}变为{% katex %}du{% endkatex %}的形式，将积分式转化为可以使用的基本积分公式{% katex %}\int f(u)du{% endkatex %}，利用基本积分公式解决问题，即凑微分法。   
+例题1：求{% katex %}\int \cos^2x\sin xdx{% endkatex %}  
+解：原式{% katex %}=-\int \cos^2x \cdot (-\sin x)dx{% endkatex %}  
+{% katex %}=-\int \cos^2xd\sin x{% endkatex %}  
+{% katex %}=-\frac{1}{3}\cos^3x+C{% endkatex %}  
+例题2：求{% katex %}\int 2\cos 2xdx{% endkatex %}
+解：原式{% katex %}=\int \cos 2x \cdot 2dx {% endkatex %}  
+{% katex %}=\int \cos 2xd 2x{% endkatex %}  
+{% katex %}=\sin 2x+C{% endkatex %}  
+例题3：求{% katex %}\int 2xe^{x^2}dx{% endkatex %}  
+解：原式{% katex %}=\int e^{x^2}\cdot 2xdx{% endkatex %}  
+{% katex %}=e^{x^2}dx^2 {% endkatex %}  
+{% katex %}=e^{x^2}+C{% endkatex %}  
+例题4：求{% katex %}\int \frac{1}{2x+3}dx{% endkatex %}  
+解：原式{% katex %}=\frac{1}{2}\int \frac{1}{2x+3}2dx{% endkatex %}  
+{% katex %}=\frac{1}{2}\int \frac{1}{2x+3}2dxd(2x+3){% endkatex %}  
+{% katex %}=\frac{1}{2}\ln |2x+3|+C{% endkatex %}  
+<br />
+**总结公式**：{% katex %}{\color{Red} \int \frac{1}{ax+b}dx=\frac{1}{a}ln|ax+b|+C (a \ne 0) }{% endkatex %}  
+<br />
+例题5：求{% katex %}\int \frac{1}{4+x^2}dx{% endkatex %}  
+解析：公式{% katex %}\int \frac{1}{1+x^2}dx=\arctan x+C\Longrightarrow \int \frac{1}{1+\Box ^2} d\Box =\arctan \Box +C{% endkatex %}  
+解：原式{% katex %}=\frac{1}{4}\cdot \frac{1}{1+(\frac{x}{2})^2}dx {% endkatex %}  
+{% katex %}=\frac{1}{2} \int \frac{1}{1+(\frac{x}{2})^2}\cdot \frac{1}{2}dx{% endkatex %}  
+{% katex %}=\frac{1}{2} \int \frac{1}{1+x^2}d\frac{x}{2}{% endkatex %}  
+{% katex %}=\frac{1}{2} \arctan x+C{% endkatex %}  
+<br />
+**总结公式**：{% katex %}{\color{Red} \int \frac{1}{a^2+x^2}dx=\frac{1}{a}\arctan \frac{x}{a}+C (a \ne 0) }{% endkatex %}  
+<br />
+例题6：求{% katex %}\int \frac{1}{x^2-1}dx{% endkatex %}  
+解析：同上章例题9；  
+解：原式{% katex %}=\frac{1}{2}\int (\frac{1}{(x-1)}-\frac{1}{x+1})dx{% endkatex %}  
+{% katex %}=\int (\frac{1}{2(x-1)}-\frac{1}{2(x+1)} )dx{% endkatex %}  
+{% katex %}=\frac{1}{2}\int \frac{1}{x-1}-\frac{1}{2}dx \int \frac{1}{x+1}dx{% endkatex %}  
+{% katex %}=\frac{1}{2}\int \frac{1}{x-1}d(x-1)-\frac{1}{2}\int \frac{1}{x+1}d(x+1){% endkatex %}  
+{% katex %}=\frac{1}{2}\ln |x-1|-\frac{1}{2}\ln |x+1|+C{% endkatex %}  
+{% katex %}=\frac{1}{2}\ln |\frac{x-1}{x+1} |+C{% endkatex %}  
+<br />
+**总结公式**：{% katex %}{\color{Red} \int \frac{1}{x^2-a^2}dx=\frac{1}{2a}\ln |\frac{x-a}{x+a}|+C (a \ne 0) }{% endkatex %}  
+<br />
+例题7：求{% katex %}\int \frac{1}{\sqrt{4-x^2} }dx{% endkatex %}  
+解析：公式{% katex %}\int \frac{1}{\sqrt(1-x^2)}dx=\arcsin x+C\Longrightarrow \int \frac{1}{1-\Box ^2} d\Box =\arcsin \Box +C{% endkatex %}  
+解：原式{% katex %}=\int \frac{1}{\sqrt{4-x^2} }dx{% endkatex %}  
+{% katex %}=\int \frac{1}{\sqrt{1-\frac{x^2}{4}\cdot 4} } dx{% endkatex %}  
+{% katex %}=\int \frac{1}{2\cdot \sqrt{1-(\frac{x}{2})^2} }dx{% endkatex %}  
+{% katex %}=\int \frac{1}{\sqrt{1-(\frac{x}{2})^2} }\cdot \frac{1}{2}dx{% endkatex %}  
+{% katex %}=\int \frac{1}{\sqrt{1-(\frac{x}{2})^2} }d(\frac{x}{2}){% endkatex %}  
+{% katex %}=\arcsin \frac{x}{2}+C{% endkatex %}  
+<br />
+**总结公式**：{% katex %}{\color{Red} \int \frac{1}{\sqrt{a^2-x^2} }dx=\arcsin \frac{x}{a}|+C (a > 0) }{% endkatex %}  
+<br />
+例题8：求{% katex %}\int \frac{e^{\sqrt{x} } }{\sqrt{x} }dx{% endkatex %}  
+解：原式{% katex %}=\int e^{\sqrt{x} } \cdot \frac{1}{\sqrt{x} }\cdot \frac{1}{2} \cdot 2dx{% endkatex %}  
+{% katex %}=2\int e^{2\sqrt{x} }dx{% endkatex %}  
+{% katex %}=2\int e^{\sqrt{x} }d\sqrt{x} {% endkatex %}   
+{% katex %}=2e^{\sqrt{x} }+C{% endkatex %}  
+例题9：求{% katex %}\int \tan xdx{% endkatex %}  
+解：原式{% katex %}=\int \frac{\sin x}{\cos x}dx{% endkatex %}  
+{% katex %}=-\int \frac{1}{\cos x}d\cos x{% endkatex %}  
+{% katex %}=-\ln |\cos x|+C{% endkatex %}  
+<br />
+**总结公式**：{% katex %}{\color{Red} \int \tan xdx=-\ln |\cos x|+C  {% endkatex %}  
+<br />  
+例题10：求{% katex %}\int \sec xdx{% endkatex %}  
+解析：{% katex %}\int \frac{1}{\cos^2x}dx=\int \sec^2xdx=\tan x+C{% endkatex %}  
+{% katex %}\int \sec x\tan xdx=\sec x+C{% endkatex %}  
+解：原式{% katex %}=\int \frac{\sec x \cdot (\sec x+\tan x)}{\sec x+\tan x}dx{% endkatex %}  
+{% katex %}=\int \frac{\sec^2x+\sec x\cdot \tan x)}{\sec x+\tan x}dx{% endkatex %}  
+{% katex %}=\int \frac{1}{\sec x+\tan x}d(\sec x+\tan x){% endkatex %}  
+{% katex %}=\ln |\sec x+\tan x|+C{% endkatex %}  
+<br />
+**总结公式**：{% katex %}{\color{Red} \int \sec xdx=\ln |\sec x+\tan x|+C  {% endkatex %}  
+<br />
+例题11：求{% katex %}\int \sin^3xdx{% endkatex %}  
+解：原式{% katex %}=\int \sin x\cdot \sin^2xdx{% endkatex %}  
+{% katex %}=\int (1-\cos^2x)\cdot (-\sin x)dx{% endkatex %}  
+{% katex %}=\int (\cos^2x-1)d(\cos x){% endkatex %}  
+{% katex %}=\int \cos^2xd(\cos x)-\int 1d(\cos x){% endkatex %}  
+{% katex %}=\frac{1}{3}\cos^3x-\cos x+C{% endkatex %}  
+例题12：求{% katex %}\int \frac{x^2}{(x+1)^3}dx{% endkatex %}  
+解：原式{% katex %}
 
 ---
 ### 定积分
