@@ -1735,7 +1735,7 @@ A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {%
 {% katex %}=-\int \frac{1}{\cos x}d\cos x{% endkatex %}  
 {% katex %}=-\ln |\cos x|+C{% endkatex %}  
 <br />
-**总结公式**：{% katex %}{\color{Red} \int \tan xdx=-\ln |\cos x|+C  {% endkatex %}  
+**总结公式**：{% katex %}{\color{Red} \int \tan xdx=-\ln | \cos x|+C } {% endkatex %}  
 <br />  
 例题10：求{% katex %}\int \sec xdx{% endkatex %}  
 解析：{% katex %}\int \frac{1}{\cos^2x}dx=\int \sec^2xdx=\tan x+C{% endkatex %}  
@@ -1745,7 +1745,7 @@ A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {%
 {% katex %}=\int \frac{1}{\sec x+\tan x}d(\sec x+\tan x){% endkatex %}  
 {% katex %}=\ln |\sec x+\tan x|+C{% endkatex %}  
 <br />
-**总结公式**：{% katex %}{\color{Red} \int \sec xdx=\ln |\sec x+\tan x|+C  {% endkatex %}  
+**总结公式**：{% katex %}{\color{Red} \int \sec xdx=\ln |\sec x+\tan x|+C } {% endkatex %}  
 <br />
 例题11：求{% katex %}\int \sin^3xdx{% endkatex %}  
 解：原式{% katex %}=\int \sin x\cdot \sin^2xdx{% endkatex %}  
@@ -1804,9 +1804,9 @@ A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {%
 {% katex %}=2(u)-8u+4\ln |u|+C{% endkatex %}  
 {% katex %}=2(\sqrt[4]{x}+1)^2-8(\sqrt[3]{x}+1)+4\ln (\sqrt[4]{x}+1)+C{% endkatex %}  
 例题5：求{% katex %}\int x\frac{\sqrt[3]{3} }{\sqrt{x}+\sqrt[3]{x} }dx{% endkatex %}  
-解：令{% katex %}\sqrt[6]{x}=t,x=t^6,dx=dt^6=6t^5dt{% endkatex %}  
-原式{% katex %}\int \frac{t^2}{t^6(t^3_t^2)}\cdot 6t^5dt{% endkatex %}    
-{% katex %}6\int]\frac{1}{t^2+t}dt{% endkatex %}  
+解：令{% katex %}\sqrt[6]{x}=t,x=t^6,dx=dt^6=6t^5dt{% endkatex %}
+原式{% katex %}=\int \frac{t^2}{t^6 \cdot (t^3-t^2) }\cdot 6t^5 dt {% endkatex %}
+{% katex %}6\int\frac{1}{t^2+t}dt{% endkatex %}  
 {% katex %}=6\int \frac{1}{t}-\frac{1}{(t+1)}dt{% endkatex %}  
 {% katex %}=6\ln t-6\ln |t+1|+C{% endkatex %}  
 {% katex %}=6\ln |\frac{t}{t+1}|+C{% endkatex %}  
