@@ -1754,7 +1754,63 @@ A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {%
 {% katex %}=\int \cos^2xd(\cos x)-\int 1d(\cos x){% endkatex %}  
 {% katex %}=\frac{1}{3}\cos^3x-\cos x+C{% endkatex %}  
 例题12：求{% katex %}\int \frac{x^2}{(x+1)^3}dx{% endkatex %}  
-解：原式{% katex %}
+解：令{% katex %}x+1=t,x=t-1,dx=d(t-1)=dt{% endkatex %}  
+原式{% katex %}=\int \frac{(t-1)^2}{t^3}dt{% endkatex %}  
+{% katex %}=\int \frac{t^2-2t+1}{t^3}dt{% endkatex %}  
+{% katex %}=\int (\frac{1}{t}-\frac{2}{t^2}+\frac{1}{t^3} )dt{% endkatex %}  
+{% katex %}=\ln |t|+\frac{2}{t}-\frac{1}{2t^2}+C{% endkatex %}  
+{% katex %}=\ln |x+1|+\frac{2}{x+1}-\frac{1}{2(x+1)^2}+C{% endkatex %}  
+例题13：求{% katex %}\int \frac{(x+2)^3}{(x+3)}dx{% endkatex %}  
+解：令{% katex %}x+3=t,x=t-3,dx=d(t-3)=dt{% endkatex %}  
+原式{% katex %}= \int \frac{(t-1)^3}{t}dt{% endkatex %}  
+{% katex %}=\int (\frac{t^3-3t^2+3t-1}{t^2} )dt{% endkatex %}  
+{% katex %}=\int (t-3+\frac{3}{t}-\frac{1}{t^2} )dt{% endkatex %}  
+{% katex %}=\frac{t^2}{2}-3t+3\ln |t|+\frac{1}{t}+C{% endkatex %}  
+{% katex %}=\frac{1}{2}(x+3)^2-3(x+3)+3\ln |x+3|+\frac{1}{x+3}+C{% endkatex %}  
+
+---
+#### 第二类换元法（根式代换法）
+例题1：求{% katex %}\int \frac{1}{1+\sqrt{2x+3} }dx{% endkatex %}  
+解：令{% katex %}2x+3=t^2,x=\frac{t^2-3}{2},dx=tdt{% endkatex %}  
+原式{% katex %}= \int \frac{1}{1+t}tdt{% endkatex %}  
+{% katex %}=\int \frac{t+1-1}{1+t}dt{% endkatex %}  
+{% katex %}=(1-\frac{1}{1+t}){% endkatex %}  
+{% katex %}=t-\ln|1+t|+C{% endkatex %}  
+{% katex %}=\sqrt{2x+3}-\ln |\sqrt{2x+3}+1|+C{% endkatex %}  
+“1型”根式代换：式子中含有{% katex %}\sqrt[n]{ax+b} {% endkatex %}
+例题2：求{% katex %}\int \frac{2}{x+\sqrt[3]{x} }dx{% endkatex %}  
+解：令{% katex %}x=t^3,x^{\frac{1}{3} }=t,dx=3t^2dt{% endkatex %}  
+原式{% katex %}=\int \frac{2}{t^3+t}3t^2dt{% endkatex %}  
+{% katex %}=\int \frac{6t}{t^2+1}dt{% endkatex %}  
+{% katex %}=3\int \frac{1}{t^2+1}d(t^2+1){% endkatex %}  
+{% katex %}=3\ln |t^2+1|+C{% endkatex %}  
+{% katex %}=3\ln x^{\frac{2}{3} +1}+C{% endkatex %}  
+例题3：求{% katex %}\int x\sqrt[3]{3x+1}dx{% endkatex %}  
+解：令{% katex %}\sqrt[3]{3x+1}=t,x=\frac{1}{3}t^3-\frac{1}{3},dx=d(\frac{1}{3t^3-\frac{1}{3} })=t^2dt{% endkatex %}  
+原式{% katex %}=\int (\frac{1}{3}t^3-\frac{1}{3} )t\cdot t^2dt{% endkatex %}  
+{% katex %}=\int (\frac{1}{3}t^6-\frac{1}{3}t^3)dt{% endkatex %}  
+{% katex %}=\frac{1}{21}t^7-\frac{1}{12}t^4+C{% endkatex %}  
+{% katex %}=\frac{1}{21}(3x+1)^{\frac{7}{3} }-\frac{1}{12}(3x+1)^{\frac{4}{3} }+C{% endkatex %}  
+“2型”根式代换：式子中同时含有{% katex %}\sqrt[m]{x} {% endkatex %}和{% katex %}\sqrt[n]{x}{% endkatex %}
+令{% katex %}t=\sqrt[m,n]{x},[m,n]{% endkatex %}代表{% katex %}m{% endkatex %}和{% katex %}n{% endkatex %}的**最小公倍数**。  
+例题4：求{% katex %}\int \frac{1}{\sqrt{x}+\sqrt[4]{x} }dx{% endkatex %}  
+解：令{% katex %}\sqrt[4]{x}=t,x=t^4,dx=dt^4=4t^3dt{% endkatex %}  
+原式{% katex %}=\int \frac{1}{t^2+t}4t^3dt{% endkatex %}  
+{% katex %}=4\frac{t^2}{t+1}dt{% endkatex %}  
+令{% katex %}t+1=u,t=u-1,dt=d(u-1)=du {% endkatex %}  
+原式{% katex %}4\int \frac{(u-1)^2}{u}du{% endkatex %}  
+{% katex %}=4\int \frac{u^2-2u+1}{u}du{% endkatex %}  
+{% katex %}=4\int (u-2+\frac{1}{u})dx{% endkatex %}  
+{% katex %}=2(u)-8u+4\ln |u|+C{% endkatex %}  
+{% katex %}=2(\sqrt[4]{x}+1)^2-8(\sqrt[3]{x}+1)+4\ln (\sqrt[4]{x}+1)+C{% endkatex %}  
+例题5：求{% katex %}\int x\frac{\sqrt[3]{3} }{\sqrt{x}+\sqrt[3]{x} }dx{% endkatex %}  
+解：令{% katex %}\sqrt[6]{x}=t,x=t^6,dx=dt^6=6t^5dt{% endkatex %}  
+原式{% katex %}\int \frac{t^2}{t^6(t^3_t^2)}\cdot 6t^5dt{% endkatex %}    
+{% katex %}6\int]\frac{1}{t^2+t}dt{% endkatex %}  
+{% katex %}=6\int \frac{1}{t}-\frac{1}{(t+1)}dt{% endkatex %}  
+{% katex %}=6\ln t-6\ln |t+1|+C{% endkatex %}  
+{% katex %}=6\ln |\frac{t}{t+1}|+C{% endkatex %}  
+{% katex %}=6\ln \frac{(\sqrt[6]{x}) }{6\sqrt[6]{x}+1}+C{% endkatex %}
 
 ---
 ### 定积分
