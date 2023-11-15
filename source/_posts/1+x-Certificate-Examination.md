@@ -47,6 +47,21 @@ date: 2023-11-14 10:58:20
 16. `require_once/include_once`：分别与require/include作用相同，不同的是，在执行到时会先检查目标内容是不是在之前导入过，那么便不在重复引入同样的内容。  
 17. `include`在加载文件失败时，会生成一个**警告（E_WARNNG）**，在错误发生后脚本继续执行。所以include用在希望继续执行并像用户输出结果时。`require`在加载失败时会生成一个**致命错误（E_COMPILE_ERROR），在错误发生后脚本停止执行。一般用在后续代码依赖于载入的文件的时候。  
 
+---
+### Laravel 
+1. Laravel中，`@extends`指令来明确的指定继承某个布局，然后使用`@section`指令将挂载中的内容挂载到布局中。挂载的内容将被挂载到布局中`@yield`部分；`include()`方法可以加载局部视图文件。  
+2. 
+
+
+---
+### JavaScript
+
+
+---
+#### Bootstrap
+Bootstrap对齐样式：`text-left(左)`、`text-center(居中)`、`text-right(右)`、`text-justify(超出自动换行)`、`text-nowrap(超出部分不换行)`、`text-lowercase(大写转小写)`、`text-uppercase(首字母大写)`、`text-capitalize`。  
+Bootstrap媒体特性属性：`device-width(设备宽度)`、`width(渲染界面或视口的宽度)`、`orientation(横屏或竖屏)`，```(orientation:{landscape(横屏)/portrait(竖屏)})```。  
+
 
 
 ---
