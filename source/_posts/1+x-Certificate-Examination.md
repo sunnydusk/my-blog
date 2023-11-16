@@ -62,7 +62,14 @@ date: 2023-11-14 10:58:20
 Bootstrap对齐样式：`text-left(左)`、`text-center(居中)`、`text-right(右)`、`text-justify(超出自动换行)`、`text-nowrap(超出部分不换行)`、`text-lowercase(大写转小写)`、`text-uppercase(首字母大写)`、`text-capitalize`。  
 Bootstrap媒体特性属性：`device-width(设备宽度)`、`width(渲染界面或视口的宽度)`、`orientation(横屏或竖屏)`，```(orientation:{landscape(横屏)/portrait(竖屏)})```。  
 
+---
+#### jQuery
 
+
+---
+#### Ajax
+1. 在Ajax中，readyState属性表示XMLHttpRequest对象的当前状态，其中含有五个可能的值：`0(UNSENT)`:XMLHttpRequest对象已创建，但尚未调用open()方法、`1(OPENED)`:open()方法被调用，在这个状态下，可以设置请求的头部信息，比如设置请求的方法(GET、POST等)和URL、`2(HEADERS_RECEIVED)`:send()方法已被调用，并且服务器响应的头部信息已被接收，这个状态下，可以通过getResponseHeader()方法获取特定的响应头部信息、`3(LOADING)`:正在接收服务器的响应数据，在这个状态下，可以通过responseText或responseXML属性获取部分响应数据、`4(DONE)`:响应数据已经完全接收，在这个状态下，可以通过status和statusText属性获取完整的服务器响应信息，通过responseText或responseXML获取完整的响应数据。   
+2. 
 
 ---
 ### 题型解答
