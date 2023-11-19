@@ -1811,6 +1811,71 @@ A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {%
 {% katex %}=6\ln t-6\ln |t+1|+C{% endkatex %}  
 {% katex %}=6\ln |\frac{t}{t+1}|+C{% endkatex %}  
 {% katex %}=6\ln \frac{(\sqrt[6]{x}) }{6\sqrt[6]{x}+1}+C{% endkatex %}
+一般当被积函数含有：  
+(1). {% katex %}\sqrt{a^2-x^2} {% endkatex %}，可以代换{% katex %}x=a\sin u{% endkatex %}  
+(2). {% katex %}\sqrt{x^2+a^2} {% endkatex %}，可以代换{% katex %}x=a\tan u{% endkatex %}  
+(3). {% katex %}\sqrt{x^2-a^2} {% endkatex %}，可以代换{% katex %}x=a\sec u{% endkatex %}  
+通常称以上代换为三角代换，当被积函数含有以上二次根式，积分时是否一定使用三角代换。  
+例题6：计算{% katex %}\int \frac{x+\arcsin x}{\sqrt{1-x^2} }dx{% endkatex %}  
+解：原式{% katex %}=\int \frac{x}{\sqrt{1-x^2} }dx+\int \frac{\arcsin x}{\sqrt{1-x^2} }dx{% endkatex %}  
+{% katex %}=\int x \cdot \frac{1}{\sqrt{1-x^2} }dx+\int \arcsin x \cdot \frac{1}{\sqrt{1-x^2} }dx{% endkatex %}  
+{% katex %}=\frac{1}{2} \int \frac{1}{\sqrt{1-x^2} }dx^2+\int \arcsin x d (\arcsin x ){% endkatex %}  
+{% katex %}=\frac{1}{2} \int \frac{1}{\sqrt{1-x^2} }d(1-x^2)+\frac{1}{2}\arcsin x{% endkatex %}  
+{% katex %}=\frac{1}{2} -\frac{1}{2}\cdot \sqrt{1-x^2}+\frac{1}{2} \arcsin^2x+C{% endkatex %}  
+{% katex %}=\frac{1}{2} -\sqrt{1-x^2}+\frac{1}{2}\arcsin^2x+C{% endkatex %}  
+第二类换元法常见类型：  
+(1). {% katex %}\int f(x,\sqrt[n]{ax+b})dx{% endkatex %}，令{% katex %}t=\sqrt[n]{ax+b}{% endkatex %}  
+(2). {% katex %}\int f(x,\sqrt[n]{\frac{ax+b}{cx+d} })dx{% endkatex %}，令{% katex %}t=\sqrt[n]{\frac{ax+b}{cx+d} }{% endkatex %}  
+(3). {% katex %}\int f(x,\sqrt{a^2-x^2})dx{% endkatex %}，令{% katex %}x=a\sin / x=a\cos t{% endkatex %}  
+(4). {% katex %}\int f(x,\sqrt{a^2+x^2})dx{% endkatex %}，令{% katex %}x=a\tan t{% endkatex %}  
+(5). {% katex %}\int f(x,\sqrt{x^2-a^2})dx{% endkatex %}，令{% katex %}x=a\sec t{% endkatex %}  
+(6). {% katex %}\int f(a^x)dx{% endkatex %}，令{% katex %}t=a^x{% endkatex %}  
+分母中因子次数较高时，可以使用倒代换。  
+常用基本积分公式：  
+{% katex %}\int \tan xdx=-\ln|\cos x|+C{% endkatex %}  
+{% katex %}\int \cot xdx=\ln |\sin x |+C{% endkatex %}  
+{% katex %}\int \sec xdx=\ln |\sec x+\tan x |+C{% endkatex %}  
+{% katex %}\int \csc xdx=\ln |\csc x-\cot x |+C{% endkatex %}  
+{% katex %}\int \frac{1}{a^2+x^2 }dx=\frac{1}{a} \arctan \frac{x}{a}+C{% endkatex %}  
+
+--- 
+#### 分部积分法
+公式：{% katex %}\int uv' dx=\int udv=uv-\int u'v dx=uv-\int vdu {% endkatex %}  
+**反对幂指三**  
+例题1：求{% katex %}\int x\arctan xdx{% endkatex %}  
+解：原式{% katex %}=\int \arctan x \cdot xd(\frac{1}{2}x^2){% endkatex %}  
+{% katex %}\frac{1}{2}\int \arctan xdx^2{% endkatex %}  
+{% katex %}=\frac{1}{2}(x^2\arctan x-\int x^2d(\arctan x)){% endkatex %}  
+{% katex %}=\frac{1}{2}(x^2\arctan x-\int x^2\cdot \frac{1}{1+x^2}dx){% endkatex %}  
+{% katex %}=\frac{1}{2}(x^2\arctan x-\int \frac{x^2+1-1}{1+x^2}dx){% endkatex %}  
+{% katex %}=\frac{1}{2}(x^2\arctan x-\int 1-\frac{1}{1+x^2}dx){% endkatex %}  
+{% katex %}=\frac{1}{2}(x^2\arctan x-x+\arctan x)+C{% endkatex %}  
+例题2：求{% katex %}\int \arctan xdx{% endkatex %}  
+解：原式{% katex %}=x\arctan x-\int xd(\arctan x){% endkatex %}  
+{% katex %}=x\arctan x-\int x\cdot \frac{1}{1+x^2}dx{% endkatex %}  
+{% katex %}=x\arctan x-\frac{1}{2}\int \frac{1}{1+x^2}dx^2{% endkatex %}  
+{% katex %}=x\arctan x-\frac{1}{2}\ln (1+x^2){% endkatex %}
+总结：{\color{Red} \int udv=uv-\int vdu}  
+例题3：求{% katex %}\int x^3\ln xdx{% endkatex %}  
+解：原式{% katex %}=\int \ln x \cdot xd(\frac{1}{4}x^4){% endkatex %}  
+{% katex %}=\frac{1}{4}\int \ln xdx^4{% endkatex %}  
+{% katex %}=\frac{1}{4}(x^4\ln x-\int x^4d(\ln x)){% endkatex %}  
+{% katex %}=\frac{1}{4}(x^4\ln x-\int x^4\cdot \frac{1}{x}dx){% endkatex %}  
+{% katex %}=\frac{1}{4}(x^4\ln x-\int x^3dx){% endkatex %}  
+{% katex %}=\frac{1}{4}x^4\ln x-\frac{1}{16}x^4+C{% endkatex %}  
+例题4：求{% katex %}\int e^x\sin xdx{% endkatex %}   
+解：原式{% katex %}=\int e^xd(-\cos x){% endkatex %}  
+{% katex %}=-\int e^xd(\cos x){% endkatex %}  
+{% katex %}=-(e^x \cdot \cos x-\int \cos xd(e^x)){% endkatex %}  
+{% katex %}=-(\cos x \cdot e^x-\int \cos x\cdot e^x dx){% endkatex %}  
+{% katex %}=-\cos x \cdot e^x+\int e^x d\sin x{% endkatex %}  
+{% katex %}=-\cos x \cdot e^x+\sin x \cdot e^x-\int \sin xde^x{% endkatex %}  
+{% katex %}=-\cos x \cdot e^x+\sin x \cdot e^x-\int e^x\cdot \sin xdx{% endkatex %}  
+{% katex %}\int e^x\sin xdx=-\cos x \cdot e^x+\sin x \cdot e^x-\int e^x\cdot \sin xdx{% endkatex %}  
+{% katex %}2\int e^x\sin xdx=-\cos x \cdot e^x-\sin x \cdot e^x{% endkatex %}  
+{% katex %}\int e^x\sin xdx =\frac{-\cos x \cdot e^x+e^x \cdot \sinx }{2}+C{% endkatex %}
 
 ---
 ### 定积分
+#### 定积分的概念
+指用来求曲边图形面积的工具，记为{% katex %}\int_a^b f(x)dx{% endkatex %}，其中{% katex %}a,b{% endkatex %}为积分上下限，{% katex %}f(x){% endkatex %}为被积函数。  
