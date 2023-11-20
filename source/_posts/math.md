@@ -1891,6 +1891,124 @@ A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {%
 {% katex %}f(x)\geq g(x){% endkatex %}  
 {% katex %}\int_0^{\frac{\pi}{2} } xdx > \int_0^{\frac{\pi}{2} } \sin xdx{% endkatex %}  
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311201410350.png)
-例题2：比较{% katex %}\int_0^1 e^xdx{% endkatex %}与{% katex %}\int_0^1 e^{x^2} dx{% endkatex %}的大小.
+例题2：比较{% katex %}\int_0^1 e^xdx{% endkatex %}与{% katex %}\int_0^1 e^{x^2} dx{% endkatex %}的大小.   
 解：从{% katex %}x \in (0,1){% endkatex %}比较{% katex %}x,x^2{% endkatex %}，取一特殊值比较大小。  
-即{% katex %}\int_0^1 e^xdx > \int_0^1 e^{x^2} dx{% endkatex %}
+即{% katex %}\int_0^1 e^xdx > \int_0^1 e^{x^2} dx{% endkatex %}   
+4. 定积分的性质   
+(1). {% katex %}\int_a^b f(x)\pm g(x)dx=\int_a^b f(x)dx+\int_a^b g(x)dx{% endkatex %}  
+(2). {% katex %}\int_a^b k\cdot f(x)dx=k\int_a^b f(x)dx(k与x无关){% endkatex %}  
+(3). {% katex %}\int_a^b f(x)dx=\int_a^c f(x)dx+\int_c^b f(x)dx{% endkatex %}  
+(4). {% katex %}\int_a^b f(x)dx=-\int_b^a {% endkatex %}（上下限调换，添负号）  
+(5). {% katex %}\int_a^b 1dx+\int_a^b dx=b-a{% endkatex %}  
+例题3：设{% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上连续，下列不正确的是()    
+A. {% katex %}\int_0^x f(t)dt{% endkatex %}是{% katex %}f(x){% endkatex %}的一个原函数  
+B. {% katex %}\int_x^b f(t)dt{% endkatex %}是{% katex %}-f(x){% endkatex %}的一个原函数  
+C. {% katex %}\int_a^b f(t)dt{% endkatex %}是{% katex %}f(x){% endkatex %}的一个原函数  
+D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积  
+解析：{% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上连续，{% katex %}\int_0^x f(t)dt{% endkatex %}是{% katex %}(\int_0^x f(t)dt)'=f(x){% endkatex %}的一个原函数，{% katex %}\int_x^b f(t)dt{% endkatex %}是{% katex %}(\int_x^b f(t)dt)'=0-f(x){% endkatex %}的一个原函数，{% katex %}\int_a^b f(t)dt{% endkatex %}不是{% katex %}f(x){% endkatex %}的一个原函数{% katex %}定积分是一个数字，所以f(x)=0{% endkatex %}，{% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积，故选C.  
+
+---
+#### 定积分的计算
+##### 定积分两个公式
+牛顿-莱布尼茨公式：{% katex %}\int_a^b f(x)dx=F(x)|\begin{matrix}b\\a\end{matrix}=F(b)-F(a){% endkatex %}  
+分部积分公式：{% katex %}\int_a^b uv' dx=\int_a^b udv=uv|\begin{matrix}b\\a\end{matrix}-\int_a^b vu' dx{% endkatex %}  
+例题1：求{% katex %}\int_0^1 (x^2+x+2)dx{% endkatex %}  
+解：原式{% katex %}=(\frac{1}{3}x^3+\frac{1}{2}x^2+2x)|\begin{matrix}1\\0\end{matrix}{% endkatex %}  
+{% katex %}=\frac{1}{3}+\frac{1}{2}+2-0=\frac{17}{6}{% endkatex %}  
+例题2：求{% katex %}\int_0^{\frac{\pi}{2}} \frac{\cos 2x}{\cos x-\sin x}dx{% endkatex %}  
+解：原式{% katex %}=\int_0^{\frac{\pi}{2}} \frac{(\cos x-\sin x)\cdot (\sin x+\cos x )}{\cos x-\sin x}dx{% endkatex %}  
+{% katex %}=\int_0^{\frac{\pi}{2}} \sin x+\cos x dx{% endkatex %}  
+{% katex %}=(-\cos x+\sin x)|\begin{matrix}\frac{\pi}{2}\\0\end{matrix}{% endkatex %}  
+{% katex %}=(0+1)-(-1+0){% endkatex %}  
+{% katex %}=2{% endkatex %}  
+例题3：求{% katex %}\int_1^2 e^{\frac{1}{x} }\cdot \frac{1}{x^2}dx{% endkatex %}  
+解：原式{% katex %}=\int_1^2 e^{\frac{1}{x} }\cdot (-\frac{1}{x})'dx{% endkatex %}  
+{% katex %}=-\int_1^2 e^{\frac{1}{x} }d(\frac{1}{x}){% endkatex %}  
+{% katex %}=-e^{\frac{1}{x} }|\begin{matrix}2\\1\end{matrix}{% endkatex %}  
+{% katex %}=-e^{\frac{1}{2} }+e{% endkatex %}  
+例题4：求{% katex %}\int_0^1 x\cdot e^{-x}dx{% endkatex %}  
+解：原式{% katex %}=\int_0^1 x d(-e^{-x}){% endkatex %}  
+{% katex %}=-(x\cdot e^{-x}|\begin{matrix}1\\0\end{matrix}-\int_0^1e^{-x}dx){% endkatex %}  
+{% katex %}=-(xe^{-x}|\begin{matrix}1\\0\end{matrix}+e^{-x}|\begin{matrix}1\\0\end{matrix}){% endkatex %}  
+{% katex %}=-(e^{-1}+e^{-1}-1{% endkatex %}   
+{% katex %}=-2e^{-1}+1=1-\frac{2}{e}{% endkatex %}  
+
+---
+##### 定积分四个运算技巧
+1. 定积分偶倍奇零（**条件：区间对称**）  
+{% katex %}\int_{-a}^{a} f(x)dx=\left\{\begin{matrix}2\int_{0}^{a} f(x)dx,f(x)为偶函数\\0，f(x)为奇函数\end{matrix}\right. {% endkatex %}  
+{% katex %}\left\{\begin{matrix}常见偶函数：C,x^{偶数},|x|,\cos x,f(x)+f(-x) \\常见奇函数：x^{奇数},\sin x,\arctan x,f(x)-f(-x)\end{matrix}\right.{% endkatex %}  
+使用技巧：加减运算，分开独立判断奇偶性；  
+例题1：求{% katex %}\int_{-1}^{1} (x^3\cos x+1)dx=(D){% endkatex %}  
+{% katex %}A. 0 B. \frac{1}{2} C. 1 D. 2{% endkatex %}  
+解析：{% katex %}x^3\cos x{% endkatex %}为奇函数，1为偶函数，故原式为{% katex %}2\int_0^1 1dx=2{% endkatex %}  
+例题2：设{% katex %}f(x){% endkatex %}在{% katex %}[-l,l]{% endkatex %}上连续，则{% katex %}\int_{-l}^{l} f(x)-f(-x)dx=(0){% endkatex %}  
+解析：{% katex %}f(x)-f(-x){% endkatex %}为奇函数，故原式为{% katex %}0{% endkatex %}    
+例题3：{% katex %}\int_{-1}^{1} \frac{2+\sin x}{1+x^2}dx{% endkatex %}  
+解：原式{% katex %}=\int_{-1}^{1} \frac{2}{1+x^2}dx+\int_{-1}^{1}\frac{\sin x}{1+x^2}{% endkatex %}  
+函数{% katex %}\frac{2}{1+x^2}{% endkatex %}为偶函数，{% katex %}\frac{\sin x}{1+x^2}{% endkatex %}为奇函数  
+故原式为{% katex %}2\cdot 2\int_0^1 \frac{1}{1+x^2}dx+0=4\arctan x|\begin{matrix}1\\0\end{matrix}=4(\arctan 1-\arctan 0)=\pi{% endkatex %}  
+例题4：求定积分{% katex %}\int_{-\pi}^{\pi} (\sqrt{1+\cos x}+|x|\cdot x)dx{% endkatex %}  
+{% katex %}\sqrt{1+\cos x}{% endkatex %}为偶函数，{% katex %}|x|\cdot x{% endkatex %}为奇函数  
+解：原式{% katex %}=2\int_{0}^{\pi} \sqrt{1+\cos x}dx{% endkatex %}  
+{% katex %}=2\int_{0}^{\pi} \sqrt{2}\cdot \cos \frac{x}{2}dx{% endkatex %}  
+{% katex %}=2\cdot 2\sqrt{2} \int_{0}^{\pi} \cos \frac{x}{2}d(\frac{x}{2}){% endkatex %}  
+{% katex %}=4\sqrt{2}\int_{0}^{\pi} \cos \frac{x}{2} }d(\frac{x}{2}){% endkatex %}  
+{% katex %}=4\sqrt{2}\sin \frac{x}{2}|\begin{matrix}\pi\\0\end{matrix}{% endkatex %}  
+{% katex %}=4\sqrt{2}\cdot(\sin \frac{\pi}{2}-\sin 0){% endkatex %}  
+{% katex %}=4\sqrt{2}{% endkatex %} 
+2. 定积分点火公式（华里氏公式）  
+条件：积分区间为{% katex %}(0,\frac{\pi}{2}){% endkatex %}  
+公式：{% katex %}\int_{0}^{\frac{\pi }{2} }\sin ^nxdx=\int_{0}^{\frac{\pi }{2} }\cos ^nxdx=\left\{\begin{matrix}\frac{n-1}{n}\cdot \frac{n-3}{n-2}\dots \frac{1}{2}\cdot \frac{\pi }{2} ，n为偶数   \\\frac{n-1}{n}\cdot \frac{n-3}{n-2}\dots \frac{2}{3}\cdot \1 ，n为奇数 \end{matrix}\right.  {% endkatex %}  
+注意：{% katex %}{\color{Red} \int_{0}^{\pi }\sin ^n xdx=2\int_{0}^{\frac{\pi }{2} } \sin ^n xdx } {% endkatex %}  
+例题5： 求{% katex %}\int_{0}^{\frac{\pi }{2} }\cos ^6xdx{% endkatex %}  
+解：原式{% katex %}=\frac{5}{6}\cdot \frac{3}{4}\cdot \frac{1}{2}\cdot \frac{\pi }{2}=\frac{5\pi }{64}{% endkatex %}  
+例题6：求{% katex %}\int_{0}^{\frac{\pi }{2} }\sin ^5xdx{% endkatex %}  
+解：原式{% katex %}=\frac{4}{5}\cdot \frac{2}{3}\cdot \frac{1}{2}\cdot 1=\frac{4}{15}{% endkatex %}  
+例题6：求{% katex %}\int_{-\frac{\pi}{2} }^{\frac{\pi }{2} }(\sin ^4\theta +\cos ^3\theta )d\theta {% endkatex %}  
+解：原式{% katex %}=2\int_0^{\frac{\pi}{2} }(\sin ^4\theta +\cos ^3\theta )d\theta {% endkatex %}  
+{% katex %}=2(\frac{3}{4}\cdot \frac{1}{2}\cdot \frac{\pi}{2} +\frac{2}{3}\cdot 1){% endkatex %}  
+{% katex %}=\frac{3\pi}{8}+\frac{4}{3}{% endkatex %}  
+3. 定积分求1/4圆面积  
+公式：{% katex %}\int_{0}^{a} \sqrt{a^2-x^2}dx=\frac{1}{4}\pi a^2{% endkatex %}  
+例题7：{% katex %}\int_{0}^{2} \sqrt{4-x^2}dx=\int_{0}^{2}\sqrt{2^2-x^2}dx=\frac{1}{4}\pi \cdot 4=\pi{% endkatex %}   
+例题8：求{% katex %}\int_{-a}^{a} (b+x)\sqrt{a^2-x^2}dx{% endkatex %}  
+解：原式{% katex %}=\int_{-a}^{a} b\sqrt{a^2-x^2}+x\sqrt{a^2-x^2}dx{% endkatex %}   
+{% katex %}=\int_{-a}^{a} b\sqrt{a^2-x^2}dx{% endkatex %}  
+{% katex %}=2b\int_{0}^{a}\sqrt{a^2-x^2}dx{% endkatex %}  
+{% katex %}=2b\cdot \frac{1}{4}\pi a^2=\frac{1}{2}\pi a^2{% endkatex %}  
+例题9：设{% katex %}f(x)=3x-\sqrt{1-x^2}-\int_{0}^{1} f(x)dx，求f(x){% endkatex %}  
+解：令{% katex %}\int_{0}^{1} f(x)dx=A{% endkatex %}则{% katex %}f(x)=3x-\sqrt{1-x^2}-A{% endkatex %}  
+{% katex %}\int_{0}^{1}f(x)dx=\int_{0}^{1} 3xdx\int_{0}^{1} \sqrt{1-x^2}dx-\int_{0}^{1}Adx{% endkatex %}  
+{% katex %}A=3\frac{1}{2}|\begin{matrix}1\\0\end{matrix} -\frac{\pi}{4} -Ax|\begin{matrix}1\\0\end{matrix}{% endkatex %}  
+{% katex %}A=3\cdot \frac{1}{2}-\frac{1}{4}\pi -A{% endkatex %}  
+{% katex %}2A=\frac{3}{2}-\frac{1}{4}\pi {% endkatex %}  
+{% katex %}A=\frac{3}{4}-\frac{1}{8}\pi {% endkatex %}   
+故{% katex %}f(x)=3x-\sqrt{1-x^2}-\frac{3}{4}+\frac{1}{8}\pi {% endkatex %}  
+4. 定积分换元法  
+{% katex %}换元类型\left\{\begin{matrix}1).无理根式代换\\2).三角代换\end{matrix}\right.{% endkatex %}  
+注:**定积分换元换限**  
+例题10：求{% katex %}\int_{1}^{4} \frac{1}{x(1+\sqrt{x}) }dx{% endkatex %}  
+解：令{% katex %}\sqrt{x}=t,x=t^2,dx=2tdt{% endkatex %}  
+上限换元：{% katex %}x=4,t=2{% endkatex %}，下限换元：{% katex %}x=1,t=1{% endkatex %}  
+故：原式{% katex %}=\int_{1}^{2} \frac{1}{t^2(1+t)}2tdt{% endkatex %}  
+{% katex %}=2\int_{1}^{2} \frac{1}{t(1+t)}dt{% endkatex %}  
+{% katex %}=2\int_{1}^{2} \frac{1}{t}-\frac{1}{1+t}dt{% endkatex %}  
+{% katex %}=2(\ln t-\ln |1+t|)|\begin{matrix}2\\1\end{matrix}{% endkatex %}  
+{% katex %}=2\ln \frac{2}{3}-2\ln \frac{1}{2}{% endkatex %}   
+{% katex %}=2\ln \frac{4}{3}{% endkatex %}   
+例题11：求{% katex %}\int_{0}^{1} x^2 \cdot \sqrt{1-x^2}dx{% endkatex %}  
+解：令{% katex %}x=\sin t，dx=\cos tdt{% endkatex %}  
+上限换元：{% katex %}x=1,t=\frac{\pi}{2}{% endkatex %}，下限换元：{% katex %}x=0,t=0{% endkatex %}  
+原式{% katex %}=\int_{0}^{\frac{\pi}{2} } \sin ^2t\cdot \sqrt{1-sin^2t} \cdot \cos tdt{% endkatex %}  
+{% katex %}=\int_{0}^{\frac{\pi}{2} } \sin ^2t\cdot \cos ^2tdt{% endkatex %}  
+{% katex %}=\int_{0}^{\frac{\pi}{2} } (1-\cos ^2t)\cdot \cos ^2tdt{% endkatex %}  
+{% katex %}=\int_{0}^{\frac{\pi}{2} } \cos ^2t-\cos ^4tdt{% endkatex %}
+{% katex %}=\frac{1}{2}\cdot \frac{\pi}{2}-\frac{3}{4}\cdot \frac{1}{2}\cdot \frac{\pi}{2}{% endkatex %}   
+{% katex %}=\frac{\pi}{16}{% endkatex %}   
+
+---
+##### 分段函数定积分 
+{% katex %}\int_{a}^{b}f(x)dx=\int_{a}^{x_0}f(x)dx+\int_{b}{x_0}f(x)dx{% endkatex%}  
+注：遇到分段函数定积分，从分段点分开单独求左侧和右侧的积分，再相加。  
+例题1：
