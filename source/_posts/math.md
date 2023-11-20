@@ -1873,9 +1873,24 @@ A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {%
 {% katex %}=-\cos x \cdot e^x+\sin x \cdot e^x-\int e^x\cdot \sin xdx{% endkatex %}  
 {% katex %}\int e^x\sin xdx=-\cos x \cdot e^x+\sin x \cdot e^x-\int e^x\cdot \sin xdx{% endkatex %}  
 {% katex %}2\int e^x\sin xdx=-\cos x \cdot e^x-\sin x \cdot e^x{% endkatex %}  
-{% katex %}\int e^x\sin xdx =\frac{-\cos x \cdot e^x+e^x \cdot \sinx }{2}+C{% endkatex %}
+{% katex %}\int e^x\sin xdx =\frac{-\cos x \cdot e^x+e^x \cdot \sin x }{2}+C{% endkatex %}
 
 ---
 ### 定积分
 #### 定积分的概念
+1. 概念   
 指用来求曲边图形面积的工具，记为{% katex %}\int_a^b f(x)dx{% endkatex %}，其中{% katex %}a,b{% endkatex %}为积分上下限，{% katex %}f(x){% endkatex %}为被积函数。  
+2. 定积分的几何意义
+{% katex %}\int_a^b f(x)dx{% endkatex %}表示曲线{% katex %}y=f(x){% endkatex %}与{% katex %}x{% endkatex %}轴以及直线{% katex %}x=a,x=b{% endkatex %}所围成的各部分的面积的代数和。    
+{% katex %}f(x)>0,\int_a^b f(x)dx>0 {% endkatex %}  
+{% katex %}f(x)<0,\int_a^b f(x)dx < 0 {% endkatex %}  
+3. 定积分比较大小  
+{% katex %}f(x)\geq g(x){% endkatex %}，则{% katex %}\int_a^b f(x)dx\geq \int_a^b g(x)dx{% endkatex %}  
+例题1：比较{% katex %}\int_0^{\frac{\pi}{2} } xdx{% endkatex %}与{% katex %}\int_0^{\frac{\pi}{2} } \sin xdx{% endkatex %}的大小.  
+解：{% katex %}f(x)=x,g(x)=\sin x{% endkatex %}  
+{% katex %}f(x)\geq g(x){% endkatex %}  
+{% katex %}\int_0^{\frac{\pi}{2} } xdx > \int_0^{\frac{\pi}{2} } \sin xdx{% endkatex %}  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311201410350.png)
+例题2：比较{% katex %}\int_0^1 e^xdx{% endkatex %}与{% katex %}\int_0^1 e^{x^2} dx{% endkatex %}的大小.
+解：从{% katex %}x \in (0,1){% endkatex %}比较{% katex %}x,x^2{% endkatex %}，取一特殊值比较大小。  
+即{% katex %}\int_0^1 e^xdx > \int_0^1 e^{x^2} dx{% endkatex %}
