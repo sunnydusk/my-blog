@@ -2009,6 +2009,6 @@ D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积
 
 ---
 ##### 分段函数定积分 
-{% katex %}\int_{a}^{b}f(x)dx=\int_{a}^{x_0}f(x)dx+\int_{b}{x_0}f(x)dx{% endkatex%}  
+{% katex %}\int_{a}^{b}f(x)dx=\int_{a}^{x_0}f(x)dx+\int_{b}^{x_0}f(x)dx{% endkatex%}  
 注：遇到分段函数定积分，从分段点分开单独求左侧和右侧的积分，再相加。  
 例题1：
