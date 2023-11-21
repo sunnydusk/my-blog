@@ -1891,6 +1891,7 @@ A. {% katex %}f(2x){% endkatex %}   B. {% katex %}f(2x)+C{% endkatex %}    C. {%
 {% katex %}f(x)\geq g(x){% endkatex %}  
 {% katex %}\int_0^{\frac{\pi}{2} } xdx > \int_0^{\frac{\pi}{2} } \sin xdx{% endkatex %}  
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311201410350.png)
+
 例题2：比较{% katex %}\int_0^1 e^xdx{% endkatex %}与{% katex %}\int_0^1 e^{x^2} dx{% endkatex %}的大小.   
 解：从{% katex %}x \in (0,1){% endkatex %}比较{% katex %}x,x^2{% endkatex %}，取一特殊值比较大小。  
 即{% katex %}\int_0^1 e^xdx > \int_0^1 e^{x^2} dx{% endkatex %}   
@@ -1976,7 +1977,7 @@ D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积
 解：原式{% katex %}=\int_{-a}^{a} b\sqrt{a^2-x^2}+x\sqrt{a^2-x^2}dx{% endkatex %}   
 {% katex %}=\int_{-a}^{a} b\sqrt{a^2-x^2}dx{% endkatex %}  
 {% katex %}=2b\int_{0}^{a}\sqrt{a^2-x^2}dx{% endkatex %}  
-{% katex %}=2b\cdot \frac{1}{4}\pi a^2=\frac{1}{2}\pi a^2{% endkatex %}  
+{% katex %}=2b\cdot \frac{1}{4}\pi a^2=\frac{1}{2}\pi a^2{% endkatex %}    
 例题9：设{% katex %}f(x)=3x-\sqrt{1-x^2}-\int_{0}^{1} f(x)dx，求f(x){% endkatex %}  
 解：令{% katex %}\int_{0}^{1} f(x)dx=A{% endkatex %}则{% katex %}f(x)=3x-\sqrt{1-x^2}-A{% endkatex %}  
 {% katex %}\int_{0}^{1}f(x)dx=\int_{0}^{1} 3xdx\int_{0}^{1} \sqrt{1-x^2}dx-\int_{0}^{1}Adx{% endkatex %}  
@@ -2052,3 +2053,54 @@ D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积
 {% katex %}=\int_{0}^{\pi}\pi \cdot f(\sin x)dx-\int_{0}^{\pi}x \cdot f(\sin x)dx{% endkatex %}  
 {% katex %}\Longrightarrow 2\int_{0}^{\pi} x\cdot f(\sin x)dx=\pi \int_{0}^{\pi}f(\sin x)dx{% endkatex %}  
 {% katex %}\Longrightarrow \int_{0}^{\pi} x\cdot f(\sin x)dx=\frac{\pi}{2} \int_{0}^{\pi}f(\sin x)dx{% endkatex %}  
+故原式成立。  
+例题4：证明：{% katex %}\int_{0}^{\frac{\pi}{2} } \frac{\sin ^3x}{\sin x+\cos x}dx=\int_{0}^{\frac{\pi}{2} } \frac{\cos ^3x}{\sin x+\cos x}dx{% endkatex %}，并利用证明结果求{% katex %}\int_{0}^{\frac{\pi}{2} } \frac{\sin ^3x}{\sin x+\cos x}dx{% endkatex %}    
+解：{% katex %}\because \int_{0}^{\frac{\pi }{2} }\frac{\sin ^3x}{\sin x+\cos x}dx{% endkatex %}  
+{% katex %}=\int_{0}^{\frac{\pi }{2} }\frac{\sin ^3(\frac{\pi }{2}-x)}{\sin (\frac{\pi }{2}-x)+\cos (\frac{\pi }{2}-x)}dx{% endkatex %}  
+{% katex %}=\int_{0}^{\frac{\pi }{2} }\frac{\cos ^3x}{\sin x+\cos x}dx{% endkatex %}  
+故原式得证；   
+又{% katex %}\int_{0}^{\frac{\pi }{2} }\frac{\sin ^3x}{\sin x+\cos x}dx+\int_{0}^{\frac{\pi }{2} }\frac{\cos ^3x}{\sin x+\cos x}dx{% endkatex %}  
+{% katex %}=2\int_{0}^{\frac{\pi }{2} }\frac{\sin ^3x}{\sin x+\cos x}dx{% endkatex %}    
+{% katex %}\int_{0}^{\frac{\pi }{2} }\frac{\sin ^3x}{\sin x+\cos x}=\frac{1}{2}\cdot [\int_{0}^{\frac{\pi }{2} }\frac{\sin ^3x+\cos ^3x}{\sin x+\cos x}dx]{% endkatex %}  
+{% katex %}=\frac{1}{2}\int_{0}^{\frac{\pi }{2} }\frac{(\sin x+\cos x)\cdot (\sin ^2x-\sin x\cos x+\cos ^2)}{\sin x+\cos x}dx{% endkatex %}  
+{% katex %}=\frac{1}{2}\int_{0}^{\frac{\pi }{2} } 1-\sin x \cos xdx{% endkatex %}  
+{% katex %}=\frac{1}{2}\int_{0}^{\frac{\pi }{2} } 1dx-\frac{1}{2}\int_{0}^{\frac{\pi }{2} }\sin x \cos xdx{% endkatex %}  
+{% katex %}=\frac{1}{2}\cdot x|\begin{matrix}\frac{\pi }{2}\\0\end{matrix}-\frac{1}{2}\int_{0}^{\frac{\pi }{2} }\sin x\sin x{% endkatex %}  
+{% katex %}=\frac{1}{2}\cdot \frac{\pi }{2}-\frac{1}{2} \cdot \frac{1}{2}(\sin x)^2|\begin{matrix}\frac{\pi }{2}\\0\end{matrix}{% endkatex %}    
+{% katex %}=\frac{\pi }{4}-\frac{1}{4}=\frac{\pi -1}{4}{% endkatex %}  
+例题5：证明：{% katex %}F(x)=\int_{0}^{\pi }\ln(x^2+2x\cos t +1)dt{% endkatex %}为偶函数。  
+证明：因为求证函数为偶函数，所以{% katex %}F(x)=F(-x){% endkatex %}  
+{% katex %}F(-x)=\int_{0}^{\pi }\ln(x^2-2x\cos t +1)dt{% endkatex %}  
+又{% katex %}\int_{0}^{\pi }\ln(x^2-2x\cos t +1)dt=\int_{0}^{\pi }\ln(x^2+2x\cos (\pi -t) +1)dt{% endkatex %}  
+{% katex %}=\int_{0}^{\pi }\ln(x^2+2x\cos t +1)dt=F(x){% endkatex %}    
+故{% katex %}F(x)=F(-x){% endkatex %}，即{% katex %}F(x){% endkatex %}为偶函数。  
+
+---
+##### 定积分的几何应用
+1. x型图：由上下两个函数围成的面积（分上下观看）   
+公式：{% katex %}S=\int_{a}^{b}f_上(x)-f_下(x)dx{% endkatex %}  
+2. y型图：由左右两个函数围成的面积（分左右观看）  
+公式：{% katex %}S=\int_{c}^{d}f_右(y)-f_左(y)dx{% endkatex %}  
+注意：**选用y型图，改写为x=f(y)**  
+解题思路：  
+(1). 画图，确定积分区间（联立函数，找曲线交点）  
+(2). 确定积分类型    
+(3). 套公式  
+例题1：求由曲线{% katex %}y=x^2{% endkatex %}与{% katex %}y=\frac{1}{x}{% endkatex %}与{% katex %}x=2{% endkatex %}所围成的图形面积。  
+解：
+   ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311211806135.png)  
+选择x型图  
+{% katex %}S=\int_{1}^{2}(x^2-\frac{1}{x})dx{% endkatex %}  
+{% katex %}=\frac{1}{3}x^3-\ln x|\begin{matrix}2\\1\end{matrix}{% endkatex %}  
+{% katex %}=(\frac{8}{3}-\ln 2)-(\frac{1}{3}-\ln 1){% endkatex %}  
+{% katex %}=\frac{7}{3}-\ln 2{% endkatex %}    
+例题2：求由曲线{% katex %}y=x^2{% endkatex %}与{% katex %}y=\sqrt{x}{% endkatex %}所围成的图形面积。  
+解：
+联立两个方程{% katex %}\left\{\begin{matrix}y=x^2\\y=\sqrt{x} \end{matrix}\right.{% endkatex %}  
+联立{% katex %}x^2=\sqrt{x}{% endkatex %}，得交点{% katex %}(0,0),(1,1){% endkatex %}   
+   ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311211819074.png)  
+选择x型图  
+{% katex %}S=\int_{0}^{1}(\sqrt{x}-x^2)dx{% endkatex %}    
+{% katex %}\int_{0}^{1}(x^{\frac{1}{2} }-x^2)dx{% endkatex %}  
+{% katex %}=\frac{2}{3}x^{\frac{3}{2}}-\frac{1}{3}x^3|\begin{matrix}1\\0\end{matrix}{% endkatex %}  
+{% katex %}=\frac{2}{3}-\frac{1}{3}=1{% endkatex %}  
