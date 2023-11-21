@@ -2040,12 +2040,12 @@ D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积
 故{% katex %}\int_{0}^{1} x^m(1-x)^ndx=\int_{0}^{1} (1+0-x)^n[1-(1+0-x)]^mdx{% endkatex %}  
 得{% katex %}\int_{0}^{1} x^m(1-x)^ndx=\int_{0}^{1} (1-x)^m\cdot x^ndx{% endkatex %}    
 故原式成立。  
-例题2：证明：{% katex %}\int_{0}^{\frac{\pi}{2} } f(\sin x)dx=\int_{0}^{\frac{\pi}{2} }f(\cos x)}{% endkatex %}  
+例题2：证明：{% katex %}\int_{0}^{\frac{\pi }{2} } f(\sin x)dx=\int_{0}^{\frac{\pi }{2} }f(\cos x){% endkatex %}  
 证明：{% katex %}\because \int_{a}^{b}f(x)dx=\int_{a}^{b}f(a+b-x)dx{% endkatex %}  
-故{% katex %}\int_{0}^{\frac{\pi}{2} } f(\sin x)dx=\int_{0}^{\frac{\pi}{2} }f[\sin (\frac{\pi}{2}-x)] }{% endkatex %}  
-得{% katex %}\int_{0}^{\frac{\pi}{2} } f(\sin x)dx=\int_{0}^{\frac{\pi}{2} }f(\cos x)}{% endkatex %}  
+故{% katex %}\int_{0}^{\frac{\pi }{2} } f(\sin x)dx=\int_{0}^{\frac{\pi }{2} }f[\sin (\frac{\pi }{2}-x)] {% endkatex %}  
+得{% katex %}\int_{0}^{\frac{\pi }{2} } f(\sin x)dx=\int_{0}^{\frac{\pi }{2} }f(\cos x){% endkatex %}  
 **奇变偶不变，符号看象限**公式。  
-例题3：证明：{% katex %}\int_{0}^{\pi} f(\sin x)dx=\frac{\pi}{2}\int_{0}^{\pi }f(\sin x)}{% endkatex %}  
+例题3：证明：{% katex %}\int_{0}^{\pi} f(\sin x)dx=\frac{\pi }{2} \int_{0}^{\pi }f(\sin x){% endkatex %}  
 证明：{% katex %}\because \int_{a}^{b}f(x)dx=\int_{a}^{b}f(a+b-x)dx{% endkatex %}  
 故{% katex %}\int_{0}^{\pi} x \cdot f(\sin x)dx=\int_{0}^{\pi} (\pi-x)\cdot f[\sin (\pi-x)]dx{% endkatex %}  
 {% katex %}=\int_{0}^{\pi} (\pi-x)\cdot f(\sin x)dx{% endkatex %}  
