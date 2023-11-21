@@ -2011,4 +2011,44 @@ D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积
 ##### 分段函数定积分 
 {% katex %}\int_{a}^{b}f(x)dx=\int_{a}^{x_0}f(x)dx+\int_{b}^{x_0}f(x)dx{% endkatex%}  
 注：遇到分段函数定积分，从分段点分开单独求左侧和右侧的积分，再相加。  
-例题1：
+例题1：{% katex %}f(x)=\left\{\begin{matrix}e^x,x\le 1\\\ln x,x>1\end{matrix}\right.求\int_{0}^{e}f(x)dx {% endkatex %}  
+解：{% katex %}\int_{0}^{e}f(x)dx{% endkatex %}  
+{% katex %}=\int_{0}^{1}e^xdx+\int_{1}^{e}\ln xdx{% endkatex %}  
+{% katex %}=e^x|\begin{matrix}1\\0\end{matrix}+(x \cdot \ln x)|\begin{matrix}e\\1\end{matrix}-\int_{1}^{e}x \cdot \frac{1}{x}dx {% endkatex %}  
+{% katex %}=e-1+e-0-x|\begin{matrix}e\\1\end{matrix}{% endkatex %}  
+{% katex %}=e{% endkatex %}  
+例题2：{% katex %}f(x)=\left\{\begin{matrix}1+x^2,x<1\\e^x,x\ge 1\end{matrix}\right.求\int_{\frac{1}{2} }^{2}f(1-x)dx {% endkatex %}  
+解：**换元**，令{% katex %}1-x=t,x=1-t,dx=-dt{% endkatex %}  
+换上下限，{% katex %}x=\frac{1}{2} ,t=\frac{1}{2} {% endkatex %}，{% katex %}x=2,t=-1{% endkatex %}  
+原式{% katex %}=-\int_{\frac{1}{2} }^{-1}f(t)dt{% endkatex %}  
+{% katex %}=\int_{-1}^{\frac{1}{2} }f(t)dt{% endkatex %}  
+{% katex %}=-\int_{-1}^{0}f(t)dt+\int_{0}^{\frac{1}{2} }f(t)dt{% endkatex %}  
+{% katex %}=\int_{-1}^{0}(1+t^2)dt+\int_{0}^{\frac{1}{2} }e^tdt{% endkatex %}   
+{% katex %}=(t+\frac{1}{3}t^3)|\begin{matrix}0\\-1\end{matrix}+e^t|\begin{matrix}\frac{1}{2}\\0\end{matrix}{% endkatex %}  
+{% katex %}=0-(-1-\frac{1}{3})+e^{\frac{1}{2} }-e^0{% endkatex %}  
+{% katex %}=\frac{1}{3}+e^{\frac{1}{2} }-1{% endkatex %}  
+
+---
+##### 定积分等式证明
+积分区间再现公式：{% katex %}\int_{a}^{b} f(x)dx=\int_{a}^{b} f(a+b-x)dx{% endkatex %}  
+证明再现公式：换元，令{% katex %}a+b-x=t,x=a+b-t,dx=-dt{% endkatex %}  
+换上下限，{% katex %}x=a,t=b{% endkatex %}，{% katex %}x=b,t=a{% endkatex %}  
+故{% katex %}\int_{a}^{b} f(a+b-x)dx=-\int_{b}^{a} f(t)dt=\int_{a}^{b}f(t)dt{% endkatex %}  
+使用条件：等式两侧积分区间一样  
+例题1：证明：{% katex %}\int_{0}^{1} x^m(1-x)^ndx=\int_{0}^{1} x^n(1-x)^mdx{% endkatex %}  
+证明：{% katex %}\because \int_{a}^{b}f(x)dx=\int_{a}^{b}f(a+b-x)dx{% endkatex %}  
+故{% katex %}\int_{0}^{1} x^m(1-x)^ndx=\int_{0}^{1} (1+0-x)^n[1-(1+0-x)]^mdx{% endkatex %}  
+得{% katex %}\int_{0}^{1} x^m(1-x)^ndx=\int_{0}^{1} (1-x)^m\cdot x^ndx{% endkatex %}    
+故原式成立。  
+例题2：证明：{% katex %}\int_{0}^{\frac{\pi}{2} } f(\sin x)dx=\int_{0}^{\frac{\pi}{2} }f(\cos x)}{% endkatex %}  
+证明：{% katex %}\because \int_{a}^{b}f(x)dx=\int_{a}^{b}f(a+b-x)dx{% endkatex %}  
+故{% katex %}\int_{0}^{\frac{\pi}{2} } f(\sin x)dx=\int_{0}^{\frac{\pi}{2} }f[\sin (\frac{\pi}{2}-x)] }{% endkatex %}  
+得{% katex %}\int_{0}^{\frac{\pi}{2} } f(\sin x)dx=\int_{0}^{\frac{\pi}{2} }f(\cos x)}{% endkatex %}  
+**奇变偶不变，符号看象限**公式。  
+例题3：证明：{% katex %}\int_{0}^{\pi} f(\sin x)dx=\frac{\pi}{2}\int_{0}^{\pi }f(\sin x)}{% endkatex %}  
+证明：{% katex %}\because \int_{a}^{b}f(x)dx=\int_{a}^{b}f(a+b-x)dx{% endkatex %}  
+故{% katex %}\int_{0}^{\pi} x \cdot f(\sin x)dx=\int_{0}^{\pi} (\pi-x)\cdot f[\sin (\pi-x)]dx{% endkatex %}  
+{% katex %}=\int_{0}^{\pi} (\pi-x)\cdot f(\sin x)dx{% endkatex %}  
+{% katex %}=\int_{0}^{\pi}\pi \cdot f(\sin x)dx-\int_{0}^{\pi}x \cdot f(\sin x)dx{% endkatex %}  
+{% katex %}\Longrightarrow 2\int_{0}^{\pi} x\cdot f(\sin x)dx=\pi \int_{0}^{\pi}f(\sin x)dx{% endkatex %}  
+{% katex %}\Longrightarrow \int_{0}^{\pi} x\cdot f(\sin x)dx=\frac{\pi}{2} \int_{0}^{\pi}f(\sin x)dx{% endkatex %}  
