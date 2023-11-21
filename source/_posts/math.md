@@ -2088,7 +2088,7 @@ D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积
 (3). 套公式  
 例题1：求由曲线{% katex %}y=x^2{% endkatex %}与{% katex %}y=\frac{1}{x}{% endkatex %}与{% katex %}x=2{% endkatex %}所围成的图形面积。  
 解：
-   ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311211806135.png)  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311211806135.png)  
 选择x型图  
 {% katex %}S=\int_{1}^{2}(x^2-\frac{1}{x})dx{% endkatex %}  
 {% katex %}=\frac{1}{3}x^3-\ln x|\begin{matrix}2\\1\end{matrix}{% endkatex %}  
@@ -2098,7 +2098,7 @@ D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积
 解：
 联立两个方程{% katex %}\left\{\begin{matrix}y=x^2\\y=\sqrt{x} \end{matrix}\right.{% endkatex %}  
 联立{% katex %}x^2=\sqrt{x}{% endkatex %}，得交点{% katex %}(0,0),(1,1){% endkatex %}   
-   ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311211819074.png)  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311211819074.png)  
 选择x型图  
 {% katex %}S=\int_{0}^{1}(\sqrt{x}-x^2)dx{% endkatex %}    
 {% katex %}\int_{0}^{1}(x^{\frac{1}{2} }-x^2)dx{% endkatex %}  
