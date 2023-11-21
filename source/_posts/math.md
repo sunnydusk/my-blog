@@ -1953,13 +1953,13 @@ D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积
 解：原式{% katex %}=2\int_{0}^{\pi} \sqrt{1+\cos x}dx{% endkatex %}  
 {% katex %}=2\int_{0}^{\pi} \sqrt{2}\cdot \cos \frac{x}{2}dx{% endkatex %}  
 {% katex %}=2\cdot 2\sqrt{2} \int_{0}^{\pi} \cos \frac{x}{2}d(\frac{x}{2}){% endkatex %}  
-{% katex %}=4\sqrt{2}\int_{0}^{\pi} \cos \frac{x}{2} }d(\frac{x}{2}){% endkatex %}  
-{% katex %}=4\sqrt{2}\sin \frac{x}{2}|\begin{matrix}\pi\\0\end{matrix}{% endkatex %}  
+{% katex %}=4\sqrt{2}\int_{0}^{\pi} \cos \frac{x}{2} d(\frac{x}{2}){% endkatex %}  
+{% katex %}=4\sqrt{2} \sin \frac{x}{2}|\begin{matrix}\pi\\0\end{matrix}{% endkatex %}  
 {% katex %}=4\sqrt{2}\cdot(\sin \frac{\pi}{2}-\sin 0){% endkatex %}  
 {% katex %}=4\sqrt{2}{% endkatex %} 
 2. 定积分点火公式（华里氏公式）  
 条件：积分区间为{% katex %}(0,\frac{\pi}{2}){% endkatex %}  
-公式：{% katex %}\int_{0}^{\frac{\pi }{2} }\sin ^nxdx=\int_{0}^{\frac{\pi }{2} }\cos ^nxdx=\left\{\begin{matrix}\frac{n-1}{n}\cdot \frac{n-3}{n-2}\dots \frac{1}{2}\cdot \frac{\pi }{2} ，n为偶数   \\\frac{n-1}{n}\cdot \frac{n-3}{n-2}\dots \frac{2}{3}\cdot \1 ，n为奇数 \end{matrix}\right.  {% endkatex %}  
+公式：{% katex %}\int_{0}^{\frac{\pi }{2} }\sin ^nxdx=\int_{0}^{\frac{\pi }{2} }\cos ^nxdx=\left\{\begin{matrix}\frac{n-1}{n}\cdot \frac{n-3}{n-2}\dots \frac{1}{2}\cdot \frac{\pi }{2} ，n为偶数   \\\frac{n-1}{n}\cdot \frac{n-3}{n-2}\dots \frac{2}{3}\cdot 1 ，n为奇数 \end{matrix}\right.  {% endkatex %}  
 注意：{% katex %}{\color{Red} \int_{0}^{\pi }\sin ^n xdx=2\int_{0}^{\frac{\pi }{2} } \sin ^n xdx } {% endkatex %}  
 例题5： 求{% katex %}\int_{0}^{\frac{\pi }{2} }\cos ^6xdx{% endkatex %}  
 解：原式{% katex %}=\frac{5}{6}\cdot \frac{3}{4}\cdot \frac{1}{2}\cdot \frac{\pi }{2}=\frac{5\pi }{64}{% endkatex %}  
