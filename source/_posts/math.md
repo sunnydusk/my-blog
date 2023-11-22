@@ -2146,9 +2146,9 @@ D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积
 {% katex %}=\frac{2}{3}\cdot x^{\frac{3}{2} }|\begin{matrix}4\\0\end{matrix}{% endkatex %}  
 {% katex %}=\frac{2}{3}\cdot (4)^{\frac{3}{2} }{% endkatex %}  
 {% katex %}=\frac{16}{3}{% endkatex %}  
-{% katex %}V=\pi \int_{c}^{d}x\cdot \sqrt{x}dx{% endkatex %}  
-{% katex %}V=\pi \int_{0}^{4}x\cdot \sqrt{x}dx{% endkatex %}  
-{% katex %}=2\pi \int_{0}^{4}x^{\frac{3}{2}}dx{% endkatex %}  
-{% katex %}=2\pi \cdot \frac{2}{5}x^{\frac{5}{2}}|\begin{matrix}4\\0\end{matrix}{% endkatex %}  
-{% katex %}=\frac{16}{5}\cdot 2\pi {% endkatex %}  
-{% katex %}=\frac{32}{5}\pi {% endkatex %}  
+{% katex %}V=\pi \int_{c}^{d}f_右^2(y)-f_左^2(y)dy{% endkatex %}  
+{% katex %}=\pi \int_{0}^{2}(4^2-y^4)dy{% endkatex %}  
+{% katex %}=\pi \int_{0}^{2}16-y^4dy{% endkatex %}  
+{% katex %}=\pi \cdot 1(6y-\frac{1}{5}x^5|\begin{matrix}2\\0\end{matrix}{% endkatex %}  
+{% katex %}=\pi \cdot (32-\frac{32}{5}){% endkatex %}  
+{% katex %}=\frac{128}{5}\pi {% endkatex %}    
