@@ -2095,7 +2095,7 @@ D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积
 {% katex %}=(\frac{8}{3}-\ln 2)-(\frac{1}{3}-\ln 1){% endkatex %}  
 {% katex %}=\frac{7}{3}-\ln 2{% endkatex %}    
 例题2：求由曲线{% katex %}y=x^2{% endkatex %}与{% katex %}y=\sqrt{x}{% endkatex %}所围成的图形面积。  
-解：
+解：  
 联立两个方程{% katex %}\left\{\begin{matrix}y=x^2\\y=\sqrt{x} \end{matrix}\right.{% endkatex %}  
 联立{% katex %}x^2=\sqrt{x}{% endkatex %}，得交点{% katex %}(0,0),(1,1){% endkatex %}   
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311211819074.png)  
@@ -2104,3 +2104,51 @@ D. {% katex %}f(x){% endkatex %}在{% katex %}[a,b]{% endkatex %}上可积
 {% katex %}\int_{0}^{1}(x^{\frac{1}{2} }-x^2)dx{% endkatex %}  
 {% katex %}=\frac{2}{3}x^{\frac{3}{2}}-\frac{1}{3}x^3|\begin{matrix}1\\0\end{matrix}{% endkatex %}  
 {% katex %}=\frac{2}{3}-\frac{1}{3}=1{% endkatex %}  
+选择y型图  
+{% katex %}S=\int_{0}^{1}(\sqrt{y}-y^2)dy{% endkatex %}  
+{% katex %}=\frac{2}{3}y^{\frac{3}{2}}-\frac{1}{3}y^3|\begin{matrix}1\\0\end{matrix}{% endkatex %}  
+{% katex %}=\frac{2}{3}-\frac{1}{3}=\frac{1}{3}{% endkatex %}    
+例题3：求由曲线{% katex %}y=\frac{1}{x}{% endkatex %}、{% katex %}y=x{% endkatex %}、{% katex %}x=2{% endkatex %}及{% katex %}x{% endkatex %}轴所围成的图形面积。  
+解：  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311221416806.png)   
+选择x型图  
+{% katex %}S=S_1+S_2{% endkatex %}  
+{% katex %}S_1=\int_{0}^{1}xdx=\frac{1}{2}|\begin{matrix}1\\0\end{matrix}=\frac{1}{2}{% endkatex %}  
+{% katex %}S_2=\int_{1}^{2}\frac{1}{x}dx=\ln |x| |\begin{matrix}2\\1\end{matrix}=\ln 2{% endkatex %}  
+即{% katex %}S=S_1+S_2=\ln 2+\frac{1}{2}{% endkatex %}    
+
+---
+##### 定积分求旋转体积
+1. x型图绕x轴旋转  
+公式：{% katex %}V_x=\pi \int_{a}^{b}f^2(x)dx{% endkatex %}  
+若是两个函数，{% katex %}f_上(x),f_下(x){% endkatex %}间的体积，{% katex %}V_x=\pi \int_{a}^{b}f_上^2(x)-f_下^2(x)dx{% endkatex %}    
+2. y型图绕y轴旋转  
+公式：{% katex %}V_y=\pi \int_{c}^{d}f^2(y)dy{% endkatex %}    
+若是两个函数，{% katex %}f_左(y),f_右(y){% endkatex %}间的体积，{% katex %}V_y=\pi \int_{a}^{b}f_右^2(y)-f_左^2(y)dy{% endkatex %}   
+3. x型图绕y轴旋转  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311221448562.png)
+公式：{% katex %}V=2\pi \int_{a}^{b}x\cdot f(x)dy{% endkatex %}   
+例题1：求由函数{% katex %}y=\sin x，0\le x\le \pi {% endkatex %}与{% katex %}x{% endkatex %}轴所围成的图形绕y轴旋转一周所得旋转体积。   
+解：  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311221512865.png)  
+{% katex %}V=2\pi \int_{a}^{b}x \cdot f(x)dx{% endkatex %}  
+{% katex %}=2\pi \int_{0}^{\pi}x\cdot \sin xdx{% endkatex %}  
+{% katex %}=-2\pi \int_{0}^{\pi}x d\cos x{% endkatex %}  
+{% katex %}=-2\pi (x\cdot \cos x|\begin{matrix}\pi\\0\end{matrix}-\int_{0}^{\pi}\cos xdx){% endkatex %}  
+{% katex %}=-2\pi (\pi \cdot \pi-\sin x|\begin{matrix}\pi\\0\end{matrix}){% endkatex %}  
+{% katex %}=-2\pi (\pi \cdot (-1)-0{% endkatex %}  
+{% katex %}=2\pi ^2{% endkatex %}  
+例题2：求由函数{% katex %}y=\sqrt{x}{% endkatex %}与{% katex %}x=4{% endkatex %}及x轴所围成的面积和绕y轴旋转一周所得旋转体积。  
+解：  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311221528323.png)
+{% katex %}S=\int_{0}^{4}\sqrt{x}dx{% endkatex %}  
+{% katex %}=\int_{0}^{4}x^{\frac{1}{2} }dx{% endkatex %}  
+{% katex %}=\frac{2}{3}\cdot x^{\frac{3}{2} }|\begin{matrix}4\\0\end{matrix}{% endkatex %}  
+{% katex %}=\frac{2}{3}\cdot (4)^{\frac{3}{2} }{% endkatex %}  
+{% katex %}=\frac{16}{3}{% endkatex %}  
+{% katex %}V=\pi \int_{c}^{d}x\cdot \sqrt{x}dx{% endkatex %}  
+{% katex %}V=\pi \int_{0}^{4}x\cdot \sqrt{x}dx{% endkatex %}  
+{% katex %}=2\pi \int_{0}^{4}x^{\frac{3}{2}}dx{% endkatex %}  
+{% katex %}=2\pi \cdot \frac{2}{5}x^{\frac{5}{2}}|\begin{matrix}4\\0\end{matrix}{% endkatex %}  
+{% katex %}=\frac{16}{5}\cdot 2\pi {% endkatex %}  
+{% katex %}=\frac{32}{5}\pi {% endkatex %}  
