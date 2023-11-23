@@ -1,5 +1,6 @@
 ---
 title: 1+X 证书考试  
+top: 1
 mathjax: true
 categories:
    - 考试复习
