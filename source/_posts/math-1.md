@@ -1,5 +1,5 @@
 ---
-title: 高等数学
+title: 高等数学-1
 hexo-math: true
 type: "categories"
 categories: 
