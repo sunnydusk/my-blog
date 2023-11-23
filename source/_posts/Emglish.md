@@ -1,7 +1,6 @@
 ---
 title: 英语
 type: "categories"
-weight: 2
 categories: 
   - 专升本
 tags:

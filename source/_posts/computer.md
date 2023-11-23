@@ -1,7 +1,6 @@
 ---
 title: 计算机基础
 mathjax: true
-weight: 2
 categories:
    - 专升本
 tags:

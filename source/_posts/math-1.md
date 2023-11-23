@@ -2,7 +2,6 @@
 title: 高等数学-1
 hexo-math: true
 type: "categories"
-weight: 1
 categories: 
   - 专升本
 tags:
