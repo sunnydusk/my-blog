@@ -1,6 +1,7 @@
 ---
 title: Word
 mathjax: true
+weight: 2
 categories:
    - 专升本
 tags:

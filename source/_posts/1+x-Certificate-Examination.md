@@ -1,6 +1,7 @@
 ---
 title: 1+X 证书考试  
 mathjax: true
+weight: 3
 categories:
    - 考试复习
 tags:
