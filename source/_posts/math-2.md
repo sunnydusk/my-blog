@@ -1,5 +1,6 @@
 ---
 title: 高等数学-2
+top: 1
 hexo-math: true
 type: "categories"
 categories: 

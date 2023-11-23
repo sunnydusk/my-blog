@@ -1,5 +1,6 @@
 ---
 title: 计算机基础
+top: 2
 mathjax: true
 categories:
    - 专升本
