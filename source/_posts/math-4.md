@@ -120,8 +120,8 @@ date: 2023-11-22 21:04:00
 则{% katex %}\frac{5}{y}=\frac{x}{6}=\frac{-2}{4}{% endkatex %}  
 解得：{% katex %}x=-3,y=-10{% endkatex %}  
 
----
-#### 空间平面方程  
+## 空间解析几何
+### 空间平面方程  
 1. 点法式方程：  
 {% katex %}A(x-x_0)+B(y_-y_0)+C(z-z_0)=0{% endkatex %}  
 解析：       
@@ -133,7 +133,7 @@ date: 2023-11-22 21:04:00
 {% katex %}Ax+By+Cz+D=0{% endkatex %}D为常数   
 
 ---
-#### 空间平面位置关系
+### 空间平面位置关系
 设有两个平面：{% katex %}\pi _1:A_1x+B_1y+C_1z+D_1=0{% endkatex %}，{% katex %}\pi _2:A_2x+B_2y+C_2z+D_2=0{% endkatex %}  
 则{% katex %}\vec{n_1}=(A_1,B_1,C_1);\vec{n_2}=(A_2,B_2,C_2){% endkatex %}   
 法向量，看x,y,z的系数    
@@ -173,7 +173,7 @@ D. {% katex %}\pi _2 \parallel \pi _3{% endkatex %}
 所以平面方程为：{% katex %}2x-y-z=0{% endkatex %}    
 
 ---
-#### 空间平面的夹角及点面距离公式
+### 空间平面的夹角及点面距离公式
 1. 平面间的夹角：  
 两个平面夹角就是两个平面法向量的夹角。  
 解法：{% katex %}\left\{\begin{matrix}1. 找\vec{n_1},\vec{n_2} \\2. 求\cos \theta =\frac{\vec{n_1}\cdot \vec{n_2} }{|\vec{n_1} |\cdot |\vec{n_2} |} \\3. 反推\theta 大小\end{matrix}\right.{% endkatex %}  
@@ -185,7 +185,7 @@ D. {% katex %}\pi _2 \parallel \pi _3{% endkatex %}
 {% katex %}d=\frac{|1+2+2\cdot 3+3|}{\sqrt{1^2+1^2+2^2}}=\frac{12}{\sqrt{8}}=\frac{\sqrt{6} }{2}{% endkatex %}    
 
 ---
-#### 特殊平面方程  
+### 特殊平面方程  
 平面的一般式方程：{% katex %}Ax+By+Cz+D=0{% endkatex %}    
 1. {% katex %}D=0，Ax+By+Cz+D=0{% endkatex %}过原点的平面，称为原点平面。   
 2. 少某个字母({% katex %}x,y,z{% endkatex %})，设少{% katex %}z,Ax+By+D=0 (z \in R){% endkatex %}则平行于z轴，少哪个字母即平行于某轴。  
@@ -201,7 +201,7 @@ D. {% katex %}\pi _2 \parallel \pi _3{% endkatex %}
 
    
 ---
-#### 空间直线方程  
+### 空间直线方程  
 1. 直线的点向式方程：{% katex %}\frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p}{% endkatex %}   
 (1). 称平行于直线的向量为方向向量，{% katex %}\vec{S}=(m,n,p){% endkatex %}  
 (2). 取直线上两不重合的点{% katex %}M(x,y,z),M_0(x_0,y_0,z_0){% endkatex %}连接{% katex %}M_0M{% endkatex %}得：  
@@ -218,7 +218,7 @@ D. {% katex %}\pi _2 \parallel \pi _3{% endkatex %}
 设两平面方程为：{% katex %}\left\{\begin{matrix}A_1x+B_1y+C_1z+D_1=0\\A_2x+B_2y+C_2z+D_2=0\end{matrix}\right.{% endkatex %}     
 
 ---
-#### 直线与直线的位置关系  
+### 直线与直线的位置关系  
 设两直线方程为：{% katex %}\left\{\begin{matrix}l_1:\frac{x-x_1}{m_1}=\frac{y-y_1}{n_1}=\frac{z-z_1}{p_1}\\l_2:\frac{x-x_2}{m_2}=\frac{y-y_2}{n_2}=\frac{z-z_2}{p_2}\end{matrix}\right.{% endkatex %}     
 则有：{% katex %}\vec{S_1}=(m_1,n_1,p_1);\vec{S_2}=(m_2,n_2,p_2){% endkatex %}   
 1. 平行：{% katex %}\vec{S_1} \parallel \vec{S_2}{% endkatex %}    
@@ -227,7 +227,7 @@ D. {% katex %}\pi _2 \parallel \pi _3{% endkatex %}
 **线和线的位置关系与向量关系一致**。  
 
 ---
-#### 直线与平面的位置关系  
+### 直线与平面的位置关系  
 与向量的位置关系相反。  
 设平面方程为：{% katex %}\pi :Ax+By+Cz+D=0{% endkatex %}，直线方程为：{% katex %}l:\frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p}{% endkatex %}   
 则有：{% katex %}\vec{n}=(A,B,C);\vec{S}=(m,n,p){% endkatex %}  
@@ -236,7 +236,7 @@ D. {% katex %}\pi _2 \parallel \pi _3{% endkatex %}
 3. 重合：{% katex %}\left\{\begin{matrix}1. 平行\\2. 直线上的点(x_0,y_0,z_0)在平面上\end{matrix}\right.{% endkatex %}     
 
 ---
-#### 例题
+### 例题
 1. 直线与直线的位置关系   
 例题1：确定{% katex %}l_1:\frac{x+14}{3}=\frac{y}{1}=\frac{z+21}{5}{% endkatex %}与直线{% katex %}\left\{\begin{matrix}x=\frac{1}{3}-9t \\y=1-3t\\z=\frac{1}{-3}-15t \end{matrix}\right.{% endkatex %}的位置关系。    
 解：{% katex %}\vec{S_1}=(3,1,5);\vec{S_2}=(-9,-3,-15){% endkatex %}   
@@ -277,7 +277,7 @@ A. 平行     B. 垂直     C. 直线在平面上     D. 相交不垂直
 即垂足为{% katex %}(1,1,5){% endkatex %}    
 
 --- 
-#### 直线与直线的夹角{% katex %}\theta {% endkatex %}  
+### 直线与直线的夹角{% katex %}\theta {% endkatex %}  
 (1). 找两个直线的方向向量{% katex %}\vec{S_1},\vec{S_2}{% endkatex %}   
 (2). 求{% katex %}\cos \theta =\frac{\vec{S_1}\cdot \vec{S_2} }{|\vec{S_1} |\cdot |\vec{S_2} |}{% endkatex %}反求{% katex %}\theta {% endkatex %}的大小。  
 例题：两条直线{% katex %}l_1:\frac{x-1}{1}=\frac{y-5}{-2}=\frac{z+8}{1}{% endkatex %}与{% katex %}\left\{\begin{matrix}x=t+6\\y=t\\z=-2t+3\end{matrix}\right.{% endkatex %}的夹角为(A)    
