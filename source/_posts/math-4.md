@@ -285,3 +285,14 @@ A. {% katex %}\frac{\pi }{3}{% endkatex %}    B. {% katex %}\frac{\pi }{4}{% end
 {% katex %}\cos \theta =|\frac{\vec{S_1} \cdot \vec{S_2} }{|\vec{S_1}|\cdot |\vec{S_2}|}|{% endkatex %}    
 {% katex %}=|\frac{1\cdot 1+(-2)\cdot 1+1\cdot (-2)}{\sqrt{1^2+(-2)^2+1^2}\cdot \sqrt{1^2+1^2+(-2)^2}}|=\frac{3}{\sqrt{6} \cdot \sqrt{6} }=\frac{3}{6}=\frac{1}{2}{% endkatex %}   
 {% katex %}\therefore \theta =\frac{\pi }{3}{% endkatex %}    
+
+---
+### 向量的方向角
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311242056757.png)  
+用于确定向量的方向的量，向量与坐标轴**正向或基向量**的交角称为向量的方向角，向量的方向角的余弦称为向量的方向余弦。  
+设向量{% katex %}r=xi+yj+zk{% endkatex %}的方向角为{% katex %}\alpha ，\beta ，\gamma {% endkatex %}则：     
+{% katex %}\cos \alpha =\frac{r \cdot i}{|r|}=\frac{x}{\sqrt{x^2+y^2+z^2}}{% endkatex %}  
+{% katex %}\cos \beta =\frac{r \cdot j}{|r|}=\frac{y}{\sqrt{x^2+y^2+z^2}}{% endkatex %}   
+{% katex %}\cos \gamma =\frac{r \cdot z}{|r|}=\frac{z}{\sqrt{x^2+y^2+z^2}}{% endkatex %}    
+且{% katex %}\cos ^2 \alpha +\cos ^2 \beta +\cos ^2 \gamma =1{% endkatex %}  
+{% katex %}r=|r|(\cos \alpha ,\cos \beta ,\cos \gamma ){% endkatex %}     
