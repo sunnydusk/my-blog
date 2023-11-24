@@ -33,12 +33,12 @@ date: 2023-11-22 21:04:00
 {% katex %}\vec{e}=\frac{\vec{AB}}{|\vec{AB}|}=\frac{(0,1,2)}{\sqrt{5}} {% endkatex %}  
 
 ---
-#### 空间直角坐标系及其单位向量  
-{% katex %}\vec{i},\vec{j},\vec{k} {% endkatex %}分别为x,y,z轴上的单位向量，称为空间直角坐标系的基向量。  
-注意：若{% katex %}2\vec{i}+3\vec{j}-2\vec{k}{% endkatex %},则为(2,3,-2)。  
+#### 空间直角坐标系及其单位向量
+1. {% katex %}\vec{i},\vec{j},\vec{k}{% endkatex %}分别为x,y,z轴上的单位向量，称为空间直角坐标系的基向量。   
+2. 注意：若{% katex %}2\vec{i}+3\vec{j}-2\vec{k} {% endkatex %},则为(2,3,-2)  
 
 ---
-#### 向量的运算法则
+#### 向量的运算法则  
 设{% katex %}\vec{a}=(x_1,y_1,z_1),\vec{b}=(x_2,y_2,z_2) {% endkatex %}  
 1. 向量的加减法：  
 {% katex %}\vec{a}\pm \vec{b}=(x_1\pm x_2,y_1\pm y_2,z_1\pm z_2) {% endkatex %}  
