@@ -161,7 +161,7 @@ D. {% katex %}\pi _2 \parallel \pi _3{% endkatex %}
 解： 带入点法式公式{% katex %}A(x-x_0)+B(y-y_0)+C(z-z_0)=0{% endkatex %}  
 {% katex %}4(x-1)+5(y-2)+6(z-3)=0{% endkatex %}  
 {% katex %}4x+5y+6z-32=0{% endkatex %}    
-例题3：求过两点{% katex %}A(1,1,1),B(0,1,-1){% endkatex %}且垂直于平面{% katex %}x+y+z=0{% endkaatex %}的平面方程。   
+例题3：求过两点{% katex %}A(1,1,1),B(0,1,-1){% endkatex %}且垂直于平面{% katex %}x+y+z=0{% endkatex %}的平面方程。   
 解析：{% katex %}\vec{n_1}\perp \vec{n_2}\Longrightarrow \vec{n_1}\times \vec{n_2}=0{% endkatex %}   
 且有{% katex %}\begin{matrix}\vec{c}\perp \vec{a}\\ \vec{c}\perp \vec{b}\end{matrix}\Longrightarrow \vec{c}=\vec{a}\times \vec{b} {% endkatex %}    
 解：{% katex %}\vec{AB}=(-1,0,-2){% endkatex %}，设符求平面法向量为{% katex %}\vec{n_1}{% endkatex %}，故{% katex %}\vec{n_1}\perp \vec{AB}{% endkatex %}  
