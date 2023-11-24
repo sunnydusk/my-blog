@@ -11,9 +11,8 @@ tags:
 date: 2023-11-22 21:04:00
 ---
 
-## 向量代数与空间解析几何  
-### 向量代数  
-#### 向量的概念
+## 向量代数与空间解析几何
+### 向量的概念
 1. 向量(矢量)是`有大小有方向`的量，用一个带箭头的线段来表示，线段的长度表示向量的大小，箭头的方向表示向量的方向{% katex %}\vec{a} {% endkatex %}。  
 2. 标量(数量)是`只有大小没有方向`的量，用一个数字来表示。  
 向量的大小用`模`来表示，向量的方向用`方向角`来表示。  
@@ -33,12 +32,12 @@ date: 2023-11-22 21:04:00
 {% katex %}\vec{e}=\frac{\vec{AB}}{|\vec{AB}|}=\frac{(0,1,2)}{\sqrt{5}} {% endkatex %}  
 
 ---
-#### 空间直角坐标系及其单位向量
+### 空间直角坐标系及其单位向量
 1. {% katex %}\vec{i},\vec{j},\vec{k}{% endkatex %}分别为x,y,z轴上的单位向量，称为空间直角坐标系的基向量。   
 2. 注意：若{% katex %}2\vec{i}+3\vec{j}-2\vec{k} {% endkatex %},则为(2,3,-2)  
 
 ---
-#### 向量的运算法则  
+### 向量的运算法则  
 设{% katex %}\vec{a}=(x_1,y_1,z_1),\vec{b}=(x_2,y_2,z_2) {% endkatex %}  
 1. 向量的加减法：  
 {% katex %}\vec{a}\pm \vec{b}=(x_1\pm x_2,y_1\pm y_2,z_1\pm z_2) {% endkatex %}  
@@ -52,7 +51,7 @@ date: 2023-11-22 21:04:00
 注：{% katex %}\left.\begin{matrix}\vec{c} \perp \vec{a} \\\vec{c} \perp \vec{b} \end{matrix}\right\}\vec{c} =\vec{a}\times \vec{b}{% endkatex %}  
 
 ---
-#####  向量点乘的几何运算
+###  向量点乘的几何运算
 在坐标下：{% katex %}\vec{a}\cdot \vec{b}=|\vec{a}|\cdot |\vec{b}|\cdot cos\theta {% endkatex %}  
 在几何下：{% katex %}\vec{a}\cdot \vec{b}=|\vec{a}|\cdot |\vec{b}|\cdot \cos \theta ,\theta {% endkatex %}指{% katex %}\vec{a},\vec{b} {% endkatex %}的夹角   
 若{% katex %}\vec{a}\perp \vec{b}{% endkatex %}则{% katex %}\vec{a}\cdot \vec{b} =|\vec{a} |\cdot |\vec{b} |\cdot \cos 90°=0{% endkatex %}   
@@ -69,7 +68,7 @@ date: 2023-11-22 21:04:00
 则有{% katex %}3\cdot 3^2+3\cdot 0-0-2^2=23{% endkatex %}  
 
 ---
-##### 向量叉乘的运算
+### 向量叉乘的运算
 若{% katex %}\vec{a}=(x_1,y_1,z_1),\vec{b}=(x_2,y_2,z_2){% endkatex %}  
 则{% katex %}\vec{a} \times \vec{b}=\begin{vmatrix}\vec{i} &\vec{j} &\vec{k} \\x_1 &y_1 &z_1 \\x_2 &y_2 &z_2 \\\end{vmatrix} {% endkatex %}  
 {% katex %}\begin{vmatrix} y_1& z_1\\y_2&z_2\end{vmatrix}\cdot \vec{i}-\begin{vmatrix} x_1& z_1\\x_2&z_2\end{vmatrix}\cdot \vec{j}+\begin{vmatrix} x_1& y_1\\x_2&y_2\end{vmatrix}\cdot \vec{k}{% endkatex %}    
@@ -91,7 +90,7 @@ date: 2023-11-22 21:04:00
 ![例题1使用对角线法解题](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311231554410.png)  
 
 ---
-##### {% katex %}\vec{a}\times \vec{b} {% endkatex %}的几何意义
+### {% katex %}\vec{a}\times \vec{b} {% endkatex %}的几何意义
 {% katex %}|\vec{a}\times \vec{b}|=|\vec{a}|\cdot |\vec{b}|\cdot \sin \theta {% endkatex %}    
 几何意义：指由{% katex %}\vec{a},\vec{b} {% endkatex %}所构成的平行四边形的面积。  
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311231604992.png)
@@ -111,7 +110,7 @@ date: 2023-11-22 21:04:00
 解得{% katex %}h=\frac{2\sqrt{21} }{7}{% endkatex %}  
 
 ---
-##### 向量间位置关系
+### 向量间位置关系
 设{% katex %}\vec{a}=(x_1,y_1,z_1),\vec{b}=(x_2,y_2,z_2){% endkatex %}  
 {% katex %}\vec{a}\perp \vec{b} \Leftrightarrow \vec{a}\cdot \vec{b}{% endkatex %}    
 {% katex %}\vec{a}\parallel \vec{b} \Leftrightarrow \frac{x_1}{x_2}=\frac{y_1}{y_2}=\frac{z_1}{z_2}{% endkatex %}对应坐标比值相等    
@@ -120,7 +119,7 @@ date: 2023-11-22 21:04:00
 则{% katex %}\frac{5}{y}=\frac{x}{6}=\frac{-2}{4}{% endkatex %}  
 解得：{% katex %}x=-3,y=-10{% endkatex %}  
 
-## 空间解析几何
+---
 ### 空间平面方程  
 1. 点法式方程：  
 {% katex %}A(x-x_0)+B(y_-y_0)+C(z-z_0)=0{% endkatex %}  
