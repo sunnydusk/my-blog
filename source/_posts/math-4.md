@@ -121,7 +121,7 @@ date: 2023-11-22 21:04:00
 解得：{% katex %}x=-3,y=-10{% endkatex %}  
 
 ---
-##### 空间平面方程  
+#### 空间平面方程  
 1. 点法式方程：  
 {% katex %}A(x-x_0)+B(y_-y_0)+C(z-z_0)=0{% endkatex %}  
 解析：       
@@ -133,7 +133,7 @@ date: 2023-11-22 21:04:00
 {% katex %}Ax+By+Cz+D=0{% endkatex %}D为常数   
 
 ---
-##### 空间平面位置关系
+#### 空间平面位置关系
 设有两个平面：{% katex %}\pi _1:A_1x+B_1y+C_1z+D_1=0{% endkatex %}，{% katex %}\pi _2:A_2x+B_2y+C_2z+D_2=0{% endkatex %}  
 则{% katex %}\vec{n_1}=(A_1,B_1,C_1);\vec{n_2}=(A_2,B_2,C_2){% endkatex %}   
 法向量，看x,y,z的系数    
@@ -143,4 +143,146 @@ date: 2023-11-22 21:04:00
 4. 重合：{% katex %}\begin{Bmatrix}平行\\有交点\end{Bmatrix}\Longrightarrow \frac{A_1}{A_2}=\frac{B_1}{B_2}=\frac{C_1}{C_2}=\frac{D_1}{D_2}{% endkatex %}     
 注：找向量{% katex %}\vec{n_1},\vec{n_2}{% endkatex %}。   
 位置关系与向量位置关系一致。   
- 
+例题1：设有三个平面：{% katex %}\pi _1:x-5y+2z=-1{% endkatex %}，{% katex %}\pi _2:3x-2y+5z+8=0{% endkatex %}，{% katex %}\pi _3:4x+2y+3z-9=0{% endkatex %}，则{% katex %}\pi _1,\pi _2,\pi _3{% endkatex %}的位置关系是：(B)   
+A. {% katex %}\pi _1 \parallel \pi _2{% endkatex %}   
+B. {% katex %}\pi _1 \perp \pi _3{% endkatex %}  
+C. {% katex %}\pi _2 \perp \pi _3{% endkatex %}  
+D. {% katex %}\pi _2 \parallel \pi _3{% endkatex %}  
+解析：{% katex %}\vec{n_1}=(1,-5,2);\vec{n_2}=(3,-2,5);\vec{n_3}=(4,2,3){% endkatex %}  
+{% katex %}\vec{n_1} \parallel \vec{n_2}=\frac{1}{3}\neq \frac{5}{2}\neq \frac{2}{5}{% endkatex %}所以A不平行，错误。    
+{% katex %}\vec{n_1} \cdot \vec{n_3}=1\cdot 4+(-5)\cdot 2+2\cdot 3=0{% endkatex %}所以B两个互相垂直，正确。    
+{% katex %}\vec{n_2} \cdot \vec{n_3}=3\cdot 4+(-2)\cdot 2+5\cdot 3\neq 0{% endkatex %}所以两个平面不垂直，错误。    
+{% katex %}\vec{n_2} \parallel \vec{n_3}=\frac{3}{4}\neq \frac{-2}{2}\neq \frac{5}{3}{% endkatex %}所以D不平行，错误。    
+已知条件，求平面方程（**题型**）：  
+解题思路：
+   (1). {% katex %}找目标条件\left\{\begin{matrix}1. 平面上一点(x_0,y_0,z_0)\\2. 平面\vec{n}(A,B,C) \end{matrix}\right.{% endkatex %}  
+   (2). 代入点法式方程：{% katex %}A(x-x_0)+B(y-y_0)+C(z-z_0)=0{% endkatex %}  
+例题2：求过点{% katex %}M(1,2,3){% endkatex %}且{% katex %}\vec{n}=(4,5,6){% endkatex %}的平面方程。  
+解： 带入点法式公式{% katex %}A(x-x_0)+B(y-y_0)+C(z-z_0)=0{% endkatex %}  
+{% katex %}4(x-1)+5(y-2)+6(z-3)=0{% endkatex %}  
+{% katex %}4x+5y+6z-32=0{% endkatex %}    
+例题3：求过两点{% katex %}A(1,1,1),B(0,1,-1){% endkatex %}且垂直于平面{% katex %}x+y+z=0{% endkaatex %}的平面方程。   
+解析：{% katex %}\vec{n_1}\perp \vec{n_2}\Longrightarrow \vec{n_1}\times \vec{n_2}=0{% endkatex %}   
+且有{% katex %}\begin{matrix}\vec{c}\perp \vec{a}\\ \vec{c}\perp \vec{b}\end{matrix}\Longrightarrow \vec{c}=\vec{a}\times \vec{b} {% endkatex %}    
+解：{% katex %}\vec{AB}=(-1,0,-2){% endkatex %}，设符求平面法向量为{% katex %}\vec{n_1}{% endkatex %}，故{% katex %}\vec{n_1}\perp \vec{AB}{% endkatex %}  
+又平面{% katex %}x+y+z=0{% endkatex %}得{% katex %}\vec{n_2}=(1,1,1){% endkatex %}由题可知{% katex %}\vec{n_1}\perp \vec{n_2}{% endkatex %}    
+由上可知{% katex %}\vec{n_1}=\vec{AB}\times \vec{n_2}{% endkatex %}  
+{% katex %}\vec{n_1}=\begin{vmatrix}\vec{i} &\vec{j} &\vec{k} \\-1&0&-2\\1&1&1\end{vmatrix}{\color{Red} \begin{matrix}\vec{i} &\vec{j} \\-1&0\\1&1\end{matrix}} {% endkatex %}   
+{% katex %}=(0-2\vec{j}-\vec{k})-(0-2\vec{i}+\vec{j})=(2,-1,-1){% endkatex %}    
+又因为过点{% katex %}A(1,1,1){% endkatex %}，故{% katex %}1\cdot 2+1\cdot (-1)+1\cdot (-1)=0{% endkatex %}  
+所以平面方程为：{% katex %}2x-y-z=0{% endkatex %}    
+
+---
+#### 空间平面的夹角及点面距离公式
+1. 平面间的夹角：  
+两个平面夹角就是两个平面法向量的夹角。  
+解法：{% katex %}\left\{\begin{matrix}1. 找\vec{n_1},\vec{n_2} \\2. 求\cos \theta =\frac{\vec{n_1}\cdot \vec{n_2} }{|\vec{n_1} |\cdot |\vec{n_2} |} \\3. 反推\theta 大小\end{matrix}\right.{% endkatex %}  
+2. 点到平面的距离：  
+设点{% katex %}P(x_0,y_0,z_0){% endkatex %}到平面{% katex %}\pi :Ax+By+Cz+D=0{% endkatex %}的距离为d  
+则有公式：{% katex %}d=\frac{|Ax_0+By_0+Cz_0+D|}{\sqrt{A^2+B^2+C^2}}{% endkatex %}   
+例题：求点{% katex %}M(1,2,3){% endkatex %}到平面{% katex %}\pi :x+y+2z+3=0{% endkatex %}的距离。  
+解：使用公式：{% katex %}d=\frac{|Ax_0+By_0+Cz_0+D|}{\sqrt{A^2+B^2+C^2}}{% endkatex %}  
+{% katex %}d=\frac{|1+2+2\cdot 3+3|}{\sqrt{1^2+1^2+2^2}}=\frac{12}{\sqrt{8}}=\frac{\sqrt{6} }{2}{% endkatex %}    
+
+---
+#### 特殊平面方程  
+平面的一般式方程：{% katex %}Ax+By+Cz+D=0{% endkatex %}    
+1. {% katex %}D=0，Ax+By+Cz+D=0{% endkatex %}过原点的平面，称为原点平面。   
+2. 少某个字母({% katex %}x,y,z{% endkatex %})，设少{% katex %}z,Ax+By+D=0 (z \in R){% endkatex %}则平行于z轴，少哪个字母即平行于某轴。  
+3. 少了两个字母({% katex %}z,y{% endkatex %})，设少{% katex %}z,y,Ax+D=0 (z,y \in R){% endkatex %}则平行或重合于yoz平面，少两个字母即平行或重合于某平面。   
+4. 少了某个字母和某个系数({% katex %}z,D{% endkatex %})，设少{% katex %}Ax+By=0{% endkatex %}则平面经过了z轴，少了哪个字母即经过了某轴。    
+例题1：求经过了z轴和点{% katex %}M_0(-3,1,2){% endkatex %}的平面方程。  
+解：设待求平面为{% katex %}Ax+By=0{% endkatex %}   
+因为点{% katex %}M_0(-3,1,2){% endkatex %}在平面上      
+所以{% katex %}A\cdot (-3)+B\cdot 1=0{% endkatex %}   
+得{% katex %}A=\frac{B}{3}{% endkatex %}      
+取{% katex %}B=3{% endkatex %}，得{% katex %}A=1{% endkatex %}   
+即平面方程为：{% katex %}x+3y=0{% endkatex %}   
+
+   
+---
+#### 空间直线方程  
+1. 直线的点向式方程：{% katex %}\frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p}{% endkatex %}   
+(1). 称平行于直线的向量为方向向量，{% katex %}\vec{S}=(m,n,p){% endkatex %}  
+(2). 取直线上两不重合的点{% katex %}M(x,y,z),M_0(x_0,y_0,z_0){% endkatex %}连接{% katex %}M_0M{% endkatex %}得：  
+{% katex %}\vec{M_0M}=(x-x_0,y-y_0,z-z_0){% endkatex %},有{% katex %}\vec{M_0M} \parallel \vec{S}{% endkatex %}  
+得：{% katex %}\frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p}{% endkatex %}     
+注：`看分母，得{% katex %}\vec{S}=(m,n,p){% endkatex %}`  
+`看分子，得点{% katex %}M(x_0,y_0,z_0){% endkatex %}`  
+2. 参数方程  
+若令{% katex %}\frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p}=t{% endkatex %}   
+则有：{% katex %}\left\{\begin{matrix}x=x_0+mt\\y=y_0+nt\\z=z_0+pt\end{matrix}\right.{% endkatex %}    
+一般求`交点`使用参数方程。  
+3. 直线的一般式方程（交面式）    
+由两平面相交而成的直线，称为交线。   
+设两平面方程为：{% katex %}\left\{\begin{matrix}A_1x+B_1y+C_1z+D_1=0\\A_2x+B_2y+C_2z+D_2=0\end{matrix}\right.{% endkatex %}     
+
+---
+#### 直线与直线的位置关系  
+设两直线方程为：{% katex %}\left\{\begin{matrix}l_1:\frac{x-x_1}{m_1}=\frac{y-y_1}{n_1}=\frac{z-z_1}{p_1}\\l_2:\frac{x-x_2}{m_2}=\frac{y-y_2}{n_2}=\frac{z-z_2}{p_2}\end{matrix}\right.{% endkatex %}     
+则有：{% katex %}\vec{S_1}=(m_1,n_1,p_1);\vec{S_2}=(m_2,n_2,p_2){% endkatex %}   
+1. 平行：{% katex %}\vec{S_1} \parallel \vec{S_2}{% endkatex %}    
+2. 垂直：{% katex %}\vec{S_1} \perp \vec{S_2}{% endkatex %}    
+3. 重合：{% katex %}\left\{\begin{matrix}1. 平行\\2. 有交点\end{matrix}\right.{% endkatex %}   
+**线和线的位置关系与向量关系一致**。  
+
+---
+#### 直线与平面的位置关系  
+与向量的位置关系相反。  
+设平面方程为：{% katex %}\pi :Ax+By+Cz+D=0{% endkatex %}，直线方程为：{% katex %}l:\frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p}{% endkatex %}   
+则有：{% katex %}\vec{n}=(A,B,C);\vec{S}=(m,n,p){% endkatex %}  
+1. 平行：{% katex %}\vec{n} \perp \vec{S}{% endkatex %}    
+2. 垂直：{% katex %}\vec{n} \parallel \vec{S}{% endkatex %}  
+3. 重合：{% katex %}\left\{\begin{matrix}1. 平行\\2. 直线上的点(x_0,y_0,z_0)在平面上\end{matrix}\right.{% endkatex %}     
+
+---
+#### 例题
+1. 直线与直线的位置关系   
+例题1：确定{% katex %}l_1:\frac{x+14}{3}=\frac{y}{1}=\frac{z+21}{5}{% endkatex %}与直线{% katex %}\left\{\begin{matrix}x=\frac{1}{3}-9t \\y=1-3t\\z=\frac{1}{-3}-15t \end{matrix}\right.{% endkatex %}的位置关系。    
+解：{% katex %}\vec{S_1}=(3,1,5);\vec{S_2}=(-9,-3,-15){% endkatex %}   
+{% katex %}\because \frac{3}{-9}=\frac{1}{-3}=\frac{5}{-15}=-\frac{1}{3}{% endkatex %}    
+{% katex %}\therefore \vec{S_1} \parallel \vec{S_2}{% endkatex %}   
+又因为{% katex %}l_2{% endkatex %}上点{% katex %}(\frac{1}{3},1,-\frac{1}{3}){% endkatex %}不满足{% katex %}l_1{% endkatex %}，所以两直线平行。    
+2. 直线与平面的位置关系   
+例题2：直线{% katex %}l:\frac{x}{2}=\frac{y-5}{5}=\frac{z-6}{3}{% endkatex %}与平面{% katex %}\pi :15x-9y+5z=-15{% endkatex %}的位置关系为(C)。   
+A. 平行     B. 垂直     C. 直线在平面上     D. 相交不垂直     
+解：{% katex %}\vec{n}=(15,-9,5);\vec{S}=(2,5,3){% endkatex %}   
+{% katex %}\frac{2}{15}\neq \frac{5}{-9}\neq \frac{3}{5}{% endkatex %}故不成立      
+{% katex %}\vec{n} \cdot \vec{S}=15\cdot 2+(-9)\cdot 5+5\cdot 3=0{% endkatex %}   
+{% katex %}\therefore \vec{n} \perp \vec{S}{% endkatex %}  
+故{% katex %}l \parallel \pi {% endkatex %}     
+又直线l上的点{% katex %}M_0(0,5,6){% endkatex %}满足平面方程，即重合。   
+3. 求平面与直线的交点坐标     
+解法：直线转换为参数方程，带入平面方程，解出参数t，带入参数方程，求出交点坐标。   
+例题3：求{% katex %}\frac{x-2}{3}=\frac{y}{2}=\frac{z-1}{5}{% endkatex %}与{% katex %}x+y+z+2=0{% endkatex %}的交点。   
+解：令{% katex %}\frac{x-2}{3}=\frac{y}{2}=\frac{z-1}{5}=t{% endkatex %}  
+则直线为：{% katex %}\left\{\begin{matrix}x=2+3t\\y=2t\\z=1+5t\end{matrix}\right.{% endkatex %}   
+{% katex %}2+3t+2t+1+5t+2=0{% endkatex %}   
+{% katex %}10t=-5{% endkatex %}   
+{% katex %}t=-\frac{1}{2}{% endkatex %}    
+故当{% katex %}t=-\frac{1}{2}{% endkatex %}时，{% katex %}x=2+3\cdot (-\frac{1}{2})=\frac{1}{2}{% endkatex %}   
+{% katex %}y=2\cdot (-\frac{1}{2})=-1{% endkatex %}   
+{% katex %}z=1+5\cdot (-\frac{1}{2})=-\frac{3}{2}{% endkatex %}  
+所以交点为：{% katex %}M(\frac{1}{2},-1,-\frac{3}{2}){% endkatex %}   
+例题4：求过点{% katex %}A(2,-1,3){% endkatex %}作平面{% katex %}x-2y-2z+11=0{% endkatex %}垂线，求垂足的坐标。    
+解：设垂足为点{% katex %}B(x_0,y_0,z_0){% endkatex %}   
+平面{% katex %}\vec{n}=(1,-2,-2){% endkatex %}，由题可知直线AB   
+{% katex %}\vec{S}=(1,-2,-2){% endkatex %},则直线AB为：   
+{% katex %}\frac{x-2}{1}=\frac{y+1}{-2}=\frac{z-3}{-2}=t{% endkatex %}   
+{% katex %}\left\{\begin{matrix}x=t+2\\y=-2t-1\\z=-2t+3\end{matrix}\right.{% endkatex %}   
+代入平面{% katex %}x-2y-2z+11=0{% endkatex %}   
+得：{% katex %}t+2-2(-2t-1)-2(-2t+3)+11=0{% endkatex %}   
+解得{% katex %}t=-1{% endkatex %}   
+故{% katex %}t=1{% endkatex %}时直线AB与平面有交点
+即垂足为{% katex %}(1,1,5){% endkatex %}    
+
+--- 
+#### 直线与直线的夹角{% katex %}\theta {% endkatex %}  
+(1). 找两个直线的方向向量{% katex %}\vec{S_1},\vec{S_2}{% endkatex %}   
+(2). 求{% katex %}\cos \theta =\frac{\vec{S_1}\cdot \vec{S_2} }{|\vec{S_1} |\cdot |\vec{S_2} |}{% endkatex %}反求{% katex %}\theta {% endkatex %}的大小。  
+例题：两条直线{% katex %}l_1:\frac{x-1}{1}=\frac{y-5}{-2}=\frac{z+8}{1}{% endkatex %}与{% katex %}\left\{\begin{matrix}x=t+6\\y=t\\z=-2t+3\end{matrix}\right.{% endkatex %}的夹角为(A)    
+A. {% katex %}\frac{\pi }{3}{% endkatex %}    B. {% katex %}\frac{\pi }{4}{% endkatex %}    C. {% katex %}\frac{\pi }{6} {% endkatex %}    D. {% katex %}\frac{\pi }{2} {% endkatex %}  
+解：{% katex %}\vec{S_1}=(1,-2,1);\vec{S_2}=(1,1,-2){% endkatex %}   
+{% katex %}\cos \theta =|\frac{\vec{S_1} \cdot \vec{S_2} }{|\vec{S_1}|\cdot |\vec{S_2}|}|{% endkatex %}    
+{% katex %}=|\frac{1\cdot 1+(-2)\cdot 1+1\cdot (-2)}{\sqrt{1^2+(-2)^2+1^2}\cdot \sqrt{1^2+1^2+(-2)^2}}|=\frac{3}{\sqrt{6} \cdot \sqrt{6} }=\frac{3}{6}=\frac{1}{2}{% endkatex %}   
+{% katex %}\therefore \theta =\frac{\pi }{3}{% endkatex %}    
