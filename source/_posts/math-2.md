@@ -21,18 +21,22 @@ date: 2023-10-20 09:36:00
 1. {% katex %}f'(x_0)=\lim_{\Delta  \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}{% endkatex %}
 2. {% katex %}f'(x_0)=\lim_{x \to x_0}\frac{f(x)-f(x_0)}{x-x_0}{% endkatex %}
 3. {% katex %}f'(x_0)=\lim_{h \to 0}\frac{f(x_0+h)-f(x_0)}{h}{% endkatex %}
-   ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251015134.png)
-   ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251015912.png)
-   例题：
-   若{% katex %}f'(x_0)=1,f(x_0)=0{% endkatex %}，则{% katex %}\lim_{h \to \infty} hf(x_0-\frac{1}{h}){% endkatex %}=______-1____.
-   解：令{% katex %}\Delta x=\frac{1}{h}{% endkatex %}
-   原式={% katex %}\lim_{\Delta x \to 0} \frac{f(x_0-\Delta x)-f(x_0)}{\Delta x}=-f'(x_0)=-1{% endkatex %}
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251015134.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251015912.png)
+例题：
+若{% katex %}f'(x_0)=1,f(x_0)=0{% endkatex %}，则{% katex %}\lim_{h \to \infty} hf(x_0-\frac{1}{h}){% endkatex %}=______-1____.
+解：令{% katex %}\Delta x=\frac{1}{h}{% endkatex %}
+原式={% katex %}\lim_{\Delta x \to 0} \frac{f(x_0-\Delta x)-f(x_0)}{\Delta x}=-f'(x_0)=-1{% endkatex %}
 ##### 导函数的定义
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251016093.png)
+
+---
 ##### 结论
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251016677.png)
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251016233.png)
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251017515.png)
+
+---
 #### 导数的定义
 函数{% katex %}f(x){% endkatex %}在某点{% katex %}x_0{% endkatex %}的导数：
 - 定义式：{% katex %}\lim_{x \to x_0} \frac{f(x)-f(x_0)}{x-x_0} =f'(x_0){% endkatex %};
@@ -58,9 +62,12 @@ date: 2023-10-20 09:36:00
           解：原式={% katex %}\lim_{\Delta x \to 0}\frac{\Delta x}{f(x_0-2\Delta x)-f(x_0-\Delta  x)}{% endkatex %}
           ={% katex %}\lim_{\Delta x \to 0}\frac{1}{\frac{f(x_0-2\Delta x)-f(x_0-\Delta x)}{\Delta x}}{% endkatex %}
           ={% katex %}\lim_{\Delta x \to 0}\frac{1}{\frac{-2-(-1)}{1}\cdot f'(x_0)}=1{% endkatex %}
+---
 ##### 导数定义，求函数{% katex %}f(x){% endkatex %}在某点的导数
 特点：此时的{% katex %}f(x){% endkatex %}为复杂的多项式，乘积形式；
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251017456.png)
+
+---
 ##### 已知{% katex %}f(x){% endkatex %}某点导数，求相关极限
 解法：根据导数定义，凑出相关极限
 例题：

@@ -32,6 +32,12 @@ date: 2023-11-22 21:04:00
 {% katex %}\vec{e}=\frac{\vec{AB}}{|\vec{AB}|}=\frac{(0,1,2)}{\sqrt{5}} {% endkatex %}  
 
 ---
+### 基础公式 
+{% katex %}|\vec{a}+\vec{b}|=\sqrt{(\vec{a}+\vec{b})^2}{% endkatex %}  
+{% katex %}|\vec{a}-\vec{b}|=\sqrt{(\vec{a}-\vec{b})^2}{% endkatex %}  
+{% katex %}\vec{a}\cdot \vec{b}=|\vec{a}||\vec{b}|\cdot \cos <\vec{a},\vec{b}>{% endkatex %}  
+
+---
 ### 空间直角坐标系及其单位向量
 1. {% katex %}\vec{i},\vec{j},\vec{k}{% endkatex %}分别为x,y,z轴上的单位向量，称为空间直角坐标系的基向量。   
 2. 注意：若{% katex %}2\vec{i}+3\vec{j}-2\vec{k} {% endkatex %},则为(2,3,-2)  
@@ -290,7 +296,7 @@ A. {% katex %}\frac{\pi }{3}{% endkatex %}    B. {% katex %}\frac{\pi }{4}{% end
 ### 向量的方向角
 ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311242056757.png)  
 用于确定向量的方向的量，向量与坐标轴**正向或基向量**的交角称为向量的方向角，向量的方向角的余弦称为向量的方向余弦。  
-设向量{% katex %}r=xi+yj+zk{% endkatex %}的方向角为{% katex %}\alpha ，\beta ，\gamma {% endkatex %}则：     
+设向量{% katex %}r=xi+y j+zk{% endkatex %}的方向角为{% katex %}\alpha ，\beta ，\gamma {% endkatex %}则：     
 {% katex %}\cos \alpha =\frac{r \cdot i}{|r|}=\frac{x}{\sqrt{x^2+y^2+z^2}}{% endkatex %}  
 {% katex %}\cos \beta =\frac{r \cdot j}{|r|}=\frac{y}{\sqrt{x^2+y^2+z^2}}{% endkatex %}   
 {% katex %}\cos \gamma =\frac{r \cdot z}{|r|}=\frac{z}{\sqrt{x^2+y^2+z^2}}{% endkatex %}    

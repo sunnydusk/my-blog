@@ -76,3 +76,17 @@ date: 2023-11-24 16:26:00
 解：{% katex %}\frac{\partial z}{\partial x}=e^{xy^2}\cdot y^2{% endkatex %}   
 {% katex %}\frac{\partial z}{\partial y}=e^{xy^2}\cdot 2xy{% endkatex %}。  
 {% katex %}dz=e^{xy^2}\cdot y^2dx+e^{xy^2}\cdot 2xydy{% endkatex %}。  
+
+---
+### 可微与偏导的关系
+{% katex %}可微\Longleftrightarrow 可导\Longrightarrow 连续\Longrightarrow 极限{% endkatex %}     
+{% katex %}z=f(x,y)偏导数存在且连续\Longrightarrow f(x,y)可微{% endkatex %}   
+{% katex %}z=f(x,y)可微\Longrightarrow 连续\Longrightarrow 极限{% endkatex %}   
+{% katex %}z=f(x,y)可微\Longrightarrow 偏导存在{% endkatex %}   
+**偏导存在，与连续无关**    
+例题1：若函数{% katex %}z=f(x,y){% endkatex %}在点{% katex %}(x_0,y_0){% endkatex %}某一邻域内偏导{% katex %}\frac{\partial z}{\partial x}，\frac{\partial z}{\partial y}{% endkatex %}都存在，则{% katex %}z=f(x,y){% endkatex %}在{% katex %}(x_0,y_0){% endkatex %}可微。(×)      
+解析：偏导未连续，不可微。  
+
+---
+### 可微的本质 
+
