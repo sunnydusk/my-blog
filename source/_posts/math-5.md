@@ -93,7 +93,7 @@ date: 2023-11-24 16:26:00
 {% katex %}\left\{\begin{matrix}\tan \theta =\frac{\Delta y}{\Delta x} \\f'(x_0)=\tan \theta \end{matrix}\right.\Longrightarrow f'(x_0)=\frac{\Delta y}{\Delta x} {% endkatex %}      
 {% katex %}\Longrightarrow \Delta y_切=f'(x_0)\Delta x{% endkatex %}。     
 若{% katex %}\Delta y_切=\Delta y{% endkatex %}则称`可微`！     
-条件：{% katex %}\Delta y-\Delta y_切=\Delta y-f'(x_0)\cdot \Deltax \Longrightarrow 趋于0且为\Delta x的高阶无穷小量{% endkatex %}     
+条件：{% katex %}\Delta y-\Delta y_切=\Delta y-f'(x_0)\cdot \Delta x \Longrightarrow 趋于0且为\Delta x的高阶无穷小量{% endkatex %}     
 *具体判断方法*：    
 (1). 写增量：{% katex %}\Delta y=f(x_0+\Delta x)-f(x_0){% endkatex %}   
 (2). 写线性增量：{% katex %}A\Delta x=f'(x_0)\cdot \Delta x{% endkatex %}   
@@ -122,7 +122,7 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 {% katex %}z=f(x,y)的两个混合偏导\frac{\partial^2 z}{\partial x \partial y}，\frac{\partial^2 z}{\partial y \partial x}在闭区间D内连续，则\frac{\partial^2 z}{\partial x \partial y}=\frac{\partial^2 z}{\partial y \partial x}{% endkatex %}     
 例题1：设{% katex %}z=x^3y^2{% endkatex %}，求{% katex %}\frac{\partial^2 z}{\partial x^2},\frac{\partial^2 z}{\partial x \partial y},\frac{\partial^2 z}{\partial y \partial x}{% endkatex %}。   
 解：{% katex %}\frac{\partial z}{\partial x}=3x^2y^2{% endkatex %}   
-则{% katex %}\frac{\partial^2 z}{\partial x^2=6xy^2,\frac{\partial^2 z}{\partial x \partial y}=6x^2y{% endkatex %}   
+则{% katex %}\frac{\partial^2 z}{\partial x^2}=6xy^2,\frac{\partial^2 z}{\partial x \partial y}=6x^2y{% endkatex %}   
 {% katex %}\frac{\partial z}{\partial y}=2x^3y{% endkatex %}   
 {% katex %}\frac{\partial^2 z}{\partial y \partial x}=6x^2y{% endkatex %}     
 例题2：设{% katex %}z=y^x{% endkatex %}，则{% katex %}z_{xy}=\frac{\partial^2 z}{\partial x \partial y}=(){% endkatex %}     
