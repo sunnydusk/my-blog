@@ -89,4 +89,89 @@ date: 2023-11-24 16:26:00
 
 ---
 ### 可微的本质 
+可微：指用{% katex %}f(x){% endkatex %}在{% katex %}(x_0,y_0){% endkatex %}处的切线上的增量{% katex %}\Delta y{% endkatex %}来替代了曲线{% katex %}f(x){% endkatex %}本身的增量{% katex %}\Delta y{% endkatex %}。    
+{% katex %}\left\{\begin{matrix}\tan \theta =\frac{\Delta y}{\Delta x} \\f'(x_0)=\tan \theta \end{matrix}\right.\Longrightarrow f'(x_0)=\frac{\Delta y}{\Delta x} {% endkatex %}      
+{% katex %}\Longrightarrow \Delta y_切=f'(x_0)\Delta x{% endkatex %}。     
+若{% katex %}\Delta y_切=\Delta y{% endkatex %}则称`可微`！     
+条件：{% katex %}\Delta y-\Delta y_切=\Delta y-f'(x_0)\cdot \Deltax \Longrightarrow 趋于0且为\Delta x的高阶无穷小量{% endkatex %}     
+*具体判断方法*：    
+(1). 写增量：{% katex %}\Delta y=f(x_0+\Delta x)-f(x_0){% endkatex %}   
+(2). 写线性增量：{% katex %}A\Delta x=f'(x_0)\cdot \Delta x{% endkatex %}   
+(3). 作极限：{% katex %}\lim_{\Delta x \to 0}\frac{\Delta y-A\Delta x}{\Delta x}=0{% endkatex %}   
+(4). 判断：若极限为0，则可微。   
+*在二元函数内*：{% katex %}z=f(x,y){% endkatex %}   
+(1). 全增量：{% katex %}\Delta z=f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0){% endkatex %}   
+(2). 线性增量：{% katex %}\Delta z=A\Delta x+B\Delta y{% endkatex %}   
+(3). 作极限：{% katex %}\lim \frac{\Delta z-\Delta z_线}{\sqrt{\Delta x^2+\Delta y^2} }=0{% endkatex %}   
+(4). 判断：若极限为0，则可微。    
+{% katex %}\Delta z=A\Delta x+B\Delta y+0(\rho ),\rho =\sqrt{\Delta x^2+\Delta y^2},A=\frac{\partial z}{\partial x},B=\frac{\partial z}{\partial y}{% endkatex %}     
+例题1：设{% katex %}f(x,y){% endkatex %}在点{% katex %}(x_0,y_0){% endkatex %}处两个偏导{% katex %}f_x(x_0,y_0),f_y(x_0,y_0){% endkatex %}都存在，则有()    
+A. 存在常数{% katex %}k{% endkatex %}使得{% katex %}\lim_{x \to x_0,y\to y_0}f(x,y)=k {% endkatex %}（极限存在）     
+B. {% katex %}\lim_{x \to x_0,y\to y_0}f(x,y)=f(x_0,y_0){% endkatex %}（连续）  
+C. {% katex %}\lim_{y\to y_0}f(x,y)=f(x_0,y_0);\lim_{x \to x_0}f(x,y)=f(x_0,y_0){% endkatex %}    
+D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0)-[f_x(x_0,y_0)\Delta x+f_y(x_0,y_0)\Delta y]=0(\sqrt{(\Delta x)^2+(\Delta y)^2}){% endkatex %}   
+解析：偏导存在，没有提连续，不能判断极限存在，AB错,{% katex %}f_x(x_0,y_0)=\frac{df(x_0,y_0)}{dx}|_{x=x_0},f_y(x_0,y_0)=\frac{df(x_0,y_0)}{dy}|_{y=y_0}{% endkatex %}可判断x方向和y方向均为连续，故C正确，偏导+连续才为可微，题目未提连续，即D错误。   
 
+---
+### 二阶偏导
+{% katex %}z=f(x,y){% endkatex %}的二阶偏导数：   
+{% katex %}\frac{\partial^2 z}{\partial x^2}指z对x求两次偏导{% endkatex %}     
+{% katex %}\frac{\partial^2 z}{\partial y^2}指z对y求两次偏导{% endkatex %}     
+{% katex %}\frac{\partial^2 z}{\partial y \partial x}指z先对y后对x的二阶混合偏导{% endkatex %}     
+{% katex %}\frac{\partial^2 z}{\partial x \partial y}指z先对x后对y的二阶混合偏导{% endkatex %}     
+{% katex %}z=f(x,y)的两个混合偏导\frac{\partial^2 z}{\partial x \partial y}，\frac{\partial^2 z}{\partial y \partial x}在闭区间D内连续，则\frac{\partial^2 z}{\partial x \partial y}=\frac{\partial^2 z}{\partial y \partial x}{% endkatex %}     
+例题1：设{% katex %}z=x^3y^2{% endkatex %}，求{% katex %}\frac{\partial^2 z}{\partial x^2},\frac{\partial^2 z}{\partial x \partial y},\frac{\partial^2 z}{\partial y \partial x}{% endkatex %}。   
+解：{% katex %}\frac{\partial z}{\partial x}=3x^2y^2{% endkatex %}   
+则{% katex %}\frac{\partial^2 z}{\partial x^2=6xy^2,\frac{\partial^2 z}{\partial x \partial y}=6x^2y{% endkatex %}   
+{% katex %}\frac{\partial z}{\partial y}=2x^3y{% endkatex %}   
+{% katex %}\frac{\partial^2 z}{\partial y \partial x}=6x^2y{% endkatex %}     
+例题2：设{% katex %}z=y^x{% endkatex %}，则{% katex %}z_{xy}=\frac{\partial^2 z}{\partial x \partial y}=(){% endkatex %}     
+解：{% katex %}\frac{\partial z}{\partial x}=y^x\cdot \ln y{% endkatex %}   
+{% katex %}\frac{\partial^2 z}{\partial x \partial y}=(y^x)'\cdot \ln y+y^x\cdot (\ln y)'=x\cdot y^{x-1}\ln y+y^x\cdot \frac{1}{x}{% endkatex %}  
+{% katex %}=y^{x-1}(x\ln y +1){% endkatex %}    
+
+---
+### 二元隐函数求一阶偏导  
+不是{% katex %}z=f(x,y){% endkatex %}的二元函数，叫隐函数。    
+用**公式法**求二元隐函数的一阶偏导  
+(1). 令{% katex %}F(x,y,z){% endkatex %}  
+(2). 求{% katex %}F_x,F_y,F_z{% endkatex %}  
+(3). 套公式：{% katex %}\frac{\partial z}{\partial x}=-\frac{F_x}{F_z},\frac{\partial z}{\partial y}=-\frac{F_y}{F_z}{% endkatex %}   
+例题1：设{% katex %}z=z(x,y){% endkatex %}由方程{% katex %}z+e^z=xy{% endkatex %}所确定，求{% katex %}\frac{\partial z}{\partial x},\frac{\partial z}{\partial y}{% endkatex %}。  
+解：令{% katex %}F(x,y,z)=z+e^z-xy{% endkatex %}    
+{% katex %}F_x=-y,F_y=-x,F_z=1+e^z{% endkatex %}   
+{% katex %}\frac{\partial z}{\partial x}=-\frac{F_x}{F_z}=\frac{y}{1+e^z},\frac{\partial z}{\partial y}=-\frac{F_y}{F_z}=\frac{x}{1+e^z}{% endkatex %}      
+例题2：由方程{% katex %}xyz+\sqrt{x^2+y^2+z^2}=\sqrt{2}{% endkatex %}所确定的函数{% katex %}z=z(x,y){% endkatex %}在点(1,0,-1)处的全微分{% katex %}dz={% endkatex %}。    
+解析：全微分：{% katex %}dz=\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy{% endkatex %}  
+解：令{% katex %}F(x,y,z)=xyz+\sqrt{x^2+y^2+z^2}-\sqrt{2}{% endkatex %}  
+{% katex %}F_x=yz+\frac{1}{2\sqrt{x^2+y^2+z^2} }\cdot 2x|_{(1,0,-1)}=\frac{1}{\sqrt{2} }=\frac{\sqrt{2} }{2}{% endkatex %}   
+{% katex %}F_x=xz+\frac{1}{2\sqrt{x^2+y^2+z^2} }\cdot 2y|_{(1,0,-1)}=-1{% endkatex %}     
+{% katex %}F_x=xy+\frac{1}{2\sqrt{x^2+y^2+z^2} }\cdot 2z|_{(1,0,-1)}=-\frac{1}{\sqrt{2} }=-\frac{\sqrt{2} }{2}{% endkatex %}  
+{% katex %}\frac{\partial z}{\partial x}=-\frac{F_x}{F_z}=-\frac{\frac{\sqrt{2} }{2} }{-\frac{\sqrt{2} }{2} }=1{% endkatex %}   
+{% katex %}\frac{\partial z}{\partial y}=-\frac{F_y}{F_z}=-\frac{-1}{\frac{\sqrt{2} }{2} }=-\sqrt{2}{% endkatex %}   
+{% katex %}dz=\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy{% endkatex %}   
+{% katex %}=dx-\sqrt{2}dy{% endkatex %}   
+
+---
+### 隐函数的二阶偏导
+(1). 使用公式求一阶导；  
+(2). 使用导数公式求二阶导；   
+注：**求二阶导时，切记z是关于x,y的函数需要求导的**。  
+例题1：设{% katex %}2x^2+y^2+z^2-4z=0{% endkatex %}其中{% katex %}z=z(x,y){% endkatex %}所确定，求{% katex %}\frac{\partial z}{\partial x}|_{(1,1,1)},\frac{\partial^2 z}{\partial x^2}|_{(1,1,1)}{% endkatex %}。     
+解：令{% katex %}F(x,y,z)=2x^2+y^2+z^2{% endkatex %}   
+则{% katex %}F_x=4x|_{(1,1,1)}=4,F_y=2y|_{(1,1,1)}=2,F_z=2z-4|_{(1,1,1)}=-2{% endkatex %}    
+故{% katex %}\frac{\partial z}{\partial x}=-\frac{F_x}{F_z}=\frac{-4x}{2e-4}|_{(1,1,1)}=2{% endkatex %}   
+{% katex %}\frac{\partial^2 z}{\partial x^2}=\frac{\partial }{\partial x}(\frac{\partial z}{\partial x})=\frac{2\cdot (z-2)+2x \cdot (\frac{\partial z}{\partial x} )}{(z-2)^2}|_{(1,1,1)}=6{% endkatex %}  
+
+
+---
+### 多元复合函数求导
+求导原则：从外向里，层层求导并相乘。    
+**链式法则**：将每层函数关系罗列（树状图）**分线相加，连线相乘**  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311251621609.png)  
+1. 题型一：具体多元函数求导（直接带入法）  
+例题1：设{% katex %}z=xy+3\ln x,其中x=2u+v ,y=u-2v{% endkatex %}，求{% katex %}\frac{\partial z}{\partial u},\frac{\partial z}{\partial v}{% endkatex %}。   
+解：由题可知：{% katex %}z=(2u+v)\cdot (u-2v)+3\ln (2u+v){% endkatex %}   
+{% katex %}\frac{\partial z}{\partial u}=2(u-2v)+(2u+v)+3\cdot \frac{1}{2u+v}\cdot 2=4u-3v+\frac{6}{2u+v}{% endkatex %}   
+{% katex %}\frac{\partial z}{\partial v}=(u-2v)+(2u+v)\cdot (-2)+3\cdot \frac{1}{2u+v}=-3u-4v+\frac{1}{2u+v}{% endkatex %}   
+2. 题型二：抽象的复合函数求导
