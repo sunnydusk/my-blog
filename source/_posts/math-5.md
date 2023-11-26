@@ -118,8 +118,8 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 {% katex %}\frac{\partial^2 z}{\partial x^2}指z对x求两次偏导{% endkatex %}     
 {% katex %}\frac{\partial^2 z}{\partial y^2}指z对y求两次偏导{% endkatex %}     
 {% katex %}\frac{\partial^2 z}{\partial y \partial x}指z先对y后对x的二阶混合偏导{% endkatex %}     
-{% katex %}\frac{\partial^2 z}{\partial x \partial y}指z先对x后对y的二阶混合偏导{% endkatex %}     
-{% katex %}z=f(x,y)的两个混合偏导\frac{\partial^2 z}{\partial x \partial y}，\frac{\partial^2 z}{\partial y \partial x}在闭区间D内连续，则\frac{\partial^2 z}{\partial x \partial y}=\frac{\partial^2 z}{\partial y \partial x}{% endkatex %}     
+{% katex %}\frac{\partial^2 z}{\partial x \partial y}指z先对x后对y的二阶混合偏导{% endkatex %}   
+{% katex %}z=f(x,y){% endkatex %}的两个混合偏导{% katex %}\frac{\partial^2 z}{\partial x \partial y},\frac{\partial^2 z}{\partial y \partial x}{% endkatex %}在闭区间D内连续，则{% katex %}\frac{\partial^2 z}{\partial x \partial y}=\frac{\partial^2 z}{\partial y \partial x}{% endkatex %}  
 例题1：设{% katex %}z=x^3y^2{% endkatex %}，求{% katex %}\frac{\partial^2 z}{\partial x^2},\frac{\partial^2 z}{\partial x \partial y},\frac{\partial^2 z}{\partial y \partial x}{% endkatex %}。   
 解：{% katex %}\frac{\partial z}{\partial x}=3x^2y^2{% endkatex %}   
 则{% katex %}\frac{\partial^2 z}{\partial x^2}=6xy^2,\frac{\partial^2 z}{\partial x \partial y}=6x^2y{% endkatex %}   
