@@ -174,4 +174,151 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 解：由题可知：{% katex %}z=(2u+v)\cdot (u-2v)+3\ln (2u+v){% endkatex %}   
 {% katex %}\frac{\partial z}{\partial u}=2(u-2v)+(2u+v)+3\cdot \frac{1}{2u+v}\cdot 2=4u-3v+\frac{6}{2u+v}{% endkatex %}   
 {% katex %}\frac{\partial z}{\partial v}=(u-2v)+(2u+v)\cdot (-2)+3\cdot \frac{1}{2u+v}=-3u-4v+\frac{1}{2u+v}{% endkatex %}   
-2. 题型二：抽象的复合函数求导
+2. 题型二：抽象的复合函数求导  
+面对含{% katex %}f(\Box ,\triangle ){% endkatex %}的复合求导。  
+注：(1). 从外向里，逐层求导；  
+   (2). 勿忘f要导f'；  
+   (3). "{% katex %}\Box {% endkatex %}"用“1”代替，"{% katex %}\triangle {% endkatex %}"用“2”代替。  
+   (4). 计算结果内容省略不写括号；  
+例题1：设{% katex %}z=f(x,xy){% endkatex %}，求{% katex %}\frac{\partial z}{\partial x},\frac{\partial z}{\partial y}{% endkatex %}。   
+解：{% katex %}\frac{\partial z}{\partial x}=f'_1{x,xy}\cdot 1+f'_2(x,xy) \cdot y=f'_1+y\cdot f'_2{% endkatex %}   
+{% katex %}\frac{\partial z}{\partial y}=f'_2(x,xy)\cdot x=x\cdot f'_2{% endkatex %}    
+例题2：设{% katex %}z=xyf(x^+y,x-y^2){% endkatex %}，其中{% katex %}f{% endkatex %}可微，求{% katex %}\frac{\partial z}{\partial x},\frac{\partial z}{\partial y}{% endkatex %}。   
+解：{% katex %}\frac{\partial z}{\partial x}=yf+xy\cdot [f'_1\cdot 2x+f'_2\cdot 1]=yf+2x^2yf'_1+xyf'_2{% endkatex %}   
+{% katex %}\frac{\partial z}{\partial y}=xf+xy[f'_1\cdot 1-f'_2\cdot 2y]=xf+xyf'_1-2xy^2f'_2{% endkatex %}   
+例题3：设{% katex %}z=f(xy,y){% endkatex %}，其中{% katex %}f{% endkatex %}具有二阶连续偏导，求{% katex %}\frac{\partial ^2z}{\partial x\partial y}{% endkatex %}。   
+解：{% katex %}\frac{\partial z}{\partial x}=f'_1(xy,y)\cdot y=yf'_1(xy,y){% endkatex %}   
+{% katex %}\frac{\partial ^2z}{\partial x\partial y}=f'_1\cdot 1+y[f''_{11} \cdot x+f''_{12}\cdot 1{% endkatex %}   
+{% katex %}=f'_1+xyf''_1+f''_{11}+yf''_{12}{% endkatex %}    
+
+--- 
+### 隐函数例题 
+例题1：设函数{% katex %}u=f(x,y,z)=x^3y^2z^2{% endkatex %}，其中{% katex %}z=z(x,y){% endkatex %}由方程{% katex %}x^3+y^3+z^3-3xyz=0{% endkatex %}所确定，求{% katex %}\frac{\partial u}{\partial x}{% endkatex %}。     
+解：{% katex %}\frac{\partial u}{\partial x}=3x^2y^2z^2+x^3y^2\cdot 2z\cdot \frac{\partial z}{\partial x}{% endkatex %}   
+令{% katex %}F(x,y,z)=x^3+y^3+z^3-3xyz{% endkatex %}   
+{% katex %}F_x=3x^2-3yz,F_z=3z^2-3xy{% endkatex %}   
+{% katex %}\frac{\partial z}{\partial x}=-\frac{F_x}{F_z}=-\frac{3x^2-3yz}{3z^2-3xy}=\frac{yz-x^2}{z^2-xy}{% endkatex %}   
+{% katex %}\frac{\partial u}{\partial x}=3x^2y^2z^2+2x^3y^2z\cdot (\frac{yz-x^2}{z^2-xy}){% endkatex %}    
+
+
+---
+### 多元函数的几何的应用
+1. 求空间曲线{% katex %}\left\{\begin{matrix}x=x(t)\\y=y(t)\\z=z(t)\end{matrix}\right.{% endkatex%}的切线及法平面方程。  
+{% katex %}\left\{\begin{matrix}直线：\frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p},\vec{S}=(m,n,p) \\平面：A(x-x_0)+B(y-y_0)+C(z-z_0)=0,\vec{n}=(A,B,B) \end{matrix}\right.{% endkatex %}    
+解法：
+   (1). 求导得向量：{% katex %}\vec{S}=(x'(t),y'(t),z'(t))=(m,n,p)/\vec{n}=(x'(t),y'(t),z'(t))=(A,B,C){% endkatex %}    
+   (2). 套公式得答案：**“线除面乘”**。   
+{% katex %}\left\{\begin{matrix}线：\frac{x-x_0}{x'(t)}=\frac{y-y_0}{y'(t)}=\frac{z-z_0}{z'(t)}\\面：x'(t)(x-x_0)+y'(t)(y-y_0)+z'(t)(z-z_0)\end{matrix}\right.{% endkatex %}   
+例题1：求螺旋线{% katex %}x=a\cos \theta,y=a\sin \theta,z=b\theta{% endkatex%}(a,b不同时为0)，上在{% katex %}\theta=\frac{\pi}{4}{% endkatex %}时的切线方程及法平面方程。    
+解：令{% katex %}\theta =t{% endkatex %}，则{% katex %}\left\{\begin{matrix}x=a\cos t\\y=a\sin t\\z=bt\end{matrix}\right.{% endkatex %}   
+即{% katex %}x'(t)=-a\sin t,y'(t)=a\cos t,z'(t)=b{% endkatex%}    
+当{% katex %}\theta =t=\frac{\pi }{4}{% endkatex%}  
+则有{% katex %}x'(t)=-\frac{\sqrt{2} a}{2},y'(t)=\frac{\sqrt{2} a}{2},z'(t)=b{% endkatex%}    
+{% katex %}(x_0,y_0,z_0)=(-\frac{\sqrt{2} a}{2},\frac{\sqrt{2} a}{2},\frac{b\pi}{4}){% endkatex%}    
+故切线{% katex %}\vec{S}=(-\frac{\sqrt{2} a}{2},\frac{\sqrt{2} a}{2},b){% endkatex%}   
+法平面{% katex %}\vec{n}=(-\frac{\sqrt{2} a}{2},\frac{\sqrt{2} a}{2},b){% endkatex%}   
+即切线方程{% katex %}\frac{x-\frac{\sqrt{2} a}{2} }{-\frac{\sqrt{2} a}{2} } =\frac{y-\frac{\sqrt{2} a}{2} }{\frac{\sqrt{2} a}{2} }=\frac{z-\frac{\pi}{4}b }{b}  {% endkatex%}     
+法平面为{% katex %}-\frac{\sqrt{2} }{2}a(x+\frac{\sqrt{2} }{2}a )+\frac{\sqrt{2} }{2}a(y-\frac{\sqrt{2} }{2}a )+b(-\frac{\pi }{4}b )=0 {% endkatex%}    
+例题2：求曲线{% katex %}y=\sin x,z=\frac{x}{2}{% endkatex%}在点{% katex %}(\pi ,0,\frac{\pi }{2}){% endkatex%}的法平面方程。    
+解析：若不是参数方程，令其中一个变量为t，转换为参数式；   
+解：令{% katex %}x=t{% endkatex%}，则{% katex %}y=\sin t,z=\frac{t}{2}{% endkatex%}   
+{% katex %}x'(t)=1,y'(t)=\cos t,z'(t)=\frac{1}{2}{% endkatex%}    
+因为在点{% katex %}(\pi ,0,\frac{\pi}{2}){% endkatex %}处，则{% katex %}x_0=t=\pi {% endkatex%}   
+{% katex %}x'(t)=1,y'(t)=-1,z'(t)=\frac{1}{2}{% endkatex%}    
+{% katex %}\vec{n}=(1,-1,\frac{1}{2}){% endkatex%}    
+{% katex %}(x_0,y_0,z_0)=(\pi ,0,\frac{\pi }{2}){% endkatex%}   
+带入解得法平面方程：{% katex %}1\cdot (x-\pi )-1\cdot (y-0)+\frac{1}{2}\cdot (z-\frac{\pi }{2})=0{% endkatex%}    
+{% katex %}x-y+\frac{z}{2}-\frac{5\pi }{4}=0{% endkatex%}    
+例题3：求曲线{% katex %}l:x=t,y=t^2,z=t^3{% endkatex%}上的一点，使得曲线在该点处的切线平行于平面{% katex %}3x+3y+z=0{% endkatex%}。   
+解析：**线与面位置关系与向量关系相反**，由题，线与面平行，即线与法线垂直，即{% katex %}\vec{S} \perp \vec{n}=\vec{S}\cdot \vec{n}=0{% endkatex%}    
+解：令曲线待求点{% katex %}(t_0,t_0^2,t_0^3){% endkatex %}   
+故在该点处{% katex %}\vec{S}=(1,2t_0,3t_0^3){% endkatex%}    
+有平面方程得{% katex %}\vec{n}=(3,3,1){% endkatex%}   
+由题知：{% katex %}\vec{S}\cdot \vec{n}=0{% endkatex%}   
+{% katex %}3+6t_0+3t_0^2=0{% endkatex%}  
+解得{% katex %}t_0=-1{% endkatex%}   
+故点为{% katex %}(-1,1,-1){% endkatex%}   
+2. 空间曲面{% katex %}F(x,y,z){% endkatex%}的切平面和法线方程。   
+解法：  
+   (1). 求导得向量：{% katex %}\vec{n}=(A,B,C)=(F_x,F_y,F_z)/\vec{S}=(m,n,p)=(F_x,F_y,F_z){% endkatex%}    
+   (2). 套公式得答案：**“线除面乘”**。   
+{% katex %}\left\{\begin{matrix}线：\frac{x-x_0}{x'(t)}=\frac{y-y_0}{y'(t)}=\frac{z-z_0}{z'(t)}\\面：x'(t)(x-x_0)+y'(t)(y-y_0)+z'(t)(z-z_0)\end{matrix}\right.{% endkatex %}   
+例题1：空间曲面{% katex %}2z-e^z+2xy=3{% endkatex%}在点{% katex %}(1,2,0){% endkatex%}处的法线方程。   
+解：令{% katex %}F(x,y,z)=2z-e^z+2xy-3{% endkatex%}   
+{% katex %}\vec{S}=(F_x,F_y,F_z)=(2y,2x,2-e^z)|_{(1,2,0)}=(4,2,1){% endkatex%}    
+故法线方程：{% katex %}\frac{x-1}{4}=\frac{y-2}{2}=\frac{z}{1}{% endkatex%}   
+例题2：已知曲面{% katex %}z=4-x^2-y^2{% endkatex%}在点{% katex %}P{% endkatex%}处的切平面平行于平面{% katex %}2x+2y+z-1=0{% endkatex%}，求P点坐标。   
+解：设P点为{% katex %}(x_0,y_0,z_0){% endkatex %}，令{% katex %}F(x,y,z)=z-4+x^2+y^2{% endkatex%}   
+所以在P点处切平面{% katex %}\vec{n_1}=(F_x,F_y,F_z)=(2x,2y,1)|_{(x_0,y_0,z_0)}=(2x_0,2y_0,1){% endkatex%}    
+又平面{% katex %}2x+2y+z-1=0{% endkatex%}的法向量为{% katex %}\vec{n_2}=(2,2,1){% endkatex%}   
+由题知：{% katex %}\vec{n_1} \parallel \vec{n_2}{% endkatex%}  
+即{% katex %}\frac{2x_0}{2}=\frac{2y_0}{2}=1{% endkatex%}   
+解得{% katex %}x_0=y_0=1{% endkatex%}  
+带入得{% katex %}z_0=2{% endkatex%}  
+故点为{% katex %}P=(1,1,2){% endkatex%}    
+
+
+---
+### 无条件极值
+无条件极值：指对{% katex %}x,y{% endkatex %}取值范围无限制下，求{% katex %}z=f(x,y){% endkatex %}的极值。   
+求解方法：   
+(1). 求一阶偏导，令其为0，找驻点；   
+{% katex %}\left\{\begin{matrix}f_x(x,y)=0\\f_y(x,y)=0\end{matrix}\right.\Longrightarrow 驻点(x_0,y_0){% endkatex %}     
+(2). 解方程组，求出极值点；   
+令{% katex %}A=f_{xx}(x_0,y_0);B=f_{xy}(x_0,y_0);C=f_{yy}(x_0,y_0){% endkatex %}   
+(3). 判断{% katex %}AC-B^2=D{% endkatex %}。  
+{% katex %}D>0{% endkatex %}，有极值{% katex %}\Longrightarrow \left\{\begin{matrix}A<0,极大值\\A>0,极小值\end{matrix}\right.{% endkatex %}   
+例题1：求函数{% katex %}f(x,y)=x^2-xy+y^2-2x+y{% endkatex %}的极值。   
+解：令{% katex %}\left\{\begin{matrix}f_x=2x-y-2=0\\f_y=-x+2y+1=0\end{matrix}\right.\Longrightarrow 驻点(1,0){% endkatex %}   
+{% katex %}A=f_{xx}=2,B=f_{xy}=-1,C=f_{yy}=2{% endkatex %}   
+{% katex %}D=AC-B^2=4-1=3>0{% endkatex %}   
+且{% katex %}A=2>0{% endkatex %}   
+故{% katex %}f(1,0){% endkatex %}处为极小值-1。    
+例题2：求函数{% katex %}f(x,y)=x^3-4x^2+2xy-y^2{% endkatex %}的极值。  
+解：令{% katex %}\left\{\begin{matrix}f_x=3x^2-8x+2y=0\\f_y=2x-2y=0\end{matrix}\right.\Longrightarrow 驻点(0,0),(2,2){% endkatex %}   
+{% katex %}A=f_{xx}=6x-8,B=f_{xy}=2,C=f_{yy}=-2{% endkatex %}   
+(1). 当驻点为{% katex %}(0,0){% endkatex %}时,{% katex %}A=-8,B=2,C=-2{% endkatex %}   
+{% katex %}D=AC-B^2=16-4=12>0{% endkatex %}   
+且{% katex %}A=-8<0{% endkatex %}  
+故{% katex %}f(0,0){% endkatex %}处有极大值0。    
+(2). 当驻点为{% katex %}(2,2){% endkatex %}时,{% katex %}A=4,B=2,C=-2{% endkatex %}   
+{% katex %}D=AC-B^2=-8-4=-12<0{% endkatex %}
+故{% katex %}f(2,2){% endkatex %}处没有极值。    
+
+---
+### 条件极值  
+条件极值：指对自变量{% katex %}x,y{% endkatex %}取值范围限制下，求{% katex %}z=f(x,y){% endkatex %}的极值。     
+求在条件{% katex %}\varphi (x,y)=0{% endkatex %}下，求{% katex %}z=f(x,y){% endkatex %}的极值。  
+解法：   
+(1). 确定目标函数{% katex %}f(x,y){% endkatex %}，及条件函数{% katex %}\varphi (x,y){% endkatex %}；  
+(2). 构造拉格朗日函数；{% katex %}F(x,y,\lambda )=f(x,y)+\lambda \varphi (x,y){% endkatex %}    
+(3). 令{% katex %}\left\{\begin{matrix}F_x=0\\F_y=0\\F_\lambda =0\end{matrix}\right.\Longrightarrow 得驻点(x_0,y_0){% endkatex %}    
+(4). 得极值。  
+例题：求函数{% katex %}z=x^2+y^2{% endkatex %}在直线{% katex %}\frac{x}{4}+\frac{y}{3}=1{% endkatex %}下的极值。  
+解：目标函数{% katex %}f(x,y)=x^2+y^2{% endkatex %}，条件函数{% katex %}\varphi (x,y)=\frac{x}{4}+\frac{y}{3}-1=0{% endkatex %}    
+令{% katex %}F(x,y,\lambda )=x^2+y^2+\lambda (\frac{x}{4}+\frac{y}{3}-1){% endkatex %}   
+{% katex %}F_x=2x+\frac{\lambda }{4}=0,F_y=2y+\frac{\lambda }{3}=0,F_\lambda =\frac{x}{4}+\frac{y}{3}-1=0{% endkatex %}   
+解得{% katex %}x_0=-\frac{36}{25},y_0=-\frac{48}{25}\Longrightarrow (\frac{36}{25}, \frac{48}{25}) {% endkatex %}为唯一驻点   
+故{% katex %}z=x^2+y^2{% endkatex %}在{% katex %}(\frac{36}{25}, \frac{48}{25}{% endkatex %}处取得极值     
+{% katex %}z=(\frac{36}{25})^2+(\frac{48}{25})^2=\frac{144}{25}{% endkatex %}    
+
+---
+### 条件极值例题
+例题1：在椭圆{% katex %}x^2+4y^2=4{% endkatex %}上求一点，使其到直线{% katex %}2x+3y-6=0{% endkatex %}的距离最短。  
+解：设点为{% katex %}(x_0,y_0){% endkatex %}，则点到直线的距离为{% katex %}d=\frac{|2x_0+3y_0-6|}{\sqrt{2^2+3^2}}=\frac{|2x_0+3y_0-6|}{\sqrt{13}}{% endkatex %}  
+令目标函数为{% katex %}2x+3y-6{% endkatex %}，条件函数为{% katex %}x^2+4y^2-4=0{% endkatex %}    
+令拉格朗日函数为{% katex %}F(x,y,\lambda )=2x+3y-6+\lambda (x^2+4y^2-4){% endkatex %}   
+{% katex %}F_x=2+2\lambda x=0,F_y=3+8\lambda y=0,F_\lambda =x^2+4y^2-4=0{% endkatex %}    
+解得{% katex %}x_0=\pm \frac{8}{5},y_0=\pm \frac{3}{5}{% endkatex %}   
+故点为{% katex %}(\frac{8}{5},\frac{3}{5}),(-\frac{8}{5},-\frac{3}{5}){% endkatex %}为驻点   
+(1). 当{% katex %}(x_0,y_0)=(\frac{8}{5},\frac{3}{5}){% endkatex %}时   
+带入{% katex %}=\frac{|2x+3y-6|}{\sqrt{13} }=\frac{|\frac{16}{5}+\frac{9}{5}-6|}{\sqrt{13} }=\frac{|5-6|}{\sqrt{13} }=\frac{\sqrt{13 } }{13}{% endkatex %}   
+(2). 当{% katex %}(x_0,y_0)=(-\frac{8}{5},-\frac{3}{5}){% endkatex %}时    
+带入{% katex %}=\frac{|2x+3y-6|}{\sqrt{13} }=\frac{|-\frac{16}{5}-\frac{9}{5}-6|}{\sqrt{13} }=\frac{|-5-6|}{\sqrt{13} }=\frac{11\sqrt{13 } }{13}{% endkatex %}   
+故点为{% katex %}P(\frac{8}{5},\frac{3}{5}){% endkatex %}时，到直线距离最短，最短距离为{% katex %}\frac{\sqrt{13} }{13}{% endkatex %}。    
+
+---
+### 二重积分
+#### 二重积分概念与性质  
+1. 定义：二重积分是用来求解曲顶柱体体积的工具，记为{% katex %}\iint f(x,y)dx,dy{% endkatex %}。  
+其中{% katex %}f(x,y){% endkatex %}为被积函数，{% katex %}dx dy={% endkatex %}面积元素，D为积分区域（底面积）。    
