@@ -361,4 +361,125 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 #### 二重积分性质考点比较
 (1). 比较定理：设{% katex %}f(x,y)\ge g(x,y){% endkatex %}，则{% katex %}\iint\limits_{D}f(x,y)dxdy \ge \iint\limits_{D}g(x,y)dxdy {% endkatex %}    
 例题1：设{% katex %}I_1=\iint\limits_{D}\cos \sqrt{x^2+y^2}dxdy,I_2=\iint\limits_{D}\cos (x^2+y^2)dxdy,I_3=\iint\limits_{D}\cos (x^2+y^2)^2dxdy{% endkatex %}其中{% katex %}D=\left \{ (x,y)|x^2+y^2\le 1 \right \} {% endkatex %}则{% katex %}I_1,I_2,I_3{% endkatex %}的大小关系是。     
+解：{% katex %}x^2+y^2 \le 1{% endkatex %}时比较    
+取一特殊值{% katex %}x^2+y^2=\frac{1}{4}{% endkatex %}得{% katex %}\sqrt{x^2+y^2} \ge x^2+y^2 \ge (x^2+y^2)^2{% endkatex %}  
+当{% katex %}x^2+y^2\le 1{% endkatex %}时，{% katex %}1 \ge \sqrt{x^2+y^2} \ge x^2+y^2 \ge (x^2+y^2)^2\ge 0{% endkatex %}     
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271352820.png)  
+由图{% katex %}I_3\ge I_2\ge I_1{% endkatex %}   
+
+---
+#### 二重积分性质考点估值
+估值定理：设{% katex %}f(x,y){% endkatex %}在D上，有最大值M和最小值m，有{% katex %}m\le f(x,y)\le M{% endkatex %}，则{% katex %}m\cdot S_D \le \iint\limits_{D}f(x,y)dxdy \le M\cdot S_D{% endkatex %}    
+例题1：设{% katex %}I=\iint\limits_{D}xy(x+y)dxdy{% endkatex %}其中{% katex %}0 \le x \le1,0\le y\le 2{% endkatex %}则{% katex %}()\le I\le(){% endkatex %}。    
 解：
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271400569.png)  
+由图知：{% katex %}S_D=1 \cdot 2=2{% endkatex %}   
+因为{% katex %}0 \le x \le 1,0 \le y\le 2{% endkatex %}  
+则{% katex %}x=0,y=0{% endkatex %}时为最小值，{% katex %}x=1,y=2{% endkatex %}时为最大值  
+即{% katex %}0 \le xy(x+y) \le 6{% endkatex %}  
+{% katex %}0\cdot S_D \le \iint\limits_{D}xy(x+y)dxdy \le 6 \cdot S_D{% endkatex %}  
+{% katex %}0 \le \iint\limits_{D}xy(x+y)dxdy \le 6 \cdot 2{% endkatex %}  
+{% katex %}0 \le \iint\limits_{D}xy(x+y)dxdy \le 12{% endkatex %}   
+
+---
+#### 二重积分的计算
+1. 直角坐标系下二重积分计算   
+解法：将二重积分化为累次积分或二次积分。  
+   (1). {% katex %}\iint\limits_{D}f(x,y)dxdy=\int_{a}^{b}dx\int_{c}^{d}f(x,y)dy {% endkatex %}     
+   (1). {% katex %}\iint\limits_{D}f(x,y)dxdy=\int_{c}^{d}dy\int_{a}^{b}f(x,y)dx {% endkatex %}      
+注：**求解顺序，先求尾部再求前面，从后往前，从右到左依次求解**    
+根据积分区域图形不同，选择不同积分顺序。   
+1). X型图：函数图形，由上下两函数，夹为一个图形；   
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271414131.png)
+公式：{% katex %}\iint\limits_{D}f(x,y)dxdy=\int_{a}^{b}dx\int_{f_{上(x)} }^{f_{下(x)} }f(x,y)dy{% endkatex %}   
+2). Y型图：函数图形，由左右两函数，合为一个图形:改函数{% katex %}f(y){% endkatex %}；   
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271416932.png)  
+公式：{% katex %}\iint\limits_{D}f(x,y)dxdy=\int_{c}^{d}dy\int_{f_{左(y)} }^{f_{右(y)} }f(x,y)dx{% endkatex %}     
+定限口诀：**后积先定限，限内画直线，先交写下限，后交写上限。**   
+2. 二重积分直角坐标系下计算例题   
+求解过程：
+   (1). 画图，联立方程，求出曲线交点。   
+   (2). 判断积分区域类型，确定积分顺序。   
+   (3). 套公式{% katex %}\left\{\begin{matrix}X\Longrightarrow \int_{\Box }^{\Box }dx\int_{\Box }^{\Box }f(x,y)dy\\Y\Longrightarrow \int_{\Box }^{\Box }dy\int_{\Box }^{\Box }f(x,y)dx\end{matrix}\right. {% endkatex %}。   
+例题1：计算二重积分{% katex %}\iint\limits_{D}xydxdy{% endkatex %}其中D为由直线{% katex %}y=1,x=2,y=x{% endkatex %}围成的区域。     
+解：  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271430804.png) 
+定为X型图：{% katex %}\left\{\begin{matrix}1 \le x \le 2\\1\le y\le x\end{matrix}\right.{% endkatex %}      
+原式{% katex %}=\int_{1}^{2}dx\int_{1}^{x}xydy{% endkatex %}   
+{% katex %}=\int_{1}^{2}(x\cdot \frac{1}{2}y^2)|\begin{matrix}1\\x\end{matrix}dx{% endkatex %}    
+{% katex %}=\frac{1}{2} \int_{1}^{2}(x^3-x)dx{% endkatex %}    
+{% katex %}=\frac{1}{2}\cdot (\frac{1}{4}x^4-\frac{1}{2}x^2)|\begin{matrix}2\\1\end{matrix}{% endkatex %}    
+{% katex %}=\frac{9}{8}{% endkatex %}   
+定为Y型图：{% katex %}\left\{\begin{matrix}1 \le y \le 2\\y\le x\le 2\end{matrix}\right.{% endkatex %}   
+原式{% katex %}=\int_{1}^{2}dy\int_{y}^{2}xydx{% endkatex %}   
+{% katex %}=\frac{1}{2} \int_{1}^{2}y\cdot x^2|\begin{matrix}y\\2\end{matrix}dy{% endkatex %}    
+{% katex %}=\frac{1}{2}\int_{1}^{2}(4y-y^3)dy{% endkatex %}    
+{% katex %}=\frac{1}{2}\cdot (2y^2-\frac{1}{4}y^4)|\begin{matrix}2\\1\end{matrix}{% endkatex %}    
+{% katex %}=\frac{9}{8}{% endkatex %}    
+例题2：计算二重积分{% katex %}\iint\limits_{D}xydxdy{% endkatex %}其中D为由直线{% katex %}y^2=x,y=x-2{% endkatex %}围成的区域。   
+解：  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271452174.png)  
+联立两个方程：{% katex %}y^2=x,y=x-2{% endkatex %}  
+求得两个交点为{% katex %}(-1,1),(4,2){% endkatex %}   
+定为Y型图：{% katex %}\left\{\begin{matrix}-1 \le y \le 2\\y^2 \le x\le y+2\end{matrix}\right.{% endkatex %}   
+原式{% katex %}=\int_{-1}^{2}dy\int_{y^2}^{y+2}xydx{% endkatex %}   
+{% katex %}=\frac{1}{2} \int_{-1}^{2}y\cdot x^2|\begin{matrix}y^2\\y+2\end{matrix}dy{% endkatex %}    
+{% katex %}=\frac{1}{2}\int_{-1}^{2}(y^3+4y^2+4y-y^5)dy{% endkatex %}    
+{% katex %}=\frac{1}{2}\cdot (\frac{1}{4}y^4+\frac{4}{3}y^3+2y^2-\frac{1}{6}y^6)|\begin{matrix}2\\-1\end{matrix}{% endkatex %}    
+{% katex %}=\frac{45}{8}{% endkatex %}    
+
+---
+#### 超越积分顺序选择
+(1). {% katex %}\frac{\sin x}{x},\frac{\cos x}{x},\sin x^2\cdot \cos x^2,e^{x^2},e^{-x^2}\Longrightarrow X{% endkatex %}型     
+(2). {% katex %}\frac{\sin y}{y},\frac{\cos y}{y},\sin y^2\cdot \cos y^2,e^{y^2},e^{-y^2}\Longrightarrow Y{% endkatex %}型      
+例题1：求二重积分{% katex %}\iint\limits_{D}\frac{\sin y}{y}dxdy{% endkatex %}其中D为由直线{% katex %}y=x,x=0,y=\pi {% endkatex %}围成的区域。   
+解：  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271536483.png)  
+定为Y型图：{% katex %}\left\{\begin{matrix}0 \le y \le \pi \\0 \le x \le y\end{matrix}\right.{% endkatex %}   
+原式{% katex %}=\int_{0}^{\pi }dy \int_{0}^{y}\frac{\sin y}{y}dx{% endkatex %}    
+{% katex %}=\int_{0}^{\pi }\frac{\sin y}{y}\cdot x|\begin{matrix}y\\0\end{matrix}dy{% endkatex %}    
+{% katex %}=\int_{x}^{\pi }\sin y dy =(-\cos y)|\begin{matrix}\pi \\0\end{matrix} =1+1=2{% endkatex %}   
+例题2：求二重积分{% katex %}\iint\limits_{D}\cos y^2dxdy{% endkatex %}其中D为由直线{% katex %}y=2,x=1,y=x-1 {% endkatex %}围成的区域。    
+解：  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271546882.png)  
+定为Y型图：{% katex %}\left\{\begin{matrix}0 \le y \le 2 \\1 \le x \le y+1\end{matrix}\right.{% endkatex %}     
+故原式{% katex %}=\int_{0}^{2}dy \int_{1}^{y+1}\cos y^2dx{% endkatex %}    
+{% katex %}=\int_{0}^{2}\cos y^2\cdot x|\begin{matrix}y+1\\1\end{matrix}dy{% endkatex %}    
+{% katex %}=\int_{0}^{2}[\cos y^2(y+1)-\cos y^2]dy {% endkatex %}     
+{% katex %}=\frac{1}{2}\int_{0}^{2}\cos y^2ydy^2{% endkatex %}  
+{% katex %}=\frac{1}{2} \sin y^2|\begin{matrix}2\\0\end{matrix} =\frac{\sin 4}{2}{% endkatex %}    
+
+---
+#### 交换积分次序 
+定义：将X型与Y型积分顺序互换；  
+交换次序思路：  
+(1). 根据积分上下限，画出积分区域   
+(2). 交换次序   
+交换次序的题型：  
+(1). 题目要求交换   
+(2). 遇积分上下限定好的二重积分计算   
+例题1：二次积分{% katex %}\int_{0}^{1}dx\int_{2x}^{2\sqrt{x} }f(x,y)dy{% endkatex %}交换积分次序。   
+A. {% katex %}\int_{0}^{1}dx\int_{2y} }^{\sqrt{y} }f(x,y)dy{% endkatex %}  
+B. {% katex %}\int_{0}^{2}dy\int_{\frac{y^2}{4} }^{\frac{y}{2}f(x,y)dx{% endkatex %}  
+C. {% katex %}\int_{2x}^{2\sqrt{x} }f(x,y)dy\int_{0}^{1}dx{% endkatex %}  
+D. {% katex %}\int_{\frac{\frac{y^2}{4} }{} }^{\frac{y}{2} }dy\int_{0}^{2}f(x,y)dx{% endkatex %}    
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271642984.png)
+解：由题可知：{% katex %}0 \le x \le 1,2x \le y \le 2\sqrt{x}{% endkatex %}   
+有图可知：{% katex %}0 \le y \le 2,\frac{y^2}{4} \le x \le \frac{y}{2}{% endkatex %}   
+故选B。  
+例题2：求积分{% katex %}I=\int_{\frac{1}{4} }^{\frac{1}{2} }dy\int_{\frac{1}{2} }^{\sqrt{y} } e^{\frac{y}{x} }dx+\int_{\frac{1}{2} }^{1}dy\int_{\sqrt{y} }^{y}e^{\frac{y}{x} }dx{% endkatex %}交换积分次序。    
+解析：{% katex %}\int_{\frac{1}{4} }^{\frac{1}{2} }dy\int_{\frac{1}{2} }^{\sqrt{y} } e^{\frac{y}{x} }dx{% endkatex %}可知  
+{% katex %}\left\{\begin{matrix}\frac{1}{4} \le y \le \frac{1}{2} \\\frac{1}{2} \le x\le \sqrt{y}  \end{matrix}\right.{% endkatex %}   
+{% katex %}\int_{\frac{1}{2} }^{1}dy\int_{\sqrt{y} }^{y}e^{\frac{y}{x} }dx{% endkatex %}可知  
+{% katex %}\left\{\begin{matrix}\frac{1}{2} \le y \le 1 \\ \sqrt{y} \le x\le y  \end{matrix}\right.{% endkatex %}   
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271702887.png)  
+选择X型：{% katex %}\left\{\begin{matrix}\frac{1}{2} \le x \le 1 \\x^2 \le y\le x  \end{matrix}\right.{% endkatex %}   
+原式{% katex %}\int_{1}^{\frac{1}{2} }dx\int_{x^2}^{x}e^{\frac{y}{x} }dy {% endkatex %}  
+{% katex %}\int_{1}^{\frac{1}{2} }x \cdot e^{\frac{y}{x} }|\begin{matrix}x\\x^2\end{matrix}dx {% endkatex %}  
+{% katex %}\int_{1}^{\frac{1}{2} }x \cdot (e-e^x)dx {% endkatex %}  
+{% katex %}\int_{1}^{\frac{1}{2} }xe - xe^x dx {% endkatex %}  
+{% katex %}e\int_{1}^{\frac{1}{2} }x dx-\int_{\frac{1}{2} }^{1}xe^xdx {% endkatex %}    
+{% katex %}e\frac{1}{2}x^2|\begin{matrix}1\\\frac{1}{2}\end{matrix}-\int_{\frac{1}{2} }^{1}xde^x {% endkatex %}    
+{% katex %}e\frac{1}{2}(1-\frac{1}{4})-[(xe^x)|\begin{matrix}1\\ \frac{1}{2}\end{matrix}-\int_{\frac{1}{2} }^{1}e^xdx] {% endkatex %}    
+{% katex %}\frac{3}{8}e-[e-\frac{1}{2}e^{\frac{1}{2} }-e+e^{\frac{1}{2} }] {% endkatex %}    
+{% katex %}\frac{3}{8}e-\frac{\sqrt{e} }{2}{% endkatex %}   
