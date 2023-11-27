@@ -321,4 +321,44 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 ### 二重积分
 #### 二重积分概念与性质  
 1. 定义：二重积分是用来求解曲顶柱体体积的工具，记为{% katex %}\iint f(x,y)dx,dy{% endkatex %}。  
-其中{% katex %}f(x,y){% endkatex %}为被积函数，{% katex %}dx dy={% endkatex %}面积元素，D为积分区域（底面积）。    
+其中{% katex %}f(x,y){% endkatex %}为被积函数(求图形体积的**h**)，{% katex %}dx dy=d\delta {% endkatex %}面积元素，D为积分区域（底面积）。    
+{% katex %}V=\iint\limits_{D}f(x,y)dxdy{% endkatex %}    
+2. 性质：   
+   (1). {% katex %}\iint\limits_{D}f(x,y)\pm g(x,y)dxdy=\iint\limits_{D}f(x,y)dxdy\pm g(x,y)dxdy {% endkatex %}      
+   (2). 可加性{% katex %}D=D_1+D_2,\iint\limits_{D}f(x,y)dxdy=\iint\limits_{D_1}f(x,y)dxdy+\iint\limits_{D_2}f(x,y)dxdy {% endkatex %}     
+   (3). {% katex %}\iint\limits_{D}kf(x,y)dxdy=k\iint\limits_{D}f(x,y)dxdy {% endkatex %}     
+   (4). **底面积计算公式**：{% katex %}\iint\limits_{D}1\cdot dxdy=\iint\limits_{D}dxdy=S_D {% endkatex %}     
+   (5). 比较定理：设{% katex %}f(x,y)\ge g(x,y){% endkatex %}，则{% katex %}\iint\limits_{D}f(x,y)dxdy \ge \iint\limits_{D}g(x,y)dxdy {% endkatex %}**反比{% katex %}f(x,y){% endkatex %}的大小**     
+   (6). 估值定理：设{% katex %}f(x,y){% endkatex %}在D上，有最大值M和最小值m，有{% katex %}m\le f(x,y)\le M{% endkatex %}     
+则有{% katex %}\Longrightarrow \iint\limits_{D}mdxdy\le \iint\limits_{D}f(x,y)dxdy\le \iint\limits_{D}Mdxdy \Longrightarrow m\iint\limits_{D}dxdy\le \iint\limits_{D}f(x,y)dxdy\le M\iint\limits_{D}dxdy \Longrightarrow m\cdot S_D\le \iint\limits_{D}f(x,y)dxdy\le M\cdot S_D {% endkatex %}         
+
+---
+#### 二重积分性质考点计算 
+{% katex %}\iint\limits_{D} 1 \cdot dxdy=S_D {% endkatex %}     
+(1). 圆的一般表达式：{% katex %}(x-a)^2+(y-b)^2=r^2{% endkatex %}    
+其中，{% katex %}(a,b){% endkatex %}为圆心，{% katex %}r{% endkatex %}为半径。   
+{% katex %}S_圆=\pi \cdot r^2{% endkatex %}   
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271116610.png)  
+(2). 椭圆的一般表达式：{% katex %}\frac{x^2}{a^2}+\frac{y^2}{b^2}=1{% endkatex %}   
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271117250.png) 
+{% katex %}S_椭圆=\pi \cdot a \cdot b{% endkatex %}     
+例题1：计算{% katex %}\iint\limits_{D}d\delta {% endkatex %}其中D为原点为圆心，半径为5的圆形区域。   
+解：{% katex %}\iint\limits_{D}d\delta =S_D=\pi \cdot 5^2=25\pi {% endkatex %}   
+例题2：计算二重积分{% katex %}\iint\limits_{x^2+y^2\le 2}dxdy {% endkatex %}     
+解：由题知：{% katex %}x^2+y^2 \le 2{% endkatex %}取{% katex %}x^2+y^2=2{% endkatex %}    
+因为{% katex %}x^2+y^2=2{% endkatex %}为圆的一般表达式，{% katex %}S_D=\pi \cdot r^2<2 {% endkatex %}时在圆面积内部    
+{% katex %}\iint\limits_{x^2+y^2\ge 2}dxdy =S_D=\pi \cdot r^2=2\pi{% endkatex %}。     
+例题3：设积分区域{% katex %}D:1 \le x^2+y^2 \le 4{% endkatex %}求二重积分{% katex %}\iint\limits_{D}dxdy {% endkatex %}   
+解：由题知：{% katex %}1 \le x^2+y^2 \le 4{% endkatex %}取{% katex %}x^2+y^2=1,x^2+y^2=4{% endkatex %}   
+则{% katex %}\iint\limits_{D}dx=S_D=S_{D大}-S_{D小}=4 \pi -\pi = 3\pi {% endkatex %}     
+例题4：设积分区域{% katex %}D:\frac{x^2}{4}+y^2 \le 1{% endkatex %}求二重积分{% katex %}\iint\limits_{D}xdxdy {% endkatex %}   
+解：由题知：{% katex %}\frac{x^2}{4}+y^2 \le 1{% endkatex %}取{% katex %}\frac{x^2}{4}+\frac{y^2}{1}=1{% endkatex %}   
+因为{% katex %}\frac{x^2}{4}+\frac{y^2}{1}=1{% endkatex %}为椭圆的一般表达式，{% katex %}S_D=\pi \cdot a \cdot b<1 {% endkatex %}时在椭圆面积内部    
+{% katex %}\iint\limits_{D}xdxdy =S_D=\pi \cdot a \cdot b=\pi \cdot 2 \cdot 1=2\pi{% endkatex %}。     
+
+
+---
+#### 二重积分性质考点比较
+(1). 比较定理：设{% katex %}f(x,y)\ge g(x,y){% endkatex %}，则{% katex %}\iint\limits_{D}f(x,y)dxdy \ge \iint\limits_{D}g(x,y)dxdy {% endkatex %}    
+例题1：设{% katex %}I_1=\iint\limits_{D}\cos \sqrt{x^2+y^2}dxdy,I_2=\iint\limits_{D}\cos (x^2+y^2)dxdy,I_3=\iint\limits_{D}\cos (x^2+y^2)^2dxdy{% endkatex %}其中{% katex %}D=\left \{ (x,y)|x^2+y^2\le 1 \right \} {% endkatex %}则{% katex %}I_1,I_2,I_3{% endkatex %}的大小关系是。     
+解：
