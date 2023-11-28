@@ -302,3 +302,64 @@ A. {% katex %}\frac{\pi }{3}{% endkatex %}    B. {% katex %}\frac{\pi }{4}{% end
 {% katex %}\cos \gamma =\frac{r \cdot z}{|r|}=\frac{z}{\sqrt{x^2+y^2+z^2}}{% endkatex %}    
 且{% katex %}\cos ^2 \alpha +\cos ^2 \beta +\cos ^2 \gamma =1{% endkatex %}  
 {% katex %}r=|r|(\cos \alpha ,\cos \beta ,\cos \gamma ){% endkatex %}     
+
+
+---
+### 极坐标系下的二重积分
+1. 极坐标系   
+极坐标系是在平面直角坐标系的基础上，引入极轴(距离)和极角(角度)的坐标系。   
+由极心，极轴，极径，极角组成。  
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281458343.png)
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281501461.png)
+由图可知：{% katex %}\sin \theta =\frac{y}{r}\Longrightarrow y=r \sin \theta  {% endkatex %}     
+{% katex %}\cos \theta =\frac{x}{r}\Longrightarrow x=y \cos \theta  {% endkatex %}     
+小结：在极坐标下，{% katex %}x=r \cos \theta ,y=r \sin \theta ,x^2+y^2=r^2{% endkatex %}    
+2. 极坐标系下二重积分计算    
+   (1). 条件：当遇到与圆相关的积分区域（圆，半圆，扇形，弧形……）。    
+   (2). 考虑利用极坐标求解。  
+**常见的函数**：{% katex %}\frac{y}{x},x^2+y^2{% endkatex %}   
+   (3). 转换：令{% katex %}x=r \cos \theta ,y=r \sin \theta ,dady=rdrd\theta{% endkatex %}    
+   (4). 公式：{% katex %}\iint\limits_{D} f(x,y)dxdy =(极)\int_{\theta 1}^{\theta 2}d\theta \int_{r1}^{r2}f(r\cos \theta ,r\sin \theta )\cdot rdr {% endkatex %}    
+3. 上下限的确定方法   
+    (1). 夹角{% katex %}\theta{% endkatex %}的取值范围：
+从原点出发，逆时针方向作积分区域的两条切线，取第一条触碰积分区域的切线与x正半轴的夹角为{% katex %}\theta _1{% endkatex %}。    
+取第二条触碰积分区域的切线与x正半轴的夹角为{% katex %}\theta _2{% endkatex %}。      
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281537649.png)
+{% katex %}\int_{\theta _1}^{\theta _2}d\theta {% endkatex %}  
+    (2). 半径r的取值范围     
+{% katex %}OA=r_1,OB=r_2{% endkatex %}，则{% katex %}r_1,r_2{% endkatex %}为积分区域的内外半径。 
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281635035.png)  
+r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% endkatex %}代入积分区域的方程，得到{% katex %}r_1,r_2{% endkatex %}的表达式。    
+**注意**：{% katex %}0 \le r{% endkatex %}     
+**常见积分区域（图像）**：
+   (1). 圆   
+一般式方程：{% katex %}x^2+y^2=R^2{% endkatex %}，其中R为半径，(a,b)为圆心。   
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281643926.png)  
+其中：{% katex %}0\le \theta \le 2\pi ,0\le r \le R{% endkatex %}   
+   (2). 偏离原点，圆心在x轴上的圆形     
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281646302.png)  
+{% katex %}(x-a)^2+y^2=a^2{% endkatex %}，其中a为半径，(a,0)为圆心。  
+由图：{% katex %}-\frac{\pi }{2}\le \theta \le \frac{\pi }{2},0 \le r \le 2a\cos \theta{% endkatex %}    
+展开方程式：{% katex %}x^2-2ax+a^2+y^2=a^2{% endkatex %}   
+{% katex %}x^2+y^2=2ax{% endkatex %}   
+即{% katex %}r^2=2a\cdot r\cos \theta{% endkatex %}     
+{% katex %}r=2a\cos \theta {% endkatex %}   
+   (3). 偏离原点，圆心在y轴上的圆形     
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281654238.png)
+{% katex %}x^2+(y-b)^2=b^2{% endkatex %}，其中b为半径，(0,b)为圆心。     
+由图：{% katex %}0\le \theta \le \pi,0 \le r \le 2a\sin \theta{% endkatex %}    
+展开方程式：{% katex %}x^2+y^2-2ay+a^2=a^2{% endkatex %}   
+{% katex %}x^2+y^2=2ay{% endkatex %}   
+即{% katex %}r^2=2a\cdot r\sin \theta{% endkatex %}     
+{% katex %}r=2a\sin \theta {% endkatex %}   
+例题1：设积分区域为：D由{% katex %}x^2+y^2=\frac{\pi ^2}{9},x^2+y^2=\pi ^2{% endkatex %}围成，求{% katex %}\iint\limits_{D} \frac{\sin \sqrt{x^2+y^2} }{\sqrt{x^2+y^2} }dxdy{% endkatex %}      
+解：令{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% endkatex %}    
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281716541.png)
+由题可知{% katex %}r_1=\frac{\pi }{3},r_2=\pi {% endkatex %}   
+可知:{% katex %}0 \le \theta \le 2\pi ,\frac{\pi }{3}\le r\le \pi {% endkatex %}  
+由原式可得：{% katex %}\int_{0}^{2\pi }d \theta \int_{\frac{\pi }{3} }^{\pi }\frac{\sin \sqrt{r^2} }{\sqrt{r^2} }dxdy{% endkatex %}    
+{% katex %}\int_{0}^{2\pi }d \theta \int_{\frac{\pi }{3} }^{\pi }\frac{\sin r}{r}dr{% endkatex %}    
+{% katex %}\int_{0}^{2\pi }(-\cos r)|\begin{matrix}\pi \\\ \frac{\pi }{3}\end{matrix} d \theta{% endkatex %}    
+{% katex %}\int_{0}^{2\pi } \frac{3}{2} d \theta{% endkatex %}    
+{% katex %}\frac{3}{2} \theta|\begin{matrix}2\pi \\\ 0\end{matrix} {% endkatex %}     
+{% katex %}3\pi {% endkatex %}   

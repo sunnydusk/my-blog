@@ -151,7 +151,8 @@ date: 2023-11-15 12:04:00
 (5). {% katex %}{\color{Red} a^2-b^2=(a+b)(a-b)} {% endkatex %}  
 (6). {% katex %}{\color{Red} a^3-b^3=(a-b)(a^2+ab+b^2)} {% endkatex %}  
 (7). {% katex %}{\color{Red} a^3+b^3=(a+b)(a^2-ab+b^2)} {% endkatex %}  
-(a). {% katex %}{\color{Purple} \cos 2x=\cos^2x-\sin^2x=2\cos^2x-1=1-2\sin^2x} {% endkatex %}  
+<br />
+(a).{% katex %}{\color{Purple} \cos 2x=\cos^2x-\sin^2x=2\cos^2x-1=1-2\sin^2x}{% endkatex %}  
 (b). {% katex %}{\color{Purple} \sin 2x=2\sin x \cos x} {% endkatex %}  
 (c). {% katex %}{\color{Purple} \sin x^2+\cos x^2 =1} {% endkatex %}  
 (d). {% katex %}{\color{Purple} \tan x^2+1=\sec x^2} {% endkatex %}  
