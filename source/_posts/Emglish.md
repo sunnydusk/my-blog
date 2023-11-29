@@ -113,7 +113,7 @@ A.a		B.an		C.the		D./
 指代名词或一句话的一种词类。大多数具有名词和形容词的功能。
 #### 1.人称代词
 代替人、事物、动物的词（人称，单复数、主宾格）
-![人称代词](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251717993.png)
+![人称代词](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251717993.png)
 人称代词的用法
 1. 人称代词主格用来做主语，一般置于谓语动词之前。
 2. 人称代词宾格用来做宾语，置于动词或介词之后。
@@ -147,7 +147,7 @@ You've saved my life.I shall never forget it（代指某件事）. 你救过我�
 ---
 #### 2.物主代词
 表示所有 关系的代词叫物主代词（人称、单复数、形容词性/名词性）
-![物主代词](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251718580.png)
+![物主代词](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251718580.png)
 物主代词的用法
 1. 形容词性物主代词可用作定语。（形物代+名词=名物代）
 例：
@@ -161,7 +161,7 @@ of+名物代   "……的……"
 ---
 #### 3.反身代词
 表示我自己，你自己，他自己，我们自己，你们自己，他们自己等的词叫反身代词（人称、单复数）
-![反身代词](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251718443.png)
+![反身代词](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251718443.png)
 反身代词的用法反身代词可用作宾语，表语，主语的同位语和宾语的同位语。用作同位语是表示强调“本人，自己”
 例：
 I am teaching myself computer. 我自学计算机。
@@ -172,7 +172,7 @@ You should ask the children themselves.你应该问一问孩子们自己。
 ---
 #### 4.指示代词
 表示这个，那个，这些，那些以及it，such，same等词叫做指示代词，指示代词在句中做主语，宾语，表语，定语。
-![指示代词](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251719279.png)
+![指示代词](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251719279.png)
 指示代词的用法
 1. this和these表示在时间上或空间上较近的人或物。
 This is a book. 这是一本书。
@@ -302,11 +302,11 @@ thousands of trees  成千上万棵树
 ---
 #### 2.序数词
 表示排列的顺序
-![1~12](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251751593.png)
-![13~19](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251752898.png)
+![1~12](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251751593.png)
+![13~19](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251752898.png)
 基数词+th=第XXX
-![20~99](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251752399.png)
-![100以上](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251752218.png)
+![20~99](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251752399.png)
+![100以上](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251752218.png)
 整十变序数词=基数词变y为ie+ty
 口诀一、二、三要全变；（one-first;two-second;three-third）
 其余都加th，th里有例外，8去t（eight-eiighth）9去e（nine-ninth）

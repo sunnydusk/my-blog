@@ -17,7 +17,7 @@ date: 2023-11-22 21:04:00
 2. 标量(数量)是`只有大小没有方向`的量，用一个数字来表示。  
 向量的大小用`模`来表示，向量的方向用`方向角`来表示。  
 3. 向量在坐标系中的表示：
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311231410632.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311231410632.png)  
 设在空间内有两个点{% katex %}A(x_1,y_1,z_1),B(x_2,y_2,z_2){% endkatex %}，则向量AB的坐标表示为：{% katex %}\vec{AB}=(x_2-x_1,y_2-y_1,z_2-z_1) {% endkatex %}(终点坐标-起点坐标)  
 4. 向量的大小(模长)：  
 指向量长度，指AB距离。  
@@ -79,7 +79,7 @@ date: 2023-11-22 21:04:00
 则{% katex %}\vec{a} \times \vec{b}=\begin{vmatrix}\vec{i} &\vec{j} &\vec{k} \\x_1 &y_1 &z_1 \\x_2 &y_2 &z_2 \\\end{vmatrix} {% endkatex %}  
 {% katex %}\begin{vmatrix} y_1& z_1\\y_2&z_2\end{vmatrix}\cdot \vec{i}-\begin{vmatrix} x_1& z_1\\x_2&z_2\end{vmatrix}\cdot \vec{j}+\begin{vmatrix} x_1& y_1\\x_2&y_2\end{vmatrix}\cdot \vec{k}{% endkatex %}    
 补充：  
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311231529147.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311231529147.png)  
 例题1：{% katex %}\vec{a}=(1,0,-1),\vec{b}=(0,2,3){% endkatex %}，求{% katex %}\vec{a}\times \vec{b}{% endkatex %}  
 解：{% katex %}\vec{a} \times \vec{b}=\begin{vmatrix}\vec{i} &\vec{j} &\vec{k} \\1 &0 &-1 \\0 &2 &3 \\\end{vmatrix} {% endkatex %}  
 {% katex %}\begin{vmatrix} 0& -1\\2&3 \end{vmatrix}\cdot \vec{i}-\begin{vmatrix} 1& -1\\0 &3 \end{vmatrix}\cdot \vec{j}+\begin{vmatrix} 1& 0\\0 & 2 \end{vmatrix}\cdot \vec{k}{% endkatex %}  
@@ -92,18 +92,18 @@ date: 2023-11-22 21:04:00
 将第一列和第二列往后排列，使用`主对角-副对角`,即捺-撇；  
 {% katex %}=\begin{vmatrix}1&2&0 \\0&1&0 \\1&1&2\end{vmatrix}{\color{Red} \begin{matrix}1&2 \\0&1 \\1&1\end{matrix}} {% endkatex %}  
 {% katex %}=(2+0+0)-(0+0+0)=2{% endkatex %}   
-![某一表白公式](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311231550391.png)  
-![例题1使用对角线法解题](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311231554410.png)  
+![某一表白公式](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311231550391.png)  
+![例题1使用对角线法解题](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311231554410.png)  
 
 ---
 ### {% katex %}\vec{a}\times \vec{b} {% endkatex %}的几何意义
 {% katex %}|\vec{a}\times \vec{b}|=|\vec{a}|\cdot |\vec{b}|\cdot \sin \theta {% endkatex %}    
 几何意义：指由{% katex %}\vec{a},\vec{b} {% endkatex %}所构成的平行四边形的面积。  
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311231604992.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311231604992.png)
 若求三角形的面积，则{% katex %}\frac{1}{2}|\vec{a}\times \vec{b}| {% endkatex %}  
 例题1：已知{% katex %}\bigtriangleup ABC{% endkatex %}上的三个顶点{% katex %}A(1,2,3),B(3,-1,2),C(1,3,2){% endkatex %}，则AB边上的高是多少，{% katex %}h=\frac{2\sqrt{21} }{7}{% endkatex %}。  
 解：
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311231617833.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311231617833.png)  
 {% katex %}\vec{AB}=(3-1,-1-2,2-3)=(2,-3,-1){% endkatex %}  
 {% katex %}\vec{AC}=(1-1,3-2,2-3)=(0,1,-1){% endkatex %}  
 {% katex %}|\vec{AB}\times \vec{AC}|=\begin{vmatrix}\vec{i} &\vec{j} &\vec{k} \\2 &-3 &-1 \\0 &1 &-1 \\\end{vmatrix} {% endkatex %}  
@@ -130,7 +130,7 @@ date: 2023-11-22 21:04:00
 1. 点法式方程：  
 {% katex %}A(x-x_0)+B(y_-y_0)+C(z-z_0)=0{% endkatex %}  
 解析：       
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311231642831.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311231642831.png)
    (1). 称垂直于平面的非零向量为平面法向量，记作{% katex %}\vec{n}=(A,B,C){% endkatex %}  
    (2). 在平面上找出不重合的两点{% katex %}M(x,y,z),M_0(x_0,y_0,z_0){% endkatex %}，连接{% katex %}\vec{M_0M}=(x-x_0,y-y_0,z-z_0){% endkatex %}  
    (3). 由{% katex %}\vec{n} \perp \vec{M_0M}{% endkatex %}，则{% katex %}\vec{n} \cdot \vec{M_0M}=0{% endkatex %}展开得：{% katex %}A(x-x_0)+B(y-y_0)+C(z-z_0)=0{% endkatex %}            
@@ -294,7 +294,7 @@ A. {% katex %}\frac{\pi }{3}{% endkatex %}    B. {% katex %}\frac{\pi }{4}{% end
 
 ---
 ### 向量的方向角
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311242056757.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311242056757.png)  
 用于确定向量的方向的量，向量与坐标轴**正向或基向量**的交角称为向量的方向角，向量的方向角的余弦称为向量的方向余弦。  
 设向量{% katex %}r=xi+y j+zk{% endkatex %}的方向角为{% katex %}\alpha ，\beta ，\gamma {% endkatex %}则：     
 {% katex %}\cos \alpha =\frac{r \cdot i}{|r|}=\frac{x}{\sqrt{x^2+y^2+z^2}}{% endkatex %}  

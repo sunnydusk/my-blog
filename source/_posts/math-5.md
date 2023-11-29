@@ -168,7 +168,7 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 ### 多元复合函数求导
 求导原则：从外向里，层层求导并相乘。    
 **链式法则**：将每层函数关系罗列（树状图）**分线相加，连线相乘**  
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311251621609.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311251621609.png)  
 1. 题型一：具体多元函数求导（直接带入法）  
 例题1：设{% katex %}z=xy+3\ln x,其中x=2u+v ,y=u-2v{% endkatex %}，求{% katex %}\frac{\partial z}{\partial u},\frac{\partial z}{\partial v}{% endkatex %}。   
 解：由题可知：{% katex %}z=(2u+v)\cdot (u-2v)+3\ln (2u+v){% endkatex %}   
@@ -338,9 +338,9 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 (1). 圆的一般表达式：{% katex %}(x-a)^2+(y-b)^2=r^2{% endkatex %}    
 其中，{% katex %}(a,b){% endkatex %}为圆心，{% katex %}r{% endkatex %}为半径。   
 {% katex %}S_圆=\pi \cdot r^2{% endkatex %}   
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271116610.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271116610.png)  
 (2). 椭圆的一般表达式：{% katex %}\frac{x^2}{a^2}+\frac{y^2}{b^2}=1{% endkatex %}   
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271117250.png) 
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271117250.png) 
 {% katex %}S_椭圆=\pi \cdot a \cdot b{% endkatex %}     
 例题1：计算{% katex %}\iint\limits_{D}d\delta {% endkatex %}其中D为原点为圆心，半径为5的圆形区域。   
 解：{% katex %}\iint\limits_{D}d\delta =S_D=\pi \cdot 5^2=25\pi {% endkatex %}   
@@ -364,7 +364,7 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 解：{% katex %}x^2+y^2 \le 1{% endkatex %}时比较    
 取一特殊值{% katex %}x^2+y^2=\frac{1}{4}{% endkatex %}得{% katex %}\sqrt{x^2+y^2} \ge x^2+y^2 \ge (x^2+y^2)^2{% endkatex %}  
 当{% katex %}x^2+y^2\le 1{% endkatex %}时，{% katex %}1 \ge \sqrt{x^2+y^2} \ge x^2+y^2 \ge (x^2+y^2)^2\ge 0{% endkatex %}     
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271352820.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271352820.png)  
 由图{% katex %}I_3\ge I_2\ge I_1{% endkatex %}   
 
 ---
@@ -372,7 +372,7 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 估值定理：设{% katex %}f(x,y){% endkatex %}在D上，有最大值M和最小值m，有{% katex %}m\le f(x,y)\le M{% endkatex %}，则{% katex %}m\cdot S_D \le \iint\limits_{D}f(x,y)dxdy \le M\cdot S_D{% endkatex %}    
 例题1：设{% katex %}I=\iint\limits_{D}xy(x+y)dxdy{% endkatex %}其中{% katex %}0 \le x \le1,0\le y\le 2{% endkatex %}则{% katex %}()\le I\le(){% endkatex %}。    
 解：
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271400569.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271400569.png)  
 由图知：{% katex %}S_D=1 \cdot 2=2{% endkatex %}   
 因为{% katex %}0 \le x \le 1,0 \le y\le 2{% endkatex %}  
 则{% katex %}x=0,y=0{% endkatex %}时为最小值，{% katex %}x=1,y=2{% endkatex %}时为最大值  
@@ -390,10 +390,10 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 注：**求解顺序，先求尾部再求前面，从后往前，从右到左依次求解**    
 根据积分区域图形不同，选择不同积分顺序。   
 1). X型图：函数图形，由上下两函数，夹为一个图形；   
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271414131.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271414131.png)
 公式：{% katex %}\iint\limits_{D}f(x,y)dxdy=\int_{a}^{b}dx\int_{f_{上(x)} }^{f_{下(x)} }f(x,y)dy{% endkatex %}   
 2). Y型图：函数图形，由左右两函数，合为一个图形:改函数{% katex %}f(y){% endkatex %}；   
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271416932.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271416932.png)  
 公式：{% katex %}\iint\limits_{D}f(x,y)dxdy=\int_{c}^{d}dy\int_{f_{左(y)} }^{f_{右(y)} }f(x,y)dx{% endkatex %}     
 定限口诀：**后积先定限，限内画直线，先交写下限，后交写上限。**   
 2. 二重积分直角坐标系下计算例题   
@@ -403,7 +403,7 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
    (3). 套公式{% katex %}\left\{\begin{matrix}X\Longrightarrow \int_{\Box }^{\Box }dx\int_{\Box }^{\Box }f(x,y)dy\\Y\Longrightarrow \int_{\Box }^{\Box }dy\int_{\Box }^{\Box }f(x,y)dx\end{matrix}\right. {% endkatex %}。   
 例题1：计算二重积分{% katex %}\iint\limits_{D}xydxdy{% endkatex %}其中D为由直线{% katex %}y=1,x=2,y=x{% endkatex %}围成的区域。     
 解：  
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271430804.png) 
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271430804.png) 
 定为X型图：{% katex %}\left\{\begin{matrix}1 \le x \le 2\\1\le y\le x\end{matrix}\right.{% endkatex %}      
 原式{% katex %}=\int_{1}^{2}dx\int_{1}^{x}xydy{% endkatex %}   
 {% katex %}=\int_{1}^{2}(x\cdot \frac{1}{2}y^2)|\begin{matrix}1\\x\end{matrix}dx{% endkatex %}    
@@ -418,7 +418,7 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 {% katex %}=\frac{9}{8}{% endkatex %}    
 例题2：计算二重积分{% katex %}\iint\limits_{D}xydxdy{% endkatex %}其中D为由直线{% katex %}y^2=x,y=x-2{% endkatex %}围成的区域。   
 解：  
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271452174.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271452174.png)  
 联立两个方程：{% katex %}y^2=x,y=x-2{% endkatex %}  
 求得两个交点为{% katex %}(-1,1),(4,2){% endkatex %}   
 定为Y型图：{% katex %}\left\{\begin{matrix}-1 \le y \le 2\\y^2 \le x\le y+2\end{matrix}\right.{% endkatex %}   
@@ -434,14 +434,14 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 (2). {% katex %}\frac{\sin y}{y},\frac{\cos y}{y},\sin y^2\cdot \cos y^2,e^{y^2},e^{-y^2}\Longrightarrow Y{% endkatex %}型      
 例题1：求二重积分{% katex %}\iint\limits_{D}\frac{\sin y}{y}dxdy{% endkatex %}其中D为由直线{% katex %}y=x,x=0,y=\pi {% endkatex %}围成的区域。   
 解：  
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271536483.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271536483.png)  
 定为Y型图：{% katex %}\left\{\begin{matrix}0 \le y \le \pi \\0 \le x \le y\end{matrix}\right.{% endkatex %}   
 原式{% katex %}=\int_{0}^{\pi }dy \int_{0}^{y}\frac{\sin y}{y}dx{% endkatex %}    
 {% katex %}=\int_{0}^{\pi }\frac{\sin y}{y}\cdot x|\begin{matrix}y\\0\end{matrix}dy{% endkatex %}    
 {% katex %}=\int_{x}^{\pi }\sin y dy =(-\cos y)|\begin{matrix}\pi \\0\end{matrix} =1+1=2{% endkatex %}   
 例题2：求二重积分{% katex %}\iint\limits_{D}\cos y^2dxdy{% endkatex %}其中D为由直线{% katex %}y=2,x=1,y=x-1 {% endkatex %}围成的区域。    
 解：  
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271546882.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271546882.png)  
 定为Y型图：{% katex %}\left\{\begin{matrix}0 \le y \le 2 \\1 \le x \le y+1\end{matrix}\right.{% endkatex %}     
 故原式{% katex %}=\int_{0}^{2}dy \int_{1}^{y+1}\cos y^2dx{% endkatex %}    
 {% katex %}=\int_{0}^{2}\cos y^2\cdot x|\begin{matrix}y+1\\1\end{matrix}dy{% endkatex %}    
@@ -463,7 +463,7 @@ A. {% katex %}\int_{0}^{1}dx\int_{2y} }^{\sqrt{y} }f(x,y)dy{% endkatex %}
 B. {% katex %}\int_{0}^{2}dy\int_{\frac{y^2}{4} }^{\frac{y}{2}f(x,y)dx{% endkatex %}  
 C. {% katex %}\int_{2x}^{2\sqrt{x} }f(x,y)dy\int_{0}^{1}dx{% endkatex %}  
 D. {% katex %}\int_{\frac{\frac{y^2}{4} }{} }^{\frac{y}{2} }dy\int_{0}^{2}f(x,y)dx{% endkatex %}    
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271642984.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271642984.png)
 解：由题可知：{% katex %}0 \le x \le 1,2x \le y \le 2\sqrt{x}{% endkatex %}   
 有图可知：{% katex %}0 \le y \le 2,\frac{y^2}{4} \le x \le \frac{y}{2}{% endkatex %}   
 故选B。  
@@ -472,7 +472,7 @@ D. {% katex %}\int_{\frac{\frac{y^2}{4} }{} }^{\frac{y}{2} }dy\int_{0}^{2}f(x,y)
 {% katex %}\left\{\begin{matrix}\frac{1}{4} \le y \le \frac{1}{2} \\\frac{1}{2} \le x\le \sqrt{y}  \end{matrix}\right.{% endkatex %}   
 {% katex %}\int_{\frac{1}{2} }^{1}dy\int_{\sqrt{y} }^{y}e^{\frac{y}{x} }dx{% endkatex %}可知  
 {% katex %}\left\{\begin{matrix}\frac{1}{2} \le y \le 1 \\ \sqrt{y} \le x\le y  \end{matrix}\right.{% endkatex %}   
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311271702887.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271702887.png)  
 选择X型：{% katex %}\left\{\begin{matrix}\frac{1}{2} \le x \le 1 \\x^2 \le y\le x  \end{matrix}\right.{% endkatex %}   
 原式{% katex %}\int_{1}^{\frac{1}{2} }dx\int_{x^2}^{x}e^{\frac{y}{x} }dy {% endkatex %}  
 {% katex %}\int_{1}^{\frac{1}{2} }x \cdot e^{\frac{y}{x} }|\begin{matrix}x\\x^2\end{matrix}dx {% endkatex %}  
@@ -490,8 +490,8 @@ D. {% katex %}\int_{\frac{\frac{y^2}{4} }{} }^{\frac{y}{2} }dy\int_{0}^{2}f(x,y)
 1. 极坐标系   
 极坐标系是在平面直角坐标系的基础上，引入极轴(距离)和极角(角度)的坐标系。   
 由极心，极轴，极径，极角组成。  
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281458343.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281501461.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281458343.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281501461.png)
 由图可知：{% katex %}\sin \theta =\frac{y}{r}\Longrightarrow y=r \sin \theta  {% endkatex %}     
 {% katex %}\cos \theta =\frac{x}{r}\Longrightarrow x=y \cos \theta  {% endkatex %}     
 小结：在极坐标下，{% katex %}x=r \cos \theta ,y=r \sin \theta ,x^2+y^2=r^2{% endkatex %}
@@ -505,20 +505,20 @@ D. {% katex %}\int_{\frac{\frac{y^2}{4} }{} }^{\frac{y}{2} }dy\int_{0}^{2}f(x,y)
    (1). 夹角{% katex %}\theta{% endkatex %}的取值范围：
 从原点出发，逆时针方向作积分区域的两条切线，取第一条触碰积分区域的切线与x正半轴的夹角为{% katex %}\theta _1{% endkatex %}。    
 取第二条触碰积分区域的切线与x正半轴的夹角为{% katex %}\theta _2{% endkatex %}。      
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281537649.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281537649.png)
 {% katex %}\int_{\theta _1}^{\theta _2}d\theta {% endkatex %}  
    (2). 半径r的取值范围     
 {% katex %}OA=r_1,OB=r_2{% endkatex %}，则{% katex %}r_1,r_2{% endkatex %}为积分区域的内外半径。
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281635035.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281635035.png)  
 r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% endkatex %}代入积分区域的方程，得到{% katex %}r_1,r_2{% endkatex %}的表达式。    
 **注意**：{% katex %}0 \le r{% endkatex %}     
 **常见积分区域（图像）**：
    (1). 圆   
 一般式方程：{% katex %}x^2+y^2=R^2{% endkatex %}，其中R为半径，(a,b)为圆心。   
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281643926.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281643926.png)  
 其中：{% katex %}0\le \theta \le 2\pi ,0\le r \le R{% endkatex %}   
    (2). 偏离原点，圆心在x轴上的圆形     
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281646302.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281646302.png)  
 {% katex %}(x-a)^2+y^2=a^2{% endkatex %}，其中a为半径，(a,0)为圆心。  
 由图：{% katex %}-\frac{\pi }{2}\le \theta \le \frac{\pi }{2},0 \le r \le 2a\cos \theta{% endkatex %}    
 展开方程式：{% katex %}x^2-2ax+a^2+y^2=a^2{% endkatex %}   
@@ -526,7 +526,7 @@ r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% e
 即{% katex %}r^2=2a\cdot r\cos \theta{% endkatex %}     
 {% katex %}r=2a\cos \theta {% endkatex %}   
    (3). 偏离原点，圆心在y轴上的圆形     
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281654238.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281654238.png)
 {% katex %}x^2+(y-b)^2=b^2{% endkatex %}，其中b为半径，(0,b)为圆心。     
 由图：{% katex %}0\le \theta \le \pi,0 \le r \le 2a\sin \theta{% endkatex %}    
 展开方程式：{% katex %}x^2+y^2-2ay+a^2=a^2{% endkatex %}   
@@ -535,7 +535,7 @@ r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% e
 {% katex %}r=2a\sin \theta {% endkatex %}   
 例题1：设积分区域为：D由{% katex %}x^2+y^2=\frac{\pi ^2}{9},x^2+y^2=\pi ^2{% endkatex %}围成，求{% katex %}\iint\limits_{D} \frac{\sin \sqrt{x^2+y^2} }{\sqrt{x^2+y^2} }dxdy{% endkatex %}      
 解：令{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% endkatex %}    
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311281716541.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281716541.png)
 由题可知{% katex %}r_1=\frac{\pi }{3},r_2=\pi {% endkatex %}   
 可知:{% katex %}0 \le \theta \le 2\pi ,\frac{\pi }{3}\le r\le \pi {% endkatex %}  
 由原式可得：{% katex %}\int_{0}^{2\pi }d \theta \int_{\frac{\pi }{3} }^{\pi }\frac{\sin \sqrt{r^2} }{\sqrt{r^2} }dxdy{% endkatex %}    
@@ -548,7 +548,7 @@ r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% e
 解：由题可知：{% katex %}x^2+y^2=2x{% endkatex %}和{% katex %}x^2+y^2=1{% endkatex %}    
 可得：{% katex %}x^2-2x+1-1+y^2=0,(x-1)+y^2=1{% endkatex %}    
 即圆心为{% katex %}(1,0),r=1{% endkatex %}和{% katex %}(0,0),r=1{% endkatex %}      
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311291502473.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311291502473.png)
 令{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2,dxdy=rdrd\theta{% endkatex %}     
 过原点作切线{% katex %}y=ax{% endkatex %}    
 将{% katex %}x=\frac{1}{2}{% endkatex %}带入{% katex %}x^2+y^2=2x{% endkatex %}得{% katex %}y=\frac{\sqrt{3} }{2}{% endkatex %}    
@@ -579,6 +579,6 @@ r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% e
 例题1：设D由{% katex %}y=1-x^2{% endkatex %}及x轴围成，则{% katex %}\iint\limits_{D}(\sin x+x^3y)dxdy{% endkatex %}     
 A. {% katex %}\frac{4}{3}{% endkatex %}      B. {% katex %}\frac{2}{3}{% endkatex %}      C.1      D. 0       
 解：
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311291538835.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311291538835.png)
 由图可知，函数关于y对称   
 由题可知：{% katex %}\sin x{% endkatex %}为奇函数，{% katex %}x^3y{% endkatex %}为奇函数，即选D    

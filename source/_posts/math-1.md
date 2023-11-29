@@ -50,13 +50,13 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 1.分段函数
 在定义域内不同区间上用不同解析式表示的函数
 2.隐函数
-![隐函数](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242144794.png)
+![隐函数](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242144794.png)
 3.参数方程式函数 
-![参数方程式](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242226795.png)
+![参数方程式](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242226795.png)
 4.抽象函数
-![抽象函数](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242229860.png)
+![抽象函数](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242229860.png)
  *4.1求抽象函数的定义域
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242231679.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242231679.png)
 例题：已知函数{% katex %}y=f(x){% endkatex %}的定义域为[-1,1),那么函数{% katex %}y=f(x-2){% endkatex %}的定义域是   [1,3)
  解：{% katex %}\because f(x){% endkatex %}的定义域为[-1,1)
     {% katex %}\therefore-1\leq x<1{% endkatex %}
@@ -108,7 +108,7 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 设函数{% katex %}f(x){% endkatex %}在区间（a,b）内有定义，对于任意{% katex %}x_1,x_2∈(a,b){% endkatex %}时：
 如果恒有{% katex %}f(x_1){% endkatex %}<{% katex %}f(x_2){% endkatex %},则称函数{% katex %}f(x){% endkatex %}在（a，b）内单调增加；
 如果恒有{% katex %}f(x_1){% endkatex %}>{% katex %}f(x_2){% endkatex %},则称函数{% katex %}f(x){% endkatex %}在（a，b）内单调减少；
-![单增单减](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242232359.png)
+![单增单减](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242232359.png)
 例题：论证函数{% katex %}y=\frac{x}{1-x}{% endkatex %}在指定区间{% katex %}(-\infty,1){% endkatex %}上的单调性。
  解：在{% katex %}(-\infty,1){% endkatex %}上{% katex %}\forall{% endkatex %}{% katex %}x_1,x_2{% endkatex %}{% katex %}x_1<x_2{% endkatex %}
     {% katex %}f(x_1)-f(x_2)=\frac{x_1}{1-x_1}-\frac{x_2}{1-x_2}{% endkatex %}
@@ -139,9 +139,9 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 
 | 函数 | 图像表达式 |    周期     | 最小正周期 |
 |----| --- |------------------------------------| --- |
-|  {% katex %}y=\sin x{% endkatex %} | ![sinx](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242252146.png) | {% katex %}2k\pi,k∈z{% endkatex %} | {% katex %}2\pi{% endkatex %} |
-| {% katex %}y=|\cos x| {% endkatex %}                     | ![cosx](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242253740.png) | {% katex %}k\pi,k∈z{% endkatex %} | {% katex %}\pi{% endkatex %} |
-| 常值函数{% katex %}y=c{% endkatex %} | ![常值函数](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242254168.png) | 任何正有理数                             | 不存在 |
+|  {% katex %}y=\sin x{% endkatex %} | ![sinx](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242252146.png) | {% katex %}2k\pi,k∈z{% endkatex %} | {% katex %}2\pi{% endkatex %} |
+| {% katex %}y=|\cos x| {% endkatex %}                     | ![cosx](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242253740.png) | {% katex %}k\pi,k∈z{% endkatex %} | {% katex %}\pi{% endkatex %} |
+| 常值函数{% katex %}y=c{% endkatex %} | ![常值函数](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242254168.png) | 任何正有理数                             | 不存在 |
 | 狄利克雷函数 | {% katex %}y=\begin{cases} 1, x∈Q \\\\0,x∈Q^c\end{cases}{% endkatex %} | 任何正有理数                             | 不存在 |
 
 #### 反函数与复合函数
@@ -151,14 +151,14 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 例如：{% katex %}y=x^2{% endkatex %}和 {% katex %}y=sinx{% endkatex %}在{% katex %}x∈R{% endkatex %}范围内没有反函数！
 ##### 反函数的性质
 反函数和原函数的图像关于直线{% katex %}y=x{% endkatex %}对称。
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242254203.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242255908.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242254203.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242255908.png)
 ##### 反函数和原函数单调性相同。
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242257542.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242257392.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242257542.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242257392.png)
 反函数和原函数的奇偶性相同。（奇函数的反函数还是奇函数，非奇非偶函数的反函数还是非奇非偶函数，偶函数不存在反函数）
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242258560.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242258960.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242258560.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242258960.png)
 ##### 复合函数
 自变量{% katex %}x{% endkatex %}——{% katex %}u=g(x){% endkatex %}——>中间变量{% katex %}u{% endkatex %}——{% katex %}y=f(u){% endkatex %}——>因变量{% katex %}y{% endkatex %}
 由函数{% katex %}y=f(u){% endkatex %}及{% katex %}u=g(x){% endkatex %}构成的函数{% katex %}y=f[g(x)]{% endkatex %}称为复合函数。
@@ -169,20 +169,20 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 幂函数、指数函数、对数函数、三角函数、反三角函数通称基本初等函数。
 ##### 幂函数：{% katex %}y=x^\mu{% endkatex %}（{% katex %}\mu∈R{% endkatex %}是常数）
 定义域和值域随{% katex %}\mu{% endkatex %}而异，但其在（{% katex %}0,+\infty{% endkatex %}）上总有意义，且图像总经过点（1，1）。
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242258307.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242258307.png)
 ##### 指数函数：{% katex %}y=a^x{% endkatex %}（{% katex %}a>0,a\ne1{% endkatex %}）
 特别当{% katex %}a=e{% endkatex %}时，有{% katex %}y=e^x{% endkatex %}({% katex %}e\approx2.718{% endkatex %})(考点).
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242259157.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242259157.png)
 ##### 对数函数：{% katex %}y=log_ax{% endkatex %}({% katex %}a>0,a\ne1{% endkatex %})
 特别当{% katex %}a=e{% endkatex %}时，有{% katex %}y=lnx{% endkatex %}.(考点)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242301918.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242301918.png)
 ##### 三角函数
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242302642.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242302346.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242302725.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242303346.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242302642.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242302346.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242302725.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242303346.png)
 ##### 反三角函数
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242303393.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242303393.png)
 
 ---
 ### 极限
@@ -437,13 +437,13 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 当 {% katex %}x\longrightarrow 0{% endkatex %}时，有：
 1. {% katex %}x\sim \sin x\sim \tan x\sim \arcsin x\sim \arctan x{% endkatex %}
 2. {% katex %}1-\cos x\sim \frac{1}{2} x^2{% endkatex %}
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242304328.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242304328.png)
 3. {% katex %}ln(1+x)x\sim x{% endkatex %}
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242305587.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242305587.png)
 4. {% katex %}e^x-1 \sim x{% endkatex %}
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242305245.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242305245.png)
 5. {% katex %}(1+x)^\mu-1 \sim  \mu \cdot x{% endkatex %}   {% katex %}\sqrt[n]{1+x}-1 \sim \frac{1}{n} \cdot x{% endkatex %}
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242306905.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242306905.png)
 提示：可以将上述x替换成任意{% katex %}\Box{% endkatex %}
 二倍角公式：{% katex %}\cos 2 \alpha =\cos ^2\alpha - \ sin ^2 \alpha  = 2\cos ^2 \alpha -1 = 1-2\sin ^2 \alpha{% endkatex %}
 #####  利用等价无穷小替换求极限
@@ -452,9 +452,9 @@ D.{% katex %}f(x)=x+1{% endkatex %},{% katex %}g(t)=t+1{% endkatex %}
 分子：{% katex %}ln \cos x = ln(\cos x -1 +1) \sim - \frac{1}{2}x^2{% endkatex %}
 分母：{% katex %}\sin x \sim x \sim \tan x =x^2{% endkatex %}
 #### 总结+习题
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242306054.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242306586.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242307410.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242306054.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242306586.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242307410.png)
 例题1：{% katex %}\lim_{x \to \infty} (\sin \frac{3}{x} +1)^{2x}{% endkatex %}
  解：原式=
     利用第二重要极限
@@ -520,10 +520,10 @@ a=0\Rightarrow 0
 如果在区间上每一点都连续的函数，叫做该区间上的连续函数，或者说函数在该区间上连续。
 1. *左连续的概念：*
 如果{% katex %}\lim_{x \to x_0^-}f(x){% endkatex %}存在且等于{% katex %}f(x_0){% endkatex %}，那么就称函数{% katex %}f(x){% endkatex %}在点{% katex %}x_0{% endkatex %}左连续，其左极限可简记为{% katex %}f(x_0^-){% endkatex %}.
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242307510.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242307510.png)
 2. *右连续的概念：*
 如果{% katex %}\lim_{x \to x_0^+}f(x){% endkatex %}存在且等于{% katex %}f(x_0){% endkatex %}，那么就称函数{% katex %}f(x){% endkatex %}在点{% katex %}x_0{% endkatex %}右连续，其右极限可简记为{% katex %}f(x_0^+){% endkatex %}.
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242308828.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242308828.png)
 3. 函数{% katex %}f(x){% endkatex %}在点{% katex %}x_0{% endkatex %}处连续的充分必要条件为：{% katex %}f(x_0^-)=f(x_0^+)=f(x_0){% endkatex %}
 
 ---
@@ -531,35 +531,35 @@ a=0\Rightarrow 0
 如果函数{% katex %}f(x){% endkatex %}在点{% katex %}x_0{% endkatex %}处不连续，那么点{% katex %}x_0{% endkatex %}就称为函数{% katex %}f(x){% endkatex %}的间断点。
 函数不连续有三种情形：
 1. 在{% katex %}x=x_0{% endkatex %}处没有定义；
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242308543.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242309190.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242308543.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242309190.png)
 2. 虽有定义，但{% katex %}\lim_{x \to x_0}f(x){% endkatex %}不存在 ；
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242309052.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242309469.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242309052.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242309469.png)
 3. 虽有定义，且{% katex %}\lim_{x \to x_0}f(x){% endkatex %}存在，但{% katex %}\lim_{x \to x_0}f(x) \ne f(x_0){% endkatex %} ；
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242310573.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242310573.png)
 ##### 间断点-间断点分类
 如果{% katex %}x_0{% endkatex %}是函数{% katex %}f(x){% endkatex %}的间断点，但左极限{% katex %}f(x_0^-){% endkatex %}和右极限{% katex %}f(x_0^+){% endkatex %}都存在，那么{% katex %}x_0{% endkatex %}称为函数{% katex %}f(x){% endkatex %}的第一类间断点；
 表示第一类间断点的任何间断点，称为第二类间断点。
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242310665.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242310665.png)
 1. 第一类：可去间断点
 如果左极限和右极限都存在，且{% katex %}f(x_0^-)=f(x_0^+){% endkatex %}，那么称{% katex %}x_0{% endkatex %}为函数{% katex %}f(x){% endkatex %}的可去间断点。
 例如：函数{% katex %}y=\frac{x^2-1}{x-1}，x=1{% endkatex %}是可取间断点
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242310908.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242310908.png)
      函数{% katex %}y=\left\{\begin{matrix}x,x\ne 1 \\ \frac{1}{2},x=1 \end{matrix}\right.,x=1{% endkatex %}是可去间断点
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242311949.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242311949.png)
 2. 第一类：跳跃间断点
 如果左极限{% katex %}f(x_0^-){% endkatex %}和右极限{% katex %}f(x_0^+){% endkatex %}都存在，且{% katex %}f(x_0^-)\ne f(x_0^+){% endkatex %}，那么称{% katex %}x_0{% endkatex %}为函数{% katex %}f(x){% endkatex %}的跳跃间断点。
 例如：函数{% katex %}y=\left\{\begin{matrix}x-1,x<0 \\0,x=0  \\x+1,x>0 \end{matrix}\right.,x=0{% endkatex %}是跳跃间断点 
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242311540.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242311540.png)
 3. 第二类：无穷间断点
 如果左极限{% katex %}f(x_0^-){% endkatex %}和右极限{% katex %}f(x_0^+){% endkatex %}至少有一个不存在，且其中至少有一个是{% katex %}\infty{% endkatex %}，那么称{% katex %}x_0{% endkatex %}为函数{% katex %}f(x){% endkatex %}的无穷间断点。
 例如：函数{% katex %}y=\tan x,x=\frac{\pi}{2}{% endkatex %}是该函数的无穷间断点
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242311962.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242311962.png)
 4. 第二类：振荡间断点
 如果左极限{% katex %}f(x_0^-){% endkatex %}和右极限{% katex %}f(x_0^+){% endkatex %}至少有一个不存在，且其中至少有一个是振荡，那么称{% katex %}x_0{% endkatex %}为函数{% katex %}f(x){% endkatex %}的振荡间断点。
 例如：函数{% katex %}y=\sin \frac{1}{x},x=0{% endkatex %}是该函数的振荡间断点
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242312133.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242312133.png)
 注意：间断点类型与该点的函数值无关
 
 ---
@@ -572,11 +572,11 @@ a=0\Rightarrow 0
 ---
 ##### 闭区间上连续函数的性质
 1. 【有界性与最大值最小值定理】在闭区间上连续的函数在该区间上有界，且一定能取得它的最大值和最小值。
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242312767.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242312767.png)
 2. 【零点定理】若函数{% katex %}f(x){% endkatex %}在闭区间{% katex %}[a,b]{% endkatex %}上连续，且{% katex %}f(a){% endkatex %}与{% katex %}f(b){% endkatex %}异号（即{% katex %}f(a)\cdot f(b)<0{% endkatex %}），则至少存在一点{% katex %}\xi \in (a,b){% endkatex %}，使得{% katex %}f(\xi)=0{% endkatex %}
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242313989.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242313989.png)
 3. 【介值定理】设函数{% katex %}f(x){% endkatex %}在闭区间{% katex %}[a,b]{% endkatex %}上连续，且在这区间的端点取不同的函数值{% katex %}f(a)=A{% endkatex %}及{% katex %}f(b)=B{% endkatex %}，则对于{% katex %}A{% endkatex %}与{% katex %}B{% endkatex %}之间的任意一个数{% katex %}C{% endkatex %}，在开区间{% katex %}(a,b){% endkatex %}内至少有一点{% katex %}\xi{% endkatex %}，使得{% katex %}f(\xi)=C{% endkatex %}。
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310242313198.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310242313198.png)
 ##### 连续考点
 ###### 判断函数在某点的连续性
 例题：判断函数{% katex %}f(x)=\left\{\begin{matrix}x+\frac{1}{2},x<0 \\ \frac{1}{2},x=0 \\ \frac{ln(1+x)}{2x},x>0 \end{matrix}\right.{% endkatex %}，在点{% katex %}x=0{% endkatex %}处的连续性
@@ -622,7 +622,7 @@ A.1			B.2			C.0			D.-1
     即{% katex %}\frac{0}{0}=A{% endkatex %}
     {% katex %}\therefore  x-a=0，即1-a=0，a=1{% endkatex %}
 ###### 证明方程在某区间内至少有一个实根——零点定理
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251013292.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251013292.png)
 例题：证明方程{% katex %}x^3+3x^2=1{% endkatex %}在区间{% katex %}(0,1){% endkatex %}内至少有一个实根。
  解：有原式=
     {% katex %}x^3+3x^2-1=0{% endkatex %}即{% katex %}f(x)=x^3+3x^2-1{% endkatex %}
@@ -646,6 +646,6 @@ A.1			B.2			C.0			D.-1
 
 ---
 ###### 课后习题
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251014781.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251014449.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251959527.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251014781.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251014449.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251959527.png)

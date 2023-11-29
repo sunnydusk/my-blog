@@ -21,20 +21,20 @@ date: 2023-10-20 09:36:00
 1. {% katex %}f'(x_0)=\lim_{\Delta  \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}{% endkatex %}
 2. {% katex %}f'(x_0)=\lim_{x \to x_0}\frac{f(x)-f(x_0)}{x-x_0}{% endkatex %}
 3. {% katex %}f'(x_0)=\lim_{h \to 0}\frac{f(x_0+h)-f(x_0)}{h}{% endkatex %}
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251015134.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251015912.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251015134.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251015912.png)
 例题：
 若{% katex %}f'(x_0)=1,f(x_0)=0{% endkatex %}，则{% katex %}\lim_{h \to \infty} hf(x_0-\frac{1}{h}){% endkatex %}=______-1____.
 解：令{% katex %}\Delta x=\frac{1}{h}{% endkatex %}
 原式={% katex %}\lim_{\Delta x \to 0} \frac{f(x_0-\Delta x)-f(x_0)}{\Delta x}=-f'(x_0)=-1{% endkatex %}
 ##### 导函数的定义
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251016093.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251016093.png)
 
 ---
 ##### 结论
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251016677.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251016233.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251017515.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251016677.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251016233.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251017515.png)
 
 ---
 #### 导数的定义
@@ -65,7 +65,7 @@ date: 2023-10-20 09:36:00
 ---
 ##### 导数定义，求函数{% katex %}f(x){% endkatex %}在某点的导数
 特点：此时的{% katex %}f(x){% endkatex %}为复杂的多项式，乘积形式；
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251017456.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251017456.png)
 
 ---
 ##### 已知{% katex %}f(x){% endkatex %}某点导数，求相关极限
@@ -119,11 +119,11 @@ date: 2023-10-20 09:36:00
 
 ---
 #### 可导与连续的关系
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251018054.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251018054.png)
 
 #### 基本导数公式和四则运算求导法则
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251018535.png)
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310251018295.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251018535.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310251018295.png)
 
 ---
 #### 函数的求导方法
@@ -158,7 +158,7 @@ date: 2023-10-20 09:36:00
 ={% katex %}y'=e^x\sqrt{1-y^2} {% endkatex %}  
 4.由参数方程确定的函数求导
 求导方法：*y对t的导数除以x对t的导数*
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310281515928.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310281515928.png)
 例题1：设函数{% katex %}y=y(x){% endkatex %}由参数发方程
 {% katex %}
 \left\{\begin{matrix}x=3t^2-1
@@ -195,15 +195,15 @@ y=\frac{1}{2}t^2+lnt
 ={% katex %}y'=(1+2x)^{\cos x}(\frac{2 \cdot \cos x}{1+2x}-\sin x \cdot ln(1+2x) ) {% endkatex %}   
 6.多因子积商乘方构成的函数求导  
 求导方法：*对数求导法*
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310281604406.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310281604406.png)
 例题1：求{% katex %}\sqrt{\frac{(x-1)(x-2)}{(x-3)(x-4)} } {% endkatex %}的导数。  
 解：原式={% katex %}lny=ln(\frac{(x-1)(x-2)}{(x-3)(x-4)} )^\frac{1}{2}=\frac{1}{2} ln\frac{(x-1)(x-2)}{(x-3)(x-4)}  {% endkatex %}  
 ={% katex %}\frac{1}{2}(ln(x-1)+ln(x-2)-ln(x-3)-ln(x-4) ) {% endkatex %}
 ={% katex %}2\frac{y'}{y}=\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4}{% endkatex %}
 ={% katex %}y'=\frac{y}{2}(\frac{1}{x-1}+\frac{1}{x-2}-\frac{1}{x-3}-\frac{1}{x-4}) {% endkatex %}
-![例题2](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310291425147.png)
+![例题2](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310291425147.png)
 7.课堂总结
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310291427077.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310291427077.png)
 
 ---
 #### 高阶导数
@@ -230,11 +230,11 @@ y=\frac{1}{2}t^2+lnt
 {% endkatex %}
 (2).求三阶以上的导数
 使用常用的高阶求导公式  
-![常用高阶求导公式](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310291505621.png)
+![常用高阶求导公式](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310291505621.png)
 例题4：设函数{% katex %}y=x^{2000}+e^x+\cos x{% endkatex %}，则{% katex %}y^{(2025)}=e^x-\sin x{% endkatex %}
 (3).由参数方程确定的函数二阶导数
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310291519838.png)
-![求导方法](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202310291519312.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310291519838.png)
+![求导方法](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202310291519312.png)
 例题5：求函数{% katex %}y=y(x){% endkatex %}由参数方程{% katex %}\left\{\begin{matrix}
 x=\frac{1}{2}t^2-1
 \\
@@ -291,7 +291,7 @@ y=\frac{1}{2}t^2+lnt
 ### 微分
 **导数**：{% katex %}f'(x)=\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x}=\frac{dy}{dx}  \frac{函数的增量}{自变量增量}{% endkatex %}代表斜率、变化率、即微商。  
 **微分**：{% katex %}dy=f'(x)dx{% endkatex %}   代表函数的增量（导数的乘积形式）。  
-![证明](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041628652.png)
+![证明](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311041628652.png)
 1. *微分的定义*：如果函数的增量{% katex %}\Delta y=f(x_0+\Delta x)-f(x_0){% endkatex %}可以表示为
    {% katex %}\Delta y=A \cdot \Delta x+o(\Delta x){% endkatex %}  
    其中A是不依赖与{% katex %}\Delta x{% endkatex %}的常数，那么称函数{% katex %}y=f(x)在点x_0{% endkatex %}是**可微**的，而{% katex %}A \cdot \Delta x{% endkatex %}即为函数在该点的微分，记作：  
@@ -299,8 +299,8 @@ y=\frac{1}{2}t^2+lnt
    或{% katex %}dy=A \cdot \Delta x{% endkatex %}(其中{% katex %}dx{% endkatex %}是自变量的微分)  
    {% katex %}函数可导\longleftarrow等价 \longrightarrow 函数可微{% endkatex %}
 2. 基本微分公式及微分运算法则  
-   ![基本公式](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041648546.png)
-   ![运算法则](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041649949.png)
+   ![基本公式](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311041648546.png)
+   ![运算法则](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311041649949.png)
 
 ---
 ### 微分中值定理
@@ -310,8 +310,8 @@ y=\frac{1}{2}t^2+lnt
 2. 在开区间{% katex %}(a,b){% endkatex %}上可导；
 3. {% katex %}f(a)=f(b){% endkatex %}；  
    则在开区间{% katex %}(a,b){% endkatex %}上至少存在一点{% katex %}\xi{% endkatex %}，使得{% katex %}f'(\xi)=0{% endkatex %}  
-   ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041700161.png)  
-   ![生活实例](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041704450.png)
+   ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311041700161.png)  
+   ![生活实例](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311041704450.png)
    **不要和零点定理搞混！！！**
    例题1：下列函数在给定区间内满足罗尔中值定理的是（   ）。  
    {% katex %}A、f(x)=\left\{\begin{matrix}
@@ -339,8 +339,8 @@ y=\frac{1}{2}t^2+lnt
    {% katex %}f'(x)=3a_1x^2-2a_2x-a_1+a_2{% endkatex %}  
    反推：  
    {% katex %}f(x)=a_1x^3-a_2x^2-a_1x+a_2x{% endkatex %}  
-   ![答案](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041744507.png)
-   ![标准解题](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311041742778.png)
+   ![答案](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311041744507.png)
+   ![标准解题](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311041742778.png)
    例题3-1：已知函数{% katex %}f(x){% endkatex %}在{% katex %}x \in R{% endkatex %}范围内连续且可导，{% katex %}f(a)=f(b)=0{% endkatex %}，证明至少存在一点{% katex %}\xi \in (a,b){% endkatex %}，使得{% katex %}f'(\xi)+f(\xi)=0{% endkatex %}  
    解析：证明含有{% katex %}f'(\xi){% endkatex %}的等式，使用罗尔中值定理。
    证明：构造函数{% katex %}F(x)=f(x) \cdot e^x{% endkatex %}  
@@ -379,7 +379,7 @@ y=\frac{1}{2}t^2+lnt
 故在{% katex %}(a,b){% endkatex %}上至少存在一点{% katex %}\xi{% endkatex %}，使得{% katex %}F'(\xi)=0{% endkatex %}    
 即{% katex %}f'(\xi) \cdot \xi ^n+f(\xi) \cdot \frac{n}{\xi} \cdot \xi ^n=0。{% endkatex %}，化简得{% katex %}\frac{\xi }{n} f'(\xi)+f(\xi)=0。{% endkatex %}  
 例题3总结
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051543530.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311051543530.png)
 例题4-1：已知函数{% katex %}f(x){% endkatex %}在{% katex %}x \in R{% endkatex %}范围内连续且可导，{% katex %}f(a)=f(b)=0{% endkatex %}，证明至少存在一点{% katex %}\xi \in (a,b){% endkatex %}，使得{% katex %}f'(\xi)-f(\xi)=0{% endkatex %}。    
 解析：{% katex %}f'(x) \Box -f(x)\Box =0{% endkatex %},{% katex %}使用(\frac{u}{v})'=\frac{u'v-uv'}{v^2} {% endkatex %}  
 {% katex %}\therefore \Box =e^x {% endkatex %}
@@ -390,7 +390,7 @@ y=\frac{1}{2}t^2+lnt
 故在{% katex %}(a,b){% endkatex %}上至少存在一点{% katex %}\xi{% endkatex %}，使得{% katex %}F'(\xi)=0{% endkatex %}    
 即{% katex %}\frac{f'(\xi)\cdot e^\xi-f(\xi) \cdot e^\xi}{(e^\xi)^2}=0{% endkatex %}，化简得{% katex %}f'(\xi)-f(\xi)=0{% endkatex %}。  
 例题4总结
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051555408.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311051555408.png)
 
 例题：若{% katex %}f(x){% endkatex %}在{% katex %}[1,e]{% endkatex %}连续，{% katex %}(1,e){% endkatex %}可导，且{% katex %}f(1)=0，f(e)=1{% endkatex %}，证明：存在一点{% katex %}\xi \in (1,e){% endkatex %}，使{% katex %}\xi \cdot f'(\xi )=1{% endkatex %}
 证明：构造函数{% katex %}F(x)=f(x) \cdot \ln x{% endkatex %}  
@@ -412,7 +412,7 @@ y=\frac{1}{2}t^2+lnt
 1. 在闭区间{% katex %}[a,b]{% endkatex %}上连续；
 2. 在开区间{% katex %}(a,b){% endkatex %}上可导；  
    则在开区间{% katex %}(a,b){% endkatex %}上至少存在一点{% katex %}\xi{% endkatex %}，使得{% katex %}f'(\xi)=\frac{f(b)-f(a)}{b-a} {% endkatex %}  
-   ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051607939.png)
+   ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311051607939.png)
    例题1：在下列区间上，函数{% katex %}f(x)=e^x-3x^{\frac{1}{3} } {% endkatex %}不满足拉格朗日中值定理的条件的是（ C ）。
    A.{% katex %}[-1,0]{% endkatex %}  
    B.{% katex %}[0,1]{% endkatex %}  
@@ -458,7 +458,7 @@ y=\frac{1}{2}t^2+lnt
 所以{% katex %}x<\tan x<\frac{x}{\cos ^2x}{% endkatex %}
 
 例题3总结：
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051707546.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311051707546.png)
 
 ---
 #### 柯西中值定理
@@ -472,7 +472,7 @@ y=\frac{1}{2}t^2+lnt
 
 1. {% katex %}f(x),g(x){% endkatex %}同时趋近于0或同时趋近于{% katex %}\infty{% endkatex %}极限为{% katex %} \frac{0}{0} {% endkatex %} 或 {% katex %} \frac{ \infty }{ \infty } {% endkatex %} 的未定式；
 2. {% katex %} \lim_{x \to x_0/x \to \infty }\frac{f'(x)}{g'(x)}{% endkatex %}存在或为{% katex %}\infty{% endkatex %}  
-   ![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311051756929.png)
+   ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311051756929.png)
    洛必达注意事项：  
    **同一道题中洛必达可以和等价无穷小可以交替使用，但是同一步骤中绝对不能混用**  
    不要盲目使用洛必达法则，能化简先化简。  
@@ -532,7 +532,7 @@ y=\frac{1}{2}t^2+lnt
 =1{% endkatex %}  
 <br />
 #### 总结
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311071515278.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311071515278.png)
 
 ---
 {% katex %}\frac{0}{0}{% endkatex %}或{% katex %}\frac{\infty}{\infty}{% endkatex %} 型
@@ -638,7 +638,7 @@ b. 法线方程{% katex %}y-y_0=-\frac{1}{f'(x_0) } (x-x_0){% endkatex %}；
 
 --- 
 #### 函数曲线的凹凸性
-![图像的凹凸性](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311091646637.png)
+![图像的凹凸性](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311091646637.png)
 
 连续曲线凹与凸的分界点称为曲线的拐点。  
 凸区间上斜率逐渐减少—>{% katex %}f(x)'{% endkatex %}单调减少—>{% katex %}f(x)''<0{% endkatex %}  
@@ -778,7 +778,7 @@ A、1个 B、2个 C、3个 D、0个
    (2). 求目标函数驻点，若驻点唯一，则根据实际问题最值一定存在确定此驻点即为极值点。
 
 例题1：如图：在半径为{% katex %}r{% endkatex %}的半圆内做一个内接矩形，矩形的长和宽为多少时能使矩形面积最大？
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311101646682.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311101646682.png)
 解：设面积为{% katex %}y{% endkatex %}，长为{% katex %}x{% endkatex %}，则宽为{% katex %}\sqrt{r^2-(\frac{x}{2})^2 }{% endkatex %}  
 建立目标函数{% katex %}y=x \cdot \sqrt{r^2-(\frac{x}{2})^2 }{% endkatex %}  
 {% katex %}y=\sqrt{r^2\cdot x^2-\frac{1}{4}x^4 }{% endkatex %}  
@@ -787,7 +787,7 @@ A、1个 B、2个 C、3个 D、0个
 {% katex %} \therefore {% endkatex %}当矩形长为{% katex %}x=\sqrt{2}r{% endkatex %}，宽为{% katex %}\frac{\sqrt{2} }{2}r{% endkatex %}时，矩形面积最大。
 
 例题2：如图，需要造圆柱形油罐，体积为{% katex %}V{% endkatex %}，问底半径{% katex %}r{% endkatex %}和高{% katex %}h{% endkatex %}各为多少时，才能使表面积 最小？这时底直径与高之比是多少？
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311101704201.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311101704201.png)
 解：设表面积为{% katex %}y{% endkatex %}，底半径为{% katex %}r{% endkatex %}，则高为{% katex %}\frac{V}{\pi r^2}{% endkatex %}  
 建立目标函数{% katex %}y=2\pi r^2+\frac{2V}{r}{% endkatex %}  
 {% katex %}y'=4\pi r-\frac{2V}{r^2}{% endkatex %}
@@ -877,7 +877,7 @@ D. {% katex %}(-\infty,-1)，(1,+\infty){% endkatex %}
 |  曲线   |    凸    |    |   凹    |   |   凸    |
 
 例题5. 某地区防空洞的截面拟建成矩形加半圆，截面的面积为{% katex %}5m^2{% endkatex %}，问底和宽{% katex %}x{% endkatex %}为多少时才能使截面的周长最小？从而使建造的材料最省。  
-![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311111452726.png)  
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311111452726.png)  
 解：设截面周长为{% katex %}L{% endkatex %}，  
 则构造函数{% katex %}L=x+2y+\frac{\pi x}{2}{% endkatex %}  
 由题可知，界面面积{% katex %}5m^2{% endkatex %}，  
