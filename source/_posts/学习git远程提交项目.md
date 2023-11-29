@@ -25,11 +25,13 @@ tags: study
 git config --global user.name "用户名"   
 git config --global user.email "邮箱"   
 ```
+
 执行上述命令进行配置；   
 之后执行以下命令生成.ssh密钥：
 ```
 ssh-keygen -t rsa -C "邮箱"
-```  
+```
+
 在C盘的user文件夹里面会有一个.ssh文件夹   
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311292210445.png)
 在.ssh文件夹内会有几个文件，这里我们只需要公钥（记事本进入复制全部数据）。   
@@ -38,7 +40,10 @@ ssh-keygen -t rsa -C "邮箱"
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311292218335.png) 
 进入设置SSH密钥后页面右上会有**添加SSH密钥**按钮，进入将复制的公钥放入密钥中，标题会自动生成，然后确认；同样，页面下方会有生成SSH密钥的教程。    
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311292220740.png)  
-4. 对本地项目进行操作   
+
+---
+## 开始操作
+1. 对本地项目进行操作   
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311292225388.png)  
 在需要提交的项目文件夹处右键，选择`Open Git Bash here` ，进入Git操作页    
 依次输入以下命令：   
@@ -46,6 +51,7 @@ ssh-keygen -t rsa -C "邮箱"
 ```
 git init
 ``` 
+
 如果没有进行ssh密钥参考上述方法；  
 建立本地与远程仓库的连接：
 首先需要复制远程仓库SSH地址：  
@@ -53,22 +59,27 @@ git init
 ```
 git remote add arigin 远程仓库地址   
 ```
+
 将项目所有文件加到缓存区域：   
 ```
 git add .  
 ```
+
 将缓冲区提到本地仓库：   
 ```
 git commit -m "注释"
 ```
+
 将远程仓库和本地仓库同步：  
 ```
 git pull--rebase origin master  
 ```
+
 将仓库文件推送至远程仓库：    
 ```
 git push -u origin master  
 ```
+
 上述是一个完整的git上传到远程仓库的做法。如果项目已经进行git初始化之后，可以使用WebStorm中远程连接：   
 当项目初始化本地仓库之后，WebStorm中标题栏会有一个Git的工具栏：   
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311292242163.png)
@@ -76,7 +87,10 @@ git push -u origin master
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311292247063.png)
 在界面左下角点击git会看见一个本地，一个远程，远程就是设置远程仓库的地址，如果存在远程，即操作成功。   
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311292249390.png)     
-5. 进行代码审查   
+
+---
+## 代码审查
+进行代码审查   
 进入华为云仓库，进入代码托管界面，查看代码是否成功提交到仓库  
 进入代码检查，点击自己的仓库名，进入`代码检查详情`：
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311292255000.png)
