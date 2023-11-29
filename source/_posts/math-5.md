@@ -552,13 +552,13 @@ r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% e
 令{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2,dxdy=rdrd\theta{% endkatex %}     
 过原点作切线{% katex %}y=ax{% endkatex %}    
 将{% katex %}x=\frac{1}{2}{% endkatex %}带入{% katex %}x^2+y^2=2x{% endkatex %}得{% katex %}y=\frac{\sqrt{3} }{2}{% endkatex %}    
-将{% Katex %}x=\frac{1}{2},y=\frac{\sqrt{3} }{2}{% endkatex %}带入{% katex %}y=ax{% endkatex %}得{% katex %}a=\sqrt{3}{% endkatex %}   
+将{% katex %} x=\frac{1}{2},y=\frac{\sqrt{3} }{2} {% endkatex %}带入{% katex %}y=ax{% endkatex %}得{% katex %}a=\sqrt{3}{% endkatex %}   
 则切线方程为{% katex %}y=\sqrt{3} x{% endkatex %}   
 则{% katex %}\tan \theta =\sqrt{3} {% endkatex %}  
 则{% katex %}\theta =\frac{\pi }{3}{% endkatex %}  
 因为{% katex %}x^2+y^2=r^2,x^2+y^2=2x{% endkatex %}    
 则有{% katex %}r_1=1,r_2=2\cos \theta {% endkatex %}   
-即得{% katex %}\left\{\begin{matrix}0 \le \theta  \le \frac{\pi }{3}\\1 \le r \le 2 \cos \theta \end{matrix}\right.{% endktex%}      
+即得{% katex %}\left\{\begin{matrix}0 \le \theta  \le \frac{\pi }{3}\\1 \le r \le 2 \cos \theta \end{matrix}\right.{% endkatex%}      
 则原式{% katex %}=\int_{0}^{\frac{\pi }{3} }d \theta \int_{1}^{2\cos \theta }\frac{r}{r}dr{% endkatex %}    
 {% katex %}=\int_{0}^{\frac{\pi }{3}}d \theta \int_{1}^{2\cos \theta }1 \cdot dr{% endkatex %}    
 {% katex %}=\int_{0}^{\frac{\pi }{3}}(2\cos \theta -1)d \theta {% endkatex %}    
