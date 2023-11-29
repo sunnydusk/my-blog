@@ -543,4 +543,42 @@ r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% e
 {% katex %}\int_{0}^{2\pi }(-\cos r)|\begin{matrix}\pi \\\ \frac{\pi }{3}\end{matrix} d \theta{% endkatex %}    
 {% katex %}\int_{0}^{2\pi } \frac{3}{2} d \theta{% endkatex %}    
 {% katex %}\frac{3}{2} \theta|\begin{matrix}2\pi \\\ 0\end{matrix} {% endkatex %}     
-{% katex %}3\pi {% endkatex %}   
+{% katex %}3\pi {% endkatex %}    
+例题2：求二重积分{% katex %}\iint\limits_{D} \frac{dxdy}{\sqrt{x^2+y^2} }{% endkatex %}其中{% katex %}D：x^2+y^2=1,x^2+y^=2x,y=0{% endkatex %}围成的区域在第一象限部分且{% katex %}x \ge \frac{1}{2}{% endkatex %}。    
+解：由题可知：{% katex %}x^2+y^2=2x{% endkatex %}和{% katex %}x^2+y^2=1{% endkatex %}    
+可得：{% katex %}x^2-2x+1-1+y^2=0,(x-1)+y^2=1{% endkatex %}    
+即圆心为{% katex %}(1,0),r=1{% endkatex %}和{% katex %}(0,0),r=1{% endkatex %}      
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311291502473.png)
+令{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2,dxdy=rdrd\theta{% endkatex %}     
+过原点作切线{% katex %}y=ax{% endkatex %}    
+将{% katex %}x=\frac{1}{2}{% endkatex %}带入{% katex %}x^2+y^2=2x{% endkatex %}得{% katex %}y=\frac{\sqrt{3} }{2}{% endkatex %}    
+将{% Katex %}x=\frac{1}{2},y=\frac{\sqrt{3} }{2}{% endkatex %}带入{% katex %}y=ax{% endkatex %}得{% katex %}a=\sqrt{3}{% endkatex %}   
+则切线方程为{% katex %}y=\sqrt{3} x{% endkatex %}   
+则{% katex %}\tan \theta =\sqrt{3} {% endkatex %}  
+则{% katex %}\theta =\frac{\pi }{3}{% endkatex %}  
+因为{% katex %}x^2+y^2=r^2,x^2+y^2=2x{% endkatex %}    
+则有{% katex %}r_1=1,r_2=2\cos \theta {% endkatex %}   
+即得{% katex %}\left\{\begin{matrix}0 \le \theta  \le \frac{\pi }{3}\\1 \le r \le 2 \cos \theta \end{matrix}\right.{% endktex%}      
+则原式{% katex %}=\int_{0}^{\frac{\pi }{3} }d \theta \int_{1}^{2\cos \theta }\frac{r}{r}dr{% endkatex %}    
+{% katex %}=\int_{0}^{\frac{\pi }{3}}d \theta \int_{1}^{2\cos \theta }1 \cdot dr{% endkatex %}    
+{% katex %}=\int_{0}^{\frac{\pi }{3}}(2\cos \theta -1)d \theta {% endkatex %}    
+{% katex %}=2\sin \theta -\theta |\begin{matrix}\frac{\pi }{3}\\0\end{matrix} {% endkatex %}    
+{% katex %}=\sqrt{3} -\frac{\pi }{3}{% endkatex %}      
+
+---
+### 二重积分的对称性
+(1). 条件：{% katex %}f(-x,y)=f(x,y),\iint\limits_D f(x,y)dxdy=2\iint\limits_{D_1} f(x,y)dxdy {% endkatex %}     
+(2). 条件：{% katex %}f(-x,y)=-f(x,y),\iint\limits_D f(x,y)dxdy=0{% endkatex %}     
+由上条件可以看出：y不变{% katex %}f(-x)=f(x){% endkatex %}为偶函数，或{% katex %}f(-x)=-f(x){% endkatex %}为奇函数     
+则二重积分的偶倍奇零。   
+(1). 积分区域D关于y轴对称，看x的奇偶性；    
+{% katex %}\iint\limits_{D}f(x,y)dxdy= {% endkatex %}关于x函数{% katex %}\left\{\begin{matrix}2\iint\limits_{D_1}f(x,y)dxdy 为偶函数\\0，为奇函数\end{matrix}\right.{% endkatex %}     
+(2). 积分区域D关于x轴对称，看y的奇偶性；    
+{% katex %}\iint\limits_{D}f(x,y)dxdy= {% endkatex %}关于y函数{% katex %}\left\{\begin{matrix}2\iint\limits_{D_1}f(x,y)dxdy 为偶函数\\0，为奇函数\end{matrix}\right.{% endkatex %}      
+**注意：若D对称，首选对称性**     
+例题1：设D由{% katex %}y=1-x^2{% endkatex %}及x轴围成，则{% katex %}\iint\limits_{D}(\sin x+x^3y)dxdy{% endkatex %}     
+A. {% katex %}\frac{4}{3}{% endkatex %}      B. {% katex %}\frac{2}{3}{% endkatex %}      C.1      D. 0       
+解：
+![](https://blog.sunnyduskxi.workers.dev/gh/sunnydusk/my-blog-images@main/202311291538835.png)
+由图可知，函数关于y对称   
+由题可知：{% katex %}\sin x{% endkatex %}为奇函数，{% katex %}x^3y{% endkatex %}为奇函数，即选D    
