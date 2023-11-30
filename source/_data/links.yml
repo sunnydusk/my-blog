@@ -7,7 +7,7 @@
 #      avatar: 头像
 #      thumbnail: 预览图（has_thumbnail 为 true 时才需要）
 
-- links_category: 分类名
+- links_category: Friend
   has_thumbnail: false
   list:
     - name: 梦无念

@@ -184,16 +184,18 @@ navbar:
        path: /archives
        icon: fa-regular fa-archive # can be empty
     Friends:
-       path: /links/
+       path: /links
        icon: fa-solid fa-link
+    Github:
+        path: https://github.com/sunnydusk
 #    Status:
 #       path: https://status.evanluo.top/
 #       icon: fa-regular fa-chart-bar
-    About:
-       icon: fa-regular fa-user
-       submenus:
-         Me: /about
-         Github: https://github.com/sunnydusk
+#    About:
+#       icon: fa-regular fa-user
+#       submenus:
+#         Me: /about
+#         Github: https://github.com/sunnydusk
     # Links:
     #   icon: fa-regular fa-link
     #   submenus:
