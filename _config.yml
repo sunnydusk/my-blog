@@ -133,11 +133,11 @@ service_worker:
     - urlPattern: /*       # 子路径（接受通配符）
       handler: cacheFirst
       options:
-        origin: www.030706.xyz  # 域名
+        origin: www.sunnydusk.cn  # 域名
     - urlPattern: /npm/*   # 子路径（接受通配符）
       handler: cacheFirst
       options:
-        origin: blog.sunnyduskxi.workers.dev  # 域名
+        origin: jsdelivr.030706.xyz  # 域名
 
 #  执行下列激活
 #  hexo clean
