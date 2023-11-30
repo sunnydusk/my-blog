@@ -2,7 +2,7 @@
 title: Word
 mathjax: true
 categories:
-   - 专升本
+   - 升学
 tags:
    - 学习资料
    - Office

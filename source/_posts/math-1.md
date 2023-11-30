@@ -4,7 +4,7 @@ top: 20
 hexo-math: true
 type: "categories"
 categories: 
-  - 专升本
+  - 升学
 tags:
   - 学习资料
   - math

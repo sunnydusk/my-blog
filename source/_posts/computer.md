@@ -3,7 +3,7 @@ title: 计算机基础
 top: 
 mathjax: true
 categories:
-   - 专升本
+   - 升学
 tags:
    - 学习资料
    - computer

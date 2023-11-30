@@ -2,7 +2,7 @@
 title: 英语
 type: "categories"
 categories: 
-  - 专升本
+  - 升学
 tags:
   - 学习资料
   - English
