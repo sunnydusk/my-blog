@@ -3,6 +3,7 @@ title: 高等数学-微分
 top: 19
 hexo-math: true
 type: "categories"
+cover: "https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311051756929.png"
 categories: 
   - 升学
 tags:

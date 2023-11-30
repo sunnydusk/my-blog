@@ -3,6 +3,7 @@ title: 高等数学-积分
 top: 18
 hexo-math: true
 type: "categories"
+cover: "https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311302244730.png"
 categories: 
   - 升学
 tags:

@@ -2,7 +2,8 @@
 title: 高等数学-函数
 top: 20
 hexo-math: true
-type: "categories"
+type: "categories" 
+cover: "https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311302217685.png"
 categories: 
   - 升学
 tags:

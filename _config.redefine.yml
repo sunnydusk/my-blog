@@ -269,7 +269,7 @@ articles:
   code_block:
     copy: true # Whether to enable code block copy button
     style: simple # mac | simple
-    font: # Custom font
+    font:  # Custom font
       enable: false # Whether to enable
       family: # Font family
       url: # Font URL to CSS file
@@ -361,7 +361,7 @@ footer:
 # INJECT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 inject:
   # Whether to enable inject
-  enable: false
+  enable: true
   # Inject custom head html code
   head:
     -
