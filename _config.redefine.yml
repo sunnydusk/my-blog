@@ -64,10 +64,11 @@ global:
   scroll_progress:
     bar: true # progress bar
     percentage: true # percentage
+
   # Website counter
   website_counter:
     url: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js # counter API URL (no need to change)
-    enable: false # enable website counter or not
+    enable: true # enable website counter or not
     site_pv: true # site page view
     site_uv: true # site unique visitor
     post_pv: true # post page view
@@ -303,9 +304,9 @@ articles:
 # COMMENT 评论系统>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 comment:
   # Whether to enable comment
-  enable: false
+  enable: true
   # 评论系统选择
-  system: gitalk # waline, gitalk, twikoo, giscus
+  system: waline # waline, gitalk, twikoo, giscus
   # System configuration
   config:
     # Waline comment system. See https://waline.js.org/
