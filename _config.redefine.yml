@@ -305,7 +305,7 @@ comment:
   # Whether to enable comment
   enable: true
   # 评论系统选择
-  system: waline # waline, gitalk, twikoo, giscus
+  system: gitalk # waline, gitalk, twikoo, giscus
   # System configuration
   config:
     # Waline comment system. See https://waline.js.org/
@@ -314,10 +314,10 @@ comment:
       lang: zh-CN # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
     # Gitalk comment system. See https://github.com/gitalk/gitalk
     gitalk:
-      clientID: # GitHub Application Client ID
-      clientSecret: # GitHub Application Client Secret
-      repo: # GitHub repository
-      owner: # GitHub repository owner
+      clientID: 1b2a785391eb0daa9f6a # GitHub Application Client ID
+      clientSecret: 33a7d0df81ea7159dc612f36b3f42049ccb6989e # GitHub Application Client Secret
+      repo: repository # GitHub repository
+      owner: sunnydusk # GitHub repository owner
     # Twikoo comment system. See https://twikoo.js.org/
     twikoo:
       version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
