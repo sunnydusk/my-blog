@@ -303,7 +303,7 @@ articles:
 # COMMENT 评论系统>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 comment:
   # Whether to enable comment
-  enable: true
+  enable: false
   # 评论系统选择
   system: gitalk # waline, gitalk, twikoo, giscus
   # System configuration
