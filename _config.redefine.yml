@@ -385,16 +385,16 @@ plugins:
     audios:
       - name: 我期待的不是雪  # audio name
         artist: -萤川- # audio artist
-        url: http://m801.music.126.net/20231201154553/43ab4ecc44aed87a516c0d308c9d765f/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/31772267660/065d/efe9/4359/4c642e2085be4be363441cc5151b8559.mp3 # audio url
-        cover: http://p2.music.126.net/pQptB4RNRjIofyxC4vE_Fw==/109951169093820622.jpg # audio cover url
+        url: https://music.163.com/song/media/outer/url?id=2103022928.mp3 # audio url
+        cover: https://p1.music.126.net/pQptB4RNRjIofyxC4vE_Fw==/109951169093820622.jpg?param=90y90 # audio cover url
       - name: 晚夜微雨问海棠  # audio name
         artist: 镜予歌,陈亦洺,喧笑 # audio artist
-        url: http://m701.music.126.net/20231201155837/a1b2fef965782fb9579df39ffe9502b4/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096477665/a70f/4889/ad3a/62a863a01955b6d8a0823d49014dd751.mp3 # audio url
-        cover: http://p2.music.126.net/3x4HLyzg9K5OXbTWttbRYA==/109951165073688416.jpg # audio cover url
+        url: https://music.163.com/song/media/outer/url?id=1456673752.mp3 # audio url
+        cover: https://p1.music.126.net/3x4HLyzg9K5OXbTWttbRYA==/109951165073688416.jpg?param=90y90 # audio cover url
       - name: カナタハルカ (遥远的彼方)  # audio name
         artist: 白易SIRO # audio artist
-        url: http://m701.music.126.net/20231201160641/8a1c04f2e32637ba87f3be42cf8b1c4a/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/26456806371/9530/62cb/8c43/c4631f3ec71cc523d2db71e1a2d61eee.mp3 # audio url
-        cover: http://p1.music.126.net/ybgknOU_ygC100v2bRmYYw==/109951168522740792.jpg # audio cover url
+        url: https://music.163.com/song/media/outer/url?id=2036362573.mp3 # audio url
+        cover: 	https://p1.music.126.net/ybgknOU_ygC100v2bRmYYw==/109951168522740792.jpg?param=90y90 # audio cover url
       #      - name: # audio name
       #        artist: # audio artist
       #        url: # audio url
