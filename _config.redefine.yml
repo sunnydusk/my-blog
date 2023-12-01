@@ -380,13 +380,13 @@ plugins:
     enable: false # Whether to enable
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
-    enable: false # Whether to enable
-    type: fixed # fixed, mini
+    enable: true # Whether to enable
+    type: mini # fixed, mini
     audios:
-      - name: # audio name
-        artist: # audio artist
-        url: # audio url
-        cover: # audio cover url
+      - name: 我期待的不是雪  # audio name
+        artist: -萤川- # audio artist
+        url: http://m801.music.126.net/20231201154553/43ab4ecc44aed87a516c0d308c9d765f/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/31772267660/065d/efe9/4359/4c642e2085be4be363441cc5151b8559.mp3 # audio url
+        cover: http://p2.music.126.net/pQptB4RNRjIofyxC4vE_Fw==/109951169093820622.jpg # audio cover url
       #      - name: # audio name
       #        artist: # audio artist
       #        url: # audio url
