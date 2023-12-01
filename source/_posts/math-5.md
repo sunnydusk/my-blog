@@ -583,3 +583,13 @@ A. {% katex %}\frac{4}{3}{% endkatex %}      B. {% katex %}\frac{2}{3}{% endkate
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311291538835.png)
 由图可知，函数关于y对称   
 由题可知：{% katex %}\sin x{% endkatex %}为奇函数，{% katex %}x^3y{% endkatex %}为奇函数，即选D    
+例题2：求{% katex %}I=\iint\limits_{D}xy(x+y)dxdy {% endkatex %}其中D:由{% katex %}y=x,x+y=0,x=1{% endkatex %}围成      
+解：   
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312011434588.png)
+由原式得：{% katex %}\iint\limits_{D}x^2y+xy^2dxdy{% endkatex %}    
+由偶倍奇零和对称性得知：{% katex %}\iint\limits_{D_1}xy^2dxdy{% endkatex %}    
+{% katex %}2\int_{0}^{1}dx\int_{0}^{x}xy^2dy{% endkatex %}    
+{% katex %}2\int_{0}^{1}(x\cdot \frac{1}{3}y^3)|\begin{matrix}0\\x\end{matrix}dx{% endkatex %}    
+{% katex %}2\int_{0}^{1}\frac{1}{3}x^4dx{% endkatex %}    
+{% katex %}\frac{2}{3}\cdot \frac{1}{5} x^5|\begin{matrix}0\\1\end{matrix}{% endkatex %}    
+{% katex %}\frac{2}{3}\cdot \frac{1}{5}1^5=\frac{2}{15}{% endkatex %}
