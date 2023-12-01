@@ -351,14 +351,14 @@ footer:
   # Footer message
   customize:
   # 自定义页脚ICP record number. See https://beian.miit.gov.cn/
-  icp:
-    enable: false # Whether to enable
-    number:  # ICP record number
-    url:  # ICP record url
 #  icp:
-#    enable: true # Whether to enable
-#    number: 萌ICP备20232103号 # ICP record number
-#    url: https://icp.gov.moe/?keyword=20232103 # ICP record url
+#    enable: false # Whether to enable
+#    number:  # ICP record number
+#    url:  # ICP record url
+  icp:
+    enable: true # Whether to enable
+    number: 萌ICP备20232103号 # ICP record number
+    url: https://icp.gov.moe/?keyword=20232103 # ICP record url
 # FOOTER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
