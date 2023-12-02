@@ -110,3 +110,32 @@ d. {% katex %}\pm e^C=C{% endkatex %}
 {% katex %}y^2-1=C^2\cdot (x-1)^2{% endkatex %}    
 {% katex %}y^2=C^2\cdot (x-1)^2+1{% endkatex %}    
 {% katex %}y^2=C\cdot (x-1)^2+1{% endkatex %}      
+
+---
+#### 一阶齐次微分方程
+解法：   
+(1). 将方程通过移项，乘除化为{% katex %}\frac{dy}{dx}=\varphi (\frac{y}{x}){% endkatex %}的形式。  
+(2). 换元，令{% katex %}\frac{y}{x}=u{% endkatex %}，则{% katex %}y=u \cdot x \Longrightarrow  y'=u'x+u{% endkatex %}，即{% katex %}\frac{dy}{dx}=\frac{dy}{dx}\cdot x+u{% endkatex %}   
+(3). 将上述换元回代方程{% katex %}\frac{y}{x}=\varphi (\frac{y}{x}){% endkatex %}中。  
+(4). 分离变量，积分后用{% katex %}u=\frac{y}{x}{% endkatex %}回代即得通解。  
+例题1：求{% katex %}y^2+x^2\frac{dy}{dx}=xy\frac{dy}{dx}{% endkatex %}的通解。   
+析：{% katex %}y^2=(xy-x^2)\frac{dy}{dx}\Longrightarrow 同除x^2 (\frac{y}{x})^2=(\frac{y}{x}-1)\frac{dy }{dx}{% endkatex %}     
+解：由题可知：{% katex %}(\frac{y}{x})^2=(\frac{y}{x}-1)\frac{dy}{dx}{% endkatex %}    
+令{% katex %}\frac{y}{x}=u,y=u\cdot x,\frac{dy}{dx}=\frac{du}{dx}\cdot x+u{% endkatex %}    
+故原式：{% katex %}u^2=(u-1)(x\frac{du}{dx}+u){% endkatex %}   
+即{% katex %}u^2=(u-1)x\frac{du}{dx}+u^2-u{% endkatex %}   
+{% katex %}u=(u-1)x\frac{du}{dx}{% endkatex %}     
+{% katex %}udx=(u-1)xdu{% endkatex %}       
+同除{% katex %}ux,\frac{1}{x}dx=\frac{(u-1)}{u}du{% endkatex %}       
+{% katex %}\frac{1}{x}dx=(1-\frac{(1)}{u})du{% endkatex %}       
+积分得：{% katex %}\int \frac{1}{x}dx=\int (1-\frac{(1)}{u})du{% endkatex %}       
+{% katex %}\ln |u|=u-\ln |u|+C{% endkatex %}       
+得：{% katex %}\ln |x|=\frac{y}{x}-\ln |\frac{y}{x}|+C{% endkatex %}     
+上述可化简：   
+{% katex %}\ln |x|+\ln |\frac{y}{x}|-C=\frac{y}{x}{% endkatex %}    
+{% katex %}\ln |y|-\ln |C|=\frac{y}{x}{% endkatex %}    
+{% katex %}\ln |\frac{y}{C}|=\frac{y}{x}{% endkatex %}    
+{% katex %}|\frac{y}{C}|=e^{\frac{y}{x} }{% endkatex %}    
+{% katex %}\frac{y}{C}=\pm e^{\frac{y}{x} }{% endkatex %}    
+{% katex %}y=\pm Ce^{\frac{y}{x} }{% endkatex %}    
+{% katex %}y=Ce^{\frac{y}{x} }{% endkatex %}    
