@@ -27,7 +27,7 @@ date: 2023-11-24 16:26:00
 {% katex %}\frac{dy}{dx}=y',\frac{d^2y}{dx^2}y''{% endkatex %}  
 `阶数`取决于整个方程中导数的最高阶导，而不是变量的次数。  
 导数**不是**幂函数；   
-例题1：{% katex %}(y''}^5+2(y')^3+xy^6=0{% endkatex %}的阶数是：（2）      
+例题1：{% katex %}(y'')^5+2(y')^3+xy^6=0{% endkatex %}的阶数是：（2）      
 例题2：{% katex %}(y')^3+y''\cdot y^4-3xy=0{% endkatex %}的阶数是：（2）    
 例题3：{% katex %}(\frac{d^2y}{dx^2})^4+y\cdot \frac{dy}{dx}=0{% endkatex %}是（2）阶      
 例题4：{% katex %}(y')^3+y''\cdot y^{(4)}-3xy=0{% endkatex %}是（4）阶      
@@ -139,3 +139,106 @@ d. {% katex %}\pm e^C=C{% endkatex %}
 {% katex %}\frac{y}{C}=\pm e^{\frac{y}{x} }{% endkatex %}    
 {% katex %}y=\pm Ce^{\frac{y}{x} }{% endkatex %}    
 {% katex %}y=Ce^{\frac{y}{x} }{% endkatex %}    
+
+---
+#### 一阶线性微分方程
+1. 形式：{% katex %}y'+P(x)\cdot y=Q(x){% endkatex %}    
+解法：{% katex %}y=e^{-\int P(x)dx}\cdot [\int Q(x)e^{\int P(x)dx}dx+C]{% endkatex %}    
+2. 形式：{% katex %}x'+P(y)\cdot x=Q(y){% endkatex %}    
+解法：{% katex %}x=e^{-\int P(y)dy}\cdot [\int Q(y)e^{\int P(y)dy}dy+C]{% endkatex %}    
+例题1：求微分方程{% katex %}y'+y=e^{-x}{% endkatex %}的通解。   
+解：{% katex %}P(x)=1,Q(x)=e^{-x}{% endkatex %}    
+{% katex %}y=e^{-\int P(x)dx}[\int Q(x)e^{\int P(x)dx}dx+C]{% endkatex %}     
+{% katex %}e^{-\int 1dx}[\int e^{-x}\cdot e^{\int 1dx}dx+C]{% endkatex %}     
+{% katex %}e^{-x}[\int e^{-x}\cdot e^xdx+C]{% endkatex %}     
+{% katex %}e^{-x}(x+C)]{% endkatex %}     
+注：在一阶微分方程中，{% katex %}y{% endkatex %}和{% katex %}y'{% endkatex %}是一次，可变量分离成{% katex %}y'+Py=Q{% endkatex %}，套公式；     
+例题2：求{% katex %}(x^2-1)\cdot y'+2xy-\cos x=0{% endkatex %}的通解。     
+析：{% katex %}y'+\frac{2x}{x^2-1}\cdot y-\frac{\cos x}{x^2-1}=0 \Longrightarrow y'+\frac{2x}\cdot y=\frac{\cos x}{x^2-1}{x^2-1}{% endkatex %}    
+解：原式为一阶线性微分方程：{% katex %}y'+\frac{2x}{x^2-1}\cdot y = \frac{\cos x}{x^2-1}{% endkatex %}     
+其中{% katex %}P(x)=\frac{2x}{x^2-1},Q(x)=\frac{\cos x}{x^2-1}{% endkatex %}     
+所以通解{% katex %}y=e^{-\int P(x)dx}[\int Q(x)\cdot e^{\int P(x)dx}dx+C]{% endkatex %}     
+{% katex %}=e^{-\int \frac{2x}{x^2-1}dx}[\int \frac{\cos x}{x^2-1}\cdot e^{\int \frac{2x}{x^2-1}dx}dx+C]{% endkatex %}       
+{% katex %}=e^{-\ln (x^2-1)}[\int \frac{\cos x}{x^2-1}\cdot e^{\ln (x^2-1)}dx+C]{% endkatex %}       
+{% katex %}=e^{\ln (x^2-1)^{-1} }[\int \frac{\cos x}{x^2-1}\cdot e^{\ln (x^2-1)}dx+C]{% endkatex %}       
+{% katex %}=(x^2-1)^{-1} [\int \frac{\cos x}{x^2-1}\cdot \ln (x^2-1)dx+C]{% endkatex %}       
+{% katex %}=\frac{1}{x^2-1} (\int \cos xdx+C){% endkatex %}       
+{% katex %}=\frac{1}{x^2-1} (\sin x+C){% endkatex %}       
+公式：{% katex %}{\color{Red} e^{\ln \Box }=\Box } {% endkatex %}     
+
+---
+#### 变限积分中的微分方程
+遇变限积分：(1). 求导； (2). 用{% katex %}\int_{a}^{b} f(t)dt=0\Longrightarrow {% endkatex%}求出一个初始条件；    
+例题1：已知一个可导函数{% katex %}f(x){% endkatex %}满足{% katex %}f(x)=\int_{0}^{x}f(t)dt+e^x{% endkatex%}，求{% katex %}f(x){% endkatex%}。        
+解：由题可知，两边同时求导得：{% katex %}f'(x)=f(x)+e^x{% endkatex %}且当{% katex %}x=0{% endkatex%}时，{% katex %}f(0)=1{% endkatex%}     
+令{% katex %}f(x)=y{% endkatex %}     
+即{% katex %}y'-y=e^x{% endkatex %}     
+其中{% katex %}P(x)=-1,Q(x)=e^x{% endkatex %}     
+{% katex %}e^{-x}f(x)=\int 1dx+C{% endkatex %}     
+{% katex %}e^{-x}f(x)=x+C{% endkatex %}     
+{% katex %}f(x)=e^x(x+C){% endkatex %}     
+所以通解{% katex %}y=e^{-\int P(x)dx}[\int Q(x)\cdot e^{\int P(x)dx}dx+C]{% endkatex %}     
+{% katex %}=e^{-\int -1dx}[\int e^x\cdot e^{\int -1dx}dx+C]{% endkatex %}     
+{% katex %}=e^x[\int e^x\cdot e^{-x}dx+C]{% endkatex %}       
+{% katex %}=e^x(x+C){% endkatex %}       
+又{% katex %}x=0,y=1{% endkatex%}   
+即{% katex %}1=e^0(0+C){% endkatex%}     
+{% katex %}C=1{% endkatex%}      
+所以{% katex %}y=e^x(x+1){% endkatex%}      
+例题2：设{% katex %}f(x){% endkatex %}具有一阶连续函数，{% katex %}f(0)=0{% endkatex%}，且{% katex %}\int_{2}[f(x)-e^x]ydx-f(x)dy{% endkatex%}与路径无关，求{% katex %}f(x){% endkatex%}。     
+解：由题可知，令{% katex %}P(x,y)=[f(x)-e^x]\cdot y,Q(x,y)=-f(x){% endkatex %}     
+因为积分与路径无关，故{% katex %}\frac{P}{y}=\frac{Q}{x}{% endkatex%}      
+即：{% katex %}f(x)-e^x=-f'(x){% endkatex%}     
+即：{% katex %}y-e^x=-y'{% endkatex%}     
+即：{% katex %}y'+y=e^x{% endkatex%}     
+其中{% katex %}P(x)=1,Q(x)=e^x{% endkatex %}     
+所以通解{% katex %}y=e^{-\int P(x)dx}[\int Q(x)\cdot e^{\int P(x)dx}dx+C]{% endkatex %}     
+{% katex %}y=e^{-\int 1dx}[\int e^x\cdot e^{\int 1dx}dx+C]{% endkatex %}     
+{% katex %}y=e^{-x}[\int e^x\cdot e^x dx+C]{% endkatex %}     
+{% katex %}y=e^{-x}[\frac{1}{2}\int e^{2x}d2x+C]{% endkatex %}     
+{% katex %}y=e^{-x}(\frac{1}{2}e^{2x}+C){% endkatex %}     
+即{% katex %}f(x)=y=e^{-x}(\frac{1}{2}e^{2x}+C){% endkatex %}     
+因为{% katex %}f(0)=0{% endkatex%}  
+即{% katex %}0=e^{-0}(\frac{1}{2}e^{2\cdot 0}+C){% endkatex%}    
+{% katex %}C=-\frac{1}{2}{% endkatex%}    
+所以{% katex %}f(x)=y=e^{-x}(\frac{1}{2}e^{2x}-\frac{1}{2}){% endkatex%}     
+
+---
+### 二阶微分方程
+#### 二阶线性微分方程   
+1. 定义：称{% katex %}ay''+by'+cy=f(x){% endkatex %}为二阶微分方程     
+   (1). 当{% katex %}f(x)=0{% endkatex %}时，称为二阶齐次微分方程；   
+   (2). 当{% katex %}f(x)=P(x)\cdot e^{\lambda x}{% endkatex %}时，称为二阶非齐次微分方程；       
+2. 二阶齐次微分方程的解法     
+   (1). 标准形式：{% katex %}ay''+by'+cy=0{% endkatex %}      
+   (2). 解法：
+a. 写出特征方程：{% katex %}ar^2+br+c=0{% endkatex %}
+b. 特征根：{% katex %}r_{1，2}=\frac{-b \pm \sqrt{b^2-4ac} }{2a}{% endkatex %}     
+c. 套公式：{% katex %}\left\{\begin{matrix}1. r_1 \ne r_2,y=c_1e^{r_1x}+c_2e^{r_2x}\\2. r_1=r_1,y=(c_1+c_2x)e^{r_1x}\\3.r_{1,2}=a \pm bi,y=e^{ax}\cdot (c_1\cos bx+c_2\sin bx \end{matrix}\right.{% endkatex %}      
+注意：欧拉创建：{% katex %}i^2=-1{% endkatex %}替代当根式下为负数的情况；例如：{% katex %}\sqrt{-4}=\sqrt{4i}=2i{% endkatex %}     
+例题1：{% katex %}y''+5y'+6y=0{% endkatex %}的通解是()      
+解：特征方程：{% katex %}r^2+5r+6=0{% endkatex %}   
+特征根：{% katex %}r_1=-2,r_2=-3{% endkatex %}   
+通解：{% katex %}y=c_1e^{-2x}+c_2e^{-3x}{% endkatex %}或{% katex %}y=c_1e^{-3x}+c_2xe^{-2x}{% endkatex %}    
+例题2：求微分方程{% katex %}y''+6y'+9y=0{% endkatex %}的通解。    
+解：特征方程：{% katex %}r^2+6r+9=0{% endkatex %}   
+特征根：{% katex %}r_1=r_2=-3{% endkatex %}   
+通解：{% katex %}y=(c_1+c_2x)e^{-3x}{% endkatex %}   
+例题3：求微分方程{% katex %}y''-4y'+5y=0{% endkatex %}的通解。     
+解：特征方程：{% katex %}r^2-4r+5=0{% endkatex %}   
+特征根：{% katex %}r_{1,2}=2\pm 1i{% endkatex %}   
+通解：{% katex %}y=e^{2x}(c_1\cos x+c_2\sin x){% endkatex %}       
+例题4：求微分方程{% katex %}y''+6y'+9y=0{% endkatex %}满足x的条件：{% katex %}y|_{x=0}=1,y'|_{x=0}=2{% endkatex%}的特解。      
+解：特征方程：{% katex %}r^2+6r+9=0{% endkatex %}   
+特征根：{% katex %}r_1=r_2=3{% endkatex %}      
+通解：{% katex %}y=(c_1+c_2x)e^{3x}{% endkatex %}   
+因为{% katex %}y'=c_2e^{3x}+(c_1+c_2x)e^{3x}\cdot 3{% endkatex%}    
+由{% katex %}y|_{x=0}=1,y'|_{x=0}=2{% endkatex%}得：{% katex %}c_1=1,c_2=-1{% endkatex%}      
+已知方程通解，反求方程表达式：   
+例题5：若{% katex %}c_1{% endkatex%}和{% katex %}c_2{% endkatex%}为两个独立的任意常数，则{% katex %}y=c_1e^{-x}+c_2e^{5x}{% endkatex%}是哪个二阶齐次微分方程的通解()    
+解：由题可知，特根为：{% katex %}r_1=-1,r_2=5{% endkatex%}    
+方程即为：{% katex %}(r+1)(r-5)=0{% endkatex%}    
+解得方程为：{% katex %}r^2-4r-5=0{% endkatex%}    
+即：{% katex %}y''-4y'-5y=0{% endkatex%}  
+
+---
