@@ -2,11 +2,11 @@
 title: 我的歌单
 date: 2023-12-03 17:48:50
 ---
+
 {% aplayerlist %}
 {
 "narrow": false,
 "autoplay": true,
-"showlrc": 3,
 "mode": "random",
 "music":
 [{
@@ -14,7 +14,6 @@ date: 2023-12-03 17:48:50
 "author":"-萤川-",
 "url":"https://music.163.com/song/media/outer/url?id=2103022928.mp3",
 "pic":"https://p1.music.126.net/pQptB4RNRjIofyxC4vE_Fw==/109951169093820622.jpg?param=90y90"
-},{
 },{
 "title":"晚夜微雨问海棠",
 "author":"镜予歌,陈亦洺,喧笑",
