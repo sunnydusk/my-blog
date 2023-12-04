@@ -109,7 +109,8 @@ deploy:
   branch: ["gh-pages"]
   message: "blog"
 
-
+aplayer:
+  meting: true
 
 math:
   katex:

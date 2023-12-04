@@ -2,12 +2,15 @@
 title: 我的歌单
 date: 2023-12-03 17:48:50
 ---
+# 音乐馆
 
 {% aplayerlist %}
 {
 "narrow": false,
-"autoplay": true,
+"autoplay": false,
+"listfolded": true,
 "mode": "random",
+"preload": "metadata",
 "music":
 [{
 "title":"我期待的不是雪",
@@ -26,3 +29,6 @@ date: 2023-12-03 17:48:50
 "pic":"https://p1.music.126.net/ybgknOU_ygC100v2bRmYYw==/109951168522740792.jpg?param=90y90"
 }]}
 {% endaplayerlist %}
+
+{% meting "1990134781" "netease" "playlist" %}
+{% meting "7403030418" "netease" "playlist" %}
