@@ -13,8 +13,53 @@ date: 2023-11-14 10:58:20
 ### 静态网页开发
 根据注释填空  
 ### MySQL
+#### 基础知识
+1. 关系型数据库：    
+DBMS—数据库管理系统     
+RDBMS—关系型数据库管理系统    
+关系：二维表—行—列    
+2. 数据库操作    
+数据库服务器>数据库>数据表    
+实例：服务器(localhost)-端口(3306):用户名(root):密码(password)   
+`show databases;`当前我进入的服务器里面的所有数据库     
+`create database 数据库名称;`创建一个数据库    
+`latin`是5.5版本默认字符集，只支持西文，不支持中文，`utf8mb4`是5.5版本之后的默认字符集，支持中文，支持西文    
+数据库名称不区分大小写，常见的为小写；   
+`select database();`查看当前所在的数据库    
+`use 数据库名称;`进入某个数据库   
+`drop database 数据库名称;`删除数据库；
+3. 数据表结构   
+列：列名   数据类型   
+`varchar(n)` 字符类型   
+`int` 数字类型   
+`datatime` 日期事件类型    
+`create table tb(a int )`创建数据表列
+`show tables;`查看当前数据库中的所有数据表     
+`show create table tb;`查看数据表结构   
+4. 用户   
+`create user 用户名@'%' identified by '密码';`创建用户   
+登录：`mysql -u用户名 -p密码`   
+修改密码：`set password for 用户名@'%' = password('新密码');`    
+修改用户：`alter user 用户名@'%' identified by '密码';`，`create user 'user1'@'%' identified by '123456';`
+删除用户：`drop user 'user1'@'%';`   
+在my.ini里面：
+`character-set-server`设置字符集   
+5. 设置系统数据库    
+6. SQL语句   
+大小写不敏感，注意**分号**和**逗号**    
+注释：#   
+`zerofill`：填充0，`unsigned`：无符号，`auto_increment`：自动增长   
+`decimal(10,2)`：10位，2位小数   
+
+
+
+
+
+---
+###
 1. MySQL的存储过程中：调用存储过程使用关键字`CALL`；存储过程的参数在定义时，有三种参数约束`IN(输入参数，默认值，该参数必须在调用存储过程时指定，在存储过程中修改该参数的值不能被返回)、OUT(输出参数，该值可在存储过程内部被改变，并可返回)、INOUT(输入输出参数，调用时改变，并且可被改变和返回)`;  
 2. MySQL的字符串类型有：`TEXT、CHAR、VARCHAR、BLOB`；  
+
 
 ---
 ### PHP

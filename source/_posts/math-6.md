@@ -242,3 +242,117 @@ c. 套公式：{% katex %}\left\{\begin{matrix}1. r_1 \ne r_2,y=c_1e^{r_1x}+c_2e
 即：{% katex %}y''-4y'-5y=0{% endkatex%}  
 
 ---
+#### 二阶常系数非齐次线性微分方程
+##### 特解的一般形式
+1. 定义：{% katex %}ay''+by'+cy=f(x){% endkatex %}为二阶常系数非齐次线性微分方程；     
+2. 类型：  
+   (1). {% katex %}ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}     
+非齐次线性方程解的结果：{% katex %}y=\bar{y}+y^* {% endkatex %}其中{% katex %}\bar{y}{% endkatex %}为齐次通解；{% katex %}y^*{% endkatex %}为非齐次特解；      
+计算齐次通解：{% katex %}\bar{y}：ay''+by'+cy=0{% endkatex %}的解{% katex %}->a\bar{y}''+b\bar{y}'+c\bar{y}=0{% endkatex %}    
+计算非齐次特解：{% katex %}\bar{y}：ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}的解{% katex %}->ay^*''+by^*'+cy^*=P(x)\cdot e^{\lambda x}{% endkatex %}    
+由上述两个式子相加{% katex %}a(\bar{y}''+y^*'')+b(\bar{y}'+y^*')+c(\bar{y}+y^*)=P(x)\cdot e^{\lambda x}{% endkatex %}     
+得{% katex %}ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}    
+3. 求二阶非齐次通解：   
+   (1). 特征根法求{% katex %}ay''+by'+cy=0{% endkatex %}的通解{% katex %}\bar{y}{% endkatex %}    
+   (2). 设特解{% katex %}y^*{% endkatex %}的一般形式，求出{% katex %}y^*',y^*''{% endkatex %}，将{% katex %}y^*,y^*',y^*''{% endkatex %}带入原式方程{% katex %}ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}对比“左=右”,{% katex %}ay^*''+by^*'+cy^*=P(x)\cdot e^{\lambda x}{% endkatex %}用待定系数，求出{% katex %}y^*{% endkatex %}；    
+   (3). 解出非齐次线性方程的通解：{% katex %}y=\bar{y}+y^*{% endkatex %}       
+注：特解{% katex %}y^*{% endkatex %}的一般形式设：看{% katex %}P(x)\cdot e^{\lambda x}{% endkatex %}    
+{% katex %}y^*=Q(x)\cdot e^{\lambda x}\cdot x^k{% endkatex %},其中，{% katex %}Q(x){% endkatex %}为{% katex %}P(x){% endkatex %}的一般式；     
+当{% katex %}P(x){% endkatex %}为：   
+   (1). 常数：则{% katex %}A,B{% endkatex %}代替{% katex %}=Q(x){% endkatex %}      
+   (2). 一次函数：则{% katex %}ax+b=Q(x){% endkatex %}       
+   (3). 二次函数：则{% katex %}ax^2+bx+c=Q(x){% endkatex %}     
+其中{% katex %}x^k{% endkatex %}中的{% katex %}k{% endkatex %}看{% katex %}\lambda {% endkatex %}与{% katex %}r_1,r_2{% endkatex %}的关系而定：    
+当{% katex %}k=0,\lambda \ne r_1,\lambda \ne r_2{% endkatex %}两个皆不相同       
+当{% katex %}k=1,\lambda {% endkatex %}与{% katex %} r_1 r_2{% endkatex %}有一个相同     
+当{% katex %}k=2,\lambda = r_1,\lambda = r_2{% endkatex %}两个都相同       
+例题1：求微分方程{% katex %}y''-5y'+6y=3xe^{2x}{% endkatex %}的特解可设为：()。    
+析：{% katex %}P(x)=3x,Q(x)=e^{2x}{% endkatex %}即{% katex %}\lambda =2，3x{% endkatex %}为一次，即{% katex %}(ax+b){% endkatex %}     
+解：设方程为{% katex %}y^*=(ax+b)e^{2x}\cdot x^k{% endkatex %}    
+因为{% katex %}y''-5y'+6y=r^2-5r+6=(r-2)(r-3)=0{% endkatex %}     
+解得{% katex %}r_1=2,r_2=3{% endkatex %}     
+因为{% katex %}\lambda =r_1=2 \ne r_2=3{% endkatex %}        
+即有一个相等，所以{% katex %}k=1{% endkatex %}     
+即{% katex %}y^*=(ax+b)e^{2x}\cdot x{% endkatex %}      
+解得：{% katex %}y^*=(ax^2+bx)e^{2x}{% endkatex %}     
+例题2：求微分方程{% katex %}y''-5y'+6y=3xe^{2x}{% endkatex %}的特解形式为：(B)。     
+A. {% katex %}(ax+b)e^{-x}{% endkatex %}     
+B. {% katex %}x^2(ax+b)e^{-x}{% endkatex %}     
+C. {% katex %}x(ax+b)e^{-x}{% endkatex %}     
+D. {% katex %}a(x+1)e^{-x}{% endkatex %}     
+析：{% katex %}P(x)=(x-1),Q(x)=e^{-x}{% endkatex %}即{% katex %}\lambda =-1，(x-1){% endkatex %}为一次，即{% katex %}(ax+b){% endkatex %}     
+解:设方程为{% katex %}y^*=(ax+b)e^{-x}\cdot x^k{% endkatex %}   
+因为{% katex %}y''+2y'+y=r^2+2r+1=(r+1)^2=0{% endkatex %}     
+解得{% katex %}r_1=r_2=-1{% endkatex %}    
+因为{% katex %}\lambda =r_1=-1 = r_2=-1{% endkatex %}   
+即两个都相等，所以{% katex %}k=2{% endkatex %}   
+即{% katex %}y^*=x^2(ax+b)e^{-x}{% endkatex %}     
+
+---
+##### 题型二：非齐次通解的解及其结构
+例题1：设{% katex %}y_1,y_2,y_3{% endkatex %}是二阶非齐次线性微分方程组{% katex %}Ax=b{% endkatex %}的解，则(D)。      
+A. {% katex %}y_1+y_2_y_3{% endkatex %}{% katex %}Ax=b{% endkatex %}的解；        
+B. {% katex %}y_1-y_2{% endkatex %}{% katex %}Ax=b{% endkatex %}的解；        
+C. {% katex %}2y_1-y_2{% endkatex %}{% katex %}Ax=0{% endkatex %}的解；        
+D. {% katex %}y_1+y_2-y_3{% endkatex %}{% katex %}Ax=b{% endkatex %}的解；        
+**结构**：{% katex %}\bar{y}+y^*{% endkatex %}    
+解：由题可知：{% katex %}Ay_1=b,Ay_2=b,Ay_3=b{% endkatex %}    
+即{% katex %}A(y_1+y_2+y_3)=3b{% endkatex %}故A错；      
+即{% katex %}A(y_1-y_2)=0{% endkatex %}故B错；     
+即{% katex %}A(2y_1-y_2)=b{% endkatex %}故C错；   
+即{% katex %}A(y_1+y_2-y_3)=b{% endkatex %}故D对；     
+例题2：设{% katex %}\alpha _1,\alpha _2{% endkatex %}是{% katex %}Ax=B{% endkatex %}，{% katex %}\beta {% endkatex %}是对应{% katex %}Ax=0{% endkatex %}的解，则(D)。     
+A. {% katex %}2\beta +\alpha _1{% endkatex %}是{% katex %}Ax=0{% endkatex %}的解；     
+B. {% katex %}\beta +\alpha _1+\alpha _2{% endkatex %}是{% katex %}Ax=0{% endkatex %}的解；     
+C. {% katex %}2\alpha _1+\alpha _2{% endkatex %}是{% katex %}Ax=B{% endkatex %}的解；     
+D. {% katex %}2\alpha _1-\alpha _2{% endkatex %}是{% katex %}Ax=B{% endkatex %}的解；     
+解：由题可知：{% katex %}A\alpha _1=B,A\alpha _2=B,A\beta =0{% endkatex %}   
+即{% katex %}A(2\beta +\alpha _1)=B{% endkatex %}故A错；     
+即{% katex %}A(\beta +\alpha _1+\alpha _2)=2B{% endkatex %}故B错；    
+即{% katex %}A(2\alpha _1+\alpha _2)=3B{% endkatex %}故C错；
+即{% katex %}A(2\alpha _1-\alpha _2)=B{% endkatex %}故D对；      
+`结构定理：`  
+(1). {% katex %}ay''+by'+cy=f(x){% endkatex %}，通解{% katex %}y=\bar{y}+y^*{% endkatex %}    
+(2). {% katex %}y_1,y_2{% endkatex %}为{% katex %}ay''+by'+cy=f(x){% endkatex %}两个解；   
+由上述可知：{% katex %}y_1-y_2{% endkatex %}为{% katex %}ay''+by'+cy=0{% endkatex %}    
+(3). {% katex %}y_1^*,y_2^*{% endkatex %}分别为{% katex %}ay''+by'+cy=f_1(x){% endkatex %}与{% katex %}ay''+by'+cy=f_2(x){% endkatex %}的特解；    
+由上述可知：{% katex %}y_1^*+y_2^*{% endkatex %}为{% katex %}ay''+by'+cy=f_1(x)+f_2(x){% endkatex %}的特解；    
+(4). {% katex %}y_1,y_2{% endkatex %}是独立的，{% katex %}ay''+by'+cy=f(x){% endkatex %}的两个解，则{% katex %}y_1-y_2{% endkatex %}为{% katex %}ay''+by'+cy=0{% endkatex %}的解；     
+由上述可知：{% katex %}c_1y_1+c_2y_2+y_1(y_2)=>ay''+by''+cy=f(x){% endkatex %}的通解，即齐次通解+非齐次特解；    
+
+---
+##### 非齐次微分方程求通解
+例题1：求微分方程{% katex %}y''-5y'+6y=xe^{2x}{% endkatex %}的通解。     
+解：特征方程：{% katex %}r^2-5r+6=(r-2)(r-3)=0{% endkatex %}      
+解得特征根：{% katex %}r_1=2,r_2=3{% endkatex %}    
+故齐次通解为：{% katex %}y=c_1e^{2x}+c_2e^{3x}{% endkatex %}    
+又因为{% katex %}\lambda =2=r_1 \ne r_1{% endkatex %}，故{% katex %}k=1{% endkatex %}   
+令特解为：{% katex %}y^*=(ax+b)e^{2x}\cdot x{% endkatex %}   
+即特解为：{% katex %}y^*=(ax^2+bx)e^{2x}{% endkatex %}     
+将特解带入原式：{% katex %}y^*''-5y^*'+6y^*=(-2ax+2a-b)e^{2x}=xe^{2x}{% endkatex %}    
+得：{% katex %}a=-\frac{1}{2},b=-1{% endkatex %}     
+所以特解为：{% katex %}y^*=-\frac{1}{2}x^2e^{2x}-xe^{2x}{% endkatex %}   
+所以非齐次通解为：{% katex %}y=\bar{y}+y^*=c_1e^{2x}+c_2e^{3x}+(-\frac{1}{2}x^2-x)e^{2x}{% endkatex %}     
+
+---
+##### n阶常系数微分方程求解
+{% katex %}y^{(n)}+P_1y^{(n-1)}+……=0{% endkatex %}      
+解法：    
+(1). 写出特征方程：{% katex %}r^{(n)}+P_1r^{(n-1)}+……=0{% endkatex %}     
+(2). 求特征根{% katex %}r_1,r_2,……,r_n{% endkatex %}    
+(3). 套公式：
+若为实数根r：
+当r为单根时：{% katex %}y=ce^{rx}{% endkatex %}     
+当r为k重根时：{% katex %}y=(c_1+c_2x+……+c_kx^{k-1})e^{rx}{% endkatex %}    
+若为复数根{% katex %}r=a \pm bi{% endkatex %}    
+当r为单根时：{% katex %}y=e^{ax}(c_1 \cos bx+c_2 \sin bx){% endkatex %}     
+当r为k重根时：{% katex %}y=e^{ax}[c_1+c_2x+……+c_kx^{k-1}\cos bx+(D_1+D_2x+……+D_kx^{k-1})-\sin bx]{% endkatex %}       
+例题1：{% katex %}y'''+2y''=0{% endkatex %}的通解：()     
+解：特征方程：{% katex %}r^3+2r^2=r^2(r+2)=0{% endkatex %}      
+解得特征根：{% katex %}r_1=r_2=0,r_3=-2{% endkatex %}    
+当{% katex %}r=0{% endkatex %}时为二重根，{% katex %}y=(c_2+c_3)e^{0x}=c_2+c_3x{% endkatex %}     
+当{% katex %}r=-2{% endkatex %}时为单根，{% katex %}y=c_1e^{-2x}{% endkatex %}     
+所以通解为：{% katex %}y=c_1e^{-2x}+c_2+c_3x{% endkatex %}   
+
+---
+## 无穷级数
