@@ -249,12 +249,12 @@ c. 套公式：{% katex %}\left\{\begin{matrix}1. r_1 \ne r_2,y=c_1e^{r_1x}+c_2e
    (1). {% katex %}ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}     
 非齐次线性方程解的结果：{% katex %}y=\bar{y}+y^* {% endkatex %}其中{% katex %}\bar{y}{% endkatex %}为齐次通解；{% katex %}y^*{% endkatex %}为非齐次特解；      
 计算齐次通解：{% katex %}\bar{y}：ay''+by'+cy=0{% endkatex %}的解{% katex %}->a\bar{y}''+b\bar{y}'+c\bar{y}=0{% endkatex %}    
-计算非齐次特解：{% katex %}\bar{y}：ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}的解{% katex %}->ay^*''+by^*'+cy^*=P(x)\cdot e^{\lambda x}{% endkatex %}    
-由上述两个式子相加{% katex %}a(\bar{y}''+y^*'')+b(\bar{y}'+y^*')+c(\bar{y}+y^*)=P(x)\cdot e^{\lambda x}{% endkatex %}     
+计算非齐次特解：{% katex %}\bar{y}：ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}的解->{% katex %}a{y^*}''+b{y^*}'+cy^*=P(x)\cdot e^{\lambda x}{% endkatex %}    
+由上述两个式子相加{% katex %}a({\bar{y} }''+{y^*}'')+b({\bar{y} }'+{y^*}')+c(\bar{y}+y^*)=P(x)\cdot e^{\lambda x}{% endkatex %}     
 得{% katex %}ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}    
 3. 求二阶非齐次通解：   
    (1). 特征根法求{% katex %}ay''+by'+cy=0{% endkatex %}的通解{% katex %}\bar{y}{% endkatex %}    
-   (2). 设特解{% katex %}y^*{% endkatex %}的一般形式，求出{% katex %}y^*',y^*''{% endkatex %}，将{% katex %}y^*,y^*',y^*''{% endkatex %}带入原式方程{% katex %}ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}对比“左=右”,{% katex %}ay^*''+by^*'+cy^*=P(x)\cdot e^{\lambda x}{% endkatex %}用待定系数，求出{% katex %}y^*{% endkatex %}；    
+   (2). 设特解{% katex %}y^*{% endkatex %}的一般形式，求出{% katex %}{y^*}',{y^*}''{% endkatex %}，将{% katex %}y^*,{y^*}',{y^*}''{% endkatex %}带入原式方程{% katex %}ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}对比“左=右”,{% katex %}a{y^*}''+b{y^*}'+cy^*=P(x)\cdot e^{\lambda x}{% endkatex %}用待定系数，求出{% katex %}y^*{% endkatex %}；    
    (3). 解出非齐次线性方程的通解：{% katex %}y=\bar{y}+y^*{% endkatex %}       
 注：特解{% katex %}y^*{% endkatex %}的一般形式设：看{% katex %}P(x)\cdot e^{\lambda x}{% endkatex %}    
 {% katex %}y^*=Q(x)\cdot e^{\lambda x}\cdot x^k{% endkatex %},其中，{% katex %}Q(x){% endkatex %}为{% katex %}P(x){% endkatex %}的一般式；     
@@ -291,10 +291,10 @@ D. {% katex %}a(x+1)e^{-x}{% endkatex %}
 ---
 ##### 题型二：非齐次通解的解及其结构
 例题1：设{% katex %}y_1,y_2,y_3{% endkatex %}是二阶非齐次线性微分方程组{% katex %}Ax=b{% endkatex %}的解，则(D)。      
-A. {% katex %}y_1+y_2_y_3{% endkatex %}{% katex %}Ax=b{% endkatex %}的解；        
-B. {% katex %}y_1-y_2{% endkatex %}{% katex %}Ax=b{% endkatex %}的解；        
-C. {% katex %}2y_1-y_2{% endkatex %}{% katex %}Ax=0{% endkatex %}的解；        
-D. {% katex %}y_1+y_2-y_3{% endkatex %}{% katex %}Ax=b{% endkatex %}的解；        
+A. {% katex %}y_1+y_2-y_3{% endkatex %}是{% katex %}Ax=b{% endkatex %}的解；        
+B. {% katex %}y_1-y_2{% endkatex %}是{% katex %}Ax=b{% endkatex %}的解；        
+C. {% katex %}2y_1-y_2{% endkatex %}是{% katex %}Ax=0{% endkatex %}的解；        
+D. {% katex %}y_1+y_2-y_3{% endkatex %}是{% katex %}Ax=b{% endkatex %}的解；        
 **结构**：{% katex %}\bar{y}+y^*{% endkatex %}    
 解：由题可知：{% katex %}Ay_1=b,Ay_2=b,Ay_3=b{% endkatex %}    
 即{% katex %}A(y_1+y_2+y_3)=3b{% endkatex %}故A错；      
@@ -329,7 +329,7 @@ D. {% katex %}2\alpha _1-\alpha _2{% endkatex %}是{% katex %}Ax=B{% endkatex %}
 又因为{% katex %}\lambda =2=r_1 \ne r_1{% endkatex %}，故{% katex %}k=1{% endkatex %}   
 令特解为：{% katex %}y^*=(ax+b)e^{2x}\cdot x{% endkatex %}   
 即特解为：{% katex %}y^*=(ax^2+bx)e^{2x}{% endkatex %}     
-将特解带入原式：{% katex %}y^*''-5y^*'+6y^*=(-2ax+2a-b)e^{2x}=xe^{2x}{% endkatex %}    
+将特解带入原式：{% katex %}{y^*}''-5{y^*}'+6y^*=(-2ax+2a-b)e^{2x}=xe^{2x}{% endkatex %}    
 得：{% katex %}a=-\frac{1}{2},b=-1{% endkatex %}     
 所以特解为：{% katex %}y^*=-\frac{1}{2}x^2e^{2x}-xe^{2x}{% endkatex %}   
 所以非齐次通解为：{% katex %}y=\bar{y}+y^*=c_1e^{2x}+c_2e^{3x}+(-\frac{1}{2}x^2-x)e^{2x}{% endkatex %}     
@@ -356,3 +356,40 @@ D. {% katex %}2\alpha _1-\alpha _2{% endkatex %}是{% katex %}Ax=B{% endkatex %}
 
 ---
 ## 无穷级数
+### 泰勒公式
+1. 常见的泰勒公式    
+当{% katex %}x \to 0{% endkatex %}:   
+即有：  
+   (1). {% katex %}\sin x=x-\frac{1}{6}x^3+o(x^3) {% endkatex %}    
+   (2). {% katex %}\cos x=1-\frac{1}{2}x^2+\frac{1}{24}x^4+o(x^4) {% endkatex %}    
+   (3). {% katex %}\tan x=x+\frac{1}{3}x^3+o(x^3) {% endkatex %}    
+   (4). {% katex %}\arcsin x=x+\frac{1}{6}x^3+o(x^3) {% endkatex %}    
+   (5). {% katex %}\arccos x= {% endkatex %}   
+   (6). {% katex %}\arctan x=x-\frac{1}{3}x^3+o(x^3) {% endkatex %}    
+   (7). {% katex %}e^x=1+x+\frac{1}{2i}x^2+\frac{1}{3i}x^3+o(x^3) {% endkatex %}    
+   (8). {% katex %}\ln (1+x)=x-\frac{1}{2}x^2+\frac{1}{3}x^3+o(x^3) {% endkatex %}     
+   (9). {% katex %}(1+x)^{\alpha }=x+\alpha x+\frac{\alpha (\alpha -1)}{2}x^2+o(x^2) {% endkatex %}    
+对于上述第九个公式会有：   
+当{% katex %}\alpha =\frac{1}{2}{% endkatex %}时，则{% katex %}\sqrt{1+x}=1+\frac{1}{2}x-\frac{1}{8}x^2+o(x^2){% endkatex %}     
+当{% katex %}\alpha =\frac{1}{3}{% endkatex %}时，则{% katex %}\sqrt{1+x}=1+\frac{1}{3}x-\frac{1}{9}x^2+o(x^2){% endkatex %}     
+2. 常用的公式    
+当{% katex %}x \to 0{% endkatex %}:   
+   (1). {% katex %}\tan x-\sin x=\frac{1}{2}x^3+o(x^3){% endkatex %}      
+   (2). {% katex %}x-\sin x=\frac{1}{6}x^3+o(x^3){% endkatex %}      
+   (3). {% katex %}\arcsin x -x=\frac{1}{6}x^3+o(x^3){% endkatex %}      
+   (4). {% katex %}\tan x-x=\frac{1}{3}x^3+o(x^3){% endkatex %}      
+   (5). {% katex %}x-\arctan x=\frac{1}{3}x^3+o(x^3){% endkatex %}      
+则可以得：   
+   (1). {% katex %}\tan x-\sin x~\frac{1}{2}x^3{% endkatex %}      
+   (2). {% katex %}x-\sin x~\frac{1}{6}x^3{% endkatex %}      
+   (3). {% katex %}\arcsin x -x~\frac{1}{6}x^3{% endkatex %}      
+   (4). {% katex %}\tan x-x~\frac{1}{3}x^3{% endkatex %}      
+   (5). {% katex %}x-\arctan x~\frac{1}{3}x^3{% endkatex %}   
+亦可得：   
+   (1). {% katex %}x-\ln (1+x)~\frac{1}{2}x^2{% endkatex %}    
+   (2). {% katex %}e^x-1-x~\frac{1}{2}x^2{% endkatex %}    
+   (3). {% katex %}1-\cos ^{\alpha }x~\frac{\alpha }{2}x^2{% endkatex %}    
+   (4). {% katex %}f(x)^{g(x)}-1~g(x)[f(x)-1]{% endkatex %}(当{% katex %}f(x) \to 1{% endkatex %}且{% katex %}f(x)^{g(x)}\to 1{% endkatex %})    
+以上公式内容均参考：[叶灵均的高数笔记](https://zhuanlan.zhihu.com/p/424480334)
+
+---
