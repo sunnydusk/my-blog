@@ -393,3 +393,70 @@ D. {% katex %}2\alpha _1-\alpha _2{% endkatex %}是{% katex %}Ax=B{% endkatex %}
 以上公式内容均参考：[叶灵均的高数笔记](https://zhuanlan.zhihu.com/p/424480334)
 
 ---
+### 无穷级数的概念
+将无穷多个数进行求和：记为{% katex %}\sum_{n=1}^{\infty }u_n=u_1+u_2+…+u_n+… {% endkatex %}，其中{% katex %}u_n{% endkatex %}为通项；       
+1. 收敛与发散：  
+   (1). 部分和（前n项和）：{% katex %}S_n=\sum_{i=1}^{n}u_i=u_1+u_2+…+u_n{% endkatex %}    
+   (2). 当{% katex %}\lim_{x \to \infty }S_n={% endkatex %}常数，称{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}收敛；     
+当{% katex %}\lim_{x \to \infty }S_n=\infty{% endkatex %}(不存在)，称{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}发散；     
+**常见数列求和**：
+a. 等差数列求和：     
+通项：{% katex %}a_n=a_1+(n-1)d{% endkatex %}     
+求和：{% katex %}S_n=\frac{(a_1+a_n)\cdot n}{2}{% endkatex %}     
+b. 等比数列求和：   
+通项：{% katex %}a_n=s_1\cdot q^{n-1}{% endkatex %}     
+求和：{% katex %}S_n=\frac{a_1(1-q^n)}{1-q}(q\ne 1){% endkatex %}    
+注：{% katex %}|q|<1,n \to \infty ,q^n \to 0{% endkatex %}->{% katex %}S_n=\frac{a_1}{1-q}={% endkatex %}{% katex %}\frac{首项}{1-公比}{% endkatex %}|公比|<1;      
+c. 裂项相消：    
+{% katex %}\frac{1}{n(n+1)}=\frac{1}{n}-\frac{1}{n+1}{% endkatex %}      
+例：{% katex %}\sum_{n=1}^{\infty }\frac{1}{n(n+1)} =\sum_{n=1}^{\infty }(\frac{1}{n}-\frac{1}{n+1}  )  {% endkatex %}    
+{% katex %}=(1-\frac{1}{2} )+(\frac{1}{2}-\frac{1}{3} )+…+(\frac{1}{n}-\frac{1}{n+1}){% endkatex %}
+{% katex %}=1-\frac{1}{n+1}=1{% endkatex %}     
+
+---
+### 无穷级数的性质
+1. 收敛级数性质：    
+   (1). {% katex %}\sum_{n=1}^{\infty }u_n{% endkatex %}收敛于A，则{% katex %}\sum_{n=1}^{\infty }ku_n=k\sum_{n=1}^{\infty }u_n{% endkatex %}也收敛，且收敛于{% katex %}kA{% endkatex %}     
+   (2). {% katex %}收敛 \pm 收敛=收敛{% endkatex %}；{% katex %}收敛 \pm 发散=发散{% endkatex %}，其余不一定成立；       
+注：{% katex %}发散 \pm 发散=不一定{% endkatex %}    
+   (3). 在级数中减去或者加上有限项，不会改变级数敛散性；     
+   (4). 若{% katex %}\sum_{n=1}^{\infty }u_n{% endkatex %}收敛，对任意项加括号后构成的新级数，敛散性不变；    
+级数收敛的结论：     
+{% katex %}\sum_{n=1}^{\infty }u_n\rightarrow  \lim_{n \to \infty }u_n=0{% endkatex %}(**不可以反推**)       
+例题1：级数{% katex %}\sum_{n=1}^{\infty }u_n{% endkatex %}收敛，求{% katex %}\lim_{x \to \infty }(u_n+2)=(2){% endkatex %}。      
+解析：收敛：{% katex %}u_n \to 0 \to 0+2=2{% endkatex %}    
+2. 级数敛散性判别：    
+   (1). 第n项判别法(逆否命题)：{% katex %}\lim_{x \to \infty }u_n \ne 0 \rightarrow \sum_{n=1}^{\infty }u_n{% endkatex %}发散；     
+例题2:判断级数{% katex %}\sum_{n=1}^{\infty }\sin \frac{1}{n},\sum_{n=1}^{\intfy }\cos \frac{1}{n},\sum_{n=1}^{\infty }(1+\frac{1}{n})^n,\sum_{n=1}^{\infty}\sqrt[n]{n}{% endkatex %}的敛散性。     
+解：当{% katex %}n \to \infty{% endkatex %}时，{% katex %}\lim_{n \to \infty}\sin \frac{1}{n}{% endkatex %}
+{% katex %}n \to \infty,\frac{1}{n} \to 0,\sin \frac{1}{n}~\frac{1}{n}{% endkatex %}      
+所以，原级数{% katex %\sum_{n=1}^{\infty}\sin \frac{1}{n}=\sum_{n=1}^{\infty }\frac{1}{n}{% endkatex %}同敛散性；   
+{% katex %}\sum_{n=1}^{\infty }\frac{1}{n}{% endkatex %}发散，即原级数发散；    
+{% katex %}\lim_{n \to \infty }\cos \frac{1}{n}=1 \ne 0{% endkatex %}，即发散；    
+{% katex %}\lim_{n \to \infty }(1+\frac{1}{n})^n=e \ne 0{% endkatex %}，即发散；    
+{% katex %}\lim_{n \to \infty }\sqrt[n]{n}=\lim_{x \to \infty }n^{\frac{1}{n} }=\lim_{x \to \infty }e^{\frac{\ln x}{x} }=e^{\lim_{x \to \infty} \frac{1}{x} }=e^0=1 \ne 0{% endkatex %}，即发散；    
+例题3：若{% katex %}\lim_{x \to \infty }u_n \ne 0{% endkatex%}则{% katex %}\sum_{n=1}^{\infty }u_n{% endkatex%}发散；    
+若{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex%}收敛，则{% katex %}\lim_{x \to \infty}u_n=0{% endkatex%}；    
+3. 等比级数判敛方法（几何级数）：     
+   (1). 标准式：{% katex %}\sum_{n=0}^{\infty }a\cdot q^n{% endkatex %}（q为公比）    
+   (2). 判别方法：看{% katex %}|q|\Longrightarrow \left\{\begin{matrix}|q|<1 ,收\\|q| \ge 1,  发\end{matrix}\right.{% endkatex %}     
+例题4：判断级数{% katex %}\sum_{n=1}^{\infty }3^n{% endkatex %}的敛散性。   
+解：{% katex %}|q|=3 > 1{% endkatex %}，发散；   
+{% katex %}\lim_{n \to \infty}3^n=\infty \ne 0{% endkatex %}，发散；    
+例题5：判断级数{% katex %}\sum_{n=1}^{\infty }(-1)^n\cdot \frac{1}{3^n}{% endkatex %}的敛散性。    
+解：{% katex %}\lim_{n \to \infty}(\frac{-1}{3})^n,|q|=\frac{1}{3} < 1{% endkatex %}，即收敛；         
+例题6：判断级数{% katex %}\sum_{n=1}^{\infty }(\frc{1}{4})^n\cdot \frac{1}{n}{% endkatex %}的敛散性。      
+解：{% katex %}\lim_{n \to \infty}(\frac{1}{4})^n,|q| =\frac{1}{4} <1{% endkatex %}，即收敛；          
+例题7：判断级数{% katex %}\sum_{n=1}^{\infty }(-1)^{n-1}\cdot \frac{2^n}{3^n}{% endkatex %}的敛散性。     
+解：{% katex %}-\lim_{n \to \infty}(-\frac{2}{3})^n,|q|=\frac{2}{3}<1{% endkatex %}，即收敛；   
+例题8：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{2^n-1}{3^n}{% endkatex %}的敛散性。    
+解：{% katex %}\sum_{n=0}^{\infty }\frac{2^n}{3^n}-\sum_{n=1}^{\infty}(\frac{1}{3})^n,|q_1|=\frac{2}{3}<1,|q_2|=\frac{1}{3}<1{% endkatex %},利于性质{% katex %}收敛\pm 收敛=收敛{% endkatex%}， 即收敛；
+例题9：判断级数{% katex %}\sum_{n=1}^{\infty }(\frac{3}{2})^n{% endkatex %}的敛散性。     
+解：{% katex %}\lim_{n \to \infty}(\frac{3}{2})^n,|q|=\frac{3}{2}>1{% endkatex %}，即发散；   
+4. P级数判别法：   
+   (1). 形式：{% katex %}\sum_{n=1}^{\infty }\frac{1}{n^P}{% endkatex %}，其中{% katex %}P>0{% endkatex %}为数字；         
+   (2). 判别方法：看{% katex %}p\Longrightarrow \left\{\begin{matrix}p>1 ,收\\p \le 1,  发\end{matrix}\right.{% endkatex %}     
+注：调和级数，{% katex %}\sum_{n=1}^{\infty }\frac{1}{n^1},P=1{% endkatex %}，发散；      
+例题10：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{1}{\sqrt[4]{n^2} }{% endkatex %}的敛散性。    
+解：{% katex %}\sum_{n=1}^{\infty }\frac{1}{\sqrt[4]{n^2} }=\sum_{n=1}^{\infty }\frac{1}{n^{\frac{1}{2} } }{% endkatex %}      
+{% katex %}P=\frac{1}{2} <1{% endkatex %}，即发散；     

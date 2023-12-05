@@ -11,7 +11,7 @@ tags:
   - math
 date: 2023-10-20 09:36:00
 ---
-## 一元函数微分学**
+## 一元函数微分学
 ### 导数
 #### 导数的定义
 设函数{% katex %}y=f(x){% endkatex %}在点{% katex %}x_0{% endkatex %}在某个邻域内有定义，当自变量{% katex %}x{% endkatex %}在{% katex %}x_0{% endkatex %}处取得增量{% katex %}\Delta x{% endkatex %}（点{% katex %}x_0+\Delta x{% endkatex %}仍在该邻域内）时，相应的因变量{% katex %}y{% endkatex %}取得增量{% katex %}\Delta y=f(x_0+\Delta x)-f(x_0){% endkatex %}。
