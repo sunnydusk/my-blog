@@ -56,7 +56,7 @@ RDBMS—关系型数据库管理系统
 
 
 ---
-###
+
 1. MySQL的存储过程中：调用存储过程使用关键字`CALL`；存储过程的参数在定义时，有三种参数约束`IN(输入参数，默认值，该参数必须在调用存储过程时指定，在存储过程中修改该参数的值不能被返回)、OUT(输出参数，该值可在存储过程内部被改变，并可返回)、INOUT(输入输出参数，调用时改变，并且可被改变和返回)`;  
 2. MySQL的字符串类型有：`TEXT、CHAR、VARCHAR、BLOB`；  
 
@@ -104,7 +104,8 @@ RDBMS—关系型数据库管理系统
 
 
 ---
-#### Bootstrap
+### Bootstrap
+
 Bootstrap对齐样式：`text-left(左)`、`text-center(居中)`、`text-right(右)`、`text-justify(超出自动换行)`、`text-nowrap(超出部分不换行)`、`text-lowercase(大写转小写)`、`text-uppercase(首字母大写)`、`text-capitalize`。  
 Bootstrap媒体特性属性：`device-width(设备宽度)`、`width(渲染界面或视口的宽度)`、`orientation(横屏或竖屏)`，```(orientation:{landscape(横屏)/portrait(竖屏)})```。  
 
@@ -113,8 +114,15 @@ Bootstrap媒体特性属性：`device-width(设备宽度)`、`width(渲染界面
 
 
 ---
-#### Ajax
-1. 在Ajax中，readyState属性表示XMLHttpRequest对象的当前状态，其中含有五个可能的值：`0(UNSENT)`:XMLHttpRequest对象已创建，但尚未调用open()方法、`1(OPENED)`:open()方法被调用，在这个状态下，可以设置请求的头部信息，比如设置请求的方法(GET、POST等)和URL、`2(HEADERS_RECEIVED)`:send()方法已被调用，并且服务器响应的头部信息已被接收，这个状态下，可以通过getResponseHeader()方法获取特定的响应头部信息、`3(LOADING)`:正在接收服务器的响应数据，在这个状态下，可以通过responseText或responseXML属性获取部分响应数据、`4(DONE)`:响应数据已经完全接收，在这个状态下，可以通过status和statusText属性获取完整的服务器响应信息，通过responseText或responseXML获取完整的响应数据。   
+### Ajax
+
+1. 在Ajax中，readyState属性表示XMLHttpRequest对象的当前状态，
+其中含有五个可能的值：     
+`0(UNSENT)`:XMLHttpRequest对象已创建，但尚未调用open()方法、     
+`1(OPENED)`:open()方法被调用，在这个状态下，可以设置请求的头部信息，比如设置请求的方法(GET、POST等)和URL、             
+`2(HEADERS_RECEIVED)`:send()方法已被调用，并且服务器响应的头部信息已被接收，这个状态下，可以通过getResponseHeader()方法获取特定的响应头部信息、         
+`3(LOADING)`:正在接收服务器的响应数据，在这个状态下，可以通过responseText或responseXML属性获取部分响应数据、    
+`4(DONE)`:响应数据已经完全接收，在这个状态下，可以通过status和statusText属性获取完整的服务器响应信息，通过responseText或responseXML获取完整的响应数据。     
 2. 
 
 ---
