@@ -187,19 +187,19 @@ navbar:
     Friends:
        path: /links
        icon: fa-solid fa-link
-    Github:
-        path: https://github.com/sunnydusk
-    Music:
-        path: /music
-        icon: fa-regular fa-music
+#    Github:
+#        path: https://github.com/sunnydusk
+#    Music:
+#        path: /music
+#        icon: fa-regular fa-music
 #    Status:
 #       path: https://status.evanluo.top/
 #       icon: fa-regular fa-chart-bar
-#    About:
-#       icon: fa-regular fa-user
-#       submenus:
-#         Me: /about
-#         Github: https://github.com/sunnydusk
+    关于:
+       icon: fa-regular fa-user
+       submenus:
+         音乐馆: /music
+         Github: https://github.com/sunnydusk
     # Links:
     #   icon: fa-regular fa-link
     #   submenus:
