@@ -37,5 +37,6 @@ date: 2023-12-03 17:48:50
 "author":"白易SIRO",
 "url":"https://music.163.com/song/media/outer/url?id=2036362573.mp3",
 "pic":"https://p1.music.126.net/ybgknOU_ygC100v2bRmYYw==/109951168522740792.jpg?param=90y90"
-}]}
+}]
+}
 {% endaplayerlist %}

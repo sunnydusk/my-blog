@@ -427,10 +427,10 @@ c. 裂项相消：
 解析：收敛：{% katex %}u_n \to 0 \to 0+2=2{% endkatex %}    
 2. 级数敛散性判别：    
    (1). 第n项判别法(逆否命题)：{% katex %}\lim_{x \to \infty }u_n \ne 0 \rightarrow \sum_{n=1}^{\infty }u_n{% endkatex %}发散；     
-例题2:判断级数{% katex %}\sum_{n=1}^{\infty }\sin \frac{1}{n},\sum_{n=1}^{\intfy }\cos \frac{1}{n},\sum_{n=1}^{\infty }(1+\frac{1}{n})^n,\sum_{n=1}^{\infty}\sqrt[n]{n}{% endkatex %}的敛散性。     
+例题2:判断级数{% katex %}\sum_{n=1}^{\infty }\sin \frac{1}{n},\sum_{n=1}^{\intfy }\cos \frac{1}{n},\sum_{n=1}^{\infty }(1+\frac{1}{n})^n,\sum_{n=1}^{\infty}\sqrt[n]{n}{% endkatex %}的敛散性。    
 解：当{% katex %}n \to \infty{% endkatex %}时，{% katex %}\lim_{n \to \infty}\sin \frac{1}{n}{% endkatex %}
-{% katex %}n \to \infty,\frac{1}{n} \to 0,\sin \frac{1}{n}~\frac{1}{n}{% endkatex %}      
-所以，原级数{% katex %\sum_{n=1}^{\infty}\sin \frac{1}{n}=\sum_{n=1}^{\infty }\frac{1}{n}{% endkatex %}同敛散性；   
+{% katex %}n \to \infty,\frac{1}{n} \to 0,\sin \frac{1}{n}~\frac{1}{n}{% endkatex %}
+所以，原级数{% katex %}\sum_{n=1}^{\infty}\sin \frac{1}{n}=\sum_{n=1}^{\infty }\frac{1}{n}{% endkatex %}同敛散性；   
 {% katex %}\sum_{n=1}^{\infty }\frac{1}{n}{% endkatex %}发散，即原级数发散；    
 {% katex %}\lim_{n \to \infty }\cos \frac{1}{n}=1 \ne 0{% endkatex %}，即发散；    
 {% katex %}\lim_{n \to \infty }(1+\frac{1}{n})^n=e \ne 0{% endkatex %}，即发散；    
@@ -455,7 +455,7 @@ c. 裂项相消：
 解：{% katex %}\lim_{n \to \infty}(\frac{3}{2})^n,|q|=\frac{3}{2}>1{% endkatex %}，即发散；   
 4. P级数判别法：   
    (1). 形式：{% katex %}\sum_{n=1}^{\infty }\frac{1}{n^P}{% endkatex %}，其中{% katex %}P>0{% endkatex %}为数字；         
-   (2). 判别方法：看{% katex %}p\Longrightarrow \left\{\begin{matrix}p>1 ,收\\p \le 1,  发\end{matrix}\right.{% endkatex %}     
+   (2). 判别方法：看{% katex %}p\Longrightarrow \left\{\begin{matrix}p>1 ,收\\p \le 1, 发\end{matrix}\right.{% endkatex %}     
 注：调和级数，{% katex %}\sum_{n=1}^{\infty }\frac{1}{n^1},P=1{% endkatex %}，发散；      
 例题10：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{1}{\sqrt[4]{n^2} }{% endkatex %}的敛散性。    
 解：{% katex %}\sum_{n=1}^{\infty }\frac{1}{\sqrt[4]{n^2} }=\sum_{n=1}^{\infty }\frac{1}{n^{\frac{1}{2} } }{% endkatex %}      
