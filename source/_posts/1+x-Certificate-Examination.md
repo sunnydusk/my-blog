@@ -101,12 +101,19 @@ MySQL的字符串类型有：`TEXT、CHAR、VARCHAR、BLOB`；
 ---
 ### Bootstrap
 
-Bootstrap对齐样式：`text-left(左)`、`text-center(居中)`、`text-right(右)`、`text-justify(超出自动换行)`、`text-nowrap(超出部分不换行)`、`text-lowercase(大写转小写)`、`text-uppercase(首字母大写)`、`text-capitalize`。  
-Bootstrap媒体特性属性：`device-width(设备宽度)`、`width(渲染界面或视口的宽度)`、`orientation(横屏或竖屏)`，```(orientation:{landscape(横屏)/portrait(竖屏)})```。  
+Bootstrap对齐样式：   
+`text-left(左)`、`text-center(居中)`、`text-right(右)`、`text-justify(超出自动换行)`、`text-nowrap(超出部分不换行)`、`text-lowercase(大写转小写)`、`text-uppercase(首字母大写)`、`text-capitalize`。  
+Bootstrap媒体特性属性：
+`device-width(设备宽度)`、`width(渲染界面或视口的宽度)`、`orientation(横屏或竖屏)`，`(orientation:{landscape(横屏)/portrait(竖屏)})`。  
 
 ---
 ### jQuery
-
+1. 基本语法   
+`$(select).action()`:其中$为定义jQuery，select为选择器，action为对元素操作；   
+2. 选择器    
+   (1). id选择器：`$('#id名称')`    
+   (2). 类选择器：`$('.class类名)`     
+   (3). 00
 
 ---
 ### Ajax
@@ -135,6 +142,6 @@ D、```$("a").attr("title").value```
 |:--------:|:----------------:|
 | onSubmit |  用于表单元素，提交表单时触发  |
 | onClick  |     点击元素时触发      |
-| onChange |    元素值发生改变时触发    |
+| onChange |    元素值发生改变时触发    |  
 |  onExit  | 不是HTML与JS内置的标准事件 |
 4. jQuery选择器有哪些：**基本选择器（指定元素、类元素、特定id元素），属性选择器，内容过滤选择器，子元素过滤选择器，表单对象属性过滤选择器，可见性过滤选择器，子元素过滤选择器，表单元素选择器**。

@@ -460,3 +460,232 @@ c. 裂项相消：
 例题10：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{1}{\sqrt[4]{n^2} }{% endkatex %}的敛散性。    
 解：{% katex %}\sum_{n=1}^{\infty }\frac{1}{\sqrt[4]{n^2} }=\sum_{n=1}^{\infty }\frac{1}{n^{\frac{1}{2} } }{% endkatex %}      
 {% katex %}P=\frac{1}{2} <1{% endkatex %}，即发散；     
+5. 正项级数判别法：    
+   (1). 形式：{% katex %}\sum_{n=1}^{\infty }u_n(u_n > 0){% endkatex %}，即{% katex %}u_n{% endkatex %}为正数；     
+   (2). 判别方法：   
+a. 比值判别法（达朗贝尔判别法）自比自：    
+{% katex %}\lim_{n \to \infty} \frac{u_n+1}{u_n}\Longrightarrow \left\{\begin{matrix}<1,收\\<1,发\\=1，失效\end{matrix}\right.{% endkatex %}失效只能使用其他方法；       
+使用对象：{% katex %}u_n{% endkatex %}中含有{% katex %}n!,a^n,n^n{% endkatex %}优选比值判别法；      
+例题11：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{2^n}{n!}{% endkatex %}的敛散性。    
+解：{% katex %}u_n=\frac{2^n}{n!},u_{n+1}=\frac{2^{n+1} }{(n+1)!}{% endkatex %}       
+{% katex %}\lim_{n \to \infty}\frac{u_{n+1} }{u_n}=\lim_{n \to \infty}\frac{2^{n+1} \cdot n!}{2^n \cdot (n+1)!}{% endkatex %}    
+{% katex %}=\lim_{n \to \infty}2 \cdot \frac{n!}{n!\cdot  (n+1)!}{% endkatex %}    
+{% katex %}=\lim_{n \to \infty}\frac{2}{(n+1)}{% endkatex %}    
+{% katex %}=0<1{% endkatex %}    
+由比值判别法得知，级数收敛；    
+例题12：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{2^n\cdot n!}{n^n}{% endkatex %}的敛散性。     
+解：{% katex %}u_n=\frac{2^n\cdot n!}{n^n},u_{n+1}=\frac{2^{n+1} \cdot (n+1)!}{(n+1)^{n+1} }{% endkatex %}       
+{% katex %}\lim_{n \to \infty}\frac{u_{n+1} }{u_n}=\lim_{n \to \infty}\frac{2^{n+1} \cdot (n+1)! \cdot n!}{2^n \cdot n! \cdot (n+1)^{n+1} }{% endkatex %}    
+{% katex %}=\lim_{n \to \infty}\frac{2^{n+1} }{2^n}\cdot \frac{(n+1)!}{n!}\cdot \frac{n^n}{(n+1)^{n+1}}{% endkatex %}    
+{% katex %}=\lim_{n \to \infty}2(n+1)\cdot \frac{n^n}{(n+1)^{n+1}}{% endkatex %}    
+{% katex %}=\lim_{n \to \infty}2\cdot (\frac{n}{(n+1)})^n{% endkatex %}    
+{% katex %}=\lim_{n \to \infty}2\cdot e^{\frac{-n}{n+1}}{% endkatex %}    
+{% katex %}=2 \cdot e^{-1}=\frac{2}{e}<1{% endkatex %}   
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312071151868.png)
+由比值判别法，级数收敛；    
+b. 比较判别法 them 比 them：     
+大方收敛则小方收敛，小方发散则大方发散；   
+找级数{% katex %}\sum_{n=1}^{\infty }v_n{% endkatex %}的方法；     
+   (1). 等价（极限的比较判别法）；
+公式：{% katex %}\lim_{n \to \infty}\frac{u_n}{v_n}=A{% endkatex %}     
+{% katex %}A\left\{\begin{matrix}A为常数，同敛散性\\0，大收小收\\\inftty,小发大发\end{matrix}\right.{% endkatex %}     
+若{% katex %}n \to \infty{% endkatex %}时{% katex %}u_n~v_n{% endkatex %}且{% katex %}u_n,v_n{% endkatex %}均有限，则{% katex %}\sum_{n=1}^{\infty }u_n{% endkatex %}与{% katex %}\sum_{n=1}^{\infty }v_n{% endkatex %}同敛散；     
+例题13：判断级数{% katex %}\sum_{n=0}^{\infty }\sin (\frac{1}{2^n}){% endkatex %}的敛散性。       
+解：{% katex %}n \to \infty，\frac{1}{2^n}\to 0 \sin \frac{1}{2^n}~\frac{1}{2^n}{% endkatex %}    
+故由极限比较判别法：{% katex %}\sum_{n=0}^{\infty}\sin (\frac{1}{2^n})与\sum_{n=0}^{\infty}\frac{1}{2^n}{% endkatex %}敛散性一致；     
+而{% katex %}\sum_{n=0}^{\infty}\frac{1^n}{2^n}=\sum_{n=0}^{\infty}(\frac{1}{2})^n;|q|=\frac{1}{2}<1{% endkatex %}即为收敛；    
+则{% katex %}\sum_{n=0}^{\infty}\sin (\frac{1}{2^n}){% endkatex %}收敛；    
+例题14：判断级数{% katex %}\sum_{n=1}^{\infty }\ln (1+\frac{1}{n}){% endkatex %}的敛散性。       
+解：{% katex %}n \to \infty，\frac{1}{n}\to 0 ,\ln (1+\frac{1}{n})~\frac{1}{2^n}{% endkatex %}    
+故由极限比较判别法：{% katex %}\sum_{n=1}^{\infty}\ln (1+\frac{1}{n})与\sum_{n=1}^{\infty}\frac{1}{n}{% endkatex %}敛散性一致；     
+而{% katex %}\sum_{n=1}^{\infty}\frac{1}{n}=\sum_{n=0}^{\infty}\frac{1}{n^1};P=1{% endkatex %}即为发散；    
+则{% katex %}\sum_{n=1}^{\infty}\ln (1+\frac{1}{n}){% endkatex %}发散；  
+例题15：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{1}{\sqrt{n} }\cdot  \ln (1+\frac{1}{n}){% endkatex %}的敛散性。       
+解：{% katex %}n \to \infty，\frac{1}{n}\to 0 ,\ln (1+\frac{1}{n})~\frac{1}{2^n}{% endkatex %}    
+故由极限比较判别法：{% katex %}\sum_{n=1}^{\infty}\ln (1+\frac{1}{n})与\sum_{n=1}^{\infty}\frac{1}{n\cdot \sqrt[n]{n} }{% endkatex %}敛散性一致；     
+而{% katex %}\sum_{n=1}^{\infty}\frac{1}{n\cdot \sqrt[n]{n} }=\sum_{n=0}^{\infty}(\frac{1}{n^{\frac{3}{2} } };P=\frac{3}{2}{% endkatex %}即为收敛；    
+则{% katex %}\sum_{n=1}^{\infty}\ln (1+\frac{1}{n}){% endkatex %}收敛；
+例题16：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{1}{n \cdot \sqrt[n]{n} }{% endkatex %}的敛散性。       
+解：{% katex %}n \to \infty,\sqrt[n]{n}=1,\frac{1}{n}\to 0 ,\frac{1}{n\cdot \sqrt[n]{n} } )~\frac{1}{n}{% endkatex %}    
+故由极限比较判别法：{% katex %}\sum_{n=1}^{\infty}\frac{1}{n\cdot \sqrt[n]{n}}与\sum_{n=1}^{\infty}\frac{1}{n}{% endkatex %}敛散性一致；     
+而{% katex %}\sum_{n=1}^{\infty}\frac{1}{n}=\sum_{n=1}^{\infty}\frac{1}{n^1};P=1{% endkatex %}即为发散；    
+则{% katex %}\sum_{n=1}^{\infty}\frac{1}{n\cdot \sqrt[n]{n} }{% endkatex %}发散；    
+例题17：判断级数{% katex %}\sum_{n=1}^{\infty }2^n\cdot \sin \frac{\pi}{3^n}{% endkatex %}的敛散性。    
+解：{% katex %}n \to \infty，\frac{\pi }{3^n}\to 0 ,\sin \frac{\pi }{3^n}~\frac{\pi }{3^n}{% endkatex %}    
+故由极限比较判别法：{% katex %}\sum_{n=1}^{\infty}2^n \cdot \sin \frac{\pi }{3^n}与\pi \sum_{n=1}^{\infty}2^n\cdot \frac{1}{3^n}{% endkatex %}敛散性一致；     
+而{% katex %}\pi \sum_{n=1}^{\infty}\frac{2^n}{3^n}=\sum_{n=0}^{\infty}(\frac{2}{3})^n;|q|=\frac{2}{3}<1{% endkatex %}即为收敛；    
+则{% katex %}\sum_{n=1}^{\infty}\ln (1+\frac{1}{n}){% endkatex %}收敛；    
+例题18：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{\sqrt{n+1}-\sqrt{n-1} }{n}{% endkatex %}的敛散性。     
+解析：将上面的根号进行展开化简：{% katex %}\frac{(\sqrt{n+1}-\sqrt{n-1})(\sqrt{n+1}+\sqrt{n-1}) }{n\cdot (\sqrt{n+1}+\sqrt{n-1}) }=\frac{2}{n(\sqrt{n+1}+\sqrt{n-1} ) }{% endkatex %}   
+将分母根号内1同约掉，即为{% katex %}~\frac{2}{n\cdot 2\sqrt{n} }~\frac{1}{n \cdot \sqrt{n} }{% endkatex %}       
+解：{% katex %}n \to \infty,\frac{\sqrt{n+1}-\sqrt{n-1} }{n}~\frac{1}{n\cdot \sqrt{n} }{% endkatex %}    
+故由极限比较判别法：{% katex %}\sum_{n=1}^{\infty}\frac{\sqrt{n+1}-\sqrt{n-1} }{n}与\sum_{n=1}^{\infty}\frac{1}{n\cdot \sqrt{n} }{% endkatex %}敛散性一致；     
+而{% katex %}\sum_{n=0}^{\infty}\frac{1}{n^1\cdot n^{\frac{1}{2} } }=\sum_{n=1}^{\infty}\frac{1}{n^{\frac{3}{2} } };P=\frac{3}{2}>1{% endkatex %}即为发散；    
+则{% katex %}\sum_{n=1}^{\infty}\ln (1+\frac{1}{n}){% endkatex %}发散；     
+注意：通过极限等价变换，可以将级数转换为其他级数，从而判断级数的敛散性(一般为P级数，等比级数)；      
+{% katex %}{\color{Red} n \to \infty ,\sqrt[n]{n}=1 } {% endkatex %}      
+   (2). 抓大头（分式保留最大项判别）“分母越小，值越大”；     
+当级数{% katex %}\sum_{n=1}^{\infty }u_n{% endkatex %}的通项{% katex %}u_n{% endkatex %}为{% katex %}n^a{% endkatex %}或{% katex %}a^n{% endkatex %}的分式，则可将分子，分母各自保留最大项所得项即为{% katex %}\sum_{n=1}^{\infty}v_n{% endkatex %}      
+例题19：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{n+1}{n(n+2)}{% endkatex %}的敛散性。       
+解：取{% katex %}\sum_{n=1}^{\infty}v_n=\sum_{n=1}^{\infty}\frac{1}{n}{% endkatex %}      
+因为{% katex %}\lim_{n \to \infty }\frac{u_n}{v_n}=\lim_{n \to \infty}\frac{(n+1)\cdot n}{n(n+2)}=1{% endkatex %}        
+故{% katex %}\sum_{n=1}^{\infty}\frac{1}{n}{% endkatex %}与原级数{% katex %}\sum_{n=1}^{\infty}\frac{n+1}{n(n+2)}{% endkatex %}同敛散性；      
+而{% katex %}\sum_{n=1}^{\infty}\frac{1}{n}{% endkatex %}为发散级数，即原级数发散；     
+例题20：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{1}{2^n+4}{% endkatex %}的敛散性。       
+解：取{% katex %}\sum_{n=1}^{\infty}v_n=\sum_{n=1}^{\infty}\frac{1}{2^n}{% endkatex %}      
+因为{% katex %}\lim_{n \to \infty }\frac{u_n}{v_n}=\lim_{n \to \infty}\frac{2^n}{2^n+4}=1{% endkatex %}       
+故{% katex %}\sum_{n=1}^{\infty}\frac{1}{2^n}{% endkatex %}与原级数{% katex %}\sum_{n=1}^{\infty}\frac{1}{2^n+4}{% endkatex %}同敛散性；      
+而{% katex %}\sum_{n=1}^{\infty}\frac{1}{2^n}=\sum_{n=1}^{\infty}(\frac{1}{2})^n,|q|=\frac{1}{2}<1{% endkatex %}为收敛级数，即原级数收敛；       
+例题21：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{1}{\sqrt{4n^3+5} }{% endkatex %}的敛散性。       
+解：取{% katex %}\sum_{n=1}^{\infty}v_n=\sum_{n=1}^{\infty}\frac{1}{2n^{\frac{3}{2} } }=\frac{1}{2}\sum_{n=1}^{\infty}\frac{1}{n^{\frac{3}{2} } }{% endkatex %}     
+故{% katex %}\frac{1}{2}\sum_{n=1}^{\infty}\frac{1}{n^{\frac{3}{2} } }{% endkatex %}与原级数{% katex %}\sum_{n=1}^{\infty}\frac{1}{\sqrt{4n^3+5} }{% endkatex %}同敛散性；      
+而{% katex %}\frac{1}{2}\sum_{n=1}^{\infty}\frac{1}{n^{\frac{3}{2} } },P=\frac{3}{2}>1{% endkatex %}为收敛级数，即原级数收敛；       
+例题22：判断级数{% katex %}\sum_{n=1}^{\infty }(\frac{1}{\sqrt{n+1} }-\frac{1}{n \cdot \sqrt{n} } ){% endkatex %}的敛散性。       
+解：{% katex %}\sum_{n=1}^{\infty}\frac{1}{\sqrt{n+1} }-\sum_{n=1}^{\infty}\frac{1}{n \cdot \sqrt{n} }{% endkatex %}     
+即{% katex %}\sum_{n=1}^{\infty}\frac{1}{\sqrt{n+1} }~\sum_{n=1}^{\infty}\frac{1}{\sqrt{n} };\sum_{n=1}^{\infty}\frac{1}{n \cdot \sqrt{n} }~\sum_{n=1}^{\infty}\frac{1}{\sqrt{n^{\frac{3}{2} } } }{% endkatex %}
+即{% katex %}\sum_{n=1}^{\infty}\frac{1}{n^{\frac{1}{2}} },P=\frac{1}{2}<1;\sum_{n=1}^{\infty}\frac{1}{\sqrt{n^{\frac{3}{2} } } },P=\frac{3}{2}>1{% endkatex %}     
+即发散-收敛=发散；
+   (3). 放缩，遇{% katex %}\sin \infty,\cos \infty,(-1)^{\infty} \le 1{% endkatex %}       
+当{% katex %}n \to \infty {% endkatex %}时，看{% katex %}u_n{% endkatex %}，遇{% katex %}\sin \infty \cos \infty \le 1{% endkatex %}       
+均值不等式：{% katex %}a^2+b^2 \ge 2ab; a+b \ge 2\sqrt{ab}{% endkatex %}      
+例题23：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{\sin nx}{n^2}{% endkatex %}的敛散性。        
+解：{% katex %}n \to \infty {% endkatex %}时，{% katex %}\frac{\sin nx}{n^2} \le \frac{1}{n^2}{% endkatex %}     
+因为{% katex %}\frac{\sin nx}{n^2} \le \frac{1}{n^2} {% endkatex %}     
+而{% katex %}\sum_{n=1}^{\infty}\frac{1}{n^2}，P=2>1{% endkatex %}为收敛级数        
+故由比较判别法，{% katex %}\sum_{n=1}^{\infty }\frac{\sin nx}{n^2}{% endkatex %}收敛；     
+例题24：设{% katex %}\sum_{n=1}^{\infty }bn{% endkatex %}为正项级数，{% katex %}\sum_{n=1}^{\infty }a_n^2{% endkatex %}收敛，则{% katex %}\sum_{n=1}^{\infty}\frac{|a_+n|}{\sqrt{n^2+bn} }=(){% endkatex %}。       
+解：因为{% katex %}\frac{|a_n|}{\sqrt{n^2+bn} }\le \frac{|a_n|}{n} \le \frac{1}{2}(a_n^2+\frac{1}{n^2}){% endkatex %}    
+所以{% katex %}\sum_{n=1}^{\infty} \frac{1}{2}(a_n^2+\frac{1}{n^2}){% endkatex %}为收敛级数，即原级数收敛；     
+c. 根值判别法：    
+
+---
+### 交错级数及敛散性判别法
+定义：称{% katex %}\sum_{n=1}^{\infty}(-1)^n\cdot u_n{% endkatex %}或{% katex %}\sum_{n=1}^{\infty}(-1)^{n-1}\cdot u_n{% endkatex %}为交错级数，其中{% katex %}u_n{% endkatex %}非负。   
+判别方法：(莱布尼茨判别法)：     
+若{% katex %}\sum_{n=1}^{\infty}(-1)^nu_n{% endkatex %}满足，则{% katex %}\begin{Bmatrix}\lim_{n \to \infty}u_n=0 \\u_n \ge u_{n+1}\end{Bmatrix}\to {% endkatex %}则{% katex %}\sum_{n=1}^{\infty}(-1)^n \cdot u_n{% endkatex %}收敛；      
+注意事项：    
+(1). 交错级数可理解为：正项，负项交替出现的级数；     
+(2). 判断敛散性时，若{% katex %}\lim_{n \to \infty}u_n \ne 0{% endkatex %}，则级数发散；   
+(3). {% katex %}u_n \ge u_{n+1}{% endkatex %}等同于{% katex %}u_n-u_{n+1} \ge 0;\frac{u_{n+1} }{u_n}\le 1;u_n{% endkatex %}是单减数列；     
+考试易错点：
+(1). 若求{% katex %}\lim_{n \to \infty}u_n=0{% endkatex %}时，出现洛必达求{% katex %}u_n{% endkatex %}极限时，**不能直接求导，需要把n改为x后再求导**；       
+(2). 用导数判断单调性时，也要将n改为x后再求导；     
+例题1：判断级数{% katex %}\sum_{n=1}^{\infty}(-1)^n\cdot \frac{1}{n!}{% endkatex %}的敛散性。      
+解：{% katex %}u_n=\frac{1}{n!}=,u_{n+1}=\frac{1}{(n+1)!}{% endkatex %}；     
+{% katex %}\lim_{n \to \infty}u_n=\lim_{n \to \infty}\frac{1}{n!}=0{% endkatex %}     
+{% katex %}u_n> u_{n+1}{% endkatex %}     
+由莱布尼兹定理知：{% katex %}\sum_{n=1}^{\infty}(-1)^n \cdot \frac1{}{n!}{% endkatex %}收敛；      
+例题2：判断级数{% katex %}\sum_{n=0}^{\infty}(-1)^n\cdot \frac{1}{n^2}{% endkatex %}的敛散性。    
+解：{% katex %}u_n=\frac{1}{n^2},u_{n+1}=\frac{1}{(n+1)^2}{% endkatex %}；     
+{% katex %}\lim_{n \to \infty}u_n=\lim_{n \to \infty}\frac{1}{n^2}=0{% endkatex %}     
+{% katex %}u_n> u_{n+1}{% endkatex %}      
+由莱布尼兹定理知：{% katex %}\sum_{n=1}^{\infty}(-1)^n \cdot \frac{1}{n^2}{% endkatex %}收敛；       
+例题3：判断级数{% katex %}\sum_{n=1}^{\infty}(-1)^{n-1}\cdot \frac{n}{3^{n-1} }{% endkatex %}的敛散性。       
+解：{% katex %}u_n=\frac{n}{3^{n-1} },u_{n+1}=\frac{n+1}{3^n}{% endkatex %}；     
+{% katex %}\lim_{x \to \infty}u_x=\lim_{n \to \infty}\frac{x}{3^{x-1} }=\lim_{x \to \infty}\frac{1}{3^{x-1}\cdot \ln 3}=0{% endkatex %}     
+令{% katex %}f(x)=\frac{x}{3^{x-1} },f'(x)=\frac{3^{x-1}-x \cdot 3^{x-1}\cdot \ln 3}{(3^{x-1})^2}{% endkatex %}     
+{% katex %}=\frac{3^{x-1}(1-x \cdot \ln 3)}{(3^{x-1})^2}=\frac{1-x\ln 3}{3^{x-1} }{% endkatex %}       
+故当{% katex %}x \to \infty{% endkatex %}时，{% katex %}f'(x)<0，{% endkatex %}即{% katex %}u_n{% endkatex %}为单减数列；   
+故由莱布尼茨定理，级数{% katex %}\sum_{n=1}^{\infty}(-1)^{n-1}\cdot \frac{n}{3^{n-1} }{% endkatex %}收敛；   
+例题4：判断级数{% katex %}\sum_{n=1}^{\infty}(-1)^n\cdot \frac{n}{n+1}{% endkatex %}的敛散性。      
+解：{% katex %}u_n=\frac{n}{n+1},u_{n+1}=\frac{n+1}{n+2}{% endkatex %}；     
+{% katex %}\lim_{n \to \infty}u_n=\lim_{n \to \infty}\frac{n}{n+1}=1\ne 0{% endkatex %}       
+故级数{% katex %}sum_{n=1}^{\infty}(-1)^{n-1}\cdot \frac{n}{3^{n-1} }{% endkatex %}发散；      
+例题5：设{% katex %}u_n=(-1)^n\cdot \sin \frac{1}{\sqrt{n} }{% endkatex %}则{% katex %}\sum_{n=1}^{\infty }u_n{% endkatex %}与{% katex %}\sum_{n=1}^{\infty}u_n^2{% endkatex %}的敛散性分别是：()。       
+解：{% katex %}\sum_{n=1}^{\infty}(-1)^n\cdot \sin \frac{1}{\sqrt{n} }{% endkatex %}      
+{% katex %}u_n=\sin \frac{1}{\sqrt{n} }u_{n+1}=\sin \frac{1}{\sqrt{n+1} }{% endkatex %}       
+{% katex %}\lim_{n \to \infty}\sin \frac{1}{\sqrt{n} }=0{% endkatex %}      
+{% katex %}u_n \ge u_{n+1}{% endkatex %}    
+由莱布尼茨判别法，级数{% katex %}\sum_{n=1}^{\infty}(-1)^n\cdot \sin \frac{1}{\sqrt{n} }{% endkatex %}收敛；      
+{% katex %}\sum_{n=1}^{\infty}u_n^2=\sum_{n=1}^{\infty}(\sin \frac{1}{\sqrt{n} })^2{% endkatex %}      
+取{% katex %}v_n=\sun_{n=1}^{\infty} \frac{1}{n}{% endkatex %}       
+因为{% katex %}\lim_{n \to \infty}\frac{(\sin \frac{1}{\sqrt{n} })^2}{\frac{1}{n} }=\lim_{n \to \infty}\frac{\frac{1}{n} }{\frac{1}{n} }=1{% endkatex %}      
+即{% katex %}\sum_{n=1}^{\infty}(\sin \frac{1}{\sqrt{n} })^2{% endkatex %}与{% katex %}\sum_{n=1}^{\infty}\frac{1}{n}{% endkatex %}同敛散性     
+而{% katex %}\sum_{n=1}^{\infty}\frac{1}{n}{% endkatex %}为发散级数，故{% katex %}\sum_{n=1}^{\infty}(\sin \frac{1}{\sqrt{n} })^2{% endkatex %}发散；      
+
+---
+### 任意项级数的绝对收敛与条件收敛
+称级数{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}，其中{% katex %}u_n{% endkatex %}为任意项，可为**正，负，形式随意**为任意项级数；   
+解题方法：对于通项{% katex %}u_n{% endkatex %}加绝对值(变{% katex %}\sun_{n=1}^{\infty}u_n{% endkatex %}为{% katex %}\sun_{n=1}^{\infty}|u_n|{% endkatex %})；   
+(1). 绝对收敛：  
+若级数{% katex %}\sum_{n=1}^{\infty}|u_n|{% endkatex %}收敛，称级数{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}绝对收敛；   
+(2). 条件收敛：   
+若级数{% katex %}\sum_{n=1}^{\infty}|u_n|{% endkatex %}发散，级数{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}收敛，称级数{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}条件收敛；    
+例题1：若级数{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}条件收敛，则级数{% katex %}\sum_{n=1}^{\infty}|u_n|{% endkatex %}必定(发散)。    
+解析：本身条件收敛，加绝对值为发散；
+扩展：则{% katex %}\sum_{n=1}^{\infty}(|u_n|+u_n){% endkatex %}：发散；     
+发散+收敛=发散；      
+例题2：下列判断有误的是：(B)     
+A. {% katex %}\sum_{n=1}^{\infty}\frac{(-1)^n}{n^2+n}{% endkatex %}绝对收敛        
+B. {% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}收敛，则{% katex %}\sum_{n=1}^{\infty}u_n^2{% endkatex %}收敛        
+C. {% katex %}\sum_{n=1}^{\infty}(-1)^n\cdot \frac{1}{n}{% endkatex %}条件收敛        
+D. {% katex %}\sum_{n=1}^{\infty}u_n \ne 0{% endkatex %}，则{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}发散        
+解析：
+A. 原级数加绝对值{% katex %}sum_{n=1}^{\infty}\frac{1}{n^2+n}~sum_{n=1}^{\infty}\frac{1}{n^2}，P=2>1{% endkatex %}即为收敛，故原级数绝对收敛；   
+C. {% katex %}\lim_{x \to \infty}\frac{1}{n}=0,f(x)=\frac{1}{x},f'(x)=-\frac{1}{x^2}<0{% endkatex %}即为收敛，{% katex %}\sum_{n=1}^{\infty}\frac{1}{n}{% endkatex %}发散，即条件收敛；       
+D. {% katex %}\sum_{n=1}^{\infty}u_n \ne 0{% endkatex %}，即{% katex %}\lim_{n \to \infty}u_n \ne 0{% endkatex %}，故原级数发散；      
+
+---
+### 幂级数
+各项均是由幂函数构成的函数项级数{% katex %}\sum_{n=0}^{\infty}a_nx^n{% endkatex %}，其中{% katex %}a_n{% endkatex %}为常数，{% katex %}x{% endkatex %}为变量，{% katex %}x^n{% endkatex %}为幂函数；     
+(1). 收敛点：当{% katex %}x=x_0{% endkatex %}时，{% katex %}\sum_{n=0}^{\infty}a_nx_0^n{% endkatex %}收敛，称{% katex %}x_0{% endkatex %}为收敛点；     
+(2). 发散点：当{% katex %}x=x_0{% endkatex %}时，{% katex %}\sum_{n=0}^{\infty}a_nx_0^n{% endkatex %}发散，称{% katex %}x_0{% endkatex %}为发散点；     
+(3). 收敛区间，收敛半径，收敛域：   
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312081636316.png)
+收敛区间：级数收敛时x的取值范围{% katex %}x \in (a,b){% endkatex %}(开区间)；          
+收敛半径：整个收敛区间的中心点{% katex %}x_0{% endkatex %}到收敛区间的端点{% katex %}a,b{% endkatex %}的距离{% katex %}R=\frac{b-a}{2}{% endkatex %}；       
+收敛域：单独讨论{% katex %}x=a,x=b{% endkatex %}时，级数敛散性后的收敛区间；**收敛取闭区间，发散取开区间**；    
+(4). 求解收敛域、收敛区间：    
+使用正项级数中的比值判别法或根值判别法；   
+求解过程：   
+{% katex %}\sum_{x=0}^{\infty}u_n(x){% endkatex %}    
+a. 定通项{% katex %}u_n,u_{n+1}{% endkatex %}     
+b. 令{% katex %}\lim_{n \to \infty}|\frac{u_{n+1}}{u_n}|<1{% endkatex %}解出x的范围，即为收敛区间；    
+注：{% katex %}|x|<a \longleftrightarrow -a<x<a{% endkatex %};{% katex %}x^2<1\longleftrightarrow -1<x<1{% endkatex %}      
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312081655692.png)
+方法总结：   
+(1). 比值判别法：令{% katex %}\lim_{n \to \infty}|\frac{u_{n+1} }{u_n}|<1{% endkatex %}解出x的范围；    
+(2). 针对{% katex %}\sum_{n=0}^{\infty}a_nx^n{% endkatex %}；公式：取{% katex %}\lim_{n \to \infty}|\frac{a_{n+1} }{a_n}|=P \to x \in (-\frac{1}{\rho},\frac{1}{\rho})\to R=\frac{1}{\rho}{% endkatex %}     
+
+
+---
+#### 具体型幂级数求解收敛区间
+例题1：求幂级数{% katex %}\sum_{n=0}^{\infty}\frac{nx^n}{3^n}{% endkatex %}的收敛半径，收敛域。    
+解析：比值判别法     
+解：{% katex %}u_n=\frac{nx^n}{3^n},u_{n+1}=\frac{(n+1)\cdot x^{n+1} }{3^{n+1} }{% endkatex %}     
+{% katex %}\lim_{n \to \infty}|\frac{u_{n+1} }{u_n}|=\lim_{n \to \infty}|\frac{(n+1)\cdot x^{n+1} }{3^{n+1} } \cdot \frac{3^n}{nx^n}|=\lim_{n \to \infty}|\frac{(n+1)\cdot x}{3n}|=|\frac{x}{3}|<1{% endkatex %}     
+所以收敛区间：{% katex %}x \in (-3,3){% endkatex %}     
+收敛半径：{% katex %}R=\frac{6}{2}=3{% endkatex %}     
+{% katex %}x=3,x=-3{% endkatex %}时，级数敛散性：     
+{% katex %}x=3{% endkatex %}时，{% katex %}\sum_{n=0}^{\infty}\frac{nx^n}{3^n}=\sum_{n=0}^{\infty}\frac{n}{3^n}\cdot 3^n=\sum_{n=0}^{\infty}n{% endkatex %}发散；     
+{% katex %}x=-3{% endkatex %}时，{% katex %}\sum_{n=0}^{\infty}\frac{nx^n}{3^n}=\sum_{n=0}^{\infty}\frac{n}{3^n}\cdot (-3)^n=\sum_{n=0}^{\infty}(-1)^n\cdot n{% endkatex %}发散；     
+所以收敛域：{% katex %}x \in (-3,3){% endkatex %}；    
+解析：公式法    
+解：因为{% katex %}a_n=\frac{n}{3^n},a_{n+1}=\frac{n+1}{3^{n+1} }{% endkatex %}     
+所以{% katex %}\lim_{n \to \infty}|\frac{a_{n+1} }{a_n}|=\lim_{n \to \infty}|\frac{n+1}{3^{n+1} } \cdot \frac{3^n}{n}|=\lim_{n \to \infty}|\frac{n+1}{3n}|=\frac{1}{3}=\rho{% endkatex %}     
+所以收敛半径：{% katex %}R=\frac{1}{\rho}=3{% endkatex %}     
+收敛区间为：{% katex %}(-\frac{1}{\rho},\frac{1}{\rho})\to x \in (-3,3){% endkatex %}    
+{% katex %}x=3,x=-3{% endkatex %}时，级数敛散性：     
+{% katex %}x=3{% endkatex %}时，{% katex %}\sum_{n=0}^{\infty}\frac{nx^n}{3^n}=\sum_{n=0}^{\infty}\frac{n}{3^n}\cdot 3^n=\sum_{n=0}^{\infty}n{% endkatex %}发散；     
+{% katex %}x=-3{% endkatex %}时，{% katex %}\sum_{n=0}^{\infty}\frac{nx^n}{3^n}=\sum_{n=0}^{\infty}\frac{n}{3^n}\cdot (-3)^n=\sum_{n=0}^{\infty}(-1)^n\cdot n{% endkatex %}发散；   
+收敛域为：{% katex %}x \in (-3,3){% endkatex %}；    
+
+---
+#### 抽象型幂级数求解收敛区间  
+题型：求{% katex %}\sum_{n=0}^{\infty}a_nx^n,\sum_{n=0}^{\infty}a_n(x-x_0)^n{% endkatex %}的收敛区间；    
+阿贝尔定理：   
+(1). {% katex %}\sum_{n=0}^{\infty}a_nx^n{% endkatex %}收敛区间对称中心为{% katex %}x=0{% endkatex %}     
+{% katex %}\sum_{n=0}^{\infty}a_n(x-x_0)^n{% endkatex %}收敛区间对称中心为{% katex %}x=x_0{% endkatex %}     
+(2). 级数在收敛区间内部绝对收敛，外部发散，条件收敛只发生在收敛区间的端点；   
+(3). {% katex %}\sum_{n=0}^{\infty}a_nx^n{% endkatex %}与{% katex %}\sum_{n=0}^{\infty}a_n(x-x_0)^n{% endkatex %}收敛半径相同，且收敛区间左右端点敛散性一样；     
+例题1：设幂级数{% katex %}\sum_{n=1}^{\infty}a_n(x-1)^n{% endkatex %}收敛区间的中心点为{% katex %}x=1{% endkatex %}，且在{% katex %}x=-1{% endkatex %}处收敛，则此级数在{% katex %}x=2{% endkatex %}处：(绝对收敛)       
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312081724956.png)
+(-1,1)收敛，对称性则{% katex %}(1,3){% endkatex %}收敛，{% katex %}x=2{% endkatex %}绝对收敛；     
+例题2：设幂级数{% katex %}\sum_{n=1}^{\infty}a_n(x-1)^n{% endkatex %}在{% katex %}x=0{% endkatex %}处收敛，在{% katex %}x=2{% endkatex %}处发散，则{% katex %}\sum_{n=1}^{\infty}a_nx^n{% endkatex %}的收敛域为：()      
+解：当{% katex %}x=1{% endkatex %}为中心点
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312081729300.png)
+此时收敛域为{% katex %}[0,2){% endkatex %}       
+则{% katex %}\sum_{n=1}^{\infty}a_nx^n{% endkatex %}对称中心为{% katex %}x=0{% endkatex %}    
+由阿贝尔定理，有两幂级数半径应为相同敛散性应相同，则得图    
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312081732034.png)
+所以收敛域为{% katex %}[-1,1){% endkatex %}；
