@@ -488,7 +488,7 @@ b. 比较判别法 them 比 them：
 找级数{% katex %}\sum_{n=1}^{\infty }v_n{% endkatex %}的方法；     
    (1). 等价（极限的比较判别法）；
 公式：{% katex %}\lim_{n \to \infty}\frac{u_n}{v_n}=A{% endkatex %}     
-{% katex %}A\left\{\begin{matrix}A为常数，同敛散性\\0，大收小收\\\inftty,小发大发\end{matrix}\right.{% endkatex %}     
+{% katex %}A\left\{\begin{matrix}A为常数，同敛散性\\0，大收小收\\\infty,小发大发\end{matrix}\right.{% endkatex %}     
 若{% katex %}n \to \infty{% endkatex %}时{% katex %}u_n~v_n{% endkatex %}且{% katex %}u_n,v_n{% endkatex %}均有限，则{% katex %}\sum_{n=1}^{\infty }u_n{% endkatex %}与{% katex %}\sum_{n=1}^{\infty }v_n{% endkatex %}同敛散；     
 例题13：判断级数{% katex %}\sum_{n=0}^{\infty }\sin (\frac{1}{2^n}){% endkatex %}的敛散性。       
 解：{% katex %}n \to \infty，\frac{1}{2^n}\to 0 \sin \frac{1}{2^n}~\frac{1}{2^n}{% endkatex %}    
@@ -598,7 +598,7 @@ c. 根值判别法：
 {% katex %}u_n \ge u_{n+1}{% endkatex %}    
 由莱布尼茨判别法，级数{% katex %}\sum_{n=1}^{\infty}(-1)^n\cdot \sin \frac{1}{\sqrt{n} }{% endkatex %}收敛；      
 {% katex %}\sum_{n=1}^{\infty}u_n^2=\sum_{n=1}^{\infty}(\sin \frac{1}{\sqrt{n} })^2{% endkatex %}      
-取{% katex %}v_n=\sun_{n=1}^{\infty} \frac{1}{n}{% endkatex %}       
+取{% katex %}v_n=\sum_{n=1}^{\infty} \frac{1}{n}{% endkatex %}       
 因为{% katex %}\lim_{n \to \infty}\frac{(\sin \frac{1}{\sqrt{n} })^2}{\frac{1}{n} }=\lim_{n \to \infty}\frac{\frac{1}{n} }{\frac{1}{n} }=1{% endkatex %}      
 即{% katex %}\sum_{n=1}^{\infty}(\sin \frac{1}{\sqrt{n} })^2{% endkatex %}与{% katex %}\sum_{n=1}^{\infty}\frac{1}{n}{% endkatex %}同敛散性     
 而{% katex %}\sum_{n=1}^{\infty}\frac{1}{n}{% endkatex %}为发散级数，故{% katex %}\sum_{n=1}^{\infty}(\sin \frac{1}{\sqrt{n} })^2{% endkatex %}发散；      
