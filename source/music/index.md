@@ -33,10 +33,20 @@ date: 2023-12-03 17:48:50
 "url":"https://music.163.com/song/media/outer/url?id=27571867.mp3",
 "pic":"http://p2.music.126.net/nlocSgc4D7T-h6S3f6IybQ==/6003333487842277.jpg"
 },{
-"title":"カナタハルカ (遥远的彼方)",
-"author":"白易SIRO",
-"url":"https://music.163.com/song/media/outer/url?id=2036362573.mp3",
-"pic":"https://p1.music.126.net/ybgknOU_ygC100v2bRmYYw==/109951168522740792.jpg?param=90y90"
+"title":"是风动",
+"author":"银临/河图",
+"url":"https://music.163.com/song/media/outer/url?id=504686859.mp3",
+"pic":"http://p2.music.126.net/C46EsA5gsbTPWjOFNLXlTA==/109951163023120938.jpg?param=130y130"
+},{
+"title":"虞兮叹",
+"author":"闻人听書_",
+"url":"https://music.163.com/song/media/outer/url?id=1479526505.mp3",
+"pic":"http://p2.music.126.net/6gdwWjPXUkyTx4CuuSxkIg==/109951165319864977.jpg?param=130y130"
+},{
+"title":"九万字",
+"author":"黄诗扶",
+"url":"https://music.163.com/song/media/outer/url?id=1335942780.mp3",
+"pic":"http://p1.music.126.net/oVCpfPtfAqNcAbRWMU7ffA==/109951163801547166.jpg?param=130y130"
 }]
 }
 {% endaplayerlist %}
