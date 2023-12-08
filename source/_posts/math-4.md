@@ -213,8 +213,8 @@ D. {% katex %}\pi _2 \parallel \pi _3{% endkatex %}
 (2). 取直线上两不重合的点{% katex %}M(x,y,z),M_0(x_0,y_0,z_0){% endkatex %}连接{% katex %}M_0M{% endkatex %}得：  
 {% katex %}\vec{M_0M}=(x-x_0,y-y_0,z-z_0){% endkatex %},有{% katex %}\vec{M_0M} \parallel \vec{S}{% endkatex %}  
 得：{% katex %}\frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p}{% endkatex %}     
-注：`看分母，得{% katex %}\vec{S}=(m,n,p){% endkatex %}`  
-`看分子，得点{% katex %}M(x_0,y_0,z_0){% endkatex %}`  
+注：**看分母，得{% katex %}\vec{S}=(m,n,p){% endkatex %}**  
+**看分子，得点{% katex %}M(x_0,y_0,z_0){% endkatex %}**  
 2. 参数方程  
 若令{% katex %}\frac{x-x_0}{m}=\frac{y-y_0}{n}=\frac{z-z_0}{p}=t{% endkatex %}   
 则有：{% katex %}\left\{\begin{matrix}x=x_0+mt\\y=y_0+nt\\z=z_0+pt\end{matrix}\right.{% endkatex %}    

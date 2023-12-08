@@ -427,7 +427,7 @@ c. 裂项相消：
 解析：收敛：{% katex %}u_n \to 0 \to 0+2=2{% endkatex %}    
 2. 级数敛散性判别：    
    (1). 第n项判别法(逆否命题)：{% katex %}\lim_{x \to \infty }u_n \ne 0 \rightarrow \sum_{n=1}^{\infty }u_n{% endkatex %}发散；     
-例题2:判断级数{% katex %}\sum_{n=1}^{\infty }\sin \frac{1}{n},\sum_{n=1}^{\intfy }\cos \frac{1}{n},\sum_{n=1}^{\infty }(1+\frac{1}{n})^n,\sum_{n=1}^{\infty}\sqrt[n]{n}{% endkatex %}的敛散性。    
+例题2:判断级数{% katex %}\sum_{n=1}^{\infty }\sin \frac{1}{n},\sum_{n=1}^{\infty }\cos \frac{1}{n},\sum_{n=1}^{\infty }(1+\frac{1}{n})^n,\sum_{n=1}^{\infty}\sqrt[n]{n}{% endkatex %}的敛散性。    
 解：当{% katex %}n \to \infty{% endkatex %}时，{% katex %}\lim_{n \to \infty}\sin \frac{1}{n}{% endkatex %}
 {% katex %}n \to \infty,\frac{1}{n} \to 0,\sin \frac{1}{n}~\frac{1}{n}{% endkatex %}
 所以，原级数{% katex %}\sum_{n=1}^{\infty}\sin \frac{1}{n}=\sum_{n=1}^{\infty }\frac{1}{n}{% endkatex %}同敛散性；   
@@ -445,7 +445,7 @@ c. 裂项相消：
 {% katex %}\lim_{n \to \infty}3^n=\infty \ne 0{% endkatex %}，发散；    
 例题5：判断级数{% katex %}\sum_{n=1}^{\infty }(-1)^n\cdot \frac{1}{3^n}{% endkatex %}的敛散性。    
 解：{% katex %}\lim_{n \to \infty}(\frac{-1}{3})^n,|q|=\frac{1}{3} < 1{% endkatex %}，即收敛；         
-例题6：判断级数{% katex %}\sum_{n=1}^{\infty }(\frc{1}{4})^n\cdot \frac{1}{n}{% endkatex %}的敛散性。      
+例题6：判断级数{% katex %}\sum_{n=1}^{\infty }(\frac{1}{4})^n\cdot \frac{1}{n}{% endkatex %}的敛散性。      
 解：{% katex %}\lim_{n \to \infty}(\frac{1}{4})^n,|q| =\frac{1}{4} <1{% endkatex %}，即收敛；          
 例题7：判断级数{% katex %}\sum_{n=1}^{\infty }(-1)^{n-1}\cdot \frac{2^n}{3^n}{% endkatex %}的敛散性。     
 解：{% katex %}-\lim_{n \to \infty}(-\frac{2}{3})^n,|q|=\frac{2}{3}<1{% endkatex %}，即收敛；   
@@ -606,7 +606,7 @@ c. 根值判别法：
 ---
 ### 任意项级数的绝对收敛与条件收敛
 称级数{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}，其中{% katex %}u_n{% endkatex %}为任意项，可为**正，负，形式随意**为任意项级数；   
-解题方法：对于通项{% katex %}u_n{% endkatex %}加绝对值(变{% katex %}\sun_{n=1}^{\infty}u_n{% endkatex %}为{% katex %}\sun_{n=1}^{\infty}|u_n|{% endkatex %})；   
+解题方法：对于通项{% katex %}u_n{% endkatex %}加绝对值(变{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}为{% katex %}\sum_{n=1}^{\infty}|u_n|{% endkatex %})；   
 (1). 绝对收敛：  
 若级数{% katex %}\sum_{n=1}^{\infty}|u_n|{% endkatex %}收敛，称级数{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}绝对收敛；   
 (2). 条件收敛：   

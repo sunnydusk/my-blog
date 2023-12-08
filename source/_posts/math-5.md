@@ -460,8 +460,8 @@ D. 当{% katex %}(\Delta x)^2+(\Delta y)^2\to 0{% endkatex %}时，{% katex %}f(
 (1). 题目要求交换   
 (2). 遇积分上下限定好的二重积分计算   
 例题1：二次积分{% katex %}\int_{0}^{1}dx\int_{2x}^{2\sqrt{x} }f(x,y)dy{% endkatex %}交换积分次序。   
-A. {% katex %}\int_{0}^{1}dx\int_{2y} }^{\sqrt{y} }f(x,y)dy{% endkatex %}  
-B. {% katex %}\int_{0}^{2}dy\int_{\frac{y^2}{4} }^{\frac{y}{2}f(x,y)dx{% endkatex %}  
+A. {% katex %}\int_{0}^{1}dx\int_{2y}^{\sqrt{y} }f(x,y)dy{% endkatex %}  
+B. {% katex %}\int_{0}^{2}dy\int_{\frac{y^2}{4} }^{\frac{y}{2} }f(x,y)dx{% endkatex %}  
 C. {% katex %}\int_{2x}^{2\sqrt{x} }f(x,y)dy\int_{0}^{1}dx{% endkatex %}  
 D. {% katex %}\int_{\frac{\frac{y^2}{4} }{} }^{\frac{y}{2} }dy\int_{0}^{2}f(x,y)dx{% endkatex %}    
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311271642984.png)
@@ -507,19 +507,23 @@ D. {% katex %}\int_{\frac{\frac{y^2}{4} }{} }^{\frac{y}{2} }dy\int_{0}^{2}f(x,y)
 从原点出发，逆时针方向作积分区域的两条切线，取第一条触碰积分区域的切线与x正半轴的夹角为{% katex %}\theta _1{% endkatex %}。    
 取第二条触碰积分区域的切线与x正半轴的夹角为{% katex %}\theta _2{% endkatex %}。      
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281537649.png)
+<br />
 {% katex %}\int_{\theta _1}^{\theta _2}d\theta {% endkatex %}  
    (2). 半径r的取值范围     
 {% katex %}OA=r_1,OB=r_2{% endkatex %}，则{% katex %}r_1,r_2{% endkatex %}为积分区域的内外半径。
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281635035.png)  
+<br />
 r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% endkatex %}代入积分区域的方程，得到{% katex %}r_1,r_2{% endkatex %}的表达式。    
 **注意**：{% katex %}0 \le r{% endkatex %}     
 **常见积分区域（图像）**：
    (1). 圆   
 一般式方程：{% katex %}x^2+y^2=R^2{% endkatex %}，其中R为半径，(a,b)为圆心。   
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281643926.png)  
+<br />
 其中：{% katex %}0\le \theta \le 2\pi ,0\le r \le R{% endkatex %}   
    (2). 偏离原点，圆心在x轴上的圆形     
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281646302.png)  
+<br />
 {% katex %}(x-a)^2+y^2=a^2{% endkatex %}，其中a为半径，(a,0)为圆心。  
 由图：{% katex %}-\frac{\pi }{2}\le \theta \le \frac{\pi }{2},0 \le r \le 2a\cos \theta{% endkatex %}    
 展开方程式：{% katex %}x^2-2ax+a^2+y^2=a^2{% endkatex %}   
