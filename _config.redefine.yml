@@ -392,18 +392,10 @@ plugins:
     enable: true # Whether to enable
     type: fixed # fixed, mini
     audios:
-      - name: 我期待的不是雪  # audio name
-        artist: -萤川- # audio artist
-        url: https://music.163.com/song/media/outer/url?id=2103022928.mp3 # audio url
-        cover: https://p1.music.126.net/pQptB4RNRjIofyxC4vE_Fw==/109951169093820622.jpg?param=90y90 # audio cover url
-      - name: 晚夜微雨问海棠  # audio name
-        artist: 镜予歌,陈亦洺,喧笑 # audio artist
-        url: https://music.163.com/song/media/outer/url?id=1456673752.mp3 # audio url
-        cover: https://p1.music.126.net/3x4HLyzg9K5OXbTWttbRYA==/109951165073688416.jpg?param=90y90 # audio cover url
-      - name: カナタハルカ (遥远的彼方)  # audio name
-        artist: 白易SIRO # audio artist
-        url: https://music.163.com/song/media/outer/url?id=2036362573.mp3 # audio url
-        cover: 	https://p1.music.126.net/ybgknOU_ygC100v2bRmYYw==/109951168522740792.jpg?param=90y90 # audio cover url
+      - name: Wake  # audio name
+        artist: Hillsong Young & Free # audio artist
+        url: https://music.163.com/song/media/outer/url?id=1873321491.mp3 # audio url
+        cover: http://p1.music.126.net/Uo7OXdK3g4LQdc2hzJ14qQ==/109951166328143737.jpg?param=130y130 # audio cover url
       #      - name: # audio name
       #        artist: # audio artist
       #        url: # audio url
