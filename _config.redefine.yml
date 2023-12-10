@@ -394,8 +394,8 @@ plugins:
     audios:
       - name: Wake  # audio name
         artist: Hillsong Young & Free # audio artist
-        url: https://music.163.com/song/media/outer/url?id=1873321491.mp3 # audio url
-        cover: http://p1.music.126.net/Uo7OXdK3g4LQdc2hzJ14qQ==/109951166328143737.jpg?param=130y130 # audio cover url
+        url: https://music.163.com/song/media/outer/url?id=33051312.mp3 # audio url
+        cover: http://p2.music.126.net/ROu52DfZhbUtYQTt_X8vpg==/109951167557295220.jpg?param=130y130 # audio cover url
       #      - name: # audio name
       #        artist: # audio artist
       #        url: # audio url
