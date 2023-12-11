@@ -14,7 +14,9 @@ info:
   # Author name
   author: SunnyDusk
   # Site URL
-  url: https://www.sunnydusk.cn
+  url:
+  - https://www.030706.xyz
+  - https://www.sunnydusk.cn
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -386,7 +388,7 @@ inject:
 plugins:
   # RSS feed. Requires hexo-generator-feed (npm i hexo-generator-feed). See https://github.com/hexojs/hexo-generator-feed
   feed:
-    enable: false # Whether to enable
+    enable: true # Whether to enable
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
     enable: true # Whether to enable
