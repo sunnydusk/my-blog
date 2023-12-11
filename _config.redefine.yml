@@ -186,7 +186,7 @@ navbar:
     Archives:
        path: /archives
        icon: fa-regular fa-archive # can be empty
-    Friends:
+    友链:
        path: /links
        icon: fa-solid fa-link
 #    Github:
