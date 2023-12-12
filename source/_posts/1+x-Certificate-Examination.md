@@ -124,7 +124,8 @@ Bootstrap媒体特性属性：
 `2(HEADERS_RECEIVED)`:send()方法已被调用，并且服务器响应的头部信息已被接收，这个状态下，可以通过getResponseHeader()方法获取特定的响应头部信息、         
 `3(LOADING)`:正在接收服务器的响应数据，在这个状态下，可以通过responseText或responseXML属性获取部分响应数据、    
 `4(DONE)`:响应数据已经完全接收，在这个状态下，可以通过status和statusText属性获取完整的服务器响应信息，通过responseText或responseXML获取完整的响应数据。     
-
+2. 使用Ajax的便捷：**减轻服务器的负担、无刷新更新页面、可用调用外部数据**   
+3. 
 
 ---
 ### 题型解答
