@@ -392,7 +392,7 @@ plugins:
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
     enable: true # Whether to enable
-    type: fixed # fixed, mini
+    type: mini # fixed, mini
     audios:
       - name: Wake  # audio name
         artist: Hillsong Young & Free # audio artist
