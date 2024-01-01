@@ -259,7 +259,7 @@ articles:
     image_border_radius: 14px # image border radius
     image_alignment: center # 图片对齐. left, center
     image_caption: true # 图片描述
-    link_icon: true # 链接图标
+    link_icon: false # 链接图标
   # 字数统计. Requires hexo-wordcount (npm install hexo-wordcount). See https://github.com/willin/hexo-wordcount
   word_count:
     enable: true # Whether to enable
@@ -422,7 +422,7 @@ page_templates:
 # CDN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 cdn:
   # Whether to enable CDN
-  enable: true
+  enable: false
   # CDN Provider
   provider: staticfile # staticfile, bootcdn, cdnjs, jsdelivr, unpkg, custom
   # Custom CDN URL
