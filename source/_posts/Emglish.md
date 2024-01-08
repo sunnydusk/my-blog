@@ -370,7 +370,7 @@ Four plus five is equal to nine.
 注：以上数的“加减乘除”的运算部分视作一个整体，故谓语动词均使用单数形式。
 
 ---
-### 形容词和副词
+### 五、形容词和副词
 #### 1.形容词与副词 
 **形容词主要在句中修饰名词；副词修饰动词、形容词和整个句子；**     
 系表动词（**be动词、感官动词、状语动词**）后 + 形容词；      
@@ -520,3 +520,169 @@ c. “`only one of + the + 形容词最高级 + 名词复数`”引起定于从�
 **主语包含在比较范围内，使用else或other，反之不需要加else或other**       
    (4). 与“never“连用，用比较级表示最高级；      
 3. 使用最高级时：**形容词的最高级前一般有定冠词the，副词的最高级前的定冠词the一般省略**     
+
+---
+### 六、介词
+#### 1. 常用介词的用法和基本意义       
+1. 表示时间    
+   (1). in   
+a. 表示*较长的时间*；     
+b. 表示*人生的某一段时间*；     
+`in one's + 整十年的复数（在某人多少岁的时候）`      
+c. `in + 时间段`： 通常用于将来时；       
+   (2). on：表示节假日、星期、具体某一天、具体某一天的上下午；    
+`带任何限定词/修饰词的上下午`，表特定的那一天；     
+   (3). at   
+a. 表示具体的某一时刻；   
+b. 表示某一天中某一个时间点；     
+   (4). after/later     
+a. after放在时间词前面；    
+b. later放在时间词后面；    
+   (5)before/ago/by     
+a. before/ago：before方时间词前面；ago放时间词后面；    
+b. before/by：before表示某一段时间前；by表示某一段时间为止，和`完成时态`连用；    
+c. `before long 不久以后`、`long before 很久以前`、`It is not long before 不用多久`       
+   (6). since/for    
+a. since    
+延续性动词，+ **时间点**，用于完成时态，固定句式：
+`It is + 时间段 + since + 过去时    自从····`       
+`It has been + 时间段 + since + 过去时    自从····`    
+b. for   
+**+ 时间段**，用于完成时态；     
+`have/has done for + 时间段`       
+   (7). during：在···期间     
+   (8). until：not…until…直到···才···     
+2. 表示地点     
+   (1). in/at    
+a. `in + 大地点`    
+b. `at + 小地点`    
+   (2). in/out/on     
+a. in：在···里面    
+b. on：在···上面（强调与物体表面的接触）   
+c. out：在···外面 `out of + 名词`     
+   (3). next to/against/near     
+a. next to ：相邻    
+b. against：紧靠、顶紧 **约为close to 依靠**     
+c. near：在···附近     
+   (4). in/on/to    
+a. in：在···里面，包含关系      
+b. on：表示接壤     
+c. to：表示隔海相望     
+3. 表示方向     
+   (1). above/below;under/over;up/down     
+a. above/below    
+above：在···上，一般表示“在上面，高于”，不一定垂直；     
+below：在···下，一般表示非垂直并不与表面接触的下方；    
+b. under/over     
+under：在···上，一般表示“在正上方”，强调垂直···之上；    
+over：在···下，一般表示垂直并不与表面接触的下方；    
+c. up/down     
+up：向上    
+down：向下    
+   (2). for/from/to/towards     
+a. for：表示“目的，对象”；    
+b. from：表示“起点”；from…to…从···到····   
+c. to：表示目的地；     
+d. towards：指“朝着某个方向”；     
+   (3). across/through/by/past/along    
+a. across：从物体的表面穿过一端到另一端，没有障碍物；（横穿）   
+b. **through：表示从两个物体中间穿过，有障碍物（贯穿）**    
+c. by：从旁边经过；   
+d. past：路过某地；    
+e. along：沿着；      
+4. 表示方式、手段     
+   (1). by：by + 名词 表示“方式”（`by doing`）；      
+   (2). with：表示使用文具；     
+   (3). in：表示使用语言；     
+5. 表示原因、理由         
+   (1). for     
+表示某一目的或结果形成的原因；for引起原因状语从句，补充说明原因；       
+   (2). because/because of      
+a. because：+ 句子   
+b. because of：+ 单词/短语          
+   (3). thanks to/thanks for    
+a. thanks to：幸亏    
+b. thanks for：因为···而感谢       
+6. 其他     
+   (1). at：表示温度、速度和价格      
+   (2). above/under     
+a. above：位置，职位、年龄“在···之上”    
+b. under：程度、年龄标准“低于”      
+   (3). in：**+ 颜色 表示穿···颜色的衣服**；     
+   (4). be made of/be made from/be made in/be made by   
+a. be made of：由···制成（`看得见原材料`）    
+b. be made from：由···制成（`看不见原材料`）      
+c. be made in + 产地      
+d. be made by：被···制作      
+   (5). with/without     
+a. with：可以表示共同关系，和···跟···；可以表示伴随：具有，带有      
+b. without：表示没有，不带   
+`with the help of sb. 在某人的帮助下`    
+   (6). about：可以表示时间“大约···，近于···时刻前后”；可以表示关于，有关；       
+   (7). in front of/in the front of/behind      
+a. in front of：在···的前面      
+b. behind：可以表示“在···的后面”；可以表示“落后”     
+   (8). of：可以表示所有关系的“···的”；可以表示同位关系；     
+   (9). off：可以表示“从···离开、去掉”；可以表示“与···相隔离”      
+
+---
+#### 2.介词的用法比较   
+1. expect，expect for，besides，but     
+这些词都有**除了···** 的意思       
+except/except for：*除开后者不包括后者*     
+besides：*除了····还有····，包括后者*        
+注：except that 只能跟从句，不能用于句首；      
+but：作“除了”，常在no， all， nobody， nothing， who之后，nothing but可以理解为only；     
+**but后接不定式时，句中若有do或to do时，but后不定式省to，若没有do或to do，则to不能省**       
+2. in the way, in a way, by the way, on one's way     
+in the way：挡，障碍；     
+in a way：在某种程度上；     
+by the way：顺便说一下，顺便说一声；     
+on one's way(to) + 地点 ：在某人去···的路上；       
+3. in the tree/on the tree     
+in the tree：外来物    
+on the tree：树本身有的；     
+
+---
+#### 3.一种特殊的表达方式   
+1. 介词短语中的名词前常用定冠词the而不用所有格代词     
+2. 介词后面的名词一般使用单数，有时复数意思也用单数形式；有时为了确切表示某种意思，也可以吧介词后面的名词用作复数；     
+
+---
+### 七、连词
+#### 1.引导时间状语从句的连词   
+引导时间状语从句的连词包含有`when[时间段点], as, while[在···期间；与连续性动词进行连用], as soon as, before, after, until`;     
+`be  about to do then… 正当···就···`
+when, as, while可以用来**描述两件事情同时发生**，描述两件**短暂的事情同时发生**使用`(just)as`；      
+**描述某件事情 紧接着另一件事情同时发生**，可以用when, as soon as, before, after等；    
+**when可具有while/as, before或after同样的意思**；     
+**until(或till)用来表示“直至”** ；`not…until…`表动作起点，直到···才···；until…动作终点；        
+
+#### 2.引导让步状语从句的连词
+引导让步状语从句的连词有`although, even though[虽然], though, while[然而], whereas, however`      
+**although和even though可用来表示让步**    
+注：`Though/Although不能与but连用`    
+**while和whereas也可用来说明两者差异**     
+**however可连接两个独立的句子，指出两件事的矛盾**，可放在句首、句中、句尾；      
+
+#### 3.引导原因和结果状语从句的连词   
+引导原因和结果状语从句的连词含有`because, as, since, so, so/such···(that)`       
+1. because, as, since等      
+   (1). because引导的从句包含主语和谓语；    
+   (2). *as和since通常放在句首*    
+**当as表示“虽然”时，句式要`倒装`，其他时候不倒装**      
+2. so, so/such…that等       
+   (1). so可用来描述某件事的结果       
+so + [adj/adv]、[many/much/few]、[little + 名词]、[adj + a/an + 名词单数]       
+**so用于adj或adv之前**
+   (2). 描述某件事情的结果，可以使用so/such…(that)   
+such + [a/an + adj + 名词单数]、[adj + 不可数名词]、[adj + 名词复数]      
+**such用于名词之前（名词前可有可无adj）     
+
+---
+#### 4.引导目的状语从句的连词
+引导目的状语从句的连词含有`in order that, that, so that, in case`       
+**in order that 引导目的状语从句**，that从句用`may/might`比较正式，现在通常与can, could, will, would搭配      
+`in order that + 句子`       
+`in order to + 原级`       
+注意：**that, so that, in order that三者中，只有`in order to`可放于句首；     
