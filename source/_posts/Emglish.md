@@ -339,7 +339,7 @@ three-quarters 3/4;		two and a quarter   2(1/4);
 one and a half  1(1/2);
 假分数=整数+and+分数
 口诀子基母序
-分子大于一，分母加-s
+`分子大于一，分母加-s`
 #### 4.小数
 小数点（point）前的基数词同基数词读法相同，小数点后的数字一一读出。
 例：
@@ -352,7 +352,7 @@ one and a half  1(1/2);
 5%		five percent
 44%		forty-four percent
 100%	one hundred percent
-百分数的用法常常与by连用，作状语，表示增加了xxx
+**百分数的用法常常与`by`连用**，作状语，表示增加了xxx
 例：
 The output of cotton went up by 20 percent.棉花的产量增加了20%。
 The price was reduced by 17 percent.价格降低了17%。
@@ -369,7 +369,154 @@ The price was reduced by 17 percent.价格降低了17%。
 Four plus five is equal to nine.
 注：以上数的“加减乘除”的运算部分视作一个整体，故谓语动词均使用单数形式。
 
+---
+### 形容词和副词
+#### 1.形容词与副词 
+**形容词主要在句中修饰名词；副词修饰动词、形容词和整个句子；**     
+系表动词（**be动词、感官动词、状语动词**）后 + 形容词；      
+形容词和副词的比较等级的用法，主要用于：    
+1. `as+原级（形容词/副词）+as… 与···一样`     
+2. `not so/as+原级（adj/adv）+as… 与···不一样`    
+Not as … as… = Not so … as … 不如       
+3. `too + 原级（adj/adv）+ to do 太···而不能 `     
+4. `比较级 + than… 比··· `     
+注：在原级as、比较级more之前加一个表示程度的状语；  
+5. `the + 最高级 + of/in /among` 表示三者以上最·····     
+6. `the more（最高级）… ， the more（最高级）… 越···就越···`          
 
+---
+#### 2.形容词的句法功能
+1. 作定语     
+通常放在所修饰的名词之前，称为前置定语；    
+注：
+   (1). 如果形容词修饰的是由`some,every, any,no与-body,-one,-thing`构成的符合不定代词，形容词后需要跟：**somebody important（某位重要的人）/nothing special（没有特别的东西）/something interesting（某种有趣的事）**；       
+   (2). `else`修饰`疑问代词:who ，whom， whose， what`；`疑问副词：where ，when`；`不定代词：something，anything，nothing，somebody， someone， anyone， anybody，no one等`，只能放在后面；    
+   (3). **enough做adj时，放在所修饰的名词之前；修饰adv或adj时，放在adj或adv之后；**      
+   (4). 形容词放在`数量词组之后`；     
+   (5). `以a开头的形容词alone，alike，awake，asleep，alive`等不做前置定语，但可以做后置定语；      
+2. 作表语   
+跟在系动词后面作表语，修饰主语或说明主语的情况；    
+   (1). 不能单独做表语的有：`worth,worthy(证实),fond, weekly, monthly, yearly, same等`；     
+   (2). **以a开头的形容词不能用very来修饰；**    
+   (3). 名词化的形容词：adj和定冠词the连用，表示一类人或物，可以做主语或宾语；`名词化形容词后跟动词复数形式`；        
 
+---
+#### 3.副词的句法功能     
+副词一般是`形容词+ly`构成的；    
+一般的形容词+-ly便构成了副词，若是形容词以`y结尾`的`变y为i+ly`构成副词；若是`以le结尾`的`变le为e+y`构成副词；       
+**并非所有以ly结尾的都是副词，例如：likely（可能的）、lovely（可爱的）、lonely（孤独的）、friendly（友好的）；**          
+副词在句中做状语、表语、定语和定语补语；      
+副词修饰名词，需放在后面；    
+1. 副词修饰形容词、副词、现在分词、过去分词，一般放在所修饰的词前面；     
+2. 副词修饰动词，一般后置；    
+句中有`频度副词：肯定：[always, usually, often(肯定), sometimes], 否定：[seldom, never, hardly(几乎不),scarcely(很少)]等`，通常放在**行为动词前；系动词，情态动词或组动词之后；**      
+频度副词表示的强弱顺序：**always(总是)-usually(通常)-often(常常)-sometimes(有时)-seldom(很少)-never(几乎不)**      
+一个句子中，如果同时存在时间、地点、方式副词作状语时，`应先说方式，再说地点，最后说时间；`       
+注：为加强语气，可以把程度副词放在句首，常用`倒装`句（一般疑问句的时序）；    
 
+---
+#### 4. 容易混淆的副词区别
+1. ago和before      
+ago表示的是“以前”，**从现在算起**，只能用`过去时态`连用；
+before表示“以前”，**从某一时刻为基准的**，大多以`过去完成时`连用；当before译“在以前”时，和`现在完成时，一般过去时，过去完成时`均可连用；     
+2. just和just now    
+二者都表示“刚刚”；just一般和`现在完成时`连用，just now一般以`过去时`连用；     
+3. sometime，some time， sometimes     
+在表示不确定时间时，不容易区别；**sometime是副词，表示“曾经，某个时候，有时”**，可以用于`过去时或将来时`；        
+**some time通常指一段时间，也可作为副词性短语使用，表示“任何时候，随时”**，使用`将来时`；     
+4. so和such      
+二者都表示程度，译为“如此，这样”；    
+so约为how->形容词、副词、many/much/few、little+名词；      
+such约为what->a/an + adj + 名词单数、adj + 不可数名词、adj + 名词复数；      
+   (1). **so + adj/adv + that 如此···以至于**        
+   (2). `so + adj + a/an + 可数名词单数 + that 如此···以至于`         
+   (3). such + adj + 不可数名词/名词复数 + that 如此···以至于     
+   (4). such + a/an +adj + 可数复数 + that 如此···以至于     
+   (5). 如果名词前面有表示数量的形容词few，little,many,much修饰时，只能使用so；     
+   (6). so + adj/adv 放在句首，句子使用`部分倒装`；    
+   (7). a. 陈述句（肯定句），so + 功能词（助动词/be动词/情态动词） + 主语（前后主语不一致）；      
+b. 陈述句（肯定句），so + 主语（前后主语一致） + 功能词（助动词/be动词/情态动词）；        
+5. 疑问副词how的使用      
+   (1). how old(多大年纪)、how long(多长，多久)、how many(多少，`-可数名词`)、how much(多少，价钱多少，`-不可数名词、单独用`)、how far(多远)、how deep(多深)、how wide(多宽)、how large(多大)、how soon(多快)、how often(多久一次)      
+可以用于*问句*外，也可适用于*从句或感叹句*；     
+   (2). how often、how soon和how long      
+其中，**how long和how soon后都跟一段时间提问**，**how often是对every day ，once a week等频率状语提问**；     
+`how long是对for`，`how soon是对in`;        
+   (3). 对**population(人口)不可以使用how many提问，可以使用`what和how large`**      
+6. too…to…和…enough to      
+   (1). `too + adj/adv + 不定式`通常表示“太···以致不能”，后面的`不定式`不加not，但是表示`否定`意义；       
+   (2). `adj/adv + enough + (for sb.) + 不定式`表示为“足以，够得上”，与“too…to…”结构相反；并且：**enough只能置于形容词和副词之后**      
+7. too, also, either, as well都表示“也”       
+   (1). too 用在**肯定句句末**表示“也”，前用逗号隔开；      
+   (2). either 用在**否定句句末**表示“也”，前用逗号隔开；     
+   (3). as well 多用于句末；     
+   (4). also 用于句中；    
 
+---
+#### 5.比较级与最高级的规则变化与不规则变化
+形容词和副词一般有三个级：原级，比较级，最高级
+规则变化：
+比较级：**单音节形容词/副词 + er**或者**more + 多音节形容词/副词**       
+最高级：**单音节形容词/副词 + est**或者**most + 多音节形容词/副词**        
+常见的不规则词：  
+形容词：  
+
+|    原级     |          比较级          |      最高级      |
+|:---------:|:---------------------:|:-------------:|
+| good,well |        better         |     best      |
+|  bad,ill  |         worse         |     worst     |
+| many,much |         more          |     most      |
+|  little   |         less          |     least     |
+|    old    | older/elder(特指家族长幼关系) | oldest/eldest | 
+**older/elder + 表称谓的名词**        
+副词：    
+
+|   原级   |       比较级       |        最高级        |
+|:------:|:---------------:|:-----------------:|
+|  well  |     better      |       best        |
+| badly  |      worse      |       worst       |
+|  much  |      more       |       most        |
+| little |      less       |       least       |
+|  far   | farther/further | farthest/furthest |
+程序副词`very ,too, so, quite`修饰`原级`；       
+
+---
+#### 6.比较级（同类事物）表示形式即用法
+1. 形容词与副词的原级     
+   (1). A与B比较程度平等时：     
+as + adj/adv(原级) + as + 比较状语从句；        
+   (2). A与B比较程度不平等时：      
+not so(as) + adj/adv(原级) + as + 比较状语从句；      
+   (3). A与B比较时，“其中A是两者中较···”     
+**A  + 谓语 + `the` + 比较级 + of the**；其中The不可以省略；       
+2. 形容词与副词的比较级     
+   (1). 若A>B应该使用“比较级 + than + 比较状语从句(比较对象)”结构；     
+   (2). 若A<B应该使用“A + not + 比较级 + than + than + B”结构，译为“A不如B”；            
+   (3). 表示某方的连续变化，“越来越···”应该用“`单音节形容词/副词比较级 + and + 单音节形容词/副词`”或者“`more and more + 多音节形容词/副词”`       
+   (4). “the + 比较级 + (其他···)，the + 比较级 + （其他···）”，译为“越···就越···”；    
+`the more, the better;   多多益善`        
+`the harder you study, the better grade you will get./the greater progress you will make.   好好学习，天天向上`       
+3. “倍数”的表达形式      
+   (1). `倍数/年龄数 + 比较级 + than···` A比B ···几倍；      
+   (2). `···倍数 + as + 原级 + as ···` A是B的几倍 = `···倍数 + the + 名词 + of `     
+4. 比较级的修饰状语    
+   (1). 修饰比较级可以是**far, much, a lot,[表示“···得多”]； a bit, a little,[表示一点]； rather[表示稍加]； even, still,[表示更加]；**     
+   (2). 比较结构的修饰语也可以用来表示度量的名词词组；      
+
+---
+#### 7.最高级表达形式及用法     
+1. 基本用法      
+   (1). **三个或三个以上的人或事物相比，用最高级**，常用`the + 最高级 + 比较范围`，其中the可以省略；**副词最高级前的the可省略**；`比较范围用in、of或among引导的介词短语来表示`；        
+   (2). a. “`one of + the + 最高级 + 名词复数`”译为：“最···之一”       
+b. “`one of + the + 形容词最高级 + 名词复数`”引起定语从句，**谓语动词用复数**        
+c. “`only one of + the + 形容词最高级 + 名词复数`”引起定于从句，**谓语动词用单数**        
+   (3). `These is + the + 形容词最高级 + 名词单数/不可数名词 + that + (现在完成时)`      
+2. 比较级表示最高级       
+   (1). `比较级 + than any other + 单数名词(比较双方同一类别，或同一范围)`      
+**other 名词复数 = others**      
+   (2). `比较级 + than any of the other + 名词复数`        
+   (3). `比较级 + than anyone (anybody, anything) else`     
+**any of + 名词复数； any + 名词单数**      
+**主语包含在比较范围内，使用else或other，反之不需要加else或other**       
+   (4). 与“never“连用，用比较级表示最高级；      
+3. 使用最高级时：**形容词的最高级前一般有定冠词the，副词的最高级前的定冠词the一般省略**     
