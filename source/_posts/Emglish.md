@@ -685,4 +685,13 @@ such + [a/an + adj + 名词单数]、[adj + 不可数名词]、[adj + 名词复�
 **in order that 引导目的状语从句**，that从句用`may/might`比较正式，现在通常与can, could, will, would搭配      
 `in order that + 句子`       
 `in order to + 原级`       
-注意：**that, so that, in order that三者中，只有`in order to`可放于句首；     
+**that, so that可用来描述目的**，通常和can, can't, will和won't搭配；          
+注意：**that, so that, in order that三者中，只有`in order to`可放于句首；**         
+**in case用来描述为了避免发生某些事情的发生而做出预防和准备**，in case后面用一般现在时讨论将来的事情（以防万一，后+句子）；       
+
+---
+#### 5.并列连词
+1. and和or，可连接分句子，也可以连接两个并列的词或短语；     
+2. 表示事情的转折，可用使用but，yet，however，nevertheless；             
+3. 表示因果关系，可以使用for，so；             
+4. 其他并列连词：either…or、neither…nor[既不···也不···]、not only…but also…[不仅···而且···]、as well as[···也···：连接主语时就近原则]、both…and…；                      
