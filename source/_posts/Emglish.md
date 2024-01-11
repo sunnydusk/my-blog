@@ -695,3 +695,4 @@ such + [a/an + adj + 名词单数]、[adj + 不可数名词]、[adj + 名词复�
 2. 表示事情的转折，可用使用but，yet，however，nevertheless；             
 3. 表示因果关系，可以使用for，so；             
 4. 其他并列连词：either…or、neither…nor[既不···也不···]、not only…but also…[不仅···而且···]、as well as[···也···：连接主语时就近原则]、both…and…；                      
+       `` ``
