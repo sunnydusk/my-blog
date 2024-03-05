@@ -538,7 +538,8 @@ r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% e
 展开方程式：{% katex %}x^2+y^2-2ay+a^2=a^2{% endkatex %}   
 {% katex %}x^2+y^2=2ay{% endkatex %}   
 即{% katex %}r^2=2a\cdot r\sin \theta{% endkatex %}     
-{% katex %}r=2a\sin \theta {% endkatex %}   
+{% katex %}r=2a\sin \theta {% endkatex %}       
+
 例题1：设积分区域为：D由{% katex %}x^2+y^2=\frac{\pi ^2}{9},x^2+y^2=\pi ^2{% endkatex %}围成，求{% katex %}\iint\limits_{D} \frac{\sin \sqrt{x^2+y^2} }{\sqrt{x^2+y^2} }dxdy{% endkatex %}      
 解：令{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% endkatex %}    
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281716541.png)
