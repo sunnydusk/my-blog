@@ -551,9 +551,9 @@ r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% e
 {% katex %}\int_{0}^{2\pi } \frac{3}{2} d \theta{% endkatex %}    
 {% katex %}\frac{3}{2} \theta|\begin{matrix}2\pi \\\ 0\end{matrix} {% endkatex %}     
 {% katex %}3\pi {% endkatex %}    
-例题2：求二重积分{% katex %}\iint\limits_{D} \frac{dxdy}{\sqrt{x^2+y^2} }{% endkatex %}其中{% katex %}D：x^2+y^2=1,x^2+y^=2x,y=0{% endkatex %}围成的区域在第一象限部分且{% katex %}x \ge \frac{1}{2}{% endkatex %}。    
+例题2：求二重积分{% katex %}\iint\limits_{D} \frac{dxdy}{\sqrt{x^2+y^2} }{% endkatex %}其中{% katex %}D：x^2+y^2=1,x^2+y^2=2x,y=0{% endkatex %}围成的区域在第一象限部分且{% katex %}x \ge \frac{1}{2}{% endkatex %}。    
 解：由题可知：{% katex %}x^2+y^2=2x{% endkatex %}和{% katex %}x^2+y^2=1{% endkatex %}    
-可得：{% katex %}x^2-2x+1-1+y^2=0,(x-1)+y^2=1{% endkatex %}    
+可得：{% katex %}x^2-2x+1-1+y^2=0,(x-1)^2+y^2=1{% endkatex %}    
 即圆心为{% katex %}(1,0),r=1{% endkatex %}和{% katex %}(0,0),r=1{% endkatex %}      
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311291502473.png)
 令{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2,dxdy=rdrd\theta{% endkatex %}     
