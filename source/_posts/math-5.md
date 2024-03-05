@@ -510,7 +510,8 @@ D. {% katex %}\int_{\frac{\frac{y^2}{4} }{} }^{\frac{y}{2} }dy\int_{0}^{2}f(x,y)
 <br />
 {% katex %}\int_{\theta _1}^{\theta _2}d\theta {% endkatex %}  
    (2). 半径r的取值范围     
-{% katex %}OA=r_1,OB=r_2{% endkatex %}，则{% katex %}r_1,r_2{% endkatex %}为积分区域的内外半径。        
+{% katex %}OA=r_1,OB=r_2{% endkatex %}，则{% katex %}r_1,r_2{% endkatex %}为积分区域的内外半径。     
+
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311281635035.png)  
 <br />
 r的计算方法：将{% katex %}x=r\cos \theta ,y=r\sin \theta ,x^2+y^2=r^2{% endkatex %}代入积分区域的方程，得到{% katex %}r_1,r_2{% endkatex %}的表达式。    
