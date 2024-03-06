@@ -574,7 +574,7 @@ c. 根值判别法：
 解：{% katex %}u_n=\frac{1}{n!},u_{n+1}=\frac{1}{(n+1)!}{% endkatex %}；     
 {% katex %}\lim_{n \to \infty}u_n=\lim_{n \to \infty}\frac{1}{n!}=0{% endkatex %}     
 {% katex %}u_n> u_{n+1}{% endkatex %}     
-由莱布尼兹定理知：{% katex %}\sum_{n=1}^{\infty}(-1)^n \cdot \frac1{}{n!}{% endkatex %}收敛；      
+由莱布尼兹定理知：{% katex %}\sum_{n=1}^{\infty}(-1)^n \cdot \frac{1}{n!}{% endkatex %}收敛；      
 例题2：判断级数{% katex %}\sum_{n=0}^{\infty}(-1)^n\cdot \frac{1}{n^2}{% endkatex %}的敛散性。    
 解：{% katex %}u_n=\frac{1}{n^2},u_{n+1}=\frac{1}{(n+1)^2}{% endkatex %}；     
 {% katex %}\lim_{n \to \infty}u_n=\lim_{n \to \infty}\frac{1}{n^2}=0{% endkatex %}     
@@ -621,7 +621,7 @@ B. {% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}收敛，则{% katex %}\sum_{n
 C. {% katex %}\sum_{n=1}^{\infty}(-1)^n\cdot \frac{1}{n}{% endkatex %}条件收敛        
 D. {% katex %}\sum_{n=1}^{\infty}u_n \ne 0{% endkatex %}，则{% katex %}\sum_{n=1}^{\infty}u_n{% endkatex %}发散        
 解析：
-A. 原级数加绝对值{% katex %}sum_{n=1}^{\infty}\frac{1}{n^2+n}~sum_{n=1}^{\infty}\frac{1}{n^2}，P=2>1{% endkatex %}即为收敛，故原级数绝对收敛；   
+A. 原级数加绝对值{% katex %}\sum_{n=1}^{\infty}\frac{1}{n^2+n}~\sum_{n=1}^{\infty}\frac{1}{n^2}，P=2>1{% endkatex %}即为收敛，故原级数绝对收敛；   
 C. {% katex %}\lim_{x \to \infty}\frac{1}{n}=0,f(x)=\frac{1}{x},f'(x)=-\frac{1}{x^2}<0{% endkatex %}即为收敛，{% katex %}\sum_{n=1}^{\infty}\frac{1}{n}{% endkatex %}发散，即条件收敛；       
 D. {% katex %}\sum_{n=1}^{\infty}u_n \ne 0{% endkatex %}，即{% katex %}\lim_{n \to \infty}u_n \ne 0{% endkatex %}，故原级数发散；      
 
