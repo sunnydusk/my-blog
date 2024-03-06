@@ -464,7 +464,7 @@ c. 裂项相消：
    (1). 形式：{% katex %}\sum_{n=1}^{\infty }u_n(u_n > 0){% endkatex %}，即{% katex %}u_n{% endkatex %}为正数；     
    (2). 判别方法：   
 a. 比值判别法（达朗贝尔判别法）自比自：    
-{% katex %}\lim_{n \to \infty} \frac{u_n+1}{u_n}\Longrightarrow \left\{\begin{matrix}<1,收\\<1,发\\=1，失效\end{matrix}\right.{% endkatex %}失效只能使用其他方法；       
+{% katex %}\lim_{n \to \infty} \frac{u_n+1}{u_n}\Longrightarrow \left\{\begin{matrix}<1,收\\>1,发\\=1，失效\end{matrix}\right.{% endkatex %}失效只能使用其他方法；       
 使用对象：{% katex %}u_n{% endkatex %}中含有{% katex %}n!,a^n,n^n{% endkatex %}优选比值判别法；      
 例题11：判断级数{% katex %}\sum_{n=1}^{\infty }\frac{2^n}{n!}{% endkatex %}的敛散性。    
 解：{% katex %}u_n=\frac{2^n}{n!},u_{n+1}=\frac{2^{n+1} }{(n+1)!}{% endkatex %}       
