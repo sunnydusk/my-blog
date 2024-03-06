@@ -571,7 +571,7 @@ c. 根值判别法：
 (1). 若求{% katex %}\lim_{n \to \infty}u_n=0{% endkatex %}时，出现洛必达求{% katex %}u_n{% endkatex %}极限时，**不能直接求导，需要把n改为x后再求导**；       
 (2). 用导数判断单调性时，也要将n改为x后再求导；     
 例题1：判断级数{% katex %}\sum_{n=1}^{\infty}(-1)^n\cdot \frac{1}{n!}{% endkatex %}的敛散性。      
-解：{% katex %}u_n=\frac{1}{n!}=,u_{n+1}=\frac{1}{(n+1)!}{% endkatex %}；     
+解：{% katex %}u_n=\frac{1}{n!},u_{n+1}=\frac{1}{(n+1)!}{% endkatex %}；     
 {% katex %}\lim_{n \to \infty}u_n=\lim_{n \to \infty}\frac{1}{n!}=0{% endkatex %}     
 {% katex %}u_n> u_{n+1}{% endkatex %}     
 由莱布尼兹定理知：{% katex %}\sum_{n=1}^{\infty}(-1)^n \cdot \frac1{}{n!}{% endkatex %}收敛；      
