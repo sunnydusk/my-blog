@@ -119,7 +119,7 @@ d. {% katex %}\pm e^C=C{% endkatex %}
 (3). 将上述换元回代方程{% katex %}\frac{y}{x}=\varphi (\frac{y}{x}){% endkatex %}中。  
 (4). 分离变量，积分后用{% katex %}u=\frac{y}{x}{% endkatex %}回代即得通解。  
 例题1：求{% katex %}y^2+x^2\frac{dy}{dx}=xy\frac{dy}{dx}{% endkatex %}的通解。   
-析：{% katex %}y^2=(xy-x^2)\frac{dy}{dx}\Longrightarrow 同除x^2 (\frac{y}{x})^2=(\frac{y}{x}-1)\frac{dy }{dx}{% endkatex %}     
+析：{% katex %}y^2=(xy-x^2)\frac{dy}{dx}\Longrightarrow 同除x^2 ,(\frac{y}{x})^2=(\frac{y}{x}-1)\frac{dy }{dx}{% endkatex %}     
 解：由题可知：{% katex %}(\frac{y}{x})^2=(\frac{y}{x}-1)\frac{dy}{dx}{% endkatex %}    
 令{% katex %}\frac{y}{x}=u,y=u\cdot x,\frac{dy}{dx}=\frac{du}{dx}\cdot x+u{% endkatex %}    
 故原式：{% katex %}u^2=(u-1)(x\frac{du}{dx}+u){% endkatex %}   
@@ -129,7 +129,7 @@ d. {% katex %}\pm e^C=C{% endkatex %}
 同除{% katex %}ux,\frac{1}{x}dx=\frac{(u-1)}{u}du{% endkatex %}       
 {% katex %}\frac{1}{x}dx=(1-\frac{(1)}{u})du{% endkatex %}       
 积分得：{% katex %}\int \frac{1}{x}dx=\int (1-\frac{(1)}{u})du{% endkatex %}       
-{% katex %}\ln |u|=u-\ln |u|+C{% endkatex %}       
+{% katex %}\ln |x|=u-\ln |u|+C{% endkatex %}       
 得：{% katex %}\ln |x|=\frac{y}{x}-\ln |\frac{y}{x}|+C{% endkatex %}     
 上述可化简：   
 {% katex %}\ln |x|+\ln |\frac{y}{x}|-C=\frac{y}{x}{% endkatex %}    
@@ -148,13 +148,13 @@ d. {% katex %}\pm e^C=C{% endkatex %}
 解法：{% katex %}x=e^{-\int P(y)dy}\cdot [\int Q(y)e^{\int P(y)dy}dy+C]{% endkatex %}    
 例题1：求微分方程{% katex %}y'+y=e^{-x}{% endkatex %}的通解。   
 解：{% katex %}P(x)=1,Q(x)=e^{-x}{% endkatex %}    
-{% katex %}y=e^{-\int P(x)dx}[\int Q(x)e^{\int P(x)dx}dx+C]{% endkatex %}     
-{% katex %}e^{-\int 1dx}[\int e^{-x}\cdot e^{\int 1dx}dx+C]{% endkatex %}     
-{% katex %}e^{-x}[\int e^{-x}\cdot e^xdx+C]{% endkatex %}     
-{% katex %}e^{-x}(x+C)]{% endkatex %}     
+{% katex %}y=e^{-\int P(x)dx}[\int Q(x)e^{\int P(x)dx}dx+C]{% endkatex %}       
+{% katex %}e^{-\int 1dx}[\int e^{-x}\cdot e^{\int 1dx}dx+C]{% endkatex %}        
+{% katex %}e^{-x}[\int e^{-x}\cdot e^xdx+C]{% endkatex %}        
+{% katex %}e^{-x}(x+C)]{% endkatex %}         
 注：在一阶微分方程中，{% katex %}y{% endkatex %}和{% katex %}y'{% endkatex %}是一次，可变量分离成{% katex %}y'+Py=Q{% endkatex %}，套公式；     
 例题2：求{% katex %}(x^2-1)\cdot y'+2xy-\cos x=0{% endkatex %}的通解。     
-析：{% katex %}y'+\frac{2x}{x^2-1}\cdot y-\frac{\cos x}{x^2-1}=0 \Longrightarrow y'+\frac{2x}\cdot y=\frac{\cos x}{x^2-1}{x^2-1}{% endkatex %}    
+析：{% katex %}y'+\frac{2x}{x^2-1}\cdot y-\frac{\cos x}{x^2-1}=0 \Longrightarrow y'+\frac{2x}{x^2+1}\cdot y=\frac{\cos x}{x^2-1}{x^2-1}{% endkatex %}    
 解：原式为一阶线性微分方程：{% katex %}y'+\frac{2x}{x^2-1}\cdot y = \frac{\cos x}{x^2-1}{% endkatex %}     
 其中{% katex %}P(x)=\frac{2x}{x^2-1},Q(x)=\frac{\cos x}{x^2-1}{% endkatex %}     
 所以通解{% katex %}y=e^{-\int P(x)dx}[\int Q(x)\cdot e^{\int P(x)dx}dx+C]{% endkatex %}     
@@ -214,7 +214,7 @@ d. {% katex %}\pm e^C=C{% endkatex %}
    (2). 解法：
 a. 写出特征方程：{% katex %}ar^2+br+c=0{% endkatex %}
 b. 特征根：{% katex %}r_{1，2}=\frac{-b \pm \sqrt{b^2-4ac} }{2a}{% endkatex %}     
-c. 套公式：{% katex %}\left\{\begin{matrix}1. r_1 \ne r_2,y=c_1e^{r_1x}+c_2e^{r_2x}\\2. r_1=r_1,y=(c_1+c_2x)e^{r_1x}\\3.r_{1,2}=a \pm bi,y=e^{ax}\cdot (c_1\cos bx+c_2\sin bx \end{matrix}\right.{% endkatex %}      
+c. 套公式：{% katex %}\left\{\begin{matrix}1. r_1 \ne r_2,y=c_1e^{r_1x}+c_2e^{r_2x}\\2. r_1=r_2,y=(c_1+c_2x)e^{r_1x}\\3.r_{1,2}=a \pm bi,y=e^{ax}\cdot (c_1\cos bx+c_2\sin bx) \end{matrix}\right.{% endkatex %}      
 注意：欧拉创建：{% katex %}i^2=-1{% endkatex %}替代当根式下为负数的情况；例如：{% katex %}\sqrt{-4}=\sqrt{4i}=2i{% endkatex %}     
 例题1：{% katex %}y''+5y'+6y=0{% endkatex %}的通解是()      
 解：特征方程：{% katex %}r^2+5r+6=0{% endkatex %}   
@@ -249,7 +249,7 @@ c. 套公式：{% katex %}\left\{\begin{matrix}1. r_1 \ne r_2,y=c_1e^{r_1x}+c_2e
    (1). {% katex %}ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}     
 非齐次线性方程解的结果：{% katex %}y=\bar{y}+y^* {% endkatex %}其中{% katex %}\bar{y}{% endkatex %}为齐次通解；{% katex %}y^*{% endkatex %}为非齐次特解；      
 计算齐次通解：{% katex %}\bar{y}：ay''+by'+cy=0{% endkatex %}的解{% katex %}->a\bar{y}''+b\bar{y}'+c\bar{y}=0{% endkatex %}    
-计算非齐次特解：{% katex %}\bar{y}：ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}的解->{% katex %}a{y^*}''+b{y^*}'+cy^*=P(x)\cdot e^{\lambda x}{% endkatex %}    
+计算非齐次特解：{% katex %}y^*：ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}的解->{% katex %}a{y^*}''+b{y^*}'+cy^*=P(x)\cdot e^{\lambda x}{% endkatex %}    
 由上述两个式子相加{% katex %}a({\bar{y} }''+{y^*}'')+b({\bar{y} }'+{y^*}')+c(\bar{y}+y^*)=P(x)\cdot e^{\lambda x}{% endkatex %}     
 得{% katex %}ay''+by'+cy=P(x)\cdot e^{\lambda x}{% endkatex %}    
 3. 求二阶非齐次通解：   
@@ -291,7 +291,7 @@ D. {% katex %}a(x+1)e^{-x}{% endkatex %}
 ---
 ##### 题型二：非齐次通解的解及其结构
 例题1：设{% katex %}y_1,y_2,y_3{% endkatex %}是二阶非齐次线性微分方程组{% katex %}Ax=b{% endkatex %}的解，则(D)。      
-A. {% katex %}y_1+y_2-y_3{% endkatex %}是{% katex %}Ax=b{% endkatex %}的解；        
+A. {% katex %}y_1+y_2+y_3{% endkatex %}是{% katex %}Ax=b{% endkatex %}的解；        
 B. {% katex %}y_1-y_2{% endkatex %}是{% katex %}Ax=b{% endkatex %}的解；        
 C. {% katex %}2y_1-y_2{% endkatex %}是{% katex %}Ax=0{% endkatex %}的解；        
 D. {% katex %}y_1+y_2-y_3{% endkatex %}是{% katex %}Ax=b{% endkatex %}的解；        
@@ -318,7 +318,7 @@ D. {% katex %}2\alpha _1-\alpha _2{% endkatex %}是{% katex %}Ax=B{% endkatex %}
 (3). {% katex %}y_1^*,y_2^*{% endkatex %}分别为{% katex %}ay''+by'+cy=f_1(x){% endkatex %}与{% katex %}ay''+by'+cy=f_2(x){% endkatex %}的特解；    
 由上述可知：{% katex %}y_1^*+y_2^*{% endkatex %}为{% katex %}ay''+by'+cy=f_1(x)+f_2(x){% endkatex %}的特解；    
 (4). {% katex %}y_1,y_2{% endkatex %}是独立的，{% katex %}ay''+by'+cy=f(x){% endkatex %}的两个解，则{% katex %}y_1-y_2{% endkatex %}为{% katex %}ay''+by'+cy=0{% endkatex %}的解；     
-由上述可知：{% katex %}c_1y_1+c_2y_2+y_1(y_2)=>ay''+by''+cy=f(x){% endkatex %}的通解，即齐次通解+非齐次特解；    
+由上述可知：{% katex %}c_1y_1+c_2y_2+y_1(y_2)=>ay''+by'+cy=f(x){% endkatex %}的通解，即齐次通解+非齐次特解；    
 
 ---
 ##### 非齐次微分方程求通解
