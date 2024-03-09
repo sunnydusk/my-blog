@@ -150,3 +150,35 @@ A.1     B.8     C.15     D.17
 
 ---
 ## 矩阵
+### 矩阵的基本概念   
+1. 定义：由{% katex %}m \times n{% endkatex %}个元素组成的{% katex %}m{% endkatex %}行{% katex %}n{% endkatex %}列的数表 **(行数和列数可以不相等)** 称为{% katex %}m{% endkatex %}行{% katex %}n{% endkatex %}列矩阵，记作{% katex %}A，A_{m \times n}{% endkatex %}或{% katex %}A=(a_{ij})_{m \times n}{% endkatex %}        
+   (1). 行矩阵指只有一行的矩阵{% katex %}A=(a_1,a_2,……a_n){% endkatex %}       
+   (2). 列矩阵只有一列的矩阵称为列矩阵；     
+![列矩阵](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403091918653.png)
+   (3). 零矩阵指元素全为零的矩阵为零矩阵，记为{% katex %}O{% endkatex %}(*不同行或列的零矩阵不同*)      
+   (4). 单位矩阵指主对角线上元素全为1，其余元素全为零的n阶方阵(**行列数相同**)，记为{% katex %}E、I{% endkatex %}        
+![单位矩阵](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403091921196.png)
+   (5). 对角矩阵指除了从左上角到右下角的对角线以外的元素都是0；       
+   (6). 三角形矩阵：主对角线的左下方的元素全为0是*上三角矩阵*，下三角矩阵反之；       
+![三角形矩阵](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403091923790.png)
+注意：对角矩阵可以看作上三角矩阵，也可以看作下三角矩阵；      
+   (7). 对称矩阵和反称矩阵：设{% katex %}A=(a_{ij}){% endkatex %}为{% katex %}n{% endkatex %}阶方阵，如果{% katex %}A^T=A{% endkatex %}，则为对称矩阵；若{% katex %}A^T=-A{% endkatex %}，则为反称矩阵。      
+2. 性质       
+   (1). 若{% katex %}A,B{% endkatex %}都是对称矩阵，则{% katex %}A+B，\lambda A{% endkatex %}也是对称矩阵(其中{% katex %}\lambda {% endkatex %}为任意常数)        
+   (2). 若{% katex %}A,B{% endkatex %}都是对称矩阵，则{% katex %}AB{% endkatex %}为对称矩阵的充要条件{% katex %}AB=BA{% endkatex %}         
+
+---
+### 矩阵的运算
+1. 加减运算：对应元素相加减     
+设{% katex %}A=(a_{ij})_{m \times n}{% endkatex %}和{% katex %}B=(b_{ij})_{m \times n}{% endkatex %}均为{% katex %}m \times n{% endkatex %}矩阵，则{% katex %}A \pm B =(a_{ij }\pm b_{ij})_{m \times n}{% endkatex %}              
+注意：**只能是同类型矩阵才可以进行加减运算且必须满足加法运算规律**
+2. 矩阵的数乘：对矩阵所有元素进行数乘        
+![矩阵的数乘](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403091942043.png)    
+3. 矩阵的乘法        
+设{% katex %}A{% endkatex %}是一个{% katex %}m \times s {% endkatex %}矩阵，{% katex %}B{% endkatex %}是一个{% katex %}s \times n{% endkatex %}，即{% katex %}A=(a_{ij})_{m  \times s},B=(b_{ij})_{s \times n}{% endkatex %}，则{% katex %}A,B{% endkatex %}矩阵的乘积为{% katex %}A_{m \times s} \cdot B_{s \times n}=C_{m \times n}{% endkatex %}或者为{% katex %}AB=C{% endkatex %}           
+其中{% katex %}C_{ij}=\sum_{k=1}^{s}a_{ik}b_{kj}(i=1……m,j=1……n){% endkatex %}      
+注意：**第一个矩阵的列数和第二个矩阵的行数相同才可以乘；矩阵乘法不满足乘法交换律，但满足结合律和分配律**        
+   (1). {% katex %}(AB)C=A(BC){% endkatex %}       
+   (2). {% katex %}k(AB)=(kA)B=A(kB){% endkatex %}，其中k为数；           
+   (3). 左分配律：{% katex %}A(B+C)=AB+AC{% endkatex %};右分配律：{% katex %}(B+C)A=BA+CA{% endkatex %}        
+4. 矩阵的转置      
