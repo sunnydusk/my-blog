@@ -138,7 +138,7 @@ A.1     B.8     C.15     D.17
 或{% katex %}D=a_{1j}A_{1j}+a_{2j}A_{2j}+……+a_{nj}A_{nj}(j=1,2……n){% endkatex %}         
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403091541149.png)
 
----
+--- 
 ### 展开的逆用
 求行列式的某行(列)代数余子式相加时，则将原行列式对应行(列)换成要求代数余子式前的系数；      
 
