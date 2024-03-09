@@ -19,9 +19,10 @@ date: 2023-11-24 16:26:00
 aij构成行列式的元素，i为行，j为列；    
 横行r，纵列c；
 除了D还可以用det()或者|A|表示；    
-行列式的本质：是一个数(函数)；    
+行列式的本质：是一个数(函数)；      
 
-## 行列式的计算
+---
+### 行列式的计算
 本质上的计算：     
 {% katex %}D_n=\begin{vmatrix}a_{11} &… & a_{1n}\\··· & ··· &··· \\a_{n1} &··· &a_{nn}\end{vmatrix}{% endkatex %}    
 即取自不同行，不同列元素乘积的代数和；
@@ -43,6 +44,15 @@ aij构成行列式的元素，i为行，j为列；
 即：{% katex %}x_1=1,x_2=2{% endkatex %}     
 
 ---
+### 克拉默法则计算方程组
+例如：{% katex %}\left\{\begin{matrix}3x_1-2x_2=12 \\2x_1+x_2=1\end{matrix}\right.{% endkatex %}       
+利用法则可求出{% katex %}x_1,x_2{% endkatex %}        
+{% katex %}D=\begin{vmatrix}3&-2\\2&1\end{vmatrix}{% endkatex %}       
+{% katex %}x_1=\frac{\begin{vmatrix}12&-2\\1&1\end{vmatrix}}{D}=2 {% endkatex %}     
+{% katex %}x_2=\frac{\begin{vmatrix}12&3\\1&2\end{vmatrix}}{D}=-3 {% endkatex %}     
+所以，要求哪一个的值那么就对结果和另一个值的系数构成行列式进行求解；       
+
+---
 ### 化三角形行列式
 主对角类型：   
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312191639294.png)
@@ -59,7 +69,23 @@ aij构成行列式的元素，i为行，j为列；
 {% katex %}\lim_{n \to \infty}\frac{1}{\infty}=0{% endkatex %}      
 
 ---
-### 求解行（列）和相等行列式  
+### 转置行列式
+对行列式中的行与列进行转换      、
+{% katex %}D=\begin{vmatrix}1&3&5\\2&4&8\\7&6&9\end{vmatrix}\Rightarrow D^T=\begin{vmatrix}1&2&7\\3&4&6\\5&8&9\end{vmatrix}{% endkatex %}       
+
+---
+### 行列式的性质     
+1. 行列式和它的转置行列式相等；即{% katex %}D^T=D{% endkatex %}       
+2. **(互换)**：交换行列式某两行(列)，行列式变号；         
+3. **(倍乘)**：行列式的某行(列)的所以元素的公因子都可以提到行列式符号的外面；       
+4. **(倍加)**：将行列式的某一行(列)各元素的{% katex %}k{% endkatex %}倍加到另外一行(列)的对应元素上去，行列式值不变；          
+推论1. 如果行列式两行(列)完全相同，则行列式的值为0；       
+推论2. 行列式中有一行(列)元素全为0，则行列式的值为0；     
+推论3. 行列式中有两行(列)元素对应成比例，则行列式的值为0；     
+5. 若行列式某一行(列)的元素是两个数之和，则行列式等于两个行列式之和；      
+
+---
+### 求解行（列）和相 等行列式  
 每一行或者每一列加起来的和相等的行列式；   
 解法：化为三角形行列式；    
 (1). 将所有行（列）全部加到第一行（列）      
@@ -103,4 +129,24 @@ A.1     B.8     C.15     D.17
 {% katex %}x=1{% endkatex %}      
 {% katex %}A_{21}=(-1)^{2+1}\cdot M_{21}=-M_{21}{% endkatex %}      
 {% katex %}=-\begin{vmatrix}0&2\\x&1\end{vmatrix}=-2x{% endkatex %}      
-{% katex %}A_{21}=(-1)\cdot (-2x)=2\cdot 1=2{% endkatex %}
+{% katex %}A_{21}=(-1)\cdot (-2x)=2\cdot 1=2{% endkatex %}      
+
+---
+### 拉普拉斯展开
+某一行列式：对行列式任一行(列)的各元素与对应的代数余子式乘积之和；     
+即{% katex %}D=a_{i1}A_{i1}+a_{i2}A_{i2}+……+a_{in}A_{in}(i=1,2……n){% endkatex %}        
+或{% katex %}D=a_{1j}A_{1j}+a_{2j}A_{2j}+……+a_{nj}A_{nj}(j=1,2……n){% endkatex %}         
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403091541149.png)
+
+---
+### 展开的逆用
+求行列式的某行(列)代数余子式相加时，则将原行列式对应行(列)换成要求代数余子式前的系数；      
+
+---
+### 范德蒙行列式 
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403091622421.png)
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403091623024.png)
+注意：第一行为1，以下每一行为上一个的次方；         
+
+---
+## 矩阵
