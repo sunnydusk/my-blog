@@ -182,3 +182,62 @@ A.1     B.8     C.15     D.17
    (2). {% katex %}k(AB)=(kA)B=A(kB){% endkatex %}，其中k为数；           
    (3). 左分配律：{% katex %}A(B+C)=AB+AC{% endkatex %};右分配律：{% katex %}(B+C)A=BA+CA{% endkatex %}        
 4. 矩阵的转置      
+矩阵{% katex %}A{% endkatex %}的行列式互换后的矩阵称为{% katex %}A{% endkatex %}的转置矩阵，记为{% katex %}A^T{% endkatex %}       
+**转置矩阵的运算规律：**       
+   (1). {% katex %}(A^T)^T=A{% endkatex %}           
+   (2). {% katex %}(A+B)^T=A^T+B^T{% endkatex %}            
+   (3). {% katex %}(\lambda A)^T=\lambda A^T{% endkatex %}            
+   (4). {% katex %}(AB)^T=B^T A^T{% endkatex %}            
+5. 方阵的行列式         
+如果{% katex %}A{% endkatex %}是谁一个已知方阵，以{% katex %}A{% endkatex %}的元素按原次序所构成的行列式，叫{% katex %}A{% endkatex %}的行列式，记作{% katex %}|A|{% endkatex %}         
+**性质1：{% katex %}|A^T|=|A|{% endkatex %}          
+性质2：{% katex %}|kA|=k^n|A|{% endkatex %},其中{% katex %}k{% endkatex %}为常数          
+性质1：{% katex %}|AB|=|A||B|{% endkatex %}**          
+
+---
+### 矩阵的逆   
+1. 定义      
+对于{% katex %}n{% endkatex %}阶矩阵{% katex %}A{% endkatex %}，如果有一个{% katex %}n{% endkatex %}阶矩阵{% katex %}B{% endkatex %}，使{% katex %}AB=BA=E{% endkatex %}则矩阵{% katex %}A{% endkatex %}是可逆的，并把矩阵{% katex %}B{% endkatex %}称为{% katex %}A{% endkatex %}的逆矩阵，简称逆阵；         
+注意：
+a. {% katex %}A{% endkatex %}的逆矩阵记作{% katex %}A^{-1}{% endkatex %}即若有{% katex %}AB=BA=E{% endkatex %}，则有{% katex %}B=A^{-1}{% endkatex %}        
+b. 若{% katex %}A{% endkatex %}可逆则{% katex %}A{% endkatex %}的逆矩阵存在且唯一；         
+2. 定理1       
+若矩阵{% katex %}A{% endkatex %}可逆，则{% katex %}|A|\ne 0{% endkatex %}        
+3. 定理2         
+若{% katex %}|A|\ne 0{% endkatex %},则{% katex %}A{% endkatex %}可逆，且满足{% katex %}A^{-1}=\frac{A^*}{|A|}{% endkatex %}，{% katex %}A^*{% endkatex %}为{% katex %}A{% endkatex %}的伴随矩阵          
+![伴随矩阵](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403101338493.png)       
+其中{% katex %}A_{ij}{% endkatex %}是元素{% katex %}a_{ij}{% endkatex %}在行列式{% katex %}|A|{% endkatex %}中的代数余子式。              
+**二阶伴随矩阵规律：主对角线元素互换，副对角线元素添加负号。**        
+4. 定理3       
+**{% katex %}AA^*=A^* \cdot A=|A|E{% endkatex %}**         
+
+---
+### 逆矩阵的性质   
+1. 若{% katex %}A{% endkatex %}可逆，则{% katex %}A^{-1}{% endkatex %}也可逆，且{% katex %}(A^{-1})^{-1}=A{% endkatex %};          
+2. 若{% katex %}A{% endkatex %}可逆，则{% katex %}kA{% endkatex %}也可逆，且{% katex %}(kA)^{-1}=\frac{1}{k}A^{-1}{% endkatex %}({% katex %}k{% endkatex %}为非零常数)         
+3. 若同阶方阵{% katex %}A.B{% endkatex %}可逆，则{% katex %}AB{% endkatex %}可逆，且{% katex %}(AB)^{-1}=B^{-1}A^{-1}{% endkatex %}        
+![例题](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403101418793.png)
+
+---
+### 矩阵的初等变换
+1. 初等变换         
+   (1). 互换：对调两行(对调{% katex %}i,j{% endkatex %}两行，记作{% katex %}r_i\longleftrightarrow r_j{% endkatex %});         
+   (2). 倍乘：以数{% katex %}k \ne 0{% endkatex %}乘以某一行中的所有元素({% katex %}r_i \times r_j{% endkatex %})；         
+   (3). 倍加：把某一行所有元素的{% katex %}k{% endkatex %}倍加到另一行对应的元素上去(r_i + r_j)；          
+2. 定义1：行的阶梯型矩阵          
+可化阶梯线，阶梯线以下为，且每个台阶只有一行；           
+![阶梯型矩阵](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403101432917.png)
+定义2：行的最简形矩阵          
+a. 为行的阶梯型矩阵      
+b. 非零行的第一个非零元素为1；     
+c. 首非零元素所在列的其他元素都为0；         
+矩阵的秩         
+设有矩阵{% katex %}A{% endkatex %}，则矩阵{% katex %}A{% endkatex %}的秩记作{% katex %}r(A)、R(A){% endkatex %}          
+计算矩阵的秩方法：     
+将矩阵做初等行变化成行的阶梯型，数一数非零行数即为矩阵的秩；        
+3. 用初等变换求矩阵的逆      
+{% katex %}(A|E)>初等行变换>(E|A^{-1}){% endkatex %}         
+![例题](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403101518277.png)  
+
+---
+## 向量空间
