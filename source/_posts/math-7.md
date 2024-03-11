@@ -301,6 +301,6 @@ b. 当{% katex %}r(A)<n{% endkatex %}时，齐次线性方程组{% katex %}AX=0{
 a. 性质1：自由项叠加           
 设{% katex %}X=\eta _1{% endkatex %}及{% katex %}X= \eta _2{% endkatex %}都是{% katex %}AX=b{% endkatex %}的解，则{% katex %}X=\eta _1 - \eta _2{% endkatex %}为其导出组{% katex %}AX=0{% endkatex %}的解；            
 b. 性质2：自由项叠加         
-设{% katex %}\xi {% endkatex %}是{% katex %}AX=0{% endkatex %}的解，{% katex %}\xi ^*{% endkatex %}是{% katex %}AX=b{% endkatex %}的一个解，则{% katex %}\eta = \xi + \xi ^{}{% endkatex %}是{% katex %}AX=b{% endkatex %}的解；      
-定理：设{% katex %}\eta ^*{% endkatex %}是{% katex %}n{% endkatex %}元非齐次线性方程组的一个特解，{% katex %}\xi _1,...,\xi _{n-r}{% endkatex %}是对于的齐次线性方程组的一个基础解系，则 非齐次线性方程组的通解为{% katex %}\eta = \eta ^*+k_1\xi _1+...+k_{n-r}\xi _{n-r}{% endkatex %}               
+设{% katex %}\xi {% endkatex %}是{% katex %}AX=0{% endkatex %}的解，{% katex %}\xi ^*{% endkatex %}是{% katex %}AX=b{% endkatex %}的一个解，则{% katex %}\eta = \xi + \xi ^*{% endkatex %}是{% katex %}AX=b{% endkatex %}的解；      
+定理：设{% katex %}\eta ^*{% endkatex %}是{% katex %}n{% endkatex %}元非齐次线性方程组的一个特解，{% katex %}\xi _1,...,\xi _{n-r}{% endkatex %}是对于的齐次线性方程组的一个基础解系，则非齐次线性方程组的通解为{% katex %}\eta = \eta ^*+k_1\xi _1+...+k_{n-r}\xi _{n-r}{% endkatex %}               
 注：**非线性齐次方程组的通解可以简记为：非齐通=齐通+非齐特**          
