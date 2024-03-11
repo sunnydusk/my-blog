@@ -241,3 +241,66 @@ c. 首非零元素所在列的其他元素都为0；
 
 ---
 ## 向量空间
+### 向量及其组合  
+1. 定义1       
+{% katex %}n{% endkatex %}个有次序的数{% katex %}a_1,a_2,…,a_n{% endkatex %}所组成的数组为 **{% katex %}n{% endkatex %}维向量**，这{% katex %}n{% endkatex %}个数称为该向量的{% katex %}n{% endkatex %}个向量，第{% katex %}i{% endkatex %}个数{% katex %}a{% endkatex %}称为第{% katex %}i{% endkatex %}个分量，分为行向量和列向量。                  
+2. 定义2         
+给定向量组{% katex %}A:a_1,a_2,…,a_m{% endkatex %}，对于任何一组实数{% katex %}k_1,k_2,…,k_m{% endkatex %}，表达式{% katex %}k_1a_1+k_2a_2+…+k_ma_m{% endkatex %}称为 **向量组{% katex %}A{% endkatex %}的应该线性组合**，{% katex %}k_1,k_2,…,k_m{% endkatex %}称为这个线性组合的系数；             
+3. 定义3            
+设两个向量组{% katex %}A:a_1,a_2,…,a_m、B:b_1,b_2,…,b_m{% endkatex %}若{% katex %}B{% endkatex %}组中的每个向量由向量组{% katex %}A{% endkatex %}线性表示，称为**向量组{% katex %}B{% endkatex %}能由向量组{% katex %}A{% endkatex %}线性表示**，若向量组{% katex %}A{% endkatex %}与向量组{% katex %}B{% endkatex %}能相互线性表示，则称这两向量组**等价**；    
+
+---
+### 向量的线性相关与无关性
+1. 定义      
+给定向量组{% katex %}A{% endkatex %}，如果存在{% katex %}m{% endkatex %}个**不全为0**的数{% katex %}k_1,k_2,k_3,…,k_m{% endkatex %}，使其{% katex %}k_1a_1+k_2a_2+…+k_ma_m=0{% endkatex %}那么称向量组{% katex %}A{% endkatex %}线性相关，否则称{% katex %}A{% endkatex %}线性无关；          
+若{% katex %}a_1,a_2...a_m{% endkatex %}线性无关，则{% katex %}k_1=k_2=...=k_m{% endkatex %}            
+2. 相关性判定定理        
+   (1). 向量组{% katex %}A:a_1,a_2...a_m{% endkatex %}线性相关{% katex %}\Longleftrightarrow R(A)<m{% endkatex %}({% katex %}m{% endkatex %}是向量个数){% katex %}\Longleftrightarrow {% endkatex %}不满秩{% katex %}\Longleftrightarrow {% endkatex %}({% katex %}A{% endkatex %}为{% katex %}n{% endkatex %}阶方阵){% katex %}|A|=0{% endkatex %}            
+   (2). 向量组{% katex %}A:a_1,a_2...a_m{% endkatex %}线性无关{% katex %}\Longleftrightarrow R(A)<m{% endkatex %}({% katex %}m{% endkatex %}是向量个数){% katex %}\Longleftrightarrow {% endkatex %}满秩{% katex %}\Longleftrightarrow {% endkatex %}{% katex %}A{% endkatex %}方阵{% katex %}|A|\ne 0{% endkatex %}          
+3. 其他定理        
+   (1). 向量组{% katex %}A:a_1...a_m(m \ge 2){% endkatex %}线性相关的充要条件是：**其中至少有一个向量可由其余{% katex %}m-1{% endkatex %}个向量表示**。       
+   (2). 设向量组{% katex %}\alpha{% endkatex %}线性无关，而向量组{% katex %}\beta{% endkatex %}线性相关，则{% katex %}\beta{% endkatex %}可由{% katex %}\alpha{% endkatex %}线性表示且表示唯一；               
+   (3). 设向量组{% katex %}A:a_1...a_m{% endkatex %}线性相关，扩充后的同维向量{% katex %}A_2:a_1...a_m...a_{m+n}{% endkatex %}必定线性相关 **部分相关，整体必定相关**；              
+   (4). 设两个向量组{% katex %}\alpha _i=(a_{i1},...,a_{ir}),(i=1,2...m),\beta _i=(a_{i1},...,a_{ir},a_{i,r+1}),(i=1,2...m){% endkatex %}如果向量组{% katex %}\alpha _1,...,\alpha _m{% endkatex %}线性无关，则{% katex %}\beta _1,...,\beta _m{% endkatex %}必定线性无关，也就是说，无关组的接长向量比无关组；          
+
+---
+### 向量的极大线性无关组
+![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403111500375.png)
+![例题](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403111516788.png)
+
+---
+## 线性方程组
+1. 概念    
+![线性方程组](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202403111536211.png)
+若常数项{% katex %}b_1,...,b_m=0{% endkatex %}则称该方程组为**齐次线性方程组**；         
+若常数项{% katex %}b_1,...,b_m{% endkatex %}不全为0，则称该方程组为**非齐次线性方程组**；         
+2. 线性方程组矩阵     
+由方程组的系数构成的{% katex %}m \times n{% endkatex %}阶矩阵为线性方程组的系数矩阵；     
+由线性方程组的系数矩阵和**常数项({% katex %}b_1...b_m{% endkatex %})** 构成的{% katex %}m \times (n+1){% endkatex %}阶矩阵称为线性方程组的**增广矩阵**，用{% katex %}\overline{A} {% endkatex %}表示；         
+若令{% katex %}A=\begin{bmatrix}a_{11}&a_{12}&...&a_{1n}\\a_{21}&a_{22}& ...&a_{2n}\\: &: &&: \\a_{m1}&a_{m2}&...&a_{mn}\end{bmatrix}，X=\begin{bmatrix}x_1\\x_2\\: \\x_n\end{bmatrix},b=\begin{bmatrix}b_1\\b_2\\: \\b_m\end{bmatrix}{% endkatex %}          
+则非齐次线性方程组的矩阵形式为{% katex %}AX=b{% endkatex %}；          
+齐次线性方程组的矩阵形式为{% katex %}AX=0{% endkatex %}；          
+3. 齐次线性方程组          
+   (1). 基础解系：若齐次方程组有限个解{% katex %}\xi _1,...,\xi _s{% endkatex %}满足；       
+a. {% katex %}\xi _1,\xi _2...\xi _s{% endkatex %}线性无关；         
+b. 方程组的任一解都可由{% katex %}\xi _1,...,\xi _s{% endkatex %}线性表示；
+则称{% katex %}\xi _1,...,\xi _s{% endkatex %}是齐次方程组的一个基础解系，通解即为解系的线性组合，即{% katex %}k_1 \xi _1+...+k_s \xi _s{% endkatex %}          
+   (2). 基础解系向量个数：若齐次方程组的系数矩阵{% katex %}A{% endkatex %}的秩{% katex %}R(A)=r<n{% endkatex %}，则他由基础解系，且基础解系所含解向量的个数为{% katex %}n-r{% endkatex %};   
+   (3). 方程组解的个数不确定，所以有以下判定定理：            
+a. 当{% katex %}r(A)=n{% endkatex %}时，齐次线性方程组{% katex %}AX=0{% endkatex %}只有零解；{% katex %}\Longleftrightarrow {% endkatex %}满秩{% katex %}\Longleftrightarrow 为方阵 {% endkatex %}{% katex %}|A| \ne 0{% endkatex %}        
+b. 当{% katex %}r(A)<n{% endkatex %}时，齐次线性方程组{% katex %}AX=0{% endkatex %}有无穷多个非零解；{% katex %}\Longleftrightarrow {% endkatex %}不满秩{% katex %}\Longleftrightarrow 为方阵 {% endkatex %}{% katex %}|A| = 0{% endkatex %}
+注意：**{% katex %}n{% endkatex %}为未知个数**                
+4. 非齐次线性方程组         
+   (1). 非齐次线性方程组解的判定      
+定理：当{% katex %}r(A)=r(\overline{A} )=n{% endkatex %}时，非齐次方程组有唯一解；       
+当{% katex %}r(A)=r(\overline{A})=r<n{% endkatex %}时，非齐次方程组无穷多解；            
+当{% katex %}r(A)\ne r(\overline{A}){% endkatex %}时，非齐次方程组无解；            
+注意：**当增广矩阵的秩与系数矩阵的秩相等时，非齐次线性方程组才有解；**            
+   (2). 非齐次线性方程组的解的结构       
+导出组：{% katex %}AX=0{% endkatex %}为{% katex %}AX=B{% endkatex %}的导出组       
+a. 性质1：自由项叠加           
+设{% katex %}X=\eta _1{% endkatex %}及{% katex %}X= \eta _2{% endkatex %}都是{% katex %}AX=b{% endkatex %}的解，则{% katex %}X=\eta _1 - \eta _2{% endkatex %}为其导出组{% katex %}AX=0{% endkatex %}的解；            
+b. 性质2：自由项叠加         
+设{% katex %}\xi {% endkatex %}是{% katex %}AX=0{% endkatex %}的解，{% katex %}\xi ^*{% endkatex %}是{% katex %}AX=b{% endkatex %}的一个解，则{% katex %}\eta = \xi + \xi ^{}{% endkatex %}是{% katex %}AX=b{% endkatex %}的解；      
+定理：设{% katex %}\eta ^*{% endkatex %}是{% katex %}n{% endkatex %}元非齐次线性方程组的一个特解，{% katex %}\xi _1,...,\xi _{n-r}{% endkatex %}是对于的齐次线性方程组的一个基础解系，则非齐次线性方程组的通解为{% katex %}\eta = \eta ^{}+k_1\xi _1+...+k_{n-r}\xi _{n-r}{% endkatex %}               
+注：**非线性齐次方程组的通解可以简记为：非齐通=齐通+非齐特**          
