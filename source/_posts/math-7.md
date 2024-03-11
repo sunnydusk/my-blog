@@ -256,7 +256,7 @@ c. 首非零元素所在列的其他元素都为0；
 若{% katex %}a_1,a_2...a_m{% endkatex %}线性无关，则{% katex %}k_1=k_2=...=k_m{% endkatex %}            
 2. 相关性判定定理        
    (1). 向量组{% katex %}A:a_1,a_2...a_m{% endkatex %}线性相关{% katex %}\Longleftrightarrow R(A)<m{% endkatex %}({% katex %}m{% endkatex %}是向量个数){% katex %}\Longleftrightarrow {% endkatex %}不满秩{% katex %}\Longleftrightarrow {% endkatex %}({% katex %}A{% endkatex %}为{% katex %}n{% endkatex %}阶方阵){% katex %}|A|=0{% endkatex %}            
-   (2). 向量组{% katex %}A:a_1,a_2...a_m{% endkatex %}线性无关{% katex %}\Longleftrightarrow R(A)<m{% endkatex %}({% katex %}m{% endkatex %}是向量个数){% katex %}\Longleftrightarrow {% endkatex %}满秩{% katex %}\Longleftrightarrow {% endkatex %}{% katex %}A{% endkatex %}方阵{% katex %}|A|\ne 0{% endkatex %}          
+   (2). 向量组{% katex %}A:a_1,a_2...a_m{% endkatex %}线性无关{% katex %}\Longleftrightarrow R(A)=m{% endkatex %}({% katex %}m{% endkatex %}是向量个数){% katex %}\Longleftrightarrow {% endkatex %}满秩{% katex %}\Longleftrightarrow {% endkatex %}{% katex %}A{% endkatex %}方阵{% katex %}|A|\ne 0{% endkatex %}          
 3. 其他定理        
    (1). 向量组{% katex %}A:a_1...a_m(m \ge 2){% endkatex %}线性相关的充要条件是：**其中至少有一个向量可由其余{% katex %}m-1{% endkatex %}个向量表示**。       
    (2). 设向量组{% katex %}\alpha{% endkatex %}线性无关，而向量组{% katex %}\beta{% endkatex %}线性相关，则{% katex %}\beta{% endkatex %}可由{% katex %}\alpha{% endkatex %}线性表示且表示唯一；               
