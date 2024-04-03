@@ -698,13 +698,13 @@ b. 令{% katex %}\lim_{n \to \infty}|\frac{u_{n+1}}{u_n}|<1{% endkatex %}解出x
    (2). {% katex %}\frac{1}{1-x}=\sum_{n=0}^{\infty }x^n,x\in (-1,1)   {% endkatex %}      
    (3). {% katex %}ln(1+x)=\sum_{n=1}^{\infty }\frac{(-1)^{n-1} }{n} x^n,x\in (-1,1]   {% endkatex %}      
    (4). {% katex %}\frac{1}{1+x}=\sum_{n=0}^{\infty }(-1)^n  x^n,x\in (-1,1)   {% endkatex %}      
-不常用：  
-   (1). {% katex %}\frac{1}{1+x}=\sum_{n=0}^{\infty }(-1)^n  x^n,x\in (-1,1)   {% endkatex %}    
+不常用：     
+   (1). {% katex %}\sin x=x-\frac{3^3}{3!}+\frac{x^5}{5!}-…+\frac{(-1)^nx^{2n+1}}{(2n+1)！}+o(x^{2n+1})   {% endkatex %}         
+   (2). {% katex %}\cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-…+\frac{(-1)^nx^{2n}}{(2n)！}+o(x^{2n})   {% endkatex %}       
 2. 幂级数的和函数   
    (1). 使用麦克劳林展开式；`带上定义域`    
    (2). 等比级数求和    
-{% katex %}\sin x=x-\frac{3^3}{3!}+\frac{x^5}{5!}-…+\frac{(-1)^nx^{2n+1}}{(2n+1)！}+o(x^{2n+1})   {% endkatex %}        
-{% katex %}\cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-…+\frac{(-1)^nx^{2n}}{(2n)！}+o(x^{2n})   {% endkatex %}        
+{% katex %}\sum_{n=0}^{\infty }\frac{a}{1-a}{% endkatex %}
    (3). 和函数方法    
 a. `先积后导`    
 适用于{% katex %}\sum_{n=0}^{\infty }a_n \cdot x^n，a_n{% endkatex %}为分式时；     
