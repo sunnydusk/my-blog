@@ -689,3 +689,30 @@ b. 令{% katex %}\lim_{n \to \infty}|\frac{u_{n+1}}{u_n}|<1{% endkatex %}解出x
 由阿贝尔定理，有两幂级数半径应为相同敛散性应相同，则得图    
 ![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312081732034.png)
 所以收敛域为{% katex %}[-1,1){% endkatex %}；
+ 
+---
+#### 幂级数的展开式    
+1. 麦克劳林展开式      
+常用：     
+   (1). {% katex %}e^x=\sum_{n=0}^{\infty }\frac{x^n}{n!},x\in R {% endkatex %}      
+   (2). {% katex %}\frac{1}{1-x}=\sum_{n=0}^{\infty }x^n,x\in (-1,1)   {% endkatex %}      
+   (3). {% katex %}ln(1+x)=\sum_{n=1}^{\infty }\frac{(-1)^{n-1} }{n} x^n,x\in (-1,1]   {% endkatex %}      
+   (4). {% katex %}\frac{1}{1+x}=\sum_{n=0}^{\infty }(-1)^n  x^n,x\in (-1,1)   {% endkatex %}      
+不常用：  
+   (1). {% katex %}\frac{1}{1+x}=\sum_{n=0}^{\infty }(-1)^n  x^n,x\in (-1,1)   {% endkatex %}    
+2. 幂级数的和函数   
+   (1). 使用麦克劳林展开式；`带上定义域`    
+   (2). 等比级数求和    
+{% katex %}\sin x=x-\frac{3^3}{3!}+\frac{x^5}{5!}-…+\frac{(-1)^nx^{2n+1}}{(2n+1)！}+o(x^{2n+1})   {% endkatex %}        
+{% katex %}\cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-…+\frac{(-1)^nx^{2n}}{(2n)！}+o(x^{2n})   {% endkatex %}        
+   (3). 和函数方法    
+a. `先积后导`    
+适用于{% katex %}\sum_{n=0}^{\infty }a_n \cdot x^n，a_n{% endkatex %}为分式时；     
+步骤：收敛域(即和函数定义域)；求导；积分        
+积分限(0,x)；若出现{% katex %}(x-x_0)^n \Rightarrow \int_{x_0}^{x}S'(t) dt{% endkatex %}      
+小结：分母=指数—>求导；    
+分母<指数—>提x；   
+分母>指数—>配x；     
+b. `先积后导`      
+适用于{% katex %}\sum_{n=0}^{\infty }a_n \cdot x^n，a_n{% endkatex %}为整式时；         
+步骤：收敛域(即和函数定义域)；积分；求导        
