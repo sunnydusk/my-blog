@@ -64,10 +64,10 @@ date: 2024-08-28 14:31:48
 2. 喷泉模型   
 一种以对象为驱动，以用户需求为动力；用于描述**面向对象的软件开发过程**；   
 `自下而上`周期各阶段*相互重叠和多次反复*
-![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202408281540417.png)    
+![喷泉模型开发过程](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202408281540417.png)    
 3. 基于组件的开发模型  
 基于构件的开发模型利用**模块化**方法将整个系统模块化；    
-![](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202408281543238.png)
+![组件开发过程](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202408281543238.png)
 4. XP开发模型   
 敏捷方法强调`适应性`而非预测性，以人为中心，不以流程为中心；
 特点：   
@@ -76,3 +76,4 @@ date: 2024-08-28 14:31:48
     - 紧凑 
     - 并行并基于构件
 规定了一组**核心价值和方法**，消除大多数重量型开发过程中不必要产物，建立**渐进型**开发过程
+![XP方法的软件开发过程](https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202408281602839.png)
