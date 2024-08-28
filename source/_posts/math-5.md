@@ -1,6 +1,5 @@
 ---
 title: 高等数学-多元函数微分学及二重积分
-top: 16
 hexo-math: true
 type: "categories"
 cover: "https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311302248735.png"

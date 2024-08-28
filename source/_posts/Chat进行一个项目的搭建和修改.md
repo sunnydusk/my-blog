@@ -1,6 +1,5 @@
 ---
 title: 使用Copilot Chat进行一个项目的搭建和修改
-top: 199
 tags: 
   - 自学
 categories: 

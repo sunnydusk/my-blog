@@ -1,6 +1,5 @@
 ---
 title: 高等数学-线性代数
-top: 14
 hexo-math: true
 type: "categories"
 categories: 

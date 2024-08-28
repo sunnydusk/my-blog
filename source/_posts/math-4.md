@@ -1,6 +1,5 @@
 ---
 title: 高等数学-向量代数与空间解析几何
-top: 17
 hexo-math: true
 type: "categories"
 cover: "https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202311302245035.png"

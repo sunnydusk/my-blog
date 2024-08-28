@@ -1,6 +1,5 @@
 ---
 title: 高等数学-无穷级数和微分方程
-top: 15
 hexo-math: true
 type: "categories"
 categories: 
