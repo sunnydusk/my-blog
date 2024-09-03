@@ -10,7 +10,7 @@
 # BASIC INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 info:
   # Site title
-  title: 清梦的小屋
+  title: 归离的小屋
   # Author name
   author: SunnyDusk
   # Site URL
@@ -111,7 +111,7 @@ home_banner:
 #    dark: /images/wallhaven-wqery6-dark.webp # 暗色
     dark: /images/dark.jpg # 暗色
   # Home banner title
-  title: 欢迎来到清梦的小屋
+  title: 欢迎来到归离的小屋
   # Home banner subtitle
   subtitle:
     text: ["123"] # subtitle text, array
