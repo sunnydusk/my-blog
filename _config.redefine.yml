@@ -392,12 +392,16 @@ plugins:
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
     enable: true # Whether to enable
-    type: mini # fixed, mini
+    type: fixed # fixed, mini
     audios:
       - name: Sakura Tears  # audio name
         artist: Snigellin # audio artist
         url: /music/001Sakura.m4a # audio url
         cover: 	https://y.qq.com/music/photo_new/T002R300x300M000004XUIbc2ThASt_1.jpg?max_age=2592000 # audio cover url
+      - name: 远山之外是远山  # audio name
+        artist: 余又 # audio artist
+        url: /music/余又 - 远山之外是远山.ogg # audio url
+        cover: https://y.qq.com/music/photo_new/T002R300x300M0000014Q9rg1EVUGD_1.jpg?max_age=2592000 # audio cover url
       #      - name: # audio name
       #        artist: # audio artist
       #        url: # audio url

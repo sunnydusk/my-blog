@@ -1,29 +1,26 @@
 ---
 title: 我的歌单
 date: 2023-12-03 17:48:50
+type: "playlist"
 ---
-# 音乐馆
 
+# 音乐馆
 {% aplayerlist %}
 {
-"narrow": false,
+"narrow": false,                          
 "autoplay": false,
-"listfolded": true,
-"mode": "random",
+"mode": "random",                         
+"mutex": true,                            
 "preload": "metadata",
+"listmaxheight": "513px",   
 "music":
 [{
-"title":"我期待的不是雪",
-"author":"-萤川-",
-"url":"https://music.163.com/song/media/outer/url?id=2103022928.mp3",
-"pic":"https://p1.music.126.net/pQptB4RNRjIofyxC4vE_Fw==/109951169093820622.jpg?param=90y90"
-},{
 "title":"晚夜微雨问海棠",
 "author":"镜予歌,陈亦洺,喧笑",
 "url":"https://music.163.com/song/media/outer/url?id=1456673752.mp3",
 "pic":"https://p1.music.126.net/3x4HLyzg9K5OXbTWttbRYA==/109951165073688416.jpg?param=90y90"
 },{
-"title":"风起天阑",
+"title":"风起天澜",
 "author":"河图",
 "url":"https://music.163.com/song/media/outer/url?id=101106.mp3",
 "pic":"http://p2.music.126.net/Jcv5rY1Pq6u9dPrPZYH0lQ==/58274116284443.jpg"
@@ -47,6 +44,12 @@ date: 2023-12-03 17:48:50
 "author":"黄诗扶",
 "url":"https://music.163.com/song/media/outer/url?id=1335942780.mp3",
 "pic":"http://p1.music.126.net/oVCpfPtfAqNcAbRWMU7ffA==/109951163801547166.jpg?param=130y130"
+},{
+"title":"九万字",
+"author":"黄诗扶",
+"url":"https://music.163.com/song/media/outer/url?id=1335942780.mp3",
+"pic":"http://p1.music.126.net/oVCpfPtfAqNcAbRWMU7ffA==/109951163801547166.jpg?param=130y130"
 }]
 }
+
 {% endaplayerlist %}
