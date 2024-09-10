@@ -1,7 +1,6 @@
 ---
 title: 我的歌单
 date: 2023-12-03 17:48:50
-type: "playlist"
 ---
 
 # 音乐馆
@@ -51,5 +50,4 @@ type: "playlist"
 "pic":"http://p1.music.126.net/oVCpfPtfAqNcAbRWMU7ffA==/109951163801547166.jpg?param=130y130"
 }]
 }
-
 {% endaplayerlist %}
