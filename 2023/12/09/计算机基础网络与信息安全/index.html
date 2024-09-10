@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="SunnyDusk">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://sunnydusk.cn/2023/12/09/计算机基础网络与信息安全/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="计算机网络的产生与发展 计算机网络的定义指将一群具有独立功能的计算机通过通信设备以及通信线路（传输媒体）互联起来，实现资源共享、信息交换或协同工作的系统；计算机网络是将计算机技术和通信技术结合起来的产物。     计算机网络发展历程(1). 以通信为主的第一代计算机网络；(2). 以资源共享的第二代计算机网络（ARPA网）；(3). 体系结构标准化的第三代计算机网络；(4). 以Internet为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机基础-网络与信息安全">
+<meta property="og:url" content="http://sunnydusk.cn/2023/12/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%BD%91%E7%BB%9C%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/index.html">
+<meta property="og:site_name" content="归离的小屋">
+<meta property="og:description" content="计算机网络的产生与发展 计算机网络的定义指将一群具有独立功能的计算机通过通信设备以及通信线路（传输媒体）互联起来，实现资源共享、信息交换或协同工作的系统；计算机网络是将计算机技术和通信技术结合起来的产物。     计算机网络发展历程(1). 以通信为主的第一代计算机网络；(2). 以资源共享的第二代计算机网络（ARPA网）；(3). 体系结构标准化的第三代计算机网络；(4). 以Internet为">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101549121.png">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101551006.png">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101553095.png">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101555859.png">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101556428.png">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101638397.png">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101743010.png">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312111529487.png">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312111552652.png">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312111555830.png">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312111753076.png">
+<meta property="og:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312121135228.png">
+<meta property="article:published_time" content="2023-12-09T05:56:16.000Z">
+<meta property="article:modified_time" content="2024-09-10T02:06:49.000Z">
+<meta property="article:author" content="SunnyDusk">
+<meta property="article:tag" content="学习资料">
+<meta property="article:tag" content="Internet">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101549121.png">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/logo.jpg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.jpg">
+    <meta name="theme-color" content="#0cb7c6">
+    <link rel="shortcut icon" href="/images/logo.jpg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            计算机基础-网络与信息安全 -
+        
+        归离的小屋
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+        
+            
+    
+            
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+        <link href="" rel="stylesheet">
+    
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"sunnydusk.cn","root":"/","language":"zh-CN","path":"search.xml"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":true,"link_icon":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":true,"list":[]},"code_block":{"copy":true,"style":"simple","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#0cb7c6","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":true,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/snow.png","dark":"/images/dark.jpg"},"title":"欢迎来到归离的小屋","subtitle":{"text":["123"],"hitokoto":{"enable":true,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Sakura Tears","artist":"Snigellin","url":"/music/001Sakura.m4a","cover":"https://y.qq.com/music/photo_new/T002R300x300M000004XUIbc2ThASt_1.jpg?max_age=2592000","lrc":null},{"name":"远山之外是远山","artist":"余又","url":"/music/余又 - 远山之外是远山.ogg","cover":"https://y.qq.com/music/photo_new/T002R300x300M0000014Q9rg1EVUGD_1.jpg?max_age=2592000"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"categories":{"path":"/categories","icon":"fa-regular fa-folder"},"tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"友链":{"path":"/links","icon":"fa-solid fa-link"},"关于":{"icon":"fa-regular fa-user","submenus":{"音乐馆":"/music","Github":"https://github.com/sunnydusk"}}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":3,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2023/10/23 20:00:00"};
+    window.lang_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://jsdelivr.030706.xyz/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+
+    <div class="navbar-content ">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                归离的小屋
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    首页
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/categories"
+                                        >
+                                    <i class="fa-regular fa-folder fa-fw"></i>
+                                    分类
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/tags"
+                                        >
+                                    <i class="fa-regular fa-tags fa-fw"></i>
+                                    标签
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/archives"
+                                        >
+                                    <i class="fa-regular fa-archive fa-fw"></i>
+                                    归档
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/links"
+                                        >
+                                    <i class="fa-solid fa-link fa-fw"></i>
+                                    友链
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown"
+                                   href="#"
+                                        onClick=&#34;return false;&#34;>
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    关于
+                                    <i class="fa-solid fa-chevron-down fa-fw"></i>
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                        
+                                            <li>
+                                                <a href="/music">
+                                                    音乐馆
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://github.com/sunnydusk">
+                                                    GITHUB
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                首页
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/categories"
+                        >
+                            <span>
+                                分类
+                            </span>
+                            
+                                <i class="fa-regular fa-folder fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/tags"
+                        >
+                            <span>
+                                标签
+                            </span>
+                            
+                                <i class="fa-regular fa-tags fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/archives"
+                        >
+                            <span>
+                                归档
+                            </span>
+                            
+                                <i class="fa-regular fa-archive fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/links"
+                        >
+                            <span>
+                                友链
+                            </span>
+                            
+                                <i class="fa-solid fa-link fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
+                        
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                             navbar-data-toggle="submenu-关于"
+                        >
+                            <span>
+                                关于
+                            </span>
+                            
+                                <i class="fa-solid fa-chevron-right fa-sm fa-fw transition-all"></i>
+                            
+                        </div>
+                        
+
+                        
+                            <div class="flex-col items-start px-2 py-2 hidden" data-target="submenu-关于">
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           href="/music">音乐馆</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://github.com/sunnydusk">GITHUB</a>
+                                    </div>
+                                
+                            </div>
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">25</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">计算机基础-网络与信息安全</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/head.jpg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">SunnyDusk</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv3</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-12-09 13:56:16</span>
+        <span class="mobile">2023-12-09 13:56:16</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-09-10 10:06:49</span>
+            <span class="mobile">2024-09-10 10:06:49</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E5%8D%87%E5%AD%A6/">升学</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/">学习资料</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Internet/">Internet</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>6.1k 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>21 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h2 id="计算机网络的产生与发展"><a href="#计算机网络的产生与发展" class="headerlink" title="计算机网络的产生与发展"></a>计算机网络的产生与发展</h2><ol>
+<li>计算机网络的定义<br>指将一群具有独立功能的计算机通过<strong>通信设备以及通信线路（传输媒体）</strong>互联起来，实现<code>资源共享、信息交换或协同工作</code>的系统；<br>计算机网络是将<code>计算机技术</code>和<code>通信技术</code>结合起来的产物。    </li>
+<li>计算机网络发展历程<br>(1). 以<em>通信为主</em>的第一代计算机网络；<br>(2). 以<em>资源共享</em>的第二代计算机网络（<code>ARPA网</code>）；<br>(3). <em>体系结构标准化</em>的第三代计算机网络；<br>(4). 以<em>Internet</em>为核心的第四代计算机网络；    </li>
+<li>计算机网络的发展趋势<br>(1). 三网合一：<strong>通信网络、计算机网络、有线电视网络</strong><br>(2). 光通信技术<br>(3). IPV6协议<br>(4). 宽带接入技术与移动通信技术       </li>
+<li>计算机网络的组成<br> (1). 物理连接：<code>计算机系统、通信链路、网络节点</code><br> (2). 计算机系统进行各种<code>数据处理</code>，通信链路和网络节点提供<code>通信功能</code><br> (3). 逻辑功能：<code>通信子网、资源子网</code>      </li>
+<li>计算机网络的功能<br>(1). <code>数据通信</code>：基本功能，用于实现计算机之间的<strong>信息传送</strong><br>(2). <code>资源共享</code>：主要指<strong>硬件、软件、数据资源</strong><br>(3). <code>分布式处理</code>：将任务交给网络种不同的计算机，从而达到均衡使用网络资源，实现分布处理的目的<br>(4). <code>提高系统可靠性</code>：通过计算机网络系统，通过结构化和模块化设计将复杂的任务分别交由几台计算机处理，用多台计算机提供冗余，以使其可靠性大大提高      </li>
+<li>计算机网络的分类<br>(1). 按网络的<code>覆盖范围</code>分类：<code>广域网</code>、<code>城域网</code>、<code>局域网</code><br>局域网(LAN)：覆盖范围较小，通常为几百米到几公里；<br>特点：<strong>传输速率高，可靠性好，适用各种传输介质，建设成本低</strong>；<br>城域网(MAN)：通常是一个城市范围内的通信网络；<br>广域网(WAN)：用于连接不同城市之间的LAN和MAN，覆盖范围较大，通常为几十公里到几千公里；<br>特点：<strong>传输相对较慢，误码率较高，建设成本较高</strong>；<br>(2). 按网络的<code>拓扑结构</code>分类：<code>总线型</code>、<code>环型</code>、<code>星型</code>、<code>树型</code>、<code>网状型</code><br>星型网络：<strong>中心节点</strong>，<strong>每个节点都与中心节点相连</strong>，信息需要先传到中央节点，再由中央节点传输给计算机，实现<strong>集中控制</strong>；<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101549121.png"
+                      alt=""
+                ><br>(<code>令牌</code>)环形网络：<strong>每个节点都与相邻节点相连</strong>，信息在环上，按同一个方向传输，<strong>无中心节点</strong>，<strong>无集中控制</strong>，<strong>可靠性高</strong>，<strong>传输速率低</strong>；<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101551006.png"
+                      alt=""
+                ><br>总线型网络：<strong>所有节点都连接在一条总线上，无中心节点，无集中控制，可靠性低，传输速率高</strong>，双向传输；<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101553095.png"
+                      alt=""
+                ><br>树形网络：<strong>根节点，分支节点，叶节点，分支节点和叶节点都与根节点相连，有中心节点，有集中控制，可靠性高，传输速率低</strong>；<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101555859.png"
+                      alt=""
+                ><br>网状型网络：<strong>任意两个节点都可以相连，无中心节点，无集中控制，可靠性高，传输速率低</strong>，常用与广域网中；<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101556428.png"
+                      alt=""
+                ><br>(3). 按<code>传输介质</code>分类：<code>有线网</code>、<code>无线网</code><br>有线网：采用<code>双绞线、同轴电缆、光纤或电话线</code>做传输介质；<br>无线网：采用<code>无线电波或红外线</code>做传输介质，对于<code>卫星数据通信网</code>通过卫星进行数据通信；<br>(4). 按网络的<code>使用性质</code>分类：<code>公用网</code>、<code>专用网</code>    </li>
+</ol>
+<hr>
+<h2 id="计算机网络系统"><a href="#计算机网络系统" class="headerlink" title="计算机网络系统"></a>计算机网络系统</h2><ol>
+<li>计算机网络系统的组成<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101638397.png"
+                      alt=""
+                ><br>(1). 网络硬件<br>a. 主体设备<br>b. 连接设备<br>c. 传输介质<br>(2). 网络软件<br>a. 网络操作系统<br>b. 网络协议<br>c. 应用软件   </li>
+<li>网络的主体设备<br>计算机网络中的主体设备称为主机（Host），一般分为中心站（服务器）和工作站（客户机）；<br>服务器：提供服务；   客户机：请求服务；   </li>
+<li>网络中的连接设备<br>(1). <code>网卡(NIC)</code>：又称网络适配器，是网络中最重要的连接设备之一；<br>作用：a.提供固定的网络地址；<br>b. 接收网线上传输的数据，把数据转换为本机可识别和处理的格式，提供计算机总线传输给本机；<br>c. 把本机要上传的数据按照一定格式转换为网络设备可处理的数据形式，通过网线上传到网上；<br>(2). <strong>集线器(HUB)</strong>：是计算机网络中连接多台计算机或其他设备的连接设备；<br>作用：提供信号放大和中转的功能；通过<code>HUB</code>可连接成<code>星型网络</code>；<br>(3). <em>中继器</em>：承担信号的放大和传送任务；<br>作用：为了放大电信号，提供电流以驱动长距离电缆，增加信号的有效传输距离；<br>(4). <em>网桥(Bridge)</em>：是一种连接两个局域网的设备，它能够在两个局域网之间传输数据包；<br>作用：扩大网络的最大传输距离；是工作在<code>数据链路层</code>的设备，能够根据MAC地址进行转发；<br>(5). <code>路由器(Router)</code>：用于连接两个以上的同类网络，能够在复杂的网络环境中完成数据包的传送工作；<br>作用：具有<code>选择路径</code>和<code>判断网络地址</code>的功能；<br>(6). <strong>交换机(Switch)</strong>：是一种多端口的网络连接设备，它具有<code>自学习</code>和<code>转发</code>功能；<br>交换机与路由的主要区别：交换机是工作在<code>数据链路层</code>，路由器是工作在<code>网络层</code>；交换机是<code>多端口</code>，路由器是<code>双端口</code>；交换机是<code>广播</code>，路由器是<code>单播</code>；交换机是<code>自学习</code>，路由器是<code>人工配置</code>；<br>(7). <strong>网关(Gateway)</strong>：又称<code>协议转换器</code>，是一种网络互连设备，它能够在两个不同的网络之间进行数据传输；<br>作用：对两个网段中的使用不同传输协议的数据进行相互的翻译转换；<br>(8). <code>调制解调器</code>：是一种将数字信号转换为模拟信号，或将模拟信号转换为数字信号的设备；<br>作用：将计算机的<code>数字信号调制为交流模拟信号</code>发送出去，又将接收到的<code>模拟信号解调为数字信号</code>，供计算机使用；    </li>
+<li>网络的传输介质<br>根据传输介质形态不同，我们可以把传输介质分为：<code>有线传输介质</code>和<code>无线传输介质</code>;<br>(1). 有限传输介质<br>指用来传输电或光信号的导线或光纤；技术成熟、性能稳定、成本较低，是局域网使用较多的介质；<br>主要有：<code>双绞线</code>、<code>同轴电缆</code>、<code>光纤</code>；<br>a. 双绞线：是一种由两根绝缘导线以一定的顺序绞合在一起的传输介质，搅合结构是<strong>减少对相邻导线的电磁干扰</strong>，单位长度上的绞合次数越高，抵消干扰的能力就越强；根据双绞线外是否有<em>屏蔽层</em>可分为<em>屏蔽双绞线与非屏蔽双绞线</em>，用的较多的是非屏蔽双绞线；<br>b. 同轴电缆：是一种由内向外依次为导体、绝缘层、网状贬值的外导体屏蔽层、塑料保护层组成，同轴电缆因为有屏蔽层，所以抗干扰能力较好；通常按照直径和特性阻抗不同将同轴电缆分为：粗缆和细缆；<br>c. 光纤：是一种用石英玻璃或塑料制成的细长柔软的光导纤维，信号传播利用了<code>光的全反射</code>原理；<br>光纤的优点：a. 传输速率高（带宽高，可达100Mbps~2Gbps）；b. 传输损耗小，中继距离长；c. 无串音干扰，且保密性好； d. 抗干扰能力强，不受其他电磁信号干扰，也不会干扰其他通信系统；e. 体积小，重量轻；<br>光纤的缺点：连接光纤需要专用设备，成本较高，安装、连接难度大；<br>(2). 无线传输介质<br>主要有：<code>无线电波</code>、<code>红外通信</code>、<code>微波通信</code>、<code>激光</code>、<code>卫星通信</code>等；    </li>
+<li>网络软件<br>是一种在网络环境下使用和运行或控制和管理网络工作的计算机软件；<br>根据软件的功能，可分为：<code>网络系统软件</code>和<code>网络应用软件</code>；   </li>
+</ol>
+<hr>
+<h2 id="计算机网络协议与体系结构"><a href="#计算机网络协议与体系结构" class="headerlink" title="计算机网络协议与体系结构"></a>计算机网络协议与体系结构</h2><ol>
+<li>计算机网络协议<br>各个独立的计算机系统之间必须严格遵守事先约定好的一整套通信规程，包括严格规定要交换的数据格式。控制信息的格式和控制功能以及通信过程中事件执行的顺序等；<br>这些<strong>通信规程</strong>称为<code>网络协议(Protocol)</code>；    </li>
+<li>网络协议的组成要素<br>(1). <code>语法</code>：指数据与控制信息的结构或格式；<br>(2). <code>语义</code>：指<strong>需要发出何种控制信息</strong>以及<strong>完成何种动作或采取何种措施</strong>；<br>(3). <code>时序</code>：指事件实现的顺序；   </li>
+<li>协议分层的原因<br>(1). 分层有助于网络的实现与维护；<br>(2). 分层有助于技术发展；<br>(3). 分层有助于网络产品的生产；<br>(4). 分层能促进标准化工作；    </li>
+<li>网络体系结构<br> (1). <code>OSI</code>参考模型：1977年由国际标准化组织提出概念，1984年10月正式发布整套OSI标准；<br>OSI参考模型将网络的功能划分为七个层次：<code>物理层、数据链路层、网络层、传输层、会话层、表示层、应用层</code>；<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312101743010.png"
+                      alt=""
+                ><br>物理层：位于OSI参考模型的最底层，提供一个物理连接，所传数据的单位是<code>比特</code>；其功能是对上层屏蔽传输媒体的区别，提供比特流传输服务，<code>集线器，中继器</code>；<br>数据链路层：位于OSI参考模型的第二层，其功能是将物理层提供的比特流进行校验，完整无误地把数据传给相邻节点的数据链路层，单位为<code>帧(Frame)</code>，<code>网桥，交换机</code>；<br>网络层：<code>路由器</code>；<br> (2). <code>TCP/IP</code>参考模型：1974年开发，实际上是一组<code>协议</code>，是一个完整的体系结构；<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312111529487.png"
+                      alt=""
+                ><br><strong>应用层的协议</strong>：<br>a. <code>超文本传输协议(HTTP)</code>：用来传递制作的网页文件；<br>b. <code>文本传输协议(FTP)</code>：用于实现互联网中交互式文件传输功能；<br>c. <code>电子邮件协议(简单邮件传输协议SMTP，邮局协议POP[3])</code>：用于实现互联网中远程登录功能；<br>d. <code>网络终端协议(TELNET)</code>：用于实现互联网中远程登录功能；<br>e. <code>域名系统协议(DNS)</code>：用于实现网络设备名字到IP地址的映射服务；<br>f. 路由信息协议(RIP)：用于网络设备之间交换路由信息；<br>g. 简单网络管理协议(SNMP)：用于收集和交换网络管理信息；<br>h. 网络文件系统(NFS)：用于网络中不同主机间的文件共享；<br>传输控制协议(TCP)：和<strong>用户数据报协议(UDP)</strong>位于TCP/IP参考模型的传输层，提供面向连接的可靠的数据传输服务，解决数据分组在传输过程中可能出现的问题，单位为<code>报文段(Segment)</code>；<br>主要功能：a. 接收数据报；b. 具有自动调节超时功能；c. 只接受最先到达的数据报；d. <code>排序恢复</code>；<br>网际协议(IP)：位于TCP/IP参考模型的网络层，单位为<code>数据报(Datagram)</code>；<br>主要功能：a. 加报头；b. 选路径；c. 去报头；——寻址<br>OSI参考模型对比TCP/IP参考模型：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312111552652.png"
+                      alt=""
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312111555830.png"
+                      alt=""
+                ><br>注：<strong>传输层中，TCP是<code>面向连接</code>的协议，是可靠的；UDP是<code>面向无连接</code>的协议，是不可靠的</strong>         </li>
+</ol>
+<hr>
+<h2 id="Internet基础"><a href="#Internet基础" class="headerlink" title="Internet基础"></a>Internet基础</h2><ol>
+<li>Internet的起源<br>在美国较早的军用计算机网<code>ARPANET</code>，是Internet的前身；<br>美国国家科学基金会(NSF)；<br>1989年MILNET(由ARPANET分离出来)实现与NSFNET连接后，采用Internet这个名词；<br>此后，其他部门的计算机网相继并入Internet；    </li>
+<li>Internet在中国的发展<br>四大主干网络：<br>(1). <code>中国科技信息网(CSTNet)</code><br>(2). <code>中国教育和科研计算机网(CERNet)</code><br>(3). <code>国家公用经济信息通信网络(金桥网：ChinaGBN)</code><br>(4). <code>公用计算机互联网(ChinaNet)</code>     </li>
+<li>Internet的发展趋势    </li>
+<li>Internet的组成<br>(1). <code>物理网</code><br>(2). <code>协议</code><br>(3). <code>应用软件</code><br>(4). <code>信息</code>    </li>
+<li>Internet专业术语<br>(1). <code>ISP：服务提供商</code>：主要为user提供拨号上网、WWW浏览、FTP、收发E-mail、BBS、Telnet等服务；<br>(2). <code>PPP协议：点对点协议</code>：Modem与ISP连接通信时所支持的协议；    </li>
+</ol>
+<hr>
+<h3 id="IP地址及域名系统"><a href="#IP地址及域名系统" class="headerlink" title="IP地址及域名系统"></a>IP地址及域名系统</h3><ol>
+<li>IP地址的概念<br>IP地址是Internet上的主机在网络上的<code>唯一</code>标识，是一个<code>32位的二进制数</code>，也被称为网际地址，通常用点分十进制表示法表示；       </li>
+<li>IP地址的组成<br><code>32位</code>二进制数组成，分层四段，每段8位；<br>使用点分十进制表示法；<br>合法IP地址：a. 四组； b. 每组0~255，不能超过255； c. 每组分隔为“.”；   </li>
+<li>IP地址的分类<br>IP地址分为“A、B、C、D、E”五类，常用“A、B、C”三类；<br>是由<code>网络号</code>和<code>主机号</code>两部分组成；<br> (1). A类地址：第一段数字范围<code>1~127(126)</code>，包含主机16777214台；<br> (2). B类地址：第一段数字范围<code>128~191</code>，包含主机65534台；<br> (3). C类地址：第一段数字范围<code>192~223</code>，包含主机254台；<br> (4). D类地址：第一段数字范围<code>224~239</code>；<br> (5). E类地址：第一段数字范围<code>240~247</code>；<br>IPv4采用<code>32位</code>地址，IPv6采用<code>128位</code>地址；    </li>
+<li>子网掩码<br>子网掩码是用来判断任意两台计算机的IP地址是否在同一个子网中的根据；<br>方法：将两台计算机各自的IP地址与子网掩码进行<code>逻辑与(AND)</code>运算，如果结果相同，则两台计算机在同一个子网中,，可以进行直接通信；<br>正常的子网掩码地址为：网络位全为1，主机位全为0，因此：<br>A类地址的子网掩码为：<code>255.0.0.0</code>，8位网络号+24位主机号；<br>B类地址的子网掩码为：<code>255.255.0.0</code>，16位网络号+16位主机号；<br>C类地址的子网掩码为：<code>255.255.255.0</code>，24位网络号+8位主机号；     </li>
+<li>Internet域名系统<br>为了方便用户，Internet在IP地址的基础上提供了一种面向用户的<code>字符型</code>主机命名机制，这就是<code>域名系统(DNS)</code>，这是一种更高级的地址形式；<br>域名采用<code>分层命名法</code>，完整的域名最多由五部分组成，用“.”分隔，最右边的子域名级别最高（顶级域名），最左边的子级域名级别最低；   </li>
+<li>域名及意义<br>(1). COM：商业组织<br>(2). NET：网络机构<br>(3). EDU：教育机构<br>(4). ORG：非盈利组织<br>(5). GOV：政府部门<br>(6). INT：国际组织<br>(7). MIL：军事部门<br>(8). INFO：信息服务     </li>
+<li>地区代码<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312111753076.png"
+                      alt=""
+                ></li>
+<li>域名解析<br>在访问一台计算机时，既可以使用IP地址，也可以使用域名；是由<code>DNS</code>进行翻译，其服务系统也会自动将域名翻译为IP地址；<br>在域名服务器中存放了域名与IP地址的<code>对照表(映射表)</code>；     </li>
+<li>IP和域名的关系<br><code>同一个IP地址可以有若干不同的域名；</code><br><code>但一个域名只能有一个IP地址与之对应；</code>    </li>
+<li>Internet的接入方式<br>(1). PSTN方式(公用电话交换机)<br>(2). ADSL方式(非对称数字用户环路)<br>(3). LAN方式(局域网)<br>(4). 无线方式(蜂窝技术、数字无绳技术、点对点微波技术、卫星技术、蓝牙技术)          </li>
+<li>Internet的应用<br>(1). 电子邮件<br>功能：a. 邮件的制作与编辑；b. 邮件的发送；c. 邮件通知； d. 邮件阅读与检索；e. 邮件的回复与转发；f. 邮件处理（转存、分类归档或删除）；<br>特点：a. 传送速度快；b. 信息多样化；c. 收发方便；d. 成本低廉； e. 更为广泛的交流对象； f. 安全；<br>格式：<code>用户名@电子邮件服务器名称</code><br>最常用的邮件协议：<code>SMTP</code>、<code>POP3</code>；<br>SMTP：<code>简单邮件传输协议</code>，是一组用于由源地址到目的地址传送邮件的规则，由它来控制邮件的中转方式；SMTP服务器则是遵循SMTP协议的发送邮件服务器，用来<code>发送或中转</code>电子邮件；<br>POP3：<code>邮局协议</code>的第三个版本，规定怎样将个人计算机连接到POP3服务器则是遵循POP3协议的接收邮件服务器，用来<code>接收</code>电子邮件；<br>电子邮件软件：outlook；<br>(2). 搜索引擎<br>本质是网站，专门为用户<strong>提供信息“检索”服务</strong>；<br>(3). 即时通信<br><strong>网上聊天(IRC)</strong>：是在Internet上专门指定一个场所，为大家提供即时的信息交流。<br><strong>网上寻呼(ICQ)</strong>：采用客户机/服务器工作模式。<br>IP电话：也称网络电话，通过TCP/IP协议实现电话应用。<br>(4). 网络音乐和网络视频<br>网络音乐：MIDI、MP3、Real Audio和wav等是歌曲的几种压缩格式，前三种是网络上比较流行的网络音乐格式；MP3体积小，音质高，采用免费的开发标准；<br>视频点播(VOD)：是交互式多媒体视频点播业务，是一种可以按用户需要点播节目的交互式视频系统；<br>(5). 文件传输<br><code>文件传送协议(FTP)</code>：采用<strong>客户机/服务器(C/S)</strong>工作模式，在Internet上，通过FTP协议及FTP程序（服务器程序和客户端程序），用户计算机和远程服务器之间可以进行<code>上传和下载</code>；<br>FTP服务器：a. 匿名：下载、浏览； b. 非匿名：上传、下载、浏览、更新、删除；<br>(6). 流媒体应用<br>指在数据网络中按时间先后次序传输和播放的音视频数据流；<br>特点：<code>连续性、实时性、时序性</code>（具有严格的先后次序性质）<br>(7). 远程登录Telnet<br>通过一台电脑登录到另一台电脑上，运行其中的程序和服务；<br>是<code>仿真终端(终端)</code><br>(8). 电子公告牌、微博与微信<br><strong>电子公告牌(电子布告栏系统)：BBS；</strong><br><strong>微博：(MicroBlog)</strong>最早的最著名的微博是美国的<strong>Twitter</strong><br><strong>微信：(WeChat)</strong> 是一款手机通讯应用软件，由腾讯公司开发；<br>(9). 其他服务<br>商业应用(Business Application)、在线游戏(Online Game)、虚拟现实(Virtual Reality)       </li>
+</ol>
+<hr>
+<h2 id="WWW与Web浏览器"><a href="#WWW与Web浏览器" class="headerlink" title="WWW与Web浏览器"></a>WWW与Web浏览器</h2><ol>
+<li>WWW产生<br>是英文词组<em>World Wide Web</em>的简称，中文译为<strong>万维网、全球信息网</strong>，由欧洲粒子物理实验室(CERN)研制；    </li>
+<li>WWW的概念<br>(1). <code>客户/服务器机制(C/S)</code><br>(2). <code>超文本标记语言(HTML)</code><br>(3). <code>统一资源定位器(URL)</code>：格式：<code>传输协议://IP地址或域名[:端口号][/路径/文件名]</code>(传输协议除http其余都不可以省略，[]内可以省略)<br>(4). <code>超文本传输协议(HTTP)</code>     </li>
+<li>网页<br>网页又称<code>HTML文件</code>，后缀名一般为<strong>.htm或.html</strong>；      </li>
+<li>网页内容<br>主要由文字，图片，动画、超链接和特殊组件等元素组成；   </li>
+<li>网页的分类<br><strong>静态网页</strong>：是指设计者没有修改网页的内容时，网页内容不会变化；<br>注意：<strong>静态网页并非是网页上没有动画</strong><br><strong>动态网页</strong>：是指网页内包含程序代码，需要服务器执行程序才能生成网页内容；<br>注意：动态页面是指网页和客户端用户<strong>互动，而非是网页上由动画；</strong>       </li>
+<li>网页的制作工具<br> (1). <code>记事本</code>：是Windows自带的文本编辑器；<br>网页制作三剑客(由Macromedia公司开发)<br> (2). <code>Firworks</code>：处理网页图片，；<br> (3). <code>Dreamweaver</code>：网站开发及网页编辑工具；<br> (4). <code>Flash</code>：动画作品制作；      </li>
+<li>网页设计的相关计算机语言<br>(1). <code>HTML</code>：<code>是超文本标记语言</code>的缩写；<br>包括<code>文本内容</code>和<code>HTML标记</code>；<br>格式为：<strong>&lt;标记名&gt;文本内容&lt;/标记名&gt;</strong><br>多数标记具有<strong>起始名和结束标记</strong>，一般<strong>成对</strong>出现，而且<strong>不区分大小写</strong>；<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://jsdelivr.030706.xyz/gh/sunnydusk/my-blog-images@main/202312121135228.png"
+                      alt=""
+                ><br>(2). <code>XML</code>：<code>可扩展标记语言</code>，主要用于互联网上传递或处理数据，其文件扩展名为“.xml”；<br>(3). <code>CSS</code>：<code>层叠样式表</code>，主要用于对网页数据进行编排、格式化、显示、特效等；<br>(4). <code>DHTML</code>：<code>动态的HTML</code>；<br>(5). 脚本语言：主流行的是JavaScript和VBScript；     </li>
+</ol>
+<hr>
+<h2 id="信息安全"><a href="#信息安全" class="headerlink" title="信息安全"></a>信息安全</h2><h3 id="信息安全概述"><a href="#信息安全概述" class="headerlink" title="信息安全概述"></a>信息安全概述</h3><ol>
+<li>信息安全的定义<br>基本定义：<code>完整性、保密性、可用性、可靠性</code>    </li>
+<li>信息安全意识<br>四大要素：<strong>技术、制度、流程和人</strong>；     </li>
+<li>信息安全的威胁<br>分为<strong>自然威胁</strong>和<strong>人为威胁</strong><br>自然威胁：自然灾害，场地环境等；<br>人为威胁：人为攻击(偶然/恶意[主动/被动])、安全缺陷、软件漏洞、结构隐患；      </li>
+<li>信息安全的技术<br>(1). <code>密码技术</code>：发送没有加密的信息叫<strong>明文</strong>，加密后称<strong>密文</strong>；密文恢复明文，合法的接受者为<strong>解密</strong>，不合法的叫<strong>破译</strong>；明文加密采用<em>加密算法</em>，密文恢复明文采用<em>解密算法</em>；<br>单钥：从一个推出另一个，称为<code>对称加密算法</code>，加密标准<code>DES</code>；<br>公钥：从一个推出另一个，称为<code>非对称加密算法</code>，加密标准<code>RSA算法</code>；<br>(2). 防火墙技术<br>(3). 虚拟专用网(VPN)技术<br>(4). 病毒与反病毒技术<br>(5). 他安全保密技术：实体及硬件安全技术、数据库安全技术    </li>
+</ol>
+<hr>
+<h3 id="计算机病毒"><a href="#计算机病毒" class="headerlink" title="计算机病毒"></a>计算机病毒</h3><ol>
+<li>计算机病毒的概念<br>指<strong>编制</strong>或计算机程序中插入破坏计算机功能或毁坏数据，影响计算机使用，能<strong>自我复制</strong>的一组计算机<strong>指令</strong>或<strong>程序代码</strong>。      </li>
+<li>计算机病毒的特点<br>(1). <code>可执行性</code><br>(2). <code>破坏性</code><br>(3). <code>传染性</code><br>(4). <code>潜伏性</code><br>(5). <code>针对性</code><br>(6). <code>衍生性</code><br>(7). <code>抗病毒软件性</code>      </li>
+<li>计算机病毒的传播途径<br>(1). 通过计算机<strong>网络</strong>传播（最快，最广泛）<br>(2). 通过<strong>移动存储设备</strong>来进行传播<br>(3). 通过不可移动的计算机硬件设备进行传播<br>(4). 通过<strong>点对点通信系统和无线通道</strong>传播<br>第二代病毒是通过<strong>网页传播</strong>的。</li>
+<li>病毒的分类<br>(1). 存在的媒体分：<strong>网络病毒、文件病毒（可执行文件[.com、.exe]）、引导型病毒</strong><br>(2). 传染的方法分：<em>驻留型病毒、非驻留型病毒</em><br>(3). 破坏能力分：<em>无害型、无危险型、危险型、非常危险型</em>    、<br>(4). 特有的算法分：<em>伴随型、寄生型、蠕虫型</em>       </li>
+<li>常见的计算机病毒<br>蠕虫病毒、木马病毒和黑客病毒、“熊猫烧香”、脚本病毒、宏病毒       </li>
+<li>病毒的预防<br>主要以 <strong>“预防为主，清除为辅”</strong>，要定期进行 <strong>备份</strong>。<br>从<code>管理</code>和<code>技术</code>两方面进行；<br>杀毒软件不能查杀所有病毒，需要及时更新<br><strong>计算机病毒会在<code>传染</code>中发生变异；</strong>   </li>
+</ol>
+<hr>
+<h3 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h3><ol>
+<li>防火墙的概念<br>是用于<code>内部网</code>和<code>因特网</code>一种网络安全系统，决定网络内部服务哪些可被外界访问，外界的哪些人可以访问内部服务，内部人员可用访问哪些外部服务；     </li>
+<li>防火墙的类型<br>网络层防火墙、应用层防火墙、链路层防火墙；   </li>
+<li>防火墙的优缺点<br>优点：<br>(1). 强化安全策略<br>(2). 有效记录Internet上的活动<br>(3). 限制暴露用户点<br>(4). 安全策略检查站<br>缺点：<br>(1). 不能防范恶意知情者<br>(2). 不能防范不通过它的链接<br>(3). 不能防备全部威胁<br>(4). 不能防范病毒    </li>
+</ol>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> 计算机基础-网络与信息安全</li>
+        <li><strong>作者:</strong> SunnyDusk</li>
+        <li><strong>创建于
+                :</strong> 2023-12-09 13:56:16</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2024-09-10 10:06:49
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://www.030706.xyz,https//www.sunnydusk.cn/2023/12/09/计算机基础网络与信息安全/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/">#学习资料</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/Internet/">#Internet</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2023/12/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">计算机基础-算法</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2023/12/04/Chat%E8%BF%9B%E8%A1%8C%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%90%AD%E5%BB%BA%E5%92%8C%E4%BF%AE%E6%94%B9/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">使用Copilot Chat进行一个项目的搭建和修改</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        评论
+    </div>
+    
+
+        
+            
+    <div id="giscus-container"></div>
+    <script data-swup-reload-script defer>
+        async function loadGiscus() {
+            const giscusConfig = {
+                'src': 'https://giscus.app/client.js',
+                'data-repo': 'sunnydusk/repository',
+                'data-repo-id': 'R_kgDOKz1wKA',
+                'data-category': 'Announcements',
+                'data-category-id': 'DIC_kwDOKz1wKM4CbYvq',
+                'data-mapping': 'pathname',
+                'data-strict': '0',
+                'data-reactions-enabled': '1',
+                'data-emit-metadata': '1',
+                'data-theme': 'preferred_color_scheme',
+                'data-lang': 'zh-CN',
+                'data-input-position': 'top',
+                'data-loading': 'lazy',
+                'crossorigin': 'anonymous',
+                'async': true
+            }
+            const giscusScript = document.createElement('script');
+            for (const key in giscusConfig) {
+                giscusScript.setAttribute(key, giscusConfig[key]);
+            }
+            document.getElementById('giscus-container').appendChild(giscusScript);
+        }
+        if ('true') {
+            let loadGiscusTimeout = setTimeout(() => {
+                loadGiscus();
+                clearTimeout(loadGiscusTimeout);
+            }, 1000);
+        } else {
+            document.addEventListener('DOMContentLoaded', loadGiscus);
+        }
+    </script>
+
+
+        
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">目录</div>
+        <div class="page-title">计算机基础-网络与信息安全</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E4%BA%A7%E7%94%9F%E4%B8%8E%E5%8F%91%E5%B1%95"><span class="nav-text">计算机网络的产生与发展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%B3%BB%E7%BB%9F"><span class="nav-text">计算机网络系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84"><span class="nav-text">计算机网络协议与体系结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Internet%E5%9F%BA%E7%A1%80"><span class="nav-text">Internet基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#IP%E5%9C%B0%E5%9D%80%E5%8F%8A%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F"><span class="nav-text">IP地址及域名系统</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WWW%E4%B8%8EWeb%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="nav-text">WWW与Web浏览器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8"><span class="nav-text">信息安全</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%A6%82%E8%BF%B0"><span class="nav-text">信息安全概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%97%85%E6%AF%92"><span class="nav-text">计算机病毒</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%98%B2%E7%81%AB%E5%A2%99"><span class="nav-text">防火墙</span></a></li></ol></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">SunnyDusk</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        共撰写了 25 篇文章
+                    </span>
+                    
+                        <span>
+                            共 179.7k 字
+                        </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">访问人数</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">总访问量</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a> 驱动</span>
+            <span class="text-sm lg:block">主题&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.7.1</a></span>
+        </div>
+        
+            <div class="icp-info my-1"><a target="_blank" rel="nofollow" href="
+                
+                    https://icp.gov.moe/?keyword=20232103
+                
+                ">萌ICP备20232103号</a></div>
+        
+        
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+            
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="站内搜索您需要的内容..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+    
+<script src="/js/libs/Swup.min.js"></script>
+
+<script src="/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/utils.js" type="module"></script>
+
+<script src="/js/main.js" type="module"></script>
+
+<script src="/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/layouts/categoryList.js" type="module"></script>
+
+
+
+    
+<script src="/js/tools/localSearch.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/libs/Typed.min.js"></script>
+
+  
+<script src="/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+    
+<script src="/js/libs/anime.min.js"></script>
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/js/layouts/toc.js" type="module"></script>
+
+<script src="/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+    <div id="aplayer"></div>
+
+<script src="/js/libs/APlayer.min.js"></script>
+
+
+<script src="/js/plugins/aplayer.js"></script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
