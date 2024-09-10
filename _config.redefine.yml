@@ -394,6 +394,18 @@ plugins:
     enable: true # Whether to enable
     type: fixed # fixed, mini
     audios:
+      - name: 致：黯淡星
+        artist: 哦漏 _ 傲七爷
+        url: /music/哦漏 _ 傲七爷 - 致：黯淡星.ogg
+        cover: https://y.qq.com/music/photo_new/T062R300x300M000003Hk4r62JcsPN.jpg?max_age=2592000
+      - name: 檐下星光
+        artist: 许梦宸
+        url: /music/许梦宸 - 檐下星光.flac
+        cover: https://y.qq.com/music/photo_new/T002R300x300M000001bj0Dz27Bt6d_1.jpg?max_age=2592000
+      - name: 夜樱
+        artist: 三无Marblue
+        url: /music/三无Marblue - 夜樱.ogg
+        cover: https://y.qq.com/music/photo_new/T002R300x300M000004S98W93xI8u0_2.jpg?max_age=2592000
       - name: Sakura Tears  # audio name
         artist: Snigellin # audio artist
         url: /music/001Sakura.m4a # audio url
