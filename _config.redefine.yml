@@ -23,7 +23,7 @@ info:
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 defaults:
   # Favicon
-  favicon: /images/logo.jpg
+  favicon: /images/logo.png
   # Site logo
   logo:
   # Site avatar
@@ -111,7 +111,7 @@ home_banner:
 #    dark: /images/wallhaven-wqery6-dark.webp # 暗色
     dark: /images/dark.jpg # 暗色
   # Home banner title
-  title: 欢迎来到归离的宇宙
+  title: 欢迎来到归离的小宇宙
   # Home banner subtitle
   subtitle:
     text: ["123"] # subtitle text, array
