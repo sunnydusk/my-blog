@@ -107,9 +107,9 @@ home_banner:
   # Home banner image
   image:
 #    light: /images/wallhaven-wqery6-light.webp # 亮色
-    light: /images/snow.png # 亮色
+    light: /images/dark1.png # 亮色
 #    dark: /images/wallhaven-wqery6-dark.webp # 暗色
-    dark: /images/dark.jpg # 暗色
+    dark: /images/hill.png # 暗色
   # Home banner title
   title: 欢迎来到归离的小宇宙
   # Home banner subtitle
