@@ -116,13 +116,13 @@ math:
     options:
       throwOnError: false
       strict: false
-  mathjax:
-    css: 'https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css'
-    options:
-      conversion:
-        display: false
-      tex:
-      svg:
+#  mathjax:
+#    css: 'https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css'
+#    options:
+#      conversion:
+#        display: false
+#      tex:
+#      svg:
 
 # offline config passed to sw-precache.
 service_worker:
